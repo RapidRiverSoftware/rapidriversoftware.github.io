@@ -1,47 +1,44 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
-  cover_image:  blog-cover.jpg
-  logo:         logo.png
-  
+  title:        "Rapid River Software"
+  subtitle:     "Hi, we're Rapid River, we get things done."
+  cover_image:  header.jpg
+  logo:         logo.jpg
+
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
+  company:      Rapid River Software
+  url:          http://rrsoft.co/
+  facebook:     rapidriversoftware
   twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   https://sendtoinc.com/about/
-  
+  about_link:   /about/
+
   # Product Information
-  product_link: http://incorporated.sendtoinc.com/
-  tagline:      "Get a modern blog for your company"
-  
+  product_link: http://rrsoft.co/
+  tagline:      "Hi, we're Rapid River, we get things done."
+
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
     shortname:  false
-  
+
   # Sharing settings
   sharing:
-    twitter:    false
+    twitter:    true
     facebook:   false
     gplus:      false
     hn:         false
-    
-  
- # Analytics     
+
+ # Analytics
   analytics:
     google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
+
   # Google Fonts
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
-  
+
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://incorporated.sendtoinc.com
+url:         http://rrsoft.co
 source:      .
 destination: ./_site
 plugins:     ./_plugins
@@ -72,19 +69,6 @@ host:        0.0.0.0
 port:        4000
 baseurl:     /
 lsi:         false
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
 
 kramdown:
   auto_ids: true
