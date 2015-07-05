@@ -5,9 +5,9 @@
     {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
 
     {% if include.layout  == 'home' %}
-      {% stylesheet home %}
+      <link rel="stylesheet" type="text/css" href="{{ site_url }}/css/home.css"/>
     {% else %}
-      {% stylesheet main %}
+      <link rel="stylesheet" type="text/css" href="{{ site_url }}/css/main.css"/>
     {% endif %}
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
