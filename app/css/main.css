@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+
+nav {
+
+  ul {
+    list-style: none;
+  }
+
+  .nav__logo--image {
+    height: 6rem;
+    vertical-align: middle;
+  }
+
+  .nav__logo--text {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 6rem;
+    vertical-align: middle;
+  }
+}

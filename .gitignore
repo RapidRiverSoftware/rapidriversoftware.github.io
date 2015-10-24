@@ -1,2 +1,4 @@
-_site
-.sass-cache
+jspm_packages
+node_modules
+
+.DS_Store
