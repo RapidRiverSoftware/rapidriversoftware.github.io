@@ -1,0 +1,50 @@
+@import "./vendors/bootstrap/bootstrap.css";
+
+html {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+nav {
+
+  header {
+    display: inline-block;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+  .nav__logo--image {
+    height: 4rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .nav__logo--text {
+    font-size: 2rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .nav__menu {
+    flex: 1;
+    list-style: none;
+    display: inline-block;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+
+    .nav__menu--item {
+        flex: 1;
+    }
+  }
+}

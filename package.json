@@ -1,0 +1,64 @@
+{
+  "private": true,
+  "jspm": {
+    "directories": {
+      "baseURL": "app"
+    },
+    "dependencies": {
+      "autoprefixer": "npm:autoprefixer@^6.0.3",
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "jquery": "github:components/jquery@^2.1.4",
+      "normalize.css": "npm:normalize.css@^3.0.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "name": "rapidriversoftware.github.io",
+  "version": "1.0.0",
+  "main": "config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RapidRiverSoftware/rapidriversoftware.github.io.git"
+  },
+  "author": "Mutahhir Ali Hayat <mutahhir.ali@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RapidRiverSoftware/rapidriversoftware.github.io/issues"
+  },
+  "homepage": "https://github.com/RapidRiverSoftware/rapidriversoftware.github.io#readme",
+  "description": "Rapid River Software",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "chokidar-cli": "^1.1.0",
+    "imagemin-cli": "^1.0.0",
+    "jspm": "^0.16.13",
+    "postcss-cli": "^2.2.0",
+    "serv": "^0.2.4"
+  },
+  "scripts": {
+    "devclean": "rm -rf app/_built_css",
+    "clean": "rm -rf ./dist",
+    "postclean": "mkdir ./dist",
+    "prebuild-css": "mkdir ./dist/css",
+    "prebuild-js": "mkdir ./dist/js",
+    "prebuild-images": "mkdir ./dist/images",
+    "build-css": "postcss -c postcss-config.json",
+    "build-js": "jspm bundle-sfx lib/main.js dist/js/bundle.js",
+    "build-html": "./build-html.js app/index.html dist/index.html",
+    "build-images": "imagemin ./app/images ./dist/images",
+    "build": "npm run clean && npm run build-html && npm run build-js && npm run build-css && npm run build-images",
+    "predevbuild-css": "npm run devclean && mkdir app/_built_css",
+    "devbuild-css": "postcss -c postcss-dev-config.json",
+    "watch": "chokidar 'app/css/**' -c 'npm run devbuild-css'",
+    "start": "npm run build"
+  },
+  "dependencies": {
+    "postcss-font-magician": "^1.3.0",
+    "postcss-import": "^7.1.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-normalize": "^0.1.1"
+  }
+}
