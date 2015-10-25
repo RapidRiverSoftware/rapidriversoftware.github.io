@@ -16,6 +16,7 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.29",
     "babel-runtime": "npm:babel-runtime@5.8.29",
+    "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@1.2.3",
     "jquery": "github:components/jquery@2.1.4",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -29,6 +30,9 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:twbs/bootstrap@3.3.5": {
+      "jquery": "github:components/jquery@2.1.4"
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"

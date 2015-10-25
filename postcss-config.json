@@ -1,5 +1,5 @@
 {
-  "use": ["autoprefixer", "postcss-normalize", "postcss-nested"],
+  "use": ["postcss-import", "autoprefixer", "postcss-normalize", "postcss-nested"],
     "input": "app/css/main.css",
     "output": "dist/css/bundle.css",
     "autoprefixer": {
