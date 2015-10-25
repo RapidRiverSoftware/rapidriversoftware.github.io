@@ -4,3 +4,8 @@ node_modules
 app/_built_css
 
 .DS_Store
+
+*/.DS_Store
+.Spotlight-V100
+.Trashes
+.DS_Store?
