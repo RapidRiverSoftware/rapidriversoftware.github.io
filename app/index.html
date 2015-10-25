@@ -10,7 +10,9 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="/css/bundle.css">
+        <!--CSS (css/bundle.css)-->
+        <link rel="stylesheet" href="_built_css/bundle.css">
+        <!--/CSS-->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,14 +26,22 @@
                     <span class="nav__logo--text">Rapid River</span>
                 </h3>
             </header>
-          <ul>
-            <li>
-
-            </li>
+          <ul class="nav__menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">How we can help</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
         </nav>
 
-
-        <script src="/js/bundle.js"></script>
+        <!--JS (js/bundle.js)-->
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script>
+        System.import('lib/main.js');
+        </script>
+        <!--/JS-->
     </body>
 </html>
