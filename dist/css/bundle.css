@@ -169,6 +169,7 @@ table {
 }
 
 html {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 62.5%;
 }
 
@@ -177,8 +178,29 @@ body {
 }
 
 
+nav {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+}
+
+
+nav header {
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: inline-block;
+}
+
+
 nav ul {
   list-style: none;
+  display: inline-block;
+}
+
+
+nav li {
+  display: inline-block;
 }
 
 
@@ -189,8 +211,19 @@ nav .nav__logo--image {
 
 
 nav .nav__logo--text {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 6rem;
   vertical-align: middle;
+}
+
+
+nav .nav__menu {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: space-around;
 }
