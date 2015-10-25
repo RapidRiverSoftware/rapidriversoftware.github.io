@@ -8,6 +8,13 @@ html {
 
 body {
   font-size: 1.4rem;
+
+  p {
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
 }
 
 nav {
