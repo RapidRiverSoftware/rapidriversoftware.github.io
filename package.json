@@ -52,6 +52,7 @@
     "build": "npm run clean && npm run build-html && npm run build-js && npm run build-css && npm run build-images",
     "predevbuild-css": "npm run devclean && mkdir app/_built_css",
     "devbuild-css": "postcss -c postcss-dev-config.json",
+    "prewatch": "npm run devbuild-css",
     "watch": "chokidar 'app/css/**' -c 'npm run devbuild-css'",
     "start": "npm run build"
   },
