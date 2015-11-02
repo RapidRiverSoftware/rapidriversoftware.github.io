@@ -13,3 +13,20 @@
 .relative-box {
   position: relative;
 }
+
+.full-width {
+  width: 100%;
+  padding: 0;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.clear-nav {
+  padding-top: 70px;
+}
+
+.absolute {
+  position: absolute;
+}

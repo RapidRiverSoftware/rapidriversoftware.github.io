@@ -62,36 +62,34 @@ nav {
   }
 }
 
-.splash__main {
-  position: relative;
-  padding: 0;
-  margin: 0;
+.hero {
+  height: 500px;
+}
 
-  max-height: 500px;
+.splash__main {
   vertical-align: middle;
   overflow: hidden;
-
-  .splash__main--image {
-    width: 100%;
-  }
+  padding: 0;
 
   &--dark-background {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    padding: 0;
     text-aligh: center;
     vertical-align: middle;
-    background-color: rgba(0,0,0, .25);
+    background-color: black;
+    overflow: hidden;
+
+    .splash__main--image {
+      opacity: 0.8;
+    }
   }
 
   &--text-frame {
-    position: absolute;
-    top: 30%;
-    width: 100%;
     vertical-align: middle;
-    margin-left: 3rem;
+    padding-top: 8rem;
   }
 
   &--header {
