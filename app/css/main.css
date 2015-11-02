@@ -164,3 +164,32 @@ section {
     margin-bottom: 3rem;
   }
 }
+
+.team {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+
+  &__member {
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+
+    &--thumb {
+      width: 10rem;
+      height: 10rem;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    &--name {
+      font-family: 'Open Sans';
+      font-weight: 300;
+    }
+  }
+
+
+}
