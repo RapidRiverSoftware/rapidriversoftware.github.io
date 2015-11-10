@@ -1,4 +1,5 @@
 @import "./vendors/bootstrap/bootstrap.css";
+@import "./vendors/avgrund.css";
 @import "./util.css";
 
 html {
@@ -202,4 +203,13 @@ section {
   }
 
 
+}
+
+
+.dialog {
+  position: fixed;
+  height: auto;
+  width: 640px;
+  top: 50%;
+  margin: 0 auto;
 }
