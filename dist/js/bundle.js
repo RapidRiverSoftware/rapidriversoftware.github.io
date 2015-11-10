@@ -8457,7 +8457,7 @@ $__System.register('1', ['3', '5', '6'], function (_export) {
       var $this = $(this);
       console.log(this);
       var name = $this.data('detail');
-      var templatePath = '/templates/team/' + name + '.template.html';
+      var templatePath = 'templates/team/' + name + '.template.html';
 
       $.ajax({
         url: templatePath,
