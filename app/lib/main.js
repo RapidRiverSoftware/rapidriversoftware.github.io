@@ -21,8 +21,11 @@ function handleTeamPopups() {
 
       Avgrund.show(".dialog");
     });
+  });
 
-  })
+  $(document).on('click', '.dialog-closer', function (e) {
+    Avgrund.hide();
+  });
 }
 
 $(() => {

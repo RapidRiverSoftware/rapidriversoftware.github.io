@@ -36,18 +36,30 @@ export default (function () {
   function setupPosition () {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
+    var popupWidth = $(popup).width();
+    windowWidth = windowWidth * 0.9; // scaling factor used in animation
 
     var popupRect = popup.getBoundingClientRect();
-    var left = (windowWidth - popupRect.width) / 2;
+    var left = Math.abs(windowWidth - popupWidth) / 2;
     var top = (windowHeight - popupRect.height) / 2;
+    var leftPerc = (left/windowWidth*100);
 
-    $(popup).css('left', left);
+    if (leftPerc < 0)
+      leftPerc = 0;
+
+    $(popup).css('left', leftPerc + '%');
   }
+
+  function onResize () {
+    setTimeout(setupPosition, 0);
+  }
+
 
 	function activate( state ) {
 		document.addEventListener( 'keyup', onDocumentKeyUp, false );
 		document.addEventListener( 'click', onDocumentClick, false );
 		document.addEventListener( 'touchstart', onDocumentClick, false );
+    window.addEventListener( 'resize', onResize, false );
 
 		removeClass( popup, currentState );
 		addClass( popup, 'no-transition' );
@@ -67,6 +79,7 @@ export default (function () {
 		document.removeEventListener( 'keyup', onDocumentKeyUp, false );
 		document.removeEventListener( 'click', onDocumentClick, false );
 		document.removeEventListener( 'touchstart', onDocumentClick, false );
+    window.removeEventListener( 'resize', onResize, false );
 
 		removeClass( container, 'avgrund-active' );
 		removeClass( popup, 'avgrund-popup-animate')

@@ -5,10 +5,12 @@
 html {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 62.5%;
+  background: black;
 }
 
 body {
   font-size: 1.4rem;
+  background: white;
 
   p {
     font-family: 'Merriweather', Georgia, serif;
@@ -209,7 +211,61 @@ section {
 .dialog {
   position: fixed;
   height: auto;
-  width: 640px;
-  top: 50%;
+  width: 75%;
+  max-width: 640px;
   margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 500px) {
+  .dialog {
+    width: 95%;
+  }
+}
+
+
+.team-detail__header {
+  text-align: center;
+
+  &--thumb {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &--close {
+    height: 16px;
+    float: right;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: .9;
+    }
+
+    &:active {
+      height: 14px;
+      margin: 1px;
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    width: 100%;
+    padding: 52px 20px 28px;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.team-detail__about {
+  padding: 20px;
+
+  p {
+    font-weight: 100;
+    font-size: 1.4rem;
+  }
 }
