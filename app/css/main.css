@@ -170,24 +170,34 @@ section {
   margin: 0;
   padding: 0;
   text-align: center;
+  user-select: none;
+  cursor: pointer;
 
 
   &__member {
     display: inline-block;
     width: 20rem;
-    height: 20rem;
     text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 1rem;
+    transition: background-color 2s ease;
 
     &--thumb {
       width: 10rem;
       height: 10rem;
       overflow: hidden;
       border-radius: 50%;
+      box-sizing: border-box;
     }
 
     &--name {
       font-family: 'Open Sans';
       font-weight: 300;
+    }
+
+    &:hover {
+      background-color: #eee;
     }
   }
 
