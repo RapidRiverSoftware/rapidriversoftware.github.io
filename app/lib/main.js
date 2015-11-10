@@ -7,7 +7,7 @@ function handleTeamPopups() {
     let $this = $(this);
     console.log(this);
     const name = $this.data('detail');
-    const templatePath = `/templates/team/${name}.template.html`;
+    const templatePath = `templates/team/${name}.template.html`;
 
     $.ajax({
       url: templatePath,
