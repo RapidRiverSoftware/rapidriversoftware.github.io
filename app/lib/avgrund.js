@@ -6,7 +6,9 @@
  * Copyright (C) 2012 Hakim El Hattab, http://hakim.se
  *
  *
- * Modifications by Mutahhir Ali Hayat <mutahhir.ali@gmail.com> to make it into an ES6 module
+ * Modifications by Mutahhir Ali Hayat <mutahhir.ali@gmail.com>
+ * - make it into an ES6 module
+ * - allow custom height popups
  */
 export default (function () {
 
