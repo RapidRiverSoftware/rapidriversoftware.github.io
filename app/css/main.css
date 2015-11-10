@@ -232,6 +232,7 @@ section {
     overflow: hidden;
     border-radius: 50%;
     box-sizing: border-box;
+    margin-left: 2.4rem;
   }
 
   &--close {
