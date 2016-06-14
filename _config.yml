@@ -1,17 +1,16 @@
-url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+url: http://rrsoft.co
+baseurl: ''
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+title: Rapid River Software
+email: info@rrsoft.co
+description: "Rapid River Software is a worldwide group of full-stack developers with skills ranging from front-end to operations automation, and everything in between. We have more than four decades of experience writing software for the Internet. Whether designing new systems, or improving existing ones, we have the skills to hit the ground running."
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Nick Marden
   pic: 1
-  position: Lead Designer
+  position: Founder & CEO
   social:
     - title: twitter
       url: #
@@ -20,9 +19,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
+- name: Calum Halcrow
   pic: 2
-  position: Lead Marketer
+  position: Founder & CTO
   social:
     - title: twitter
       url: #
@@ -31,9 +30,9 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
+- name: Yury Stepanov
   pic: 3
-  position: Lead Developer
+  position: Software Engineer
   social:
     - title: twitter
       url: #
