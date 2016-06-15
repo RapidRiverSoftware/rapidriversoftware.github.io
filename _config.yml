@@ -12,12 +12,12 @@ people:
   pic: 1
   position: Founder & CEO
   social:
+    - title: github
+      url: https://github.com/nickmarden
     - title: twitter
-      url: #
+      url: https://twitter.com/nickmarden
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+      url: https://www.facebook.com/nickmarden
 
 - name: Calum Halcrow
   pic: 2
