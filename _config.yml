@@ -41,6 +41,15 @@ people:
     - title: google-plus
       url: #
 
+- name: Martha Thompson
+  pic: martha
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/MothOnMars
+    - title: linkedin
+      url: https://www.linkedin.com/in/marthathompson007
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
