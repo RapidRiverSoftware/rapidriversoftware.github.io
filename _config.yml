@@ -12,6 +12,8 @@ people:
   pic: 1
   position: Founder & CEO
   social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/nick-marden-591326
     - title: github
       url: https://github.com/nickmarden
     - title: twitter
