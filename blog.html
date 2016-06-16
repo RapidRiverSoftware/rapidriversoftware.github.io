@@ -1,0 +1,16 @@
+---
+layout: basic
+---
+<div class="home" style="margin: 8em 0">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p>{{ post.description }}</p>
+      <p class="meta"><em>{{ post.author }} - {{ post.date | date: '%B %d, %Y' }}</em></p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS.</a></p>
+
+</div>
