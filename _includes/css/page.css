@@ -29,15 +29,12 @@ body.page .post ul {
     margin: 1em 0;
 }
 
-/*@media (min-width: 1200px) {*/
-    /*body.page .post {*/
-        /*padding: 0 12em;*/
-    /*}*/
-/*}*/
 @media (min-width: 992px) {
     body.page .post {
         padding: 0 12em;
     }
 }
-/*@media (min-width: 786px) {*/
-/*}*/
+
+#about h4 a {
+    color: white;
+}

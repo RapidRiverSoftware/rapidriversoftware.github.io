@@ -35,3 +35,13 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+$(function() {
+  var path = window.location.pathname.replace(/\//g, '');
+  if (path) {
+    // For blog post pages.
+    if (path.match(/^\d{4}/)) { path = 'blog' }
+
+    $("#bs-example-navbar-collapse-1 a[href='/"+path+"']").parent().addClass('active');
+  }
+});
