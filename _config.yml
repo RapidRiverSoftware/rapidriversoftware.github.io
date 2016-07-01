@@ -81,6 +81,19 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/ivan-yeoh-14391855
 
+- name: Jimmy Ngu
+  pic: jimmy
+  position: Engineering Team Lead
+  social:
+    - title: github
+      url: https://github.com/jimmynguyc
+    - title: facebook
+      url: https://www.facebook.com/jimmyngu
+    - title: twitter
+      url: https://twitter.com/jimmynguyc
+    - title: linkedin
+      url: https://www.linkedin.com/in/jimmyngu
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
