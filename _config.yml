@@ -68,6 +68,19 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/victorlim
 
+- name: Ivan Yeoh
+  pic: ivan
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/ivanyeoh
+    - title: facebook
+      url: https://www.facebook.com/yeohweiboon
+    - title: twitter
+      url: https://twitter.com/ivanyeoh
+    - title: linkedin
+      url: https://www.linkedin.com/in/ivan-yeoh-14391855
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
