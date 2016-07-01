@@ -25,23 +25,21 @@ people:
   pic: 2
   position: Founder & CTO
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/calumhalcrow
+    - title: github
+      url: https://github.com/calumhalcrow
+    - title: twitter
+      url: https://twitter.com/calumhalcrow
+    - title: facebook
+      url: https://www.facebook.com/calumhalcrow
 
 - name: Yury Stepanov
   pic: 3
   position: Software Engineer
   social:
-    - title: twitter
-      url: #
     - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://www.facebook.com/yurgen.kulikow
 
 - name: Martha Thompson
   pic: martha
