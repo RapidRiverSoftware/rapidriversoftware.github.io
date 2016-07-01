@@ -59,6 +59,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/nathan-smith-0a01651
 
+- name: Lim Victor
+  pic: victor
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/viclim
+    - title: linkedin
+      url: https://www.linkedin.com/in/victorlim
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
@@ -67,7 +76,7 @@ social:
     url:
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
+  - title: bitbucket
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
