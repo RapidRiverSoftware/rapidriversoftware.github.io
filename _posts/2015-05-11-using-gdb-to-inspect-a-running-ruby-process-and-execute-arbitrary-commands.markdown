@@ -1,5 +1,5 @@
 ---
-title: Using gdb to Inspect a Running Rby Process and Execute Arbitrary Commands
+title: Using gdb to Inspect a Running Ruby Process and Execute Arbitrary Commands
 layout: blog_post
 date: 2015-05-11
 description: How Unix utilities helped me dive beneath the covers to spot a problem deep in some Ruby code

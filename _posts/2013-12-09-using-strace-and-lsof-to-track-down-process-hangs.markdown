@@ -1,5 +1,5 @@
 ---
-title: Using strace and lsof to track down process hangs
+title: Using strace and lsof to Track Down Process Hangs
 layout: blog_post
 date: 2013-12-09
 description: Using an old-school tool from the Unix toolbox to find out what's going wrong when a process is inexplicably hung
@@ -50,7 +50,7 @@ mmap(NULL, 77737, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f758336d000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 open("/lib/libc.so.6", O_RDONLY)        = 3
-read(3, "177ELF2113&gt;1`3551"..., 832) = 832
+read(3, "177ELF2113->13551"..., 832) = 832
 fstat(3, {st_mode=S_IFREG|0755, st_size=1432968, ...}) = 0
 mmap(NULL, 3541032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7582e04000
 mprotect(0x7f7582f5c000, 2093056, PROT_NONE) = 0
@@ -75,7 +75,7 @@ Wow...strace shows us every system call made by our program makes, including the
 
 Now let’s look at one particular system call that occurred during the execution of the “Hello, world” program. Something subtle happened here, and it’s important to understand in order to follow the rest of this recipe.
 
-First, the program made a system call to the write() function. The write function was told to print the string “Hello, worldn” to file handle #1, also known as “[standard output](http://www.livefirelabs.com/unix_tip_trick_shell_script/june_2003/06092003.htm)“. Since write() can handle null-terminated strings, it was also necessary for the write() function to be told the length of the string (13 characters).
+First, the program made a system call to the write() function. The write function was told to print the string “Hello, world\n” to file handle #1, also known as “[standard output](http://www.livefirelabs.com/unix_tip_trick_shell_script/june_2003/06092003.htm)“. Since write() can handle null-terminated strings, it was also necessary for the write() function to be told the length of the string (13 characters).
 
 ```
 write(1, "Hello, world\n", 13
@@ -109,7 +109,7 @@ When you see a program hang, you’re looking at one of two things:
 
 The easy way to distinguish between the two is that blocked programs generally consume no CPU while programs in an infinite loop burn 100% of the CPU. A program like [top](http://en.wikipedia.org/wiki/Top_\(software\)) (or better yet, [htop](http://htop.sourceforge.net/)) can quickly help you distinguish which of these two scenarios is occurring.
 
-If you’ve got a program that’s pegged on 100% CPU in one environment (say, production) but never exhibited that behavior in another environment, then this exact recipe won’t apply. However, strace will probably still be a valuable tool in diagnosing its behavior; try attaching with strace -p to see what the program is doing.
+If you’ve got a program that’s pegged on 100% CPU in one environment (say, production) but never exhibited that behavior in another environment, then this exact recipe won’t apply. However, strace will probably still be a valuable tool in diagnosing its behavior; try attaching with `strace -p` to see what the program is doing. (I wrote [another post]({% post_url 2015-05-11-using-gdb-to-inspect-a-running-ruby-process-and-execute-arbitrary-commands%}) about how [gdb](https://www.gnu.org/software/gdb/) can be a useful tool in this situation, especially for interpreted languages.)
 
 The rest of this post assumes that your program is showing low or zero CPU consumption during hangs. If that’s the case, then it’s almost certainly blocked waiting for a resource that isn’t available. Here are some categories of resource blocks that commonly occur:
 
@@ -119,7 +119,7 @@ The rest of this post assumes that your program is showing low or zero CPU consu
 
 Luckily the common thread in all of these problems (except for the mutex lock) is a _file handle_. If the program is blocked trying to connect(), read(), or write() a file handle, strace will tell us which file handle is the culprit.
 
-To see this in action, let’s compare the strace of a successful MySQL database login with one that times out due to an unreachable server. (Note the use of “-e trace=connect” here to reduce the verbosity of the strace output by only logging connect() system calls.)
+To see this in action, let’s compare the strace of a successful MySQL database login with one that times out due to an unreachable server. (Note the use of `-e trace=connect` here to reduce the verbosity of the strace output by only logging connect() system calls.)
 
 First, here’s a successful login:
 
@@ -182,22 +182,25 @@ socket(PF_INET, SOCK_STREAM, IPPROTO_IP) = 3
 connect(3, {sa_family=AF_INET, sin_port=htons(3306), sin_addr=inet_addr("1.2.3.4")}, 16
 ```
 
-With all this reuse of file handles, it would be nearly impossible to tell what’s going on without the lsof program. While this mysql client was hanging in one terminal, I used lsof to dump a partial list of files in another terminal, and sure enough file handle #3 was the socket that was timing out on the remote, nonexistent MySQL server:
+With all this reuse of file handles, it would be nearly impossible to tell what’s going on without the [lsof](https://people.freebsd.org/~abe/) program. While this mysql client was hanging in one terminal, I used lsof to dump a partial list of files in another terminal, and sure enough file handle #3 was the socket that was timing out on the remote, nonexistent MySQL server:
 
 ```
 [root@nickdev ~]$ ps auxwww | grep mysql | grep 1.2.3.4
 root     11497  0.0  0.0  31760  2144 pts/6    S+   23:44   0:00 mysql -h 1.2.3.4
+
 [root@nickdev ~]$ lsof -n -p 11497 | egrep -v '(DIR|REG)'
 COMMAND   PID USER   FD   TYPE  DEVICE SIZE/OFF    NODE NAME
 mysql   11497 root    0u   CHR   136,6      0t0       9 /dev/pts/6
 mysql   11497 root    1u   CHR   136,6      0t0       9 /dev/pts/6
 mysql   11497 root    2u   CHR   136,6      0t0       9 /dev/pts/6
-mysql   11497 root    3u  IPv4 2203168      0t0     TCP 192.168.1.220:57646-&gt;1.2.3.4:mysql (SYN_SENT)
+mysql   11497 root    3u  IPv4 2203168      0t0     TCP 192.168.1.220:57646->1.2.3.4:mysql (SYN_SENT)
 ```
 
 Here I used the ‘-n’ option for lsof, which makes it run much more quickly at the expense of not translating IP addresses to DNS host names. I also used ‘-p’ to specify the particular Unix process ID whose open files I wanted to examine, and then I did a little egrep magic to get rid of some less-interesting and noisy output from lsof.
 
-The SYN_SENT flag is a classic source of system hangs. It means “I sent a [SYN](http://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml) (begin conversation) request to the server, but it has not yet responded back.” Common reasons for a hang on SYN_SENT include: the remote host doesn’t exist, doesn’t offer service on the specified port, or is otherwise dropping the traffic on the floor (e.g. because of firewall rules). The reason this one shows up so often when moving from one environment to another – especially from dev/QA to staging/production is that dev and QA environments often lack the complex firewall rules that are common in production environments. So, even if everything is working great in dev, mysterious hangs appear when that new code tries to make a connection that isn’t allowed by the current production firewall rules!
+The SYN_SENT flag is a classic source of system hangs. It means “I sent a [SYN](http://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml) (begin conversation) request to the server, but it has not yet responded back.” Common reasons for a hang on SYN_SENT include: the remote host doesn’t exist, doesn’t offer service on the specified port, or is otherwise dropping the traffic on the floor (e.g. because of firewall rules).
+
+The reason this one shows up so often when moving from one environment to another – especially from dev/QA to staging/production is that dev and QA environments often lack the complex firewall rules that are common in production environments. So, even if everything is working great in dev, mysterious hangs appear when that new code tries to make a connection that isn’t allowed by the current production firewall rules!
 
 ### Tapping into Running Processes with strace
 
@@ -267,7 +270,7 @@ nanosleep({60, 0},
  
 Looks like the author of `write_words_slowly.pl` put in a 60-second sleep() call in his main loop! There probably should have been a code review.
 
-This example illustrates how easily strace and lsof can be used to determine who is clogging the plumbing between daisy-chained Unix processes.
+This example illustrates how easily strace and lsof can be used to determine who is clogging the plumbing between Unix processes that have been daisy-chained through named pipes.
 
 ### Hanging on flock()
 
@@ -290,4 +293,3 @@ This is just a small sample of what you can accomplish on a running system using
 ### Recommended Reading
 * [Introducing strace](http://linuxgazette.net/148/saha.html)
 * [Fun with strace and the GDB debugger](http://www.ibm.com/developerworks/aix/library/au-unix-strace.html)
-* [Mastering Linux debugging techniques](http://www.ibm.com/developerworks/linux/library/l-debug/)
