@@ -120,3 +120,4 @@ exclude:
   - README.md
   - Gemfile*
   - LICENSE
+  - vendor
