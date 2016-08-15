@@ -9,7 +9,7 @@ description: "Rapid River Software is a worldwide group of full-stack developers
 # Team names, titles and social links
 people:
 - name: Nick Marden
-  pic: 1
+  pic: nick
   position: Founder & CEO
   social:
     - title: linkedin
@@ -22,7 +22,7 @@ people:
       url: https://www.facebook.com/nickmarden
 
 - name: Calum Halcrow
-  pic: 2
+  pic: calum
   position: Founder & CTO
   social:
     - title: linkedin
@@ -35,7 +35,7 @@ people:
       url: https://www.facebook.com/calumhalcrow
 
 - name: Yury Stepanov
-  pic: 3
+  pic: yury
   position: Software Engineer
   social:
     - title: facebook
