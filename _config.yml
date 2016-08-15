@@ -107,6 +107,19 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/anton-lvov-6109aa36
 
+- name: Karuna Krishnasamy
+  pic: karuna
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/snowflakekiller
+    - title: facebook
+      url: https://www.facebook.com/sn0wflakekiller
+    - title: twitter
+      url: https://twitter.com/snowflakekiller
+    - title: linkedin
+      url: https://www.linkedin.com/in/karunaskj
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
