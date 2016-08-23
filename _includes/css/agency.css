@@ -868,3 +868,28 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+#portfolio > .container > .row:first-child {
+    margin-bottom: 50px;
+}
+
+#portfolio img {
+    width: 280px;
+    margin: 0 auto;
+}
+#portfolio #govwizely {
+    margin-top: 40px
+}
+#portfolio #essayjack {
+    margin-top: 5px
+}
+#portfolio div.lower {
+    margin-top: 30px;
+}
+#portfolio #dasheroo {
+    margin-top: 10px
+}
+#portfolio #vertical-response {
+    margin-top: 20px
+}
+
