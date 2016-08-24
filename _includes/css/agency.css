@@ -893,3 +893,8 @@ body {
     margin-top: 20px
 }
 
+footer div.company-info p {
+    text-align: left;
+    font-size: x-small;
+}
+
