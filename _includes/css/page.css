@@ -38,3 +38,16 @@ body.page .post ul {
 #about h4 a {
     color: white;
 }
+
+dl {
+    font-size: 16px;
+    margin-left: 40px;
+}
+dl dt {
+    display: list-item;
+}
+dl dd {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
