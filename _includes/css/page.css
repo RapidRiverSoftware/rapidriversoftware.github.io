@@ -45,6 +45,7 @@ dl {
 }
 dl dt {
     display: list-item;
+    font-weight: normal;
 }
 dl dd {
     font-size: 14px;
