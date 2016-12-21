@@ -120,6 +120,28 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/karunaskj
 
+- name: Kavitha Nadarajah
+  pic: kavitha
+  position: HR & Admin Manager
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/kavitha-nadarajah-6776992b
+    - title: facebook
+      url: https://www.facebook.com/nkavitha
+    - title: instagram
+      url: https://www.instagram.com/nkavitha
+
+- name: Tamer Shlash
+  pic: tamer
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/TamerShlash
+    - title: stack-overflow
+      url: https://stackoverflow.com/users/368167
+    - title: linkedin
+      url: https://www.linkedin.com/in/tamershlash
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
