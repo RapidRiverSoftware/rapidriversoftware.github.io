@@ -142,6 +142,17 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/tamershlash
 
+- name: Peter H Bristol
+  pic: peter
+  position: Team Lead
+  social:
+    - title: github
+      url: https://github.com/BristolArea8
+    - title: twitter
+      url: https://twitter.com/p3t3
+    - title: linkedin
+      url: https://www.linkedin.com/in/peterhbristol
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
