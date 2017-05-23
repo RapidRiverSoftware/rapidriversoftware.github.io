@@ -153,6 +153,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/peterhbristol
 
+- name: Lim Yih En
+  pic: yihen
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/yih-en
+    - title: linkedin
+      url: https://www.linkedin.com/in/yih-en-lim-16882b99/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
