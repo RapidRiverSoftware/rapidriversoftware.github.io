@@ -171,6 +171,15 @@ people:
     - title: instagram
       url: https://www.instagram.com/james_marden/
 
+- name: Adeline Lim Cheah Yiing
+  pic: adeline
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/adelinelim
+    - title: linkedin
+      url: https://www.linkedin.com/in/adeline-lim-593953141/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
