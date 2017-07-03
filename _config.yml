@@ -180,6 +180,17 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/adeline-lim-593953141/
 
+- name: Waihon Yew
+  pic: waihon
+  position: Engineering Team Lead
+  social:
+    - title: github
+      url: https://github.com/waihon
+    - title: twitter
+      url: https://twitter.com/waihon
+    - title: linkedin
+      url: https://www.linkedin.com/in/waihonyew
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
