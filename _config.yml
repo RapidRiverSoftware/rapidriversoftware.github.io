@@ -81,6 +81,13 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/ivan-yeoh-14391855
 
+- name: Aaron Lim
+  pic: aaron
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/aaron-lim
+
 - name: Jimmy Ngu
   pic: jimmy
   position: Engineering Team Lead
@@ -171,7 +178,7 @@ people:
     - title: instagram
       url: https://www.instagram.com/james_marden/
 
-- name: Adeline Lim Cheah Yiing
+- name: Adeline Lim
   pic: adeline
   position: Software Engineer
   social:
