@@ -209,6 +209,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/hakimthedev
 
+- name: Iqbal Hasnan
+  pic: iqbal
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/iqbalhasnan
+    - title: linkedin
+      url: https://www.linkedin.com/in/iqbalhasnan
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
