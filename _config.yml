@@ -218,6 +218,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/iqbalhasnan
 
+- name: Hafiz Khairudin
+  pic: hafiz
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/hafizio
+    - title: linkedin
+      url: https://www.linkedin.com/in/hafizkhairudin
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
