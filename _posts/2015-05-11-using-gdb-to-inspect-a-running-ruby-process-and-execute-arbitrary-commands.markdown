@@ -22,7 +22,7 @@ So a regex was to blame. Specifically, it was a regex that appeared to be loopin
 
 #### The Tricky Solution
 
-I decided to reach for a slightly more powerful tool, [gdb](http://www.gnu.org/software/gdb/). With gdb I was able to attach to the tight-looping process. Since Ruby is written in C, I was then able to use gdb to call a function called `rb_p` from the Ruby internals, which functions much like a call to `eval` in Ruby code.
+I decided to reach for a slightly more powerful tool, [gdb](http://www.gnu.org/software/gdb/). With gdb I was able to attach to the tight-looping process. Since Ruby is written in C, I was then able to use gdb to call a function called `rb_eval_string_protect` from the Ruby internals, which functions much like a call to `eval` in Ruby code.
 
 In my case, I injected code that would dump the [caller](http://ruby-doc.org/core-2.2.2/Kernel.html#method-i-caller) output to a file on disk. This would provide me with a stack trace-style context that should pinpoint the cause of the tight loop.
 
