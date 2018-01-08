@@ -22,20 +22,5 @@
         </div>
     </footer>
 <script type="text/javascript">
-!function(e,n){var t=document.createElement("script");t.onload=t.onreadystatechange=function(e){("load"===(e||window.event).type||/loaded|complete/.test(t.readyState)&&document.documentMode<=11)&&(t.onload=t.onreadystatechange=t.onerror=null,new IBTracker(void 0))},t.onerror=function(){t.onload=t.onreadystatechange=t.onerror=null},t.async=1,t.src="//ibclick.stream/assets/js/track/dist/js/v1/tracker.min.js",document.getElementsByTagName("head")[0].appendChild(t)}();
-</script>
-<script type="text/javascript">
-    window.ibtracker = window.ibtracker || [];
-
-    // add click event listener on every anchor links
-    function trackClick(e) {
-      if (e.target.tagName.toLowerCase() !== 'a') return;
-      window.ibtracker.push(["articleClick", { eventText: e.target.innerText }]);
-    }
-
-    if (document.addEventListener) {
-      document.addEventListener('click', trackClick);
-    } else if (document.attachEvent) {
-      document.attachEvent('click', trackClick);
-    }
+!function(e,n){var t=document.createElement("script");t.onload=t.onreadystatechange=function(e){("load"===(e||window.event).type||/loaded|complete/.test(t.readyState)&&document.documentMode<=11)&&(t.onload=t.onreadystatechange=t.onerror=null,new IBTracker(n))},t.onerror=function(){t.onload=t.onreadystatechange=t.onerror=null},t.async=1,t.src="//ibclick.stream/assets/js/track/dist/js/v1/tracker.min.js",document.getElementsByTagName("head")[0].appendChild(t)}(0,{site:"rrsoft.co"});
 </script>
