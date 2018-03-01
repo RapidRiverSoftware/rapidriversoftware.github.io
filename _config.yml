@@ -227,6 +227,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/hafizkhairudin
 
+- name: Fahmi San
+  pic: fahmi
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/fahmisan88
+    - title: linkedin
+      url: https://www.linkedin.com/in/ahmad-fahmi-san-ahmad-8763b7131/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
