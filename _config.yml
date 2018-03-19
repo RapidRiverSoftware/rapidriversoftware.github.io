@@ -227,6 +227,16 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/ahmad-fahmi-san-ahmad-8763b7131/
 
+- name: Shaii Ong
+  pic: shaii
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/monsteronfire
+    - title: twitter
+      url: https://twitter.com/monsteronfire
+    - title: linkedin
+      url: https://www.linkedin.com/in/shaii-ong
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
