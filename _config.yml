@@ -198,15 +198,6 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/iqbalhasnan
 
-- name: Hafiz Khairudin
-  pic: hafiz
-  position: Software Engineer
-  social:
-    - title: github
-      url: https://github.com/hafizio
-    - title: linkedin
-      url: https://www.linkedin.com/in/hafizkhairudin
-
 - name: Fahmi San
   pic: fahmi
   position: Software Engineer
