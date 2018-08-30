@@ -50,15 +50,6 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/marthathompson007
 
-- name: Nathan Smith
-  pic: nathan
-  position: Lead Software Engineer
-  social:
-    - title: github
-      url: https://github.com/noremmie
-    - title: linkedin
-      url: https://www.linkedin.com/in/nathan-smith-0a01651
-
 - name: Lim Victor
   pic: victor
   position: Software Engineer
