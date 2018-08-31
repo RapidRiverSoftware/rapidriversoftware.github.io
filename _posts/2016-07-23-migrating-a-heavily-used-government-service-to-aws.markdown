@@ -42,7 +42,7 @@ The answer to the previous question is: certainly not us. However, the search.us
 
 The first five applications - usasearch, search_consumer, i14y, asis, and jobs_api, could be deployed quite easily using [AWS OpsWorks](https://aws.amazon.com/opsworks/)' well-known deployment recipes. We simply pointed OpsWorks to the GitHub repos for each app, and it took care of the rest with robust [Capistrano](http://capistranorb.com/)-style deployments of the Rails and NodeJS apps.
 
-That left us with with just Tematres and Elasticsearch, so we reached into the bag of tricks and wrote [Chef](http://chef.io) recipes that would fit into the OpsWorks deployment cycle for these two applications. (An enormous hat tip goes to [Nathan Smith](https://www.linkedin.com/in/nathan-smith-0a01651) for his work on all of these recipes!)
+That left us with with just Tematres and Elasticsearch, so we reached into the bag of tricks and wrote [Chef](http://chef.io) recipes that would fit into the OpsWorks deployment cycle for these two applications. (An enormous hat tip goes to [Nathan Smith](https://www.linkedin.com/in/noremmie) for his work on all of these recipes!)
 
 ## Deployment in AWS
 
