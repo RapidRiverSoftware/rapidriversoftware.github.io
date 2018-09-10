@@ -5,7 +5,7 @@ Rapid River Software's website
 
 - Clone this repo
 - `bundle install`
-- `jekyll serve`
+- `bundle exec jekyll serve`
 
 Note: if you don't see your changes showing up, stop the jekyll server, do a `jekyll clean` then start the server again.
 
