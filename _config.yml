@@ -41,15 +41,6 @@ people:
     - title: facebook
       url: https://www.facebook.com/yurgen.kulikow
 
-- name: Martha Thompson
-  pic: martha
-  position: Software Engineer
-  social:
-    - title: github
-      url: https://github.com/MothOnMars
-    - title: linkedin
-      url: https://www.linkedin.com/in/marthathompson007
-
 - name: Lim Victor
   pic: victor
   position: Software Engineer
