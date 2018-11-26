@@ -199,6 +199,15 @@ people:
       url: https://twitter.com/monsteronfire
     - title: linkedin
       url: https://www.linkedin.com/in/shaii-ong
+
+- name: Halah Abuateeq
+  pic: halah
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/HalahAb
+    - title: linkedin
+      url: https://www.linkedin.com/in/halah-abuateeq/
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
