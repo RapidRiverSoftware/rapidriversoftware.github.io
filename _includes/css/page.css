@@ -28,6 +28,9 @@ body.page .post ul {
     line-height: 2;
     margin: 1em 0;
 }
+body.page .post ul ul {
+    margin: 0;
+}
 
 @media (min-width: 992px) {
     body.page .post {
