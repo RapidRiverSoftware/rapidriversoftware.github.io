@@ -216,6 +216,12 @@ people:
       url: https://github.com/Abdulrazak-Alkl
     - title: linkedin
       url: https://www.linkedin.com/in/abdulrazakalkl/
+- name: 'Fatima "Sarah" Maisarah Moktar'
+  pic: sarah
+  position: HR & Admin Executive
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/fatima-maisarah-moktar-a4505b131/
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
