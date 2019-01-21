@@ -8,19 +8,6 @@ description: "Rapid River Software is a worldwide group of full-stack developers
 
 # Team names, titles and social links
 people:
-- name: Nick Marden
-  pic: nick
-  position: Founder & CEO
-  social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/nick-marden-591326
-    - title: github
-      url: https://github.com/nickmarden
-    - title: twitter
-      url: https://twitter.com/nickmarden
-    - title: facebook
-      url: https://www.facebook.com/nickmarden
-
 - name: Calum Halcrow
   pic: calum
   position: Founder & CTO
@@ -233,9 +220,6 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: "US: 50 Sunnyside Avenue"
-  - line: Reading, MA, 01867
-  - line: "MY: Unit 25-02 Tower A"
   - line: The Vertical Business Suites
   - line: Avenue 3 Bangsar South City
   - line: No. 8 Jalan Kerinchi, 59200 Kuala Lumpur
