@@ -337,7 +337,8 @@ section h2.section-heading {
     font-size: 40px;
 }
 
-section h3.section-subheading {
+section h3.section-subheading,
+h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
@@ -501,7 +502,8 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    /* background-color: #{{ site.data.template.color.primary }}; */
+    background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {

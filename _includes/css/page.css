@@ -2,7 +2,8 @@ body.page .post {
     margin-bottom: 4em;
 }
 
-body.page .post h1 {
+body.page .post h1,
+body.page .wide-post h1 {
     margin: 2em 0 1em;
     text-align: center;
     text-transform: none;
