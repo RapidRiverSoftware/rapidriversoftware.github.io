@@ -3,7 +3,7 @@ color:
   primary: 0081df # lighter blue from RRSoft logo
   secondary: 1d94ea # slightly lighter primary blue
   secondary-dark: 10293f
-  muted: 777
+  muted: 888888
 
 # Font Families
 font:
