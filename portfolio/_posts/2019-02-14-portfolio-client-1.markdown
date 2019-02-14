@@ -1,11 +1,11 @@
 ---
-title: EssayJack
-subtitle: Essay templating web app
+title: Client 1
+subtitle: Muggle detection app
 layout: default
 modal-id: 1
 date: 2019-02-14
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: client1.png
+thumbnail: client1-thumbnail.png
 alt: image-alt
 client: EssayJack
 category: portfolio

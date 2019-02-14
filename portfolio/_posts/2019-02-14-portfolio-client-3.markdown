@@ -1,11 +1,11 @@
 ---
-title: EssayJack
-subtitle: Essay templating web app
+title: Qlient Three
+subtitle: Bottlecap creation station
 layout: default
 modal-id: 3
 date: 2019-02-14
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: client3.png
+thumbnail: client3-thumbnail.png
 alt: image-alt
 client: EssayJack
 category: portfolio

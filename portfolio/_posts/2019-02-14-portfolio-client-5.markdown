@@ -1,11 +1,11 @@
 ---
-title: EssayJack
-subtitle: Essay templating web app
+title: Flossing
+subtitle: Dance move popularised by Fortnight
 layout: default
 modal-id: 5
 date: 2019-02-14
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: client5.png
+thumbnail: client5-thumbnail.png
 alt: image-alt
 client: EssayJack
 category: portfolio

@@ -1,11 +1,11 @@
 ---
-title: EssayJack
-subtitle: Essay templating web app
+title: Klient Two
+subtitle: Invisibility cloak maker
 layout: default
 modal-id: 2
 date: 2019-02-14
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: client2.png
+thumbnail: client2-thumbnail.png
 alt: image-alt
 client: EssayJack
 category: portfolio

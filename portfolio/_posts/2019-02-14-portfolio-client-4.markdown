@@ -1,11 +1,11 @@
 ---
-title: EssayJack
-subtitle: Essay templating web app
+title: Yoloswag
+subtitle: Living only once
 layout: default
 modal-id: 4
 date: 2019-02-14
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: client4.png
+thumbnail: client4-thumbnail.png
 alt: image-alt
 client: EssayJack
 category: portfolio
