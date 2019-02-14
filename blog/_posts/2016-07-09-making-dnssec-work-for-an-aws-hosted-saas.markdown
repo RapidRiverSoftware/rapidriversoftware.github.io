@@ -1,6 +1,7 @@
 ---
 title: Making DNSSEC Work for an AWS-Hosted SaaS
 layout: blog_post
+category: blog
 date: 2016-07-09
 description: Not everything in the Internet clicks together as easily as you might think. This post details the approach that we took to solve the hard problem of securing DNS for our government agency's SaaS servers - as well as their customers' CNAMEs to the SaaS servers - in the AWS environment.
 author: Nick Marden

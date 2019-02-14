@@ -237,6 +237,10 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media(min-width:768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -381,7 +385,7 @@ h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
+    background: rgba(0, 129, 223, 1); /* Fallback when no plugin support */
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
@@ -505,7 +509,6 @@ h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    /* background-color: #{{ site.data.template.color.primary }}; */
     background-color: #fff;
 }
 

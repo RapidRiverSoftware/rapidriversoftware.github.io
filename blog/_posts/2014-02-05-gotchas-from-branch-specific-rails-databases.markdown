@@ -1,6 +1,7 @@
 ---
 title: Gotchas With Branch-Specific Rails Databases
 layout: blog_post
+category: blog
 date: 2014-02-05
 description: A demonstration of a problem that can plague projects that use per-branch database names
 author: Nick Marden

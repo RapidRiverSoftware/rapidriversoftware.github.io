@@ -1,6 +1,7 @@
 ---
 title: Websockets, Elastic Load Balancers, express-state and jade! Oh my!
 layout: blog_post
+category: blog
 date: 2014-10-20
 description: Websocket upgrades in the context of AWS Elastic Load Balancers
 author: Nick Marden

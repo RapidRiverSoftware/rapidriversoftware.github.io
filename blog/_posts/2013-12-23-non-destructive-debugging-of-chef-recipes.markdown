@@ -1,6 +1,7 @@
 ---
 title: Non-Destructive Debugging of Chef Recipes
 layout: blog_post
+category: blog
 date: 2013-12-23
 description: How to debug Chef recipes in an environment where recipe modification isn't possible
 author: Nick Marden
