@@ -62,7 +62,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #efefef;
 }
 
 .bg-darkest-gray {
@@ -316,6 +316,10 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
+    header {
+        position: relative;
+    }
+
     header .intro-text {
         width: 60%;
         padding-top: 300px;
@@ -336,6 +340,15 @@ header .intro-text .intro-heading {
         font-size: 42px;
         font-weight: 700;
         line-height: 60px;
+    }
+
+    .secret-hotspot {
+        position: absolute;
+        top: 44%;
+        right: 8%;
+        width: 5%;
+        height: 7%;
+        background-color: red;
     }
 }
 
@@ -395,7 +408,6 @@ h3.section-subheading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(0, 129, 223, 1); /* Fallback when no plugin support */
-    background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -891,7 +903,7 @@ body {
 }
 
 #portfolio img {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
 }
 #portfolio #govwizely {
