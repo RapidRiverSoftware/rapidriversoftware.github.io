@@ -1,6 +1,7 @@
 ---
 title: Using strace and lsof to Track Down Process Hangs
 layout: blog_post
+category: blog
 date: 2013-12-09
 description: Using an old-school tool from the Unix toolbox to find out what's going wrong when a process is inexplicably hung
 author: Nick Marden
@@ -109,7 +110,7 @@ When you see a program hang, you’re looking at one of two things:
 
 The easy way to distinguish between the two is that blocked programs generally consume no CPU while programs in an infinite loop burn 100% of the CPU. A program like [top](http://en.wikipedia.org/wiki/Top_\(software\)) (or better yet, [htop](http://htop.sourceforge.net/)) can quickly help you distinguish which of these two scenarios is occurring.
 
-If you’ve got a program that’s pegged on 100% CPU in one environment (say, production) but never exhibited that behavior in another environment, then this exact recipe won’t apply. However, strace will probably still be a valuable tool in diagnosing its behavior; try attaching with `strace -p` to see what the program is doing. (I wrote [another post]({% post_url 2015-05-11-using-gdb-to-inspect-a-running-ruby-process-and-execute-arbitrary-commands%}) about how [gdb](https://www.gnu.org/software/gdb/) can be a useful tool in this situation, especially for interpreted languages.)
+If you’ve got a program that’s pegged on 100% CPU in one environment (say, production) but never exhibited that behavior in another environment, then this exact recipe won’t apply. However, strace will probably still be a valuable tool in diagnosing its behavior; try attaching with `strace -p` to see what the program is doing. (I wrote [another post]({% post_url blog/2015-05-11-using-gdb-to-inspect-a-running-ruby-process-and-execute-arbitrary-commands%}) about how [gdb](https://www.gnu.org/software/gdb/) can be a useful tool in this situation, especially for interpreted languages.)
 
 The rest of this post assumes that your program is showing low or zero CPU consumption during hangs. If that’s the case, then it’s almost certainly blocked waiting for a resource that isn’t available. Here are some categories of resource blocks that commonly occur:
 

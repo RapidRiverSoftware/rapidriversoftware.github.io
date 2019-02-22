@@ -11,7 +11,7 @@ body {
 }
 
 .text-muted {
-    #{{ site.data.template.color.muted }};
+    color: #{{ site.data.template.color.muted }};
 }
 
 .text-primary {
@@ -62,7 +62,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #efefef;
 }
 
 .bg-darkest-gray {
@@ -119,7 +119,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 15px 35px;
     border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
@@ -176,14 +176,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    background: url('{{ site.baseurl }}/img/logos/rrs.png') no-repeat 0 0;
-    background-size: 100%;
+    width: 256px;
+    height: 35px;
+    margin-top: 11px;
+    margin-left: 10px;
     color: transparent;
     font-size: 0;
-    height: 35px;
     line-height: 0;
-    margin-top: 11px;
-    width: 256px;
+    background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0;
+    background-size: 80%;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -226,17 +227,21 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    color: {{ site.data.template.font.primary }};
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
+    color: #{{ site.data.template.color.primary }};
+    /* background-color: #{{ site.data.template.color.secondary }}; */
 }
 
 @media(min-width:768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -251,15 +256,23 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        background: url('{{ site.baseurl }}/img/logos/rrs.png') no-repeat 0 0; 
+        background-size: 100%;
     }
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
+        color: #{{ site.data.template.color.primary }}
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0; 
+        background-size: 100%;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -269,9 +282,8 @@ fieldset[disabled] .btn-xl.active {
 
 
 header {
-    text-align: center;
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('{{ site.baseurl }}/img/header-bg.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
@@ -282,48 +294,61 @@ header {
 }
 
 header .intro-text {
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: italic;
+    font-size: 16px;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 50px;
 }
 
 @media(min-width:768px) {
+    header {
+        position: relative;
+    }
+
     header .intro-text {
+        width: 60%;
         padding-top: 300px;
         padding-bottom: 200px;
+        text-align: left;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
-        font-size: 40px;
-        font-style: italic;
+        font-size: 16px;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
+        font-size: 42px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 60px;
+    }
+
+    .secret-hotspot {
+        position: absolute;
+        top: 44%;
+        right: 8%;
+        width: 5%;
+        height: 7%;
+        background-color: red;
     }
 }
 
@@ -334,21 +359,26 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
-section h3.section-subheading {
+section h3.section-subheading,
+h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
-    font-style: italic;
     font-weight: 400;
+    line-height: 22px;
 }
 
 @media(min-width:768px) {
     section {
         padding: 150px 0;
+    }
+
+    section h2.section-heading {
+        font-size: 40px;
     }
 }
 
@@ -377,8 +407,7 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
+    background: rgba(0, 129, 223, 1); /* Fallback when no plugin support */
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -501,7 +530,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {
@@ -757,7 +786,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #{{ site.data.template.color.secondary-dark }};
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -874,7 +903,7 @@ body {
 }
 
 #portfolio img {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
 }
 #portfolio #govwizely {

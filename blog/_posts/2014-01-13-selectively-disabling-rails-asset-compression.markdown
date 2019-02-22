@@ -1,6 +1,7 @@
 ---
 title: Selectively Disabling Rails Asset Compression
 layout: blog_post
+category: blog
 date: 2014-01-13
 description: Asset compression can break your specs. But disabling it for tests can also mean disabling in production - or having tests that don't reflect production behavior. Here's how to strike a middle ground.
 author: Nick Marden

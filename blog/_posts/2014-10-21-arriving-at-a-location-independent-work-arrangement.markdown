@@ -1,6 +1,7 @@
 ---
 title: Arriving at a location-independent work arrangement
 layout: blog_post
+category: blog
 date: 2014-10-21
 description: A discussion about the benefits of a location-independent work environment and how to get there.
 author: Calum Halcrow
