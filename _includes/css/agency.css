@@ -234,7 +234,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #{{ site.data.template.color.primary }};
-    /* background-color: #{{ site.data.template.color.secondary }}; */
+    background-color: transparent;
 }
 
 @media(min-width:768px) {
@@ -296,7 +296,7 @@ header.home {
 }
 
 header.careers {
-    background: linear-gradient( rgba(255, 193, 0, 1), rgba(195, 33, 72, 1) );
+    background: linear-gradient( rgba(255, 193, 0, 0.8), rgba(195, 33, 72, 1) ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
