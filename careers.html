@@ -4,80 +4,10 @@ layout: full_page
 ---
 
 <div class="careers-page">
-    <!-- Careers: Header -->
-    <header class="careers">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">Work with us at Rapid River Software</div>
-                <div class="intro-lead-in">We believe that finding fulfilment in your work is what turns a job into a career. Learn more about us and see if this is the place for you.</div>
-                <!-- <a href="#case-studies" class="page-scroll btn btn-xl">See our work</a> -->
-                <a href="#positions" class="page-scroll btn btn-xl">View open positions</a>
-            </div>
-            <div class="intro-image">
-                <img src="/img/careers/header-person-working.png" alt="Vector image of person on a laptop">
-            </div>
-        </div>
-    </header>
-
-    <!-- Careers: Values -->
-    <section class="values bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What we care about</h2>
-                    <h3 class="section-subheading text-muted">We are proud of the team we've built and we're always keen to meet people who share our values.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Careers: Benefits -->
-    <section class="benefits">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What you get</h2>
-                    <h3 class="section-subheading text-muted">We believe that the best work is done when you're not sweating the small stuff. These are some of the ways we help you do your best work.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Careers: Open positions -->
-    <section id="positions" class="positions bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Open positions</h2>
-                    <h3 class="section-subheading text-muted">We are currently looking to fill the following positions in Malaysia.
-                    <br/><br/>
-                    These positions will be primarily remote. We only require that you be resident in Malaysia, so that you can be an employee of our Malaysian company.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Careers: Recruitment process -->
-    <section class="recruitment">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our recruitment process</h2>
-                    <h3 class="section-subheading text-muted">Every candidate is unique, and we like to treat them as such. But just for peace of mind, this is what a typical process would look like.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Careers: Learn more -->
-    <section class="cta-to-about bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Learn more about us</h2>
-                    <h3 class="section-subheading text-muted">We like to think we're a pretty nice bunch, but if you'd like to learn more, please visit our about page.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include careers/careers_header.html %}
+    {% include careers/careers_values.html %}
+    {% include careers/careers_benefits.html %}
+    {% include careers/careers_positions.html %}
+    {% include careers/careers_recruitment.html %}
+    {% include careers/careers_learn_more.html %}
 </div>
