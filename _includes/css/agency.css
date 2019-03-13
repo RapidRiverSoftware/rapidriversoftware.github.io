@@ -280,10 +280,8 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-
 header {
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
@@ -291,6 +289,14 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+header.home {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
+}
+
+header.careers {
+    background: linear-gradient( rgba(255, 193, 0, 1), rgba(195, 33, 72, 1) );
 }
 
 header .intro-text {
@@ -320,11 +326,34 @@ header .intro-text .intro-heading {
         position: relative;
     }
 
+    header.careers .container {
+        display: flex;
+    }
+
     header .intro-text {
         width: 60%;
+        text-align: left;
+    }
+
+    header.home .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
-        text-align: left;
+    }
+    
+    header.careers .intro-text {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    header.careers .intro-image {
+        width: 40%;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+
+    header.careers .intro-image img {
+        width: 42%;
     }
 
     header .intro-text .intro-lead-in {
@@ -920,6 +949,16 @@ body {
 }
 #portfolio #vertical-response {
     margin-top: 20px
+}
+
+.full-page {
+    
+}
+
+@media(min-width:768px) {
+    .full-page {
+        margin-top: -131px;
+    }
 }
 
 footer div.company-info p {
