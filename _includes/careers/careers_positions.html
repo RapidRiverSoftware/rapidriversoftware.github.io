@@ -9,19 +9,16 @@
                 These positions will be primarily remote. We only require that you be resident in Malaysia, so that you can be an employee of our Malaysian company.</h3>
             </div>
         </div>
+
         <div class="row text-center">
-            <div class="col-md-4">
-                <h4 class="service-heading">Technical Project Manager</h4>
-                <p class="text-muted">Learn more and apply</p>
-            </div>
-            <div class="col-md-4">
-                <h4 class="service-heading">Rails / React Developer</h4>
-                <p class="text-muted">Learn more and apply</p>
-            </div>
-            <div class="col-md-4">
-                <h4 class="service-heading">Rails / Elixir Developer</h4>
-                <p class="text-muted">Learn more and apply</p>
-            </div>
+            {% for post in site.posts %}
+                {% if post.categories contains 'careers' %}
+                <div class="col-md-4">
+                    <h4 class="service-heading">{{ post.title }}</h4>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.cta }}</a>
+                </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>

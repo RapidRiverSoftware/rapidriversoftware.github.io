@@ -295,7 +295,8 @@ header.home {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
 }
 
-header.careers {
+header.careers,
+header.careers-post {
     background: linear-gradient( rgba(255, 193, 0, 0.8), rgba(195, 33, 72, 1) ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
@@ -335,6 +336,10 @@ header .intro-text .intro-heading {
         text-align: left;
     }
 
+    header.careers-post .intro-text {
+        width: 100%;
+    }
+
     header.home .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
@@ -343,6 +348,11 @@ header .intro-text .intro-heading {
     header.careers .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+
+    header.careers-post .intro-text {
+        padding-top: 200px;
+        padding-bottom: 50px;
     }
 
     header.careers .intro-image {

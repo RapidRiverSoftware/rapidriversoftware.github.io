@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body id="page-top" class="page">
+
+    {% include gtm.html %}
+    {% include nav_transparent.html %}
+
+    <div class="full-page">
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="careers-post">
+                    <div class="container post">
+                        <div class="intro-text">
+                            <div class="intro-heading">  {{ page.title }}</div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="container post">
+            <div class="row">
+                {{ content | markdownify }}
+            </div>
+        </div>
+    </div>
+
+
+    {% include footer.html %}
+    {% include js.html %}
+
+    </body>
+</html>
