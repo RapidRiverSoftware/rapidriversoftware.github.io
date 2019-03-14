@@ -971,6 +971,15 @@ body {
     }
 }
 
+/* Icon Styles */
+
+@media(min-width:768px) {
+    .icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 footer div.company-info p {
     text-align: left;
     font-size: x-small;
