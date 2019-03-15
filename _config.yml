@@ -10,7 +10,7 @@ description: "Rapid River Software is a worldwide group of full-stack developers
 people:
 - name: Calum Halcrow
   pic: calum
-  position: Founder & CTO
+  position: CEO
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/calumhalcrow
@@ -195,20 +195,39 @@ people:
       url: https://github.com/HalahAb
     - title: linkedin
       url: https://www.linkedin.com/in/halah-abuateeq/
-- name: Abdul Razzak Alkel
-  pic: abd
-  position: Engineering Team Lead
-  social:
-    - title: github
-      url: https://github.com/Abdulrazak-Alkl
-    - title: linkedin
-      url: https://www.linkedin.com/in/abdulrazakalkl/
+
 - name: 'Fatima "Sarah" Maisarah Moktar'
   pic: sarah
   position: HR & Admin Executive
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/fatima-maisarah-moktar-a4505b131/
+
+- name: Carlos Lima
+  pic: carlos
+  position: Engineering Team Lead
+  social:
+    - title: github
+      url: https://github.com/carloslima
+    - title: linkedin
+      url: https://www.linkedin.com/in/carloslimabr/
+
+- name: Audrey Lim
+  pic: audrey
+  position: Technical Project Manager
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/audrey-lim-a7340865/
+
+- name: Tristan Gomez
+  pic: tristan
+  position: Senior Software Engineer
+  social:
+    - title: github
+      url: https://github.com/parasquid
+    - title: linkedin
+      url: https://www.linkedin.com/in/parasquid/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
