@@ -201,6 +201,16 @@ people:
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/fatima-maisarah-moktar-a4505b131/
+
+- name: Carlos Lima
+  pic: carlos
+  position: Engineering Team Lead
+  social:
+    - title: github
+      url: https://github.com/carloslima
+    - title: linkedin
+      url: https://www.linkedin.com/in/carloslimabr/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
