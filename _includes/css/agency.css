@@ -306,6 +306,9 @@ header .intro-text {
     padding-bottom: 50px;
     text-align: center;
 }
+header.careers .intro-image {
+    display: none;
+}
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
@@ -356,6 +359,7 @@ header .intro-text .intro-heading {
     }
 
     header.careers .intro-image {
+        display: block;
         width: 40%;
         padding-top: 200px;
         padding-bottom: 200px;
@@ -964,7 +968,7 @@ body {
 }
 
 .full-page {
-    
+    margin-top: -22px;
 }
 
 @media(min-width:768px) {
@@ -974,6 +978,10 @@ body {
 }
 
 /* Icon Styles */
+.icon {
+    width: 60px;
+    height: 60px;
+}
 
 @media(min-width:768px) {
     .icon {
