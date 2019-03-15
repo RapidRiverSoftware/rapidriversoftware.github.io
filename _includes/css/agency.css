@@ -918,11 +918,13 @@ ul.social-buttons li a:active {
 ::-moz-selection {
     text-shadow: none;
     background: #{{ site.data.template.color.primary }};
+    color: white;
 }
 
 ::selection {
     text-shadow: none;
     background: #{{ site.data.template.color.primary }};
+    color: white;
 }
 
 img::selection {
