@@ -195,6 +195,7 @@ people:
       url: https://github.com/HalahAb
     - title: linkedin
       url: https://www.linkedin.com/in/halah-abuateeq/
+
 - name: 'Fatima "Sarah" Maisarah Moktar'
   pic: sarah
   position: HR & Admin Executive
@@ -217,6 +218,15 @@ people:
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/audrey-lim-a7340865/
+
+- name: Tristan Gomez
+  pic: tristan
+  position: Senior Software Engineer
+  social:
+    - title: github
+      url: https://github.com/parasquid
+    - title: linkedin
+      url: https://www.linkedin.com/in/parasquid/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
