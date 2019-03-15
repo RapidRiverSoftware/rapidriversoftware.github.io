@@ -211,6 +211,13 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/carloslimabr/
 
+- name: Audrey Lim
+  pic: audrey
+  position: Technical Project Manager
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/audrey-lim-a7340865/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
