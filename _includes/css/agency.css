@@ -802,10 +802,9 @@ footer {
 }
 
 footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
     font-family: {{ site.data.template.font.primary }};
-    line-height: 40px;
+    line-height: 40px; 
+    font-size: x-small;
 }
 
 footer ul.quicklinks {
@@ -814,6 +813,24 @@ footer ul.quicklinks {
     text-transform: none;
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
+}
+
+footer div.company-info p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: x-small;
+}
+
+@media(min-width:768px) {
+    footer span.copyright {
+        font-family: {{ site.data.template.font.primary }};
+        line-height: 40px;
+    }
+
+    footer div.company-info p {
+        margin-top: 0px;
+        text-align: left;
+    }
 }
 
 ul.social-buttons {
@@ -989,9 +1006,3 @@ body {
         height: 120px;
     }
 }
-
-footer div.company-info p {
-    text-align: left;
-    font-size: x-small;
-}
-
