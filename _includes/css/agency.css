@@ -176,9 +176,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    width: 256px;
+    width: 220px;
     height: 35px;
-    margin-top: 11px;
+    margin-top: 16px;
     margin-left: 10px;
     color: transparent;
     font-size: 0;
