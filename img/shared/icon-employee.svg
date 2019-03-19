@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="30px" viewBox="0 0 42 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke="#979797">
+            <g id="add-person" transform="translate(9.000000, 2.000000)">
+                <g id="Page-1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.8938167,6.02464145 C13.8938167,9.32752303 11.2117883,12.004875 7.9033363,12.004875 C4.59479537,12.004875 1.9127669,9.32752303 1.9127669,6.02464145 C1.9127669,2.72175987 4.59479537,0.0444078947 7.9033363,0.0444078947 C11.2117883,0.0444078947 13.8938167,2.72175987 13.8938167,6.02464145 Z" id="Stroke-1"></path>
+                    <path d="M24.9851868,20.5904309 C24.9851868,24.0894178 22.1437278,26.9260164 18.6387456,26.9260164 C15.1337633,26.9260164 12.2923043,24.0894178 12.2923043,20.5904309 C12.2923043,17.0914441 15.1337633,14.2548454 18.6387456,14.2548454 C22.1437278,14.2548454 24.9851868,17.0914441 24.9851868,20.5904309 Z" id="Stroke-3"></path>
+                    <path d="M4.49327402,10.9416878 C4.49327402,10.9416878 0.044519573,13.8995201 0.044519573,19.1693161 C0.044519573,24.4391122 10.3495018,22.9354609 12.6109786,22.5770891" id="Stroke-5"></path>
+                    <path d="M11.563016,10.7590293 C11.563016,10.7590293 14.2200445,12.6856214 15.2283185,15.2465359" id="Stroke-7"></path>
+                </g>
+                <path d="M18.5,17.5 L18.5,23.5" id="Line" stroke-linecap="square"></path>
+                <path d="M21.5,20.5 L15.5,20.5" id="Line" stroke-linecap="square"></path>
+                <circle id="Oval" cx="6" cy="15" r="1"></circle>
+                <circle id="Oval" cx="6" cy="19" r="1"></circle>
+                <path d="M8.5,12.5 L8.5,22.5498756" id="Line" stroke-linecap="square"></path>
+                <path d="M9.99997772,8 C9.99997772,8.51996986 9.10455918,8.94146313 8.00000371,8.94146313 C6.89541854,8.94146313 6,8.51996986 6,8" id="Page-1" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
