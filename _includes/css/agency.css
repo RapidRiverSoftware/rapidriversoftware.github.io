@@ -307,7 +307,11 @@ header.home {
 
 header.careers,
 header.careers-post {
-    background: linear-gradient( rgba(255, 193, 0, 0.8), rgba(195, 33, 72, 1) ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+}
+
+header.about-us {
+    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
@@ -321,7 +325,8 @@ header.careers .intro-text span {
     display: inline;
 }
 
-header.careers .intro-image {
+header.careers .intro-image,
+header.about-us .intro-image {
     display: none;
 }
 
@@ -345,7 +350,8 @@ header .intro-text .intro-heading {
         position: relative;
     }
 
-    header.careers .container {
+    header.careers .container,
+    header.about-us .container {
         display: flex;
     }
 
@@ -368,7 +374,8 @@ header .intro-text .intro-heading {
         padding-bottom: 200px;
     }
     
-    header.careers .intro-text {
+    header.careers .intro-text,
+    header.about-us .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -378,16 +385,29 @@ header .intro-text .intro-heading {
         padding-bottom: 50px;
     }
 
-    header.careers .intro-image {
+    header.careers .intro-image,
+    header.about-us .intro-image {
         display: block;
         width: 40%;
+        text-align: center;
+    }
+
+    header.careers .intro-image {
         padding-top: 200px;
         padding-bottom: 200px;
-        text-align: center;
+    }
+
+    header.about-us .intro-image {
+        padding-top: 225px;
+        padding-bottom: 150px;
     }
 
     header.careers .intro-image img {
         width: 42%;
+    }
+
+    header.about-us .intro-image img {
+        width: 100%;
     }
 
     header .intro-text .intro-lead-in {
@@ -1024,5 +1044,12 @@ body {
     .icon {
         width: 120px;
         height: 120px;
+    }
+}
+
+/* About Page Styles */
+@media(min-width:768px) {
+    .about-item .about-image img {
+        width: 100%;
     }
 }

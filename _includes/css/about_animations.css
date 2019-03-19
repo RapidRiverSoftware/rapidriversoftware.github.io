@@ -1,0 +1,36 @@
+/* Calendar icon */
+
+@media(min-width:768px) {
+  .about-day {
+    position: relative;
+  }
+
+  .calendar-icon {
+    position: absolute;
+    top: 70px;
+    width: 80px;
+    background: linear-gradient(rgba(204,204,204,0.3), rgba(255,255,255,0.6));
+    font-size: 30px;
+    text-shadow: white 0 1px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #888888;
+  }
+
+  .calendar-icon span {
+    display:block;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    /* text-shadow:#00365a 0 -1px 0;	 */
+    background-color: #{{ site.data.template.color.primary }};
+  }
+
+}
+
+/* About page Content */
+@media(min-width:768px) {
+    .section-subheading {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
