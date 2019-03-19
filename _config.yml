@@ -6,6 +6,10 @@ title: Rapid River Software
 email: info@rrsoft.co
 description: "Rapid River Software is a worldwide group of full-stack developers with skills ranging from front-end to operations automation, and everything in between. We have more than four decades of experience writing software for the Internet. Whether designing new systems, or improving existing ones, we have the skills to hit the ground running."
 
+collections:
+  careers:
+    output: true
+
 # Team names, titles and social links
 people:
 - name: Calum Halcrow

@@ -11,14 +11,12 @@
         </div>
 
         <div class="row text-center">
-            {% for post in site.posts %}
-                {% if post.categories contains 'careers' %}
+            {% for career in site.careers %}
                 <div class="col-md-4">
                     <img src="/img/shared/icon-employee.svg" alt="An awesome applicant who is smiling" class="icon icon-laptop" />
-                    <h4 class="service-heading">{{ post.title }}</h4>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.cta }}</a>
+                    <h4 class="service-heading">{{ career.title }}</h4>
+                    <a href="{{ career.url | prepend: site.baseurl }}">{{ career.cta }}</a>
                 </div>
-                {% endif %}
             {% endfor %}
         </div>
     </div>
