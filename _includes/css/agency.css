@@ -251,7 +251,17 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
+    .navbar-transparent {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
     .navbar-default .navbar-brand {
+        width: 220px;
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -990,7 +1000,7 @@ body {
 
 @media(min-width:768px) {
     .full-page {
-        margin-top: -131px;
+        margin-top: 0px;
     }
 }
 
