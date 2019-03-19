@@ -306,6 +306,11 @@ header .intro-text {
     padding-bottom: 50px;
     text-align: center;
 }
+
+header.careers .intro-text span {
+    display: inline;
+}
+
 header.careers .intro-image {
     display: none;
 }
@@ -337,6 +342,11 @@ header .intro-text .intro-heading {
     header .intro-text {
         width: 60%;
         text-align: left;
+    }
+
+
+    header.careers .intro-text span {
+        display: block;
     }
 
     header.careers-post .intro-text {
