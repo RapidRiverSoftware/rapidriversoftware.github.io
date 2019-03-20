@@ -1052,4 +1052,8 @@ body {
     .about-item .about-image img {
         width: 100%;
     }
+
+    .photo-feed-row img {
+        width: 100%;
+    }
 }
