@@ -1048,11 +1048,11 @@ body {
 }
 
 /* About Page Styles */
-@media(min-width:768px) {
-    .about-item .about-image img {
-        width: 100%;
-    }
+.about-item .about-image img {
+    width: 100%;
+}
 
+@media(min-width:768px) {
     .photo-feed-row img {
         width: 100%;
     }

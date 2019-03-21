@@ -17,9 +17,8 @@
 
 .instafeed a {
   display: block;
-  width: 27%;
-  margin: 1% 1%;
-
+  width: 90%;
+  margin: 10px 0px;
   background-color:#ddc;
   border:solid 20px #729FB4;
   border-bottom-color:#92cce6;
@@ -66,4 +65,11 @@
   border-left-color:#eed;
   border-right-color:#eed;
   border-top-color:#ccb;
+}
+
+@media(min-width:768px) {
+  .instafeed a {
+    width: 27%;
+    margin: 1% 1%;
+  } 
 }
