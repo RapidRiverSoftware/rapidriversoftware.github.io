@@ -1,5 +1,5 @@
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
 {% include css/page.css %}
-{% include css/about_animations.css %}
+{% include css/about_instagram.css %}
 {{ content }}
