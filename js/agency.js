@@ -6,17 +6,6 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 
-// Handling smooth scrolling in CSS. But leaving this here we need to revert due to browser support issues
-
-// $(function() {
-//     $('a.page-scroll').bind('click', function(event) {
-//         var $anchor = $(this);
-//         $('html, body').stop().animate({
-//             scrollTop: $($anchor.attr('href')).offset().top
-//         }, 1500, 'easeInOutExpo');
-//     });
-// });
-
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
