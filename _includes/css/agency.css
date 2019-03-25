@@ -453,7 +453,7 @@ h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 32px;
 }
 
 @media(min-width:768px) {
