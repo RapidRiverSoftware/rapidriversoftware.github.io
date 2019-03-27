@@ -492,6 +492,7 @@ h3.section-subheading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(0, 129, 223, 1); /* Fallback when no plugin support */
+    display: none;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -1008,6 +1009,7 @@ body {
 #portfolio img {
     width: 100%;
     margin: 0 auto;
+    cursor: default;
 }
 #portfolio #govwizely {
     margin-top: 40px
