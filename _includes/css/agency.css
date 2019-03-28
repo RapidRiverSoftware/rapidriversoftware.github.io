@@ -307,7 +307,11 @@ header.home {
 
 header.careers,
 header.careers-post {
-    background: linear-gradient( rgba(255, 193, 0, 0.8), rgba(195, 33, 72, 1) ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+}
+
+header.about-us {
+    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
@@ -321,7 +325,8 @@ header.careers .intro-text span {
     display: inline;
 }
 
-header.careers .intro-image {
+header.careers .intro-image,
+header.about-us .intro-image {
     display: none;
 }
 
@@ -345,7 +350,8 @@ header .intro-text .intro-heading {
         position: relative;
     }
 
-    header.careers .container {
+    header.careers .container,
+    header.about-us .container {
         display: flex;
     }
 
@@ -368,7 +374,8 @@ header .intro-text .intro-heading {
         padding-bottom: 200px;
     }
     
-    header.careers .intro-text {
+    header.careers .intro-text,
+    header.about-us .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -378,16 +385,29 @@ header .intro-text .intro-heading {
         padding-bottom: 50px;
     }
 
-    header.careers .intro-image {
+    header.careers .intro-image,
+    header.about-us .intro-image {
         display: block;
         width: 40%;
+        text-align: center;
+    }
+
+    header.careers .intro-image {
         padding-top: 200px;
         padding-bottom: 200px;
-        text-align: center;
+    }
+
+    header.about-us .intro-image {
+        padding-top: 225px;
+        padding-bottom: 150px;
     }
 
     header.careers .intro-image img {
         width: 42%;
+    }
+
+    header.about-us .intro-image img {
+        width: 100%;
     }
 
     header .intro-text .intro-lead-in {
@@ -423,6 +443,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 36px;
+    text-transform: capitalize;
 }
 
 section h3.section-subheading,
@@ -432,7 +453,7 @@ h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 32px;
 }
 
 @media(min-width:768px) {
@@ -471,6 +492,7 @@ h3.section-subheading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(0, 129, 223, 1); /* Fallback when no plugin support */
+    display: none;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -987,6 +1009,7 @@ body {
 #portfolio img {
     width: 100%;
     margin: 0 auto;
+    cursor: default;
 }
 #portfolio #govwizely {
     margin-top: 40px
@@ -1024,5 +1047,16 @@ body {
     .icon {
         width: 120px;
         height: 120px;
+    }
+}
+
+/* About Page Styles */
+.about-item .about-image img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .photo-feed-row img {
+        width: 100%;
     }
 }
