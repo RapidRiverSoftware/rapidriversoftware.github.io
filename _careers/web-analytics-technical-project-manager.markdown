@@ -21,6 +21,5 @@ Rapid River manages a mission-critical web analytics data warehouse for one of o
 - Excellent English language written and verbal communication skills.
 - Good temperament and a genuine enjoyment of helping other people grow.
 - Relevant technical experience with some or all of the following: SQL, data warehouses, REST web services, git, and Ruby/Rails.
-- Ability to travel as needed to Boston or New Jersey, up to one week per month.
 
 If you think you have what it takes, get in touch with us by sending an email to [workwithus@rrsoft.co](mailto:workwithus@rrsoft.co).
