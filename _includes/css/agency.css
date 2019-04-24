@@ -318,6 +318,10 @@ header.case-studies {
     background: linear-gradient( 180deg, rgba(16, 41, 63, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.9) 60%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
+header.blog {
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+}
+
 header .intro-text {
     width: 100%;
     padding-top: 100px;
@@ -331,7 +335,8 @@ header.careers .intro-text span {
 
 header.careers .intro-image,
 header.about-us .intro-image,
-header.case-studies .intro-image {
+header.case-studies .intro-image,
+header.blog .intro-image {
     display: none;
 }
 
@@ -357,7 +362,8 @@ header .intro-text .intro-heading {
 
     header.careers .container,
     header.about-us .container,
-    header.case-studies .container {
+    header.case-studies .container,
+    header.blog .container {
         display: flex;
     }
 
@@ -385,7 +391,8 @@ header .intro-text .intro-heading {
     }
     
     header.careers .intro-text,
-    header.about-us .intro-text {
+    header.about-us .intro-text,
+    header.blog .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -403,7 +410,8 @@ header .intro-text .intro-heading {
     }
 
     header.careers .intro-image,
-    header.about-us .intro-image {
+    header.about-us .intro-image,
+    header.blog .intro-image {
         display: block;
         width: 40%;
         text-align: center;
