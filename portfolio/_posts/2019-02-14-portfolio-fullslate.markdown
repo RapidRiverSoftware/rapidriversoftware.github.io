@@ -8,6 +8,7 @@ img: fullslate.png
 thumbnail: fullslate-thumbnail.png
 alt: image-alt
 client: Full Slate
+slug: fullslate
 category: portfolio
 tech: Ruby on Rails, JavaScript
 description: Full Slate is an appointment scheduling software for small businesses. The Rapid River successfully upgraded the Rails version from 2 to 5.
