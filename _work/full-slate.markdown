@@ -1,19 +1,15 @@
 ---
 title: Full Slate - Rails Upgrade
 subtitle: Upgraded from Rails 2 to Rails 5
-layout: default
-modal-id: 2
-date: 2019-02-14
+layout: work_post
 img: fullslate.png
 thumbnail: fullslate-thumbnail.png
 alt: image-alt
 client: Full Slate
-slug: fullslate
-category: portfolio
 tech: Ruby on Rails, JavaScript
 description: Full Slate is an appointment scheduling software for small businesses. The Rapid River successfully upgraded the Rails version from 2 to 5.
 project-url: https://www.fullslate.com/
-
+status: published
 ---
 
 Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.

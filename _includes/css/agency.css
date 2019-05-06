@@ -315,7 +315,7 @@ header.about-us {
 }
 
 header.case-studies {
-    background: linear-gradient( 180deg, rgba(234, 234, 234, 0.9) 40%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 180deg, rgba(16, 41, 63, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.9) 60%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
@@ -411,7 +411,8 @@ header .intro-text .intro-heading {
 
     header.case-studies .intro-image {
         display: block;
-        margin-top: 90px;
+        padding-top: 200px;
+        padding-bottom: 20px;
     }
 
     header.careers .intro-image {
@@ -1071,6 +1072,22 @@ body {
         margin-top: 0px;
     }
 }
+
+/* Careers Styles */
+.careers .post p,
+.careers .post ul li {
+    color: #888888;
+}
+
+ /* Case Study Styles */
+.case-studies .post h2 {
+    margin-top: 45px;
+}
+
+.case-studies .post p {
+    color: #888888;
+}
+
 
 /* Icon Styles */
 .icon {
