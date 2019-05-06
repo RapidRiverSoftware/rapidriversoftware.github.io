@@ -9,6 +9,8 @@ description: "Rapid River Software is a worldwide group of full-stack developers
 collections:
   careers:
     output: true
+  case_studies:
+    output: true
 
 # Team names, titles and social links
 people:

@@ -911,15 +911,24 @@ ul.social-buttons li a:active {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
+    /* text-align: center; */
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content h1,
+.portfolio-modal .modal-content h2 {
+    text-transform: capitalize;
+}
+
+.portfolio-modal .modal-content h1 {
+    font-size: 42px;
+}
+
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
-    font-size: 3em;
+    font-size: 40px;
 }
 
 .portfolio-modal .modal-content p {
