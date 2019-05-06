@@ -318,6 +318,10 @@ header.case-studies {
     background: linear-gradient( 180deg, rgba(16, 41, 63, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.9) 60%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
+header.blog {
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+}
+
 header .intro-text {
     width: 100%;
     padding-top: 100px;
@@ -331,7 +335,8 @@ header.careers .intro-text span {
 
 header.careers .intro-image,
 header.about-us .intro-image,
-header.case-studies .intro-image {
+header.case-studies .intro-image,
+header.blog .intro-image {
     display: none;
 }
 
@@ -357,7 +362,8 @@ header .intro-text .intro-heading {
 
     header.careers .container,
     header.about-us .container,
-    header.case-studies .container {
+    header.case-studies .container,
+    header.blog .container {
         display: flex;
     }
 
@@ -385,7 +391,8 @@ header .intro-text .intro-heading {
     }
     
     header.careers .intro-text,
-    header.about-us .intro-text {
+    header.about-us .intro-text,
+    header.blog .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -403,7 +410,8 @@ header .intro-text .intro-heading {
     }
 
     header.careers .intro-image,
-    header.about-us .intro-image {
+    header.about-us .intro-image,
+    header.blog .intro-image {
         display: block;
         width: 40%;
         text-align: center;
@@ -435,6 +443,12 @@ header .intro-text .intro-heading {
 
     header.case-studies .intro-image img {
         width: 30%;
+    }
+    
+    header.blog .intro-image img {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 90%;
     }
 
     header .intro-text .intro-lead-in {
@@ -1088,6 +1102,47 @@ body {
     color: #888888;
 }
 
+/* Blog Styles */
+.subscribe {
+    text-align: center;
+}
+
+.blog.posts {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+@media(min-width:768px) {
+    .blog.posts {
+        width: 64%;
+    }
+}
+
+.blog.posts li {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.blog.posts h3 {
+    text-transform: capitalize;
+}
+
+.blog.posts h3 a {
+    color: #{{ site.data.template.color.secondary-dark }};
+}
+
+.blog.posts h3 a:hover {
+    color: #{{ site.data.template.color.primary }};
+}
+
+.blog.posts p {
+    color: #888888;
+}
+
+.blog.posts p.meta {
+    color: #{{ site.data.template.color.primary }};
+}
 
 /* Icon Styles */
 .icon {

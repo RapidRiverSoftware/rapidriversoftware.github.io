@@ -1,18 +1,24 @@
 ---
-layout: blog
+title: Blog
+layout: full_page
 ---
-<div class="home" style="margin: 8em 0">
-  <ul class="posts">
-    {% for post in site.posts %}
-        {% if post.categories contains 'blog' %}
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <p>{{ post.description }}</p>
-          <p class="meta"><em>{{ post.author }} - {{ post.date | date: '%B %d, %Y' }}</em></p>
-          </li>
-        {% endif %}
-    {% endfor %}
-  </ul>
+<div class="blog-page home">
+  {% include blog/blog_header.html %}
+  <section>
+    <div class="container">
+      <ul class="blog posts">
+        {% for post in site.posts %}
+            {% if post.categories contains 'blog' %}
+              <li>
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <p>{{ post.description }}</p>
+                <p class="meta">{{ post.author }} - <em>{{ post.date | date: '%B %d, %Y' }}</em></p>
+              </li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS.</a></p>
-
+  {% include blog/blog_subscribe.html %}
 </div>
