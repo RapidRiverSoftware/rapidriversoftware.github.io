@@ -1,5 +1,5 @@
 ---
-title: Full Slate
+title: Full Slate - Rails Upgrade
 subtitle: Upgraded from Rails 2 to Rails 5
 layout: default
 modal-id: 2
@@ -15,8 +15,6 @@ description: Full Slate is an appointment scheduling software for small business
 project-url: https://www.fullslate.com/
 
 ---
-
-# Full Slate: Rails Upgrade
 
 Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
 

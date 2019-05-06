@@ -314,6 +314,10 @@ header.about-us {
     background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
+header.case-studies {
+    background: linear-gradient( 180deg, rgba(234, 234, 234, 0.9) 40%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+}
+
 header .intro-text {
     width: 100%;
     padding-top: 100px;
@@ -326,7 +330,8 @@ header.careers .intro-text span {
 }
 
 header.careers .intro-image,
-header.about-us .intro-image {
+header.about-us .intro-image,
+header.case-studies .intro-image {
     display: none;
 }
 
@@ -351,15 +356,20 @@ header .intro-text .intro-heading {
     }
 
     header.careers .container,
-    header.about-us .container {
+    header.about-us .container,
+    header.case-studies .container {
         display: flex;
+    }
+
+    header.case-studies .container {
+        flex-direction: column;
+        text-align: center;
     }
 
     header .intro-text {
         width: 60%;
         text-align: left;
     }
-
 
     header.careers .intro-text span {
         display: block;
@@ -385,11 +395,23 @@ header .intro-text .intro-heading {
         padding-bottom: 50px;
     }
 
+    header.case-studies .intro-text {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
     header.careers .intro-image,
     header.about-us .intro-image {
         display: block;
         width: 40%;
         text-align: center;
+    }
+
+    header.case-studies .intro-image {
+        display: block;
+        margin-top: 90px;
     }
 
     header.careers .intro-image {
@@ -408,6 +430,10 @@ header .intro-text .intro-heading {
 
     header.about-us .intro-image img {
         width: 100%;
+    }
+
+    header.case-studies .intro-image img {
+        width: 30%;
     }
 
     header .intro-text .intro-lead-in {
@@ -907,7 +933,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 0px;
     min-height: 100%;
     border: 0;
     border-radius: 0;
@@ -933,6 +959,8 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
+    font-size: 16px;
+    color: #888888;
 }
 
 .portfolio-modal .modal-content p.item-intro {
@@ -955,7 +983,7 @@ ul.social-buttons li a:active {
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 75px;
+    width: 120px;
     height: 75px;
     background-color: transparent;
     cursor: pointer;
