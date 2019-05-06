@@ -1102,6 +1102,47 @@ body {
     color: #888888;
 }
 
+/* Blog Styles */
+.subscribe {
+    text-align: center;
+}
+
+.blog.posts {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+@media(min-width:768px) {
+    .blog.posts {
+        width: 64%;
+    }
+}
+
+.blog.posts li {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.blog.posts h3 {
+    text-transform: capitalize;
+}
+
+.blog.posts h3 a {
+    color: #{{ site.data.template.color.secondary-dark }};
+}
+
+.blog.posts h3 a:hover {
+    color: #{{ site.data.template.color.primary }};
+}
+
+.blog.posts p {
+    color: #888888;
+}
+
+.blog.posts p.meta {
+    color: #{{ site.data.template.color.primary }};
+}
 
 /* Icon Styles */
 .icon {

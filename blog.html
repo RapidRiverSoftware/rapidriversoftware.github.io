@@ -6,13 +6,13 @@ layout: full_page
   {% include blog/blog_header.html %}
   <section>
     <div class="container">
-      <ul class="posts">
+      <ul class="blog posts">
         {% for post in site.posts %}
             {% if post.categories contains 'blog' %}
               <li>
-                <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                 <p>{{ post.description }}</p>
-                <p class="meta"><em>{{ post.author }} - {{ post.date | date: '%B %d, %Y' }}</em></p>
+                <p class="meta">{{ post.author }} - <em>{{ post.date | date: '%B %d, %Y' }}</em></p>
               </li>
             {% endif %}
         {% endfor %}
@@ -20,9 +20,5 @@ layout: full_page
     </div>
   </section>
 
-  <section id="subscribe" class="bg-light-gray">
-    <div class="container">
-      <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="page-scroll btn btn-xl rss-subscribe">Subscribe via RSS</a>
-    </div>
-  </section>
+  {% include blog/blog_subscribe.html %}
 </div>
