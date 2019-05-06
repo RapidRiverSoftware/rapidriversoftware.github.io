@@ -444,6 +444,12 @@ header .intro-text .intro-heading {
     header.case-studies .intro-image img {
         width: 30%;
     }
+    
+    header.blog .intro-image img {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 90%;
+    }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
