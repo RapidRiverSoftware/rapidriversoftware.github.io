@@ -347,6 +347,10 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
+header.case-studies .intro-heading {
+    color: #{{ site.data.template.color.secondary-dark }}; 
+}
+
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.primary }};
@@ -407,6 +411,10 @@ header .intro-text .intro-heading {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 50px;
+    }
+
+    header.case-studies .intro-heading {
+        color: white; 
     }
 
     header.careers .intro-image,
