@@ -9,37 +9,31 @@
     {% include nav_transparent.html %}
 
     <div class="full-page case-studies">
-        <div class="row">
-            <div class="col-lg-12">
-                <header class="case-studies">
-                    <div class="container">
-                        <div class="intro-image">
-                            <img src="/img/case-studies/{{ page.img }}">
-                        </div>
-                        <div class="intro-text">
-                            <div class="intro-heading">{{ page.title }}</div>
-                        </div>
-                    </div>
-                </header>
+        <header class="case-studies">
+            <div class="container">
+                <div class="intro-image">
+                    <img src="/img/case-studies/{{ page.img }}">
+                </div>
+                <div class="intro-text">
+                    <div class="intro-heading">{{ page.title }}</div>
+                </div>
             </div>
-        </div>
+        </header>
         <div class="container post">
-            <div class="row">
-                <hr class="star-primary">
-                {{ content | markdownify }}
-                <hr class="star-primary">
-                <ul class="list-inline item-details">
-                    <li>Client:
-                        <strong><a href="{{post.project-url}}">{{ page.client }}</a>
-                        </strong>
-                    </li>
-                    <li>Technology:
-                        {{ page.tech }}
-                    </li>
-                </ul>
-                <hr class="star-primary">
-                <a href="/" type="button" class="btn btn-primary">Go back to homepage</a>
-            </div>
+            <hr class="star-primary">
+            {{ content | markdownify }}
+            <hr class="star-primary">
+            <ul class="list-inline item-details">
+                <li>Client:
+                    <strong><a href="{{post.project-url}}">{{ page.client }}</a>
+                    </strong>
+                </li>
+                <li>Technology:
+                    {{ page.tech }}
+                </li>
+            </ul>
+            <hr class="star-primary">
+            <a href="/" type="button" class="btn btn-primary">Go back to homepage</a>
         </div>
     </div>
 
