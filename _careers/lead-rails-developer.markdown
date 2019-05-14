@@ -22,5 +22,3 @@ A major part of the scope of work after on-boarding will be to lead an overhaul 
 - Excellent English language written and verbal communication skills.
 - Good temperament and a genuine enjoyment of helping others grow.
 - Relevant technical experience with some or all of the following: Ruby on Rails, front-end web development with JavaScript, Unix (esp. Linux variants), PostgreSQL, Redis.
-
-If you think you have what it takes, get in touch with us by sending an email to [workwithus@rrsoft.co](mailto:workwithus@rrsoft.co).

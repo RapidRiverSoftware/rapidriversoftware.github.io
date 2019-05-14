@@ -28,6 +28,3 @@ Rapid River contributes to a large application built on a microservices architec
 - Competitive salary.
 - Medical insurance and dental/optical allowance.
 - Laptop (MacBook Pro) will be supplied for carrying out work duties.
-
-If you think you have what it takes, get in touch with us by sending an email to [workwithus@rrsoft.co](mailto:workwithus@rrsoft.co).
-

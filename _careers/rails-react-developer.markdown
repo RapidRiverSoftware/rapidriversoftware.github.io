@@ -23,6 +23,3 @@ Rapid River provides ongoing development of a web application written in Ruby on
 - Competitive salary.
 - Medical insurance and dental/optical allowance.
 - Laptop (MacBook Pro) will be supplied for carrying out work duties.
-
-If you think you have what it takes, get in touch with us by sending an email to [workwithus@rrsoft.co](mailto:workwithus@rrsoft.co).
-

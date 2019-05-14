@@ -45,6 +45,3 @@ You are a project management guru – a perfect mix of prioritization genius and
 - Competitive salary.
 - Medical insurance and dental/optical allowance.
 - Laptop (MacBook Pro) will be supplied for carrying out work duties.
-
-If you think you have what it takes, get in touch with us by sending an email to [workwithus@rrsoft.co](mailto:workwithus@rrsoft.co).
-
