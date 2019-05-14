@@ -19,12 +19,3 @@ Rapid River contributes to a large application built on a microservices architec
 
 - Strong front-end web development skills. Experience with React and related tools would be a plus, or a solid general understanding of JavaScript for web application development.
 - Experience in other (non-Ruby) back-end programming languages. Rust, Python, Scala (to name a few) appear in the stacks we contribute to, so experience in these would allow you to be more effective in your role.
-
-### Benefits
-
-- Remote-first culture: flexible working hours, near-total freedom to manage your own schedule.
-- Space in our Bangsar South office for use if working from home doesn't appeal to you.
-  - Parking and lunch provided if you do!
-- Competitive salary.
-- Medical insurance and dental/optical allowance.
-- Laptop (MacBook Pro) will be supplied for carrying out work duties.
