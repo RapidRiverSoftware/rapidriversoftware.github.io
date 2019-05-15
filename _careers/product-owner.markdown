@@ -8,7 +8,7 @@ We have an opening on one of our Scrum teams for the position of Product Owner.
 
 ### About the Role
 
-In this role, you would be main point of contract between our client and our development team. You would gather input from key stakeholders in our client's organization, the development team, and the market, and turn this into a coherent and prioritized product backlog. You would optimize the work the development team does for value, and you'd ensure that the product backlog has all the information it needs for developers to carry out work. Lastly, you'd ensure that the backlog has enough work for the development team to break off for the next sprint.
+In this role, you would be main point of contact between our client and our development team. You would gather input from key stakeholders in our client's organization, the development team, and the market, and turn this into a coherent and prioritized product backlog. You would optimize the work the development team does for value, and you'd ensure that the product backlog has all the information it needs for developers to carry out work. Lastly, you'd ensure that the backlog has enough work for the development team to break off for the next sprint.
 
 ### About the Product
 
