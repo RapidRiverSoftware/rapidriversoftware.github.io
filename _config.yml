@@ -142,17 +142,6 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/adeline-lim-593953141/
 
-- name: Waihon Yew
-  pic: waihon
-  position: Engineering Team Lead
-  social:
-    - title: github
-      url: https://github.com/waihon
-    - title: twitter
-      url: https://twitter.com/waihon
-    - title: linkedin
-      url: https://www.linkedin.com/in/waihonyew
-
 - name: Hakim Ahmad
   pic: hakim
   position: Software Engineer
