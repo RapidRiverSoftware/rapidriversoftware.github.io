@@ -27,7 +27,7 @@ In time you'll lead at least one QA Engineer (performing manual testing) and one
 
 ### About the Project
 
-The first project you will contribute to is a high-traffic, microservices-based web application in the Legal space. A Rapid River develop team provides a range of development work on this project, but currently has to rely on an external QA team to have work approved. This arrangement hinders our ability to deliver significant portions of new work quickly, so we'd like to bring QA "in house" and become more autonomous. With this, full ownership of significant parts of the development process will become possible - an arrangement which we'd like to work ourselves into. Our work on this project needs both a comprehensive QA process in place, and also satisfactory monitoring and insight into the health of the system at all times.
+The first project you will contribute to is a high-traffic, microservices-based web application in the Legal space. A Rapid River development team provides a range of development work on this project, but currently has to rely on an external QA team to have work approved. This arrangement hinders our ability to deliver significant portions of new work quickly, so we'd like to bring QA "in house" and become more autonomous. With this, full ownership of significant parts of the development process will become possible - an arrangement which we'd like to work ourselves into. Our work on this project needs both a comprehensive QA process in place, and also satisfactory monitoring and insight into the health of the system at all times.
 
 ### Skills and Requirements
 
