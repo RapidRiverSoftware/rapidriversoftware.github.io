@@ -234,6 +234,15 @@ people:
     - title: facebook
       url: https://www.facebook.com/massa1240
 
+- name: Haritha Kotte
+  pic: haritha
+  position: Junior Software Engineer
+  social:
+    - title: github
+      url: https://github.com/harithakotte59
+    - title: linkedin
+      url: https://www.linkedin.com/in/haritha-kotte-55993aa7/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
