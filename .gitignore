@@ -1,5 +1,6 @@
 _site
-
+#rubymine config
+.idea
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
