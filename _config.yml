@@ -1,6 +1,5 @@
 url: http://rrsoft.co
 baseurl: ''
-
 # Site settings
 title: Rapid River Software
 email: info@rrsoft.co
@@ -242,6 +241,14 @@ people:
       url: https://github.com/harithakotte59
     - title: linkedin
       url: https://www.linkedin.com/in/haritha-kotte-55993aa7/
+- name: Gaukhar Yergaleyeva
+  pic: gaukhar
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/G900
+    - title: linkedin
+      url: https://www.linkedin.com/in/yergaleyeva/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
