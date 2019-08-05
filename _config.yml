@@ -249,6 +249,12 @@ people:
       url: https://github.com/G900
     - title: linkedin
       url: https://www.linkedin.com/in/yergaleyeva/
+- name: Ahmed Osman
+  pic: ahmed
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/lucindax
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
