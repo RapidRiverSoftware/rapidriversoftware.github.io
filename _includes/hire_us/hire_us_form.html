@@ -11,37 +11,37 @@
     </div>
     <div class="row hire-us-form-wrapper ">
       <div class="col-lg-12">
-        <form name="projectDetails" id="hireUsForm" novalidate>
+        <form name="projectDetails" id="hireUsForm">
           <div class="row">
             <div class="col-md-6 col-md-offset-3">
               <div class="control-group form-group">
                 <label for="project_name">What is your company or project name?</label>
-                <input type="text" class="form-control" id="project_name" name="project_name">
+                <input type="text" class="form-control" id="project_name" name="project_name" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
                 <label for="client_name">What is your name?</label>
-                <input type="text" class="form-control" id="client_name" name="client_name">
+                <input type="text" class="form-control" id="client_name" name="client_name" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
                 <label for="client_email">What is your email address?</label>
-                <input type="text" class="form-control" id="client_email" name="client_email">
+                <input type="email" class="form-control" id="client_email" name="client_email" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
                 <label for="client_phone">What is your phone number?</label>
-                <input type="text" class="form-control" id="client_phone" name="client_phone">
+                <input type="number" class="form-control" id="client_phone" name="client_phone" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
                 <label for="project_brief">What can Rapid River do for you?</label>
-                <textarea type="text" class="form-control" id="project_brief" name="project_brief"></textarea>
+                <textarea type="text" class="form-control" id="project_brief" name="project_brief" required></textarea>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
                 <label for="referral_point">How did you hear about Rapid River?</label>
-                <input type="text" class="form-control" id="referral_point" name="referral_point">
+                <input type="text" class="form-control" id="referral_point" name="referral_point" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="clearfix"></div>
