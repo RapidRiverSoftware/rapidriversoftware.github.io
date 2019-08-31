@@ -9,34 +9,45 @@
             </h3>
       </div>
     </div>
-    <div class="row hire-us-form-wrapper">
+    <div class="row hire-us-form-wrapper ">
       <div class="col-lg-12">
         <form name="projectDetails" id="hireUsForm" novalidate>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-md-offset-3">
               <div class="control-group form-group">
-                <input type="text" class="form-control" name="project_name" placeholder="What is your company or project name?">
+                <label for="project_name">What is your company or project name?</label>
+                <input type="text" class="form-control" id="project_name" name="project_name">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
-                <input type="text" class="form-control" name="client_name" placeholder="What is your name?">
+                <label for="client_name">What is your name?</label>
+                <input type="text" class="form-control" id="client_name" name="client_name">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
-                <input type="text" class="form-control" name="client_email" placeholder="What is your email address?">
+                <label for="client_email">What is your email address?</label>
+                <input type="text" class="form-control" id="client_email" name="client_email">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
-                <input type="text" class="form-control" name="client_phone" placeholder="What is your phone number?">
+                <label for="client_phone">What is your phone number?</label>
+                <input type="text" class="form-control" id="client_phone" name="client_phone">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
-                <textarea type="text" class="form-control" name="project_brief" placeholder="What can Rapid River do for you?"></textarea>
+                <label for="project_brief">What can Rapid River do for you?</label>
+                <textarea type="text" class="form-control" id="project_brief" name="project_brief"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="control-group form-group">
-                <input type="text" class="form-control" name="referral_point" placeholder="How did you hear about Rapid River?">
+                <label for="referral_point">How did you hear about Rapid River?</label>
+                <input type="text" class="form-control" id="referral_point" name="referral_point">
                 <p class="help-block text-danger"></p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="control-group form-group text-center">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">Send Message</button>
               </div>
             </div>
           </div>
