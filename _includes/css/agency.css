@@ -838,70 +838,40 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
+/* Hire Us Form styles */
+section#hire-us {
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
-    color: #fff;
-}
-
-section#contact .form-group {
+section#hire-us .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+section#hire-us .form-group input,
+section#hire-us .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+section#hire-us .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+section#hire-us .form-group textarea.form-control {
     height: 236px;
+    resize: vertical;
 }
 
-section#contact .form-control:focus {
+section#hire-us .form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact .text-danger {
+section#hire-us .text-danger {
     color: #e74c3c;
 }
+
+/* Footer styles */
 
 footer {
     padding: 25px 0;
