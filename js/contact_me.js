@@ -20,7 +20,7 @@ $(function() {
                 firstName = clientName.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formspree.io/info@rrsoft.co",
+                url: "https://formspree.io/hire-us@rrsoft.co",
                 type: "POST",
                 data: {
                     projectName: projectName,
