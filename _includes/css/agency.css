@@ -314,7 +314,7 @@ header.about-us {
     background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
-header.case-studies {
+header.case-study-post {
     background: linear-gradient( 180deg, rgba(16, 41, 63, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.9) 60%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
@@ -339,7 +339,7 @@ header.careers .intro-text span {
 
 header.careers .intro-image,
 header.about-us .intro-image,
-header.case-studies .intro-image,
+header.case-study-post .intro-image,
 header.blog .intro-image,
 header.hire-us .intro-image {
     display: none;
@@ -352,7 +352,7 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
-header.case-studies .intro-heading {
+header.case-study-post .intro-heading {
     color: #{{ site.data.template.color.secondary-dark }}; 
 }
 
@@ -371,13 +371,13 @@ header .intro-text .intro-heading {
 
     header.careers .container,
     header.about-us .container,
-    header.case-studies .container,
+    header.case-study-post .container,
     header.blog .container,
     header.hire-us .container {
         display: flex;
     }
 
-    header.case-studies .container {
+    header.case-study-post .container {
         flex-direction: column;
         text-align: center;
     }
@@ -413,14 +413,14 @@ header .intro-text .intro-heading {
         padding-bottom: 50px;
     }
 
-    header.case-studies .intro-text {
+    header.case-study-post .intro-text {
         width: 100%;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 50px;
     }
 
-    header.case-studies .intro-heading {
+    header.case-study-post .intro-heading {
         color: white; 
     }
 
@@ -433,7 +433,7 @@ header .intro-text .intro-heading {
         text-align: center;
     }
 
-    header.case-studies .intro-image {
+    header.case-study-post .intro-image {
         display: block;
         padding-top: 200px;
         padding-bottom: 20px;
@@ -457,7 +457,7 @@ header .intro-text .intro-heading {
         width: 100%;
     }
 
-    header.case-studies .intro-image img {
+    header.case-study-post .intro-image img {
         width: 30%;
     }
     
@@ -1089,11 +1089,11 @@ body {
 }
 
  /* Case Study Styles */
-.case-studies .post h2 {
+.case-study-post .post h2 {
     margin-top: 45px;
 }
 
-.case-studies .post p {
+.case-study-post .post p {
     color: #888888;
 }
 
