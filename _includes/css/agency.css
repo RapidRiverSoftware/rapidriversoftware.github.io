@@ -644,7 +644,7 @@ h3.section-subheading {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: 0;
     }
 }
 
@@ -1123,6 +1123,10 @@ body {
 }
 
  /* Case Study Styles */
+.case-studies-page .portfolio-item:nth-child(even) {
+    background-color: #EFEFEF;
+}
+
 .case-study-post .post h2 {
     margin-top: 45px;
 }
