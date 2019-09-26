@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.work %}
+            {% for post in site.case_studies %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     {% if post.status contains 'published' %}
                     <a href="{{ post.url | prepend: site.baseurl }}" class="portfolio-link">
