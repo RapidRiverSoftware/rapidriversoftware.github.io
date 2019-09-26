@@ -314,12 +314,9 @@ header.about-us {
     background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
-header.case-studies {
-    background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
-}
-
+header.case-studies,
 header.case-study-post {
-    background: linear-gradient( 180deg, rgba(16, 41, 63, 0.9) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0.9) 60%, rgba(16, 41, 63, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header.blog {
@@ -348,7 +345,6 @@ header.case-studies .intro-text span {
 header.careers .intro-image,
 header.about-us .intro-image,
 header.case-studies .intro-image,
-header.case-study-post .intro-image,
 header.blog .intro-image,
 header.hire-us .intro-image {
     display: none;
@@ -359,10 +355,6 @@ header .intro-text .intro-lead-in {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     line-height: 22px;
-}
-
-header.case-study-post .intro-heading {
-    color: #{{ site.data.template.color.secondary-dark }}; 
 }
 
 header .intro-text .intro-heading {
@@ -381,15 +373,9 @@ header .intro-text .intro-heading {
     header.careers .container,
     header.about-us .container,
     header.case-studies .container,
-    header.case-study-post .container,
     header.blog .container,
     header.hire-us .container {
         display: flex;
-    }
-
-    header.case-study-post .container {
-        flex-direction: column;
-        text-align: center;
     }
 
     header .intro-text {
@@ -409,8 +395,11 @@ header .intro-text .intro-heading {
         display: block;
     }
 
-    header.careers-post .intro-text {
+    header.careers-post .intro-text,
+    header.case-study-post .intro-text {
         width: 100%;
+        padding-top: 200px;
+        padding-bottom: 50px;
     }
 
     header.home .intro-text {
@@ -420,27 +409,10 @@ header .intro-text .intro-heading {
     
     header.careers .intro-text,
     header.about-us .intro-text,
-    header.case-studies .intro-text,
     header.blog .intro-text,
     header.hire-us .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
-    }
-
-    header.careers-post .intro-text {
-        padding-top: 200px;
-        padding-bottom: 50px;
-    }
-
-    header.case-study-post .intro-text {
-        width: 100%;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 50px;
-    }
-
-    header.case-study-post .intro-heading {
-        color: white; 
     }
 
     header.careers .intro-image,
@@ -456,12 +428,6 @@ header .intro-text .intro-heading {
         display: block;
         width: 50%;
         text-align: right;
-    }
-
-    header.case-study-post .intro-image {
-        display: block;
-        padding-top: 200px;
-        padding-bottom: 20px;
     }
 
     header.careers .intro-image {
@@ -491,10 +457,6 @@ header .intro-text .intro-heading {
         width: 90%;
     }
 
-    header.case-study-post .intro-image img {
-        width: 30%;
-    }
-    
     header.blog .intro-image img {
         padding-top: 200px;
         padding-bottom: 200px;
