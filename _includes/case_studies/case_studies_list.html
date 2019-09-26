@@ -1,6 +1,6 @@
 <!-- Case studies Section -->
 <div id="portfolio" class="portfolio">
-{% for post in site.work %}
+{% for post in site.case_studies %}
     <section class="portfolio-item">
         <div class="container">
             <div class="row">
@@ -10,7 +10,7 @@
                         <img src="/img/case-studies/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                     </a>
                     {% else %}
-                    <a href="#work" class="portfolio-link">
+                    <a href="javascript:void(0)" class="portfolio-link">
                         <img src="/img/case-studies/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                     </a>
                     {% endif %}
