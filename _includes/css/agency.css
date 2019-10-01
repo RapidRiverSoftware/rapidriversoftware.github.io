@@ -409,6 +409,7 @@ header .intro-text .intro-heading {
     
     header.careers .intro-text,
     header.about-us .intro-text,
+    header.case-studies .intro-text,
     header.blog .intro-text,
     header.hire-us .intro-text {
         padding-top: 200px;
