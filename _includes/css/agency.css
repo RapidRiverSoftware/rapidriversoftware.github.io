@@ -962,6 +962,46 @@ img.case-study-product {
     max-width: 100%;
 }
 
+.case-study-photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.case-study-photo-grid img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .case-study-photo-grid {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+/* Homepage Case Studies CTA */
+.work .flex-row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.work .flex-row .flex-column {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .work .flex-row {
+        flex-direction: row;
+    }
+
+    .work .flex-row .flex-column {
+        width: 50%;
+    }
+}
+
 /* Blog Styles */
 .subscribe {
     text-align: center;
