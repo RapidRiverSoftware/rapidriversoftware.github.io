@@ -1,13 +1,13 @@
 <!-- Case studies Section -->
-<div id="portfolio" class="portfolio">
+<div id="projects" class="projects">
 {% for post in site.case_studies %}
-    <section class="portfolio-item">
+    <section class="project-item">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     {% if post.status contains 'published' %}
                     <div class="col-md-6">
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="portfolio-link">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
                             <img src="/img/case-studies/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                         </a>
                     </div>
@@ -18,7 +18,7 @@
                     </div>
                     {% else %}
                     <div class="col-md-6">
-                        <a href="javascript:void(0)" class="portfolio-link">
+                        <a href="javascript:void(0)" class="project-link">
                             <img src="/img/case-studies/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                         </a>
                     </div>

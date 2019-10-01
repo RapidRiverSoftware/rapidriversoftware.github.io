@@ -17,12 +17,13 @@
             </div>
         </header>
         <div class="container post">
+            <img class="case-study-product" src="/img/case-studies/{{page.product-img}}" />
             <hr class="star-primary">
             {{ content | markdownify }}
             <hr class="star-primary">
             <ul class="list-inline item-details">
                 <li>Client:
-                    <strong><a href="{{post.project-url}}">{{ page.client }}</a>
+                    <strong><a href="{{page.project-url}}" target="_blank" rel="noopener noreferrer">{{ page.client }}</a>
                     </strong>
                 </li>
                 <li>Technology:
@@ -30,7 +31,7 @@
                 </li>
             </ul>
             <hr class="star-primary">
-            <a href="/" type="button" class="btn btn-primary">Go back to homepage</a>
+            <a href="/case_studies/#projects" type="button" class="btn btn-primary">Go back to case studies</a>
         </div>
     </div>
 

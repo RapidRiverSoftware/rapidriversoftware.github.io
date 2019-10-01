@@ -3,6 +3,7 @@ title: Full Slate - Rails Upgrade
 subtitle: Upgraded from Rails 2 to Rails 5
 layout: work_post
 img: fullslate.png
+product-img: fullslate-product.png
 thumbnail: fullslate-thumbnail.png
 alt: image-alt
 client: Full Slate
@@ -12,7 +13,7 @@ project-url: https://www.fullslate.com/
 status: published
 ---
 
-Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
+###### Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
 
 ## The Problem
 
@@ -29,6 +30,10 @@ We found that the upgrade roadmap itself would be fairly straight-forward (we'd 
 For testing, the QA team we were working with planned to concurrently build out a manual testing process (to be replaced by a Selenium-based automated suite later), meaning that we could rely on them to provide regular test runs covering all major app functionality. The existing test suite provided unit test coverage of some core features. We decided that ensuring the existing test suite passed, plus relying on the QA team to perform walk-throughs of the app on staging environments, would provide sufficient test coverage.
 
 We did however anticipate that many errors would be encountered during testing on staging environments, so we decided early on to add [Rollbar](https://rollbar.com/) to the project, and to act on items as they came in. This proved to be a very effective way of detecting and fixing problems introduced by the upgrade at all stages of the project.
+
+<div class="client-quote">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar scelerisque purus. Sed pharetra tempor est quis ultricies. Vestibulum ut tellus tortor. Etiam lacinia libero id enim porttitor scelerisque. Ut eget nisl et risus aliquam tempor. Aliquam et risus a ante tempus viverra a eget nisl. Praesent congue magna non scelerisque convallis.
+</div>
 
 ## Some App-Specific Trickiness
 
