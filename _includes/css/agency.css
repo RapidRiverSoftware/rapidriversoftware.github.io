@@ -1055,6 +1055,16 @@ img.case-study-product {
     color: #{{ site.data.template.color.primary }};
 }
 
+.blog img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .blog img {
+        width: auto;
+    }
+}
+
 /* Icon Styles */
 .icon {
     width: 60px;
