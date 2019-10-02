@@ -948,7 +948,7 @@ img.case-study-product {
 .client-quote::after {
     content: '';
     position: absolute;
-    left: -40px;
+    left: 37%;
     bottom: -40px;
     width: 80px;
     height: 80px;
@@ -980,6 +980,16 @@ img.case-study-product {
     .case-study-photo-grid {
         width: 100%;
         margin-top: 0px;
+    }
+
+    .client-quote::after {
+        left: -10px;
+    }
+}
+
+@media(min-width: 770px) {
+    .client-quote::after {
+        left: -40px;
     }
 }
 
