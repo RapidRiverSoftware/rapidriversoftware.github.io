@@ -130,7 +130,7 @@ fieldset[disabled] .btn-xl.active {
     color: transparent;
     font-size: 0;
     line-height: 0;
-    // background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0;
+    background: url('../img/logos/rrs-white.png') no-repeat 0 0;
     background-size: 80%;
 }
 
@@ -213,7 +213,7 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        // background: url('{{ site.baseurl }}/img/logos/rrs.png') no-repeat 0 0; 
+        background: url('../img/logos/rrs.png') no-repeat 0 0; 
         background-size: 100%;
     }
 
@@ -228,7 +228,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        // background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0; 
+        background: url('../img/logos/rrs-white.png') no-repeat 0 0; 
         background-size: 100%;
     }
 
@@ -249,29 +249,29 @@ header {
 }
 
 header.home {
-    // background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.jpg');
 }
 
 header.careers,
 header.careers-post {
-    // background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
 header.about-us {
-    // background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
 header.case-studies,
 header.case-study-post {
-    // background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
 }
 
 header.blog {
-    // background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
 header.hire-us {
-    // background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
@@ -900,7 +900,7 @@ img.case-study-product {
     width: 80px;
     height: 80px;
     /* background-color: white; */
-    // background-image: url('{{ site.baseurl }}/img/case-studies/clients/default.png');
+    background-image: url('../img/case-studies/clients/default.png');
     background-size: cover;
     border-radius: 80px;
     border: 3px solid #ecf0f1;
