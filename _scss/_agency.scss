@@ -17,12 +17,12 @@
 }
 
 .btn-primary {
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
     text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #0081df;
 }
 
 .btn-primary:hover,
@@ -30,9 +30,9 @@
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
     color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #1d94ea;
 }
 
 .btn-primary:active,
@@ -56,25 +56,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
+    background-color: #0081df;
 }
 
 .btn-primary .badge {
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 15px 35px;
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #0081df;
 }
 
 .btn-xl:hover,
@@ -82,9 +82,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
     color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #1d94ea;
 }
 
 .btn-xl:active,
@@ -108,18 +108,18 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
+    background-color: #0081df;
 }
 
 .btn-xl .badge {
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
     background-color: #fff;
 }
 
 .navbar-default {
     border-color: transparent;
-    background-color: #{{ site.data.template.color.secondary-dark }};
+    background-color: #10293f;
 }
 
 .navbar-default .navbar-brand {
@@ -130,7 +130,7 @@ fieldset[disabled] .btn-xl.active {
     color: transparent;
     font-size: 0;
     line-height: 0;
-    background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0;
+    // background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0;
     background-size: 80%;
 }
 
@@ -145,8 +145,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
+    background-color: #0081df;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -155,12 +155,12 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #0081df;
 }
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -169,18 +169,18 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: {{ site.data.template.font.primary }};
+    color: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
     background-color: transparent;
 }
 
@@ -213,22 +213,22 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        background: url('{{ site.baseurl }}/img/logos/rrs.png') no-repeat 0 0; 
+        // background: url('{{ site.baseurl }}/img/logos/rrs.png') no-repeat 0 0; 
         background-size: 100%;
     }
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
-        color: #{{ site.data.template.color.primary }}
+        color: #0081df;
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #{{ site.data.template.color.secondary-dark }};
+        background-color: #10293f;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0; 
+        // background: url('{{ site.baseurl }}/img/logos/rrs-white.png') no-repeat 0 0; 
         background-size: 100%;
     }
 
@@ -249,29 +249,29 @@ header {
 }
 
 header.home {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
+    // background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('{{ site.baseurl }}/img/header-bg.jpg');
 }
 
 header.careers,
 header.careers-post {
-    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    // background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header.about-us {
-    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    // background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header.case-studies,
 header.case-study-post {
-    background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    // background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header.blog {
-    background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    // background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header.hire-us {
-    background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
+    // background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('{{ site.baseurl }}/img/shared/texture-dark-mosaic.png');
 }
 
 header .intro-text {
@@ -299,14 +299,14 @@ header.hire-us .intro-image {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
     font-size: 16px;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     font-size: 36px;
     font-weight: 700;
     line-height: 50px;
@@ -422,14 +422,14 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.secondary }};
+        font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
         font-size: 16px;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        font-family: {{ site.data.template.font.primary }};
+        font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
         font-size: 42px;
         font-weight: 700;
         line-height: 60px;
@@ -460,7 +460,7 @@ section h3.section-subheading,
 h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -730,7 +730,7 @@ section#hire-us .form-group textarea.form-control {
 }
 
 section#hire-us .form-control:focus {
-    border-color: #{{ site.data.template.color.primary }};
+    border-color: #0081df;
     box-shadow: none;
 }
 
@@ -746,7 +746,7 @@ footer {
 }
 
 footer span.copyright {
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     line-height: 40px; 
     font-size: x-small;
 }
@@ -755,7 +755,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
     line-height: 40px;
 }
 
@@ -767,7 +767,7 @@ footer div.company-info p {
 
 @media(min-width:768px) {
     footer span.copyright {
-        font-family: {{ site.data.template.font.primary }};
+        font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
         line-height: 40px;
     }
 
@@ -790,7 +790,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #{{ site.data.template.color.secondary-dark }};
+    background-color: #10293f;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -799,7 +799,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #0081df;
 }
 
 .btn:focus,
@@ -811,13 +811,13 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #0081df;
     color: white;
 }
 
 ::selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #0081df;
     color: white;
 }
 
@@ -830,7 +830,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+    webkit-tap-highlight-color: #0081df;
 }
 
 .full-page {
@@ -900,7 +900,7 @@ img.case-study-product {
     width: 80px;
     height: 80px;
     /* background-color: white; */
-    background-image: url('{{ site.baseurl }}/img/case-studies/clients/default.png');
+    // background-image: url('{{ site.baseurl }}/img/case-studies/clients/default.png');
     background-size: cover;
     border-radius: 80px;
     border: 3px solid #ecf0f1;
@@ -987,11 +987,11 @@ img.case-study-product {
 }
 
 .blog.posts h3 a {
-    color: #{{ site.data.template.color.secondary-dark }};
+    color: #10293f;
 }
 
 .blog.posts h3 a:hover {
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
 }
 
 .blog.posts p {
@@ -999,7 +999,7 @@ img.case-study-product {
 }
 
 .blog.posts p.meta {
-    color: #{{ site.data.template.color.primary }};
+    color: #0081df;
 }
 
 .blog img {

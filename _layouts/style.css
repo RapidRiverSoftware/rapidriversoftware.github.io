@@ -1,7 +1,1 @@
-{% include css/bootstrap.min.css %}
-{% include css/base.scss %}
-{% include css/agency.scss %}
-{% include css/page.scss %}
-{% include css/about_instagram.scss %}
-{% include css/rrsoft.scss %}
 {{ content }}
