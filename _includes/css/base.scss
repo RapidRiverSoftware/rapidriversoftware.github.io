@@ -1,0 +1,52 @@
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #{{ site.data.template.color.secondary-dark }};
+}
+
+.text-muted {
+  color: #{{ site.data.template.color.muted }};
+}
+
+.text-primary {
+  color: #{{ site.data.template.color.primary }};
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+}
+
+a {
+  color: #{{ site.data.template.color.primary }};
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #{{ site.data.template.color.secondary }};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: {{ site.data.template.font.primary }};
+  font-weight: 700;
+}
