@@ -1,0 +1,139 @@
+/* Navbar Styles */
+.navbar-default {
+  border-color: transparent;
+  background-color: #10293f;
+}
+
+.navbar-default .navbar-brand {
+  width: 220px;
+  height: 35px;
+  margin-top: 16px;
+  margin-left: 10px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  background: url('../img/logos/rrs-white.png') no-repeat 0 0;
+  background-size: 80%;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+}
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #0081df;
+  background-color: #0081df;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0081df;
+}
+
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: #0081df;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #0081df;
+  background-color: transparent;
+}
+
+.navbar-transparent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media(min-width:768px) {
+  .navbar {
+      border-radius: 0px;
+  }
+
+  .navbar-default {
+      padding: 25px 0;
+      border: 0;
+      background-color: transparent;
+      -webkit-transition: padding .3s;
+      -moz-transition: padding .3s;
+      transition: padding .3s;
+  }
+
+  .navbar-default .navbar-brand {
+      width: 220px;
+      font-size: 2em;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+      background: url('../img/logos/rrs.png') no-repeat 0 0; 
+      background-size: 100%;
+  }
+
+  .navbar-default .navbar-nav>.active>a {
+      border-radius: 3px;
+      color: #0081df;
+  }
+
+  .navbar-default.navbar-shrink {
+      padding: 10px 0;
+      background-color: #10293f;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+      background: url('../img/logos/rrs-white.png') no-repeat 0 0; 
+      background-size: 100%;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+      font-size: 1.5em;
+  }
+}
+
+
+
+
+.navbar--main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #10293f;
+}
+
+@media(min-width:768px) {
+  .navbar--main {
+    background-color: transparent;
+  }
+}
