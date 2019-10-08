@@ -11,6 +11,9 @@ collections:
   case_studies:
     output: true
 
+sass:
+  sass_dir: _scss
+
 # Team names, titles and social links
 people:
 - name: Calum Halcrow

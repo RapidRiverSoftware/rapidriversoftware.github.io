@@ -1,15 +1,15 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #{{ site.data.template.color.secondary-dark }};
+  color: #10293f;
 }
 
 .text-muted {
-  color: #{{ site.data.template.color.muted }};
+  color: #888888;
 }
 
 .text-primary {
-  color: #{{ site.data.template.color.primary }};
+  color: #0081df;
 }
 
 p {
@@ -30,14 +30,14 @@ a.active {
 }
 
 a {
-  color: #{{ site.data.template.color.primary }};
+  color: #0081df;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #{{ site.data.template.color.secondary }};
+  color: #1d94ea;
 }
 
 h1,
@@ -47,6 +47,6 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-family: {{ site.data.template.font.primary }};
+  font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
   font-weight: 700;
 }
