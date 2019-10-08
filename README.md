@@ -15,6 +15,14 @@ You may find [reading about Jekyll](https://jekyllrb.com) will help also.
 
 Please open a PR and assign it to Calum for review.
 
+## Quick Guides
+This section provides a summary of the ways different types of content can be added.
+
+### Creating a page
+1. Add your new page in the `/pages` directory
+2. Make sure to set the `permalink` of the page in the frontmatter
+3. Add the page link to the top navigation
+
 ### To create a blog post:
 
 1. Copy an existing post in the `blog/_posts` directory, edit the file name and "front matter" accordingly.
