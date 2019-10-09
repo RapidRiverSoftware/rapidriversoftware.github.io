@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato|Montserrat:400,700|Roboto+Slab:400,700&display=swap');
+
+/* Variables */
+$primary-font: 'Montserrat', "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif';
+$secondary-font: 'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; 
+$tertiary-font: 'Droid Serif', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+/* Base Site Styles */
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: $secondary-font;
   color: #10293f;
 }
 
@@ -47,6 +55,6 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+  font-family: $primary-font;
   font-weight: 700;
 }

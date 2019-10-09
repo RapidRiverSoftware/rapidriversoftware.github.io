@@ -19,7 +19,7 @@
 .btn-primary {
     border-color: #0081df;
     text-transform: uppercase;
-    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-family: $primary-font;
     font-weight: 700;
     color: #fff;
     background-color: #0081df;
@@ -70,7 +70,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #0081df;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-family: $primary-font;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -179,14 +179,14 @@ header.hire-us .intro-image {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
+    font-family: $tertiary-font;
     font-size: 16px;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-family: $primary-font;
     font-size: 36px;
     font-weight: 700;
     line-height: 50px;
@@ -302,14 +302,14 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
+        font-family: $tertiary-font;
         font-size: 16px;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+        font-family: $primary-font;
         font-size: 42px;
         font-weight: 700;
         line-height: 60px;
@@ -340,7 +340,7 @@ section h3.section-subheading,
 h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
+    font-family: $tertiary-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -626,7 +626,7 @@ footer {
 }
 
 footer span.copyright {
-    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-family: $primary-font;
     line-height: 40px; 
     font-size: x-small;
 }
@@ -635,7 +635,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-family: $primary-font;
     line-height: 40px;
 }
 
@@ -647,7 +647,7 @@ footer div.company-info p {
 
 @media(min-width:768px) {
     footer span.copyright {
-        font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+        font-family: $primary-font;
         line-height: 40px;
     }
 
@@ -759,7 +759,7 @@ img.case-study-product {
 
 .case-studies h6 {
     font-size: 21px;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $secondary-font;
     font-weight: normal;
     line-height: 160%;
     text-transform: none;
