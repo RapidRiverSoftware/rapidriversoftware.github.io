@@ -10,8 +10,24 @@
   background-color: #10293f;
 }
 
+.nav--link {
+  color: white;
+  font-family: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  background-color: #0081df;
+}
+
 @media(min-width:768px) {
   .navbar--main {
     background-color: transparent;
+  }
+
+  .nav--link {
+    padding: 10px 15px;
   }
 }
