@@ -1,0 +1,58 @@
+body.page .post {
+  margin-bottom: 4em;
+}
+
+body.page .post h1,
+body.page .wide-post h1 {
+  margin: 2em 0 1em;
+  text-align: center;
+  text-transform: none;
+}
+
+body.page .post p.meta {
+  margin: 2em;
+  text-align: center;
+}
+
+body.page .post h2 {
+  text-transform: none;
+}
+body.page .post h3 {
+  line-height: 2;
+  font-size: 18px;
+  text-transform: none;
+}
+
+body.page .post p,
+body.page .post ul {
+  font-size: 16px;
+  line-height: 2;
+  margin: 1em 0;
+}
+body.page .post ul ul {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  body.page .post {
+      padding: 0 12em;
+  }
+}
+
+#about h4 a {
+  color: white;
+}
+
+dl {
+  font-size: 16px;
+  margin-left: 40px;
+}
+dl dt {
+  display: list-item;
+  font-weight: normal;
+}
+dl dd {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}

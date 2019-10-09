@@ -128,14 +128,19 @@ section h2.section-heading {
     text-transform: capitalize;
 }
 
-section h3.section-subheading,
-h3.section-subheading {
+.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: $tertiary-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+}
+
+@media(min-width:768px) {
+    .section-subheading {
+        margin: 0 auto;
+    }
 }
 
 @media(min-width:768px) {
