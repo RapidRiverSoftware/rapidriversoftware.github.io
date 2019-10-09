@@ -23,7 +23,7 @@ In this post we'll explain how we re-architected and migrated the search.usa.gov
 
 In the prior search.usa.gov datacenters - one in Chicago and one in Virgina - we had a pools of high-powered Dell "pizza box" servers running a mishmosh of services in a composition that had been tuned to the observed traffic patterns of search.usa.gov:
 
-![Old Datacenter Network Diagram](/img/posts/old_datacenter_network_diagram.png)
+![Old Datacenter Network Diagram](/assets/img/posts/old_datacenter_network_diagram.png)
 
 The layout of services across the servers didn't seem to have much rhyme or reason. The fact that these were physical, pizza-box servers that were expensive to add and difficult to push through the security update process had led to the barnacle-like accumulations of services on servers over time.
 
@@ -55,7 +55,7 @@ We also migrated our database services (MySQL and Redis) with the hosted AWS equ
 
 With all of these pieces in place we were able to build out the following architecture in AWS:
 
-![AWS Network Diagram](/img/posts/aws_network_diagram.png)
+![AWS Network Diagram](/assets/img/posts/aws_network_diagram.png)
 
 The key thing to note about this architecture is that it has four new characteristics that our old environment did not:
 

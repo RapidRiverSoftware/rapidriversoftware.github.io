@@ -23,7 +23,7 @@ We knew we wanted to make use of a [multi-domain Subject Alternative Name](https
 * the certificate authority sends the certificate to the hosting provider
 * the hosting provider replaces our certificate with the new one and notifies us
 
-![previous certificate process](/img/posts/ssl_certificate_process_before.png)
+![previous certificate process](/assets/img/posts/ssl_certificate_process_before.png)
 
 [Let's Encrypt](https://letsencrypt.org/) offers an automated process for obtaining and renewing SSL certificates -- including SAN SSL certificates for up to 100 domains -- as long as you can prove to them that you control any domain that's included in a requested certificate. Given that we wanted to be able to quickly offer HTTPS support to new or existing "masked" domain customers, this automation seemed very promising to us. The fact that Let's Encrypt is a free service made it all the more compelling. So we set ourselves about the task of making sure we could always prove our ownership of the `search.usa.gov` domain as well as "masked" customer domains while keeping the site available for customer use at all times.
 
@@ -68,7 +68,7 @@ Roughly following the [Domain Validation example](https://letsencrypt.org/how-it
 
 This reduces the convoluted many-party, multi-step process to one that involves only three parties. Since one of these parties, Let's Encrypt, is automated, this reduces the entire process time from weeks to minutes.
 
-![new certificate process](/img/posts/ssl_certificate_process_after.png)
+![new certificate process](/assets/img/posts/ssl_certificate_process_after.png)
 
 ## HTTP Domain Validation in a Multi-app-server Environment
 
@@ -83,7 +83,7 @@ The solution to running Certbot in a multi-server environment stems from the fac
 </Location>
 ```
 
-![let's encrypt and customer requests](/img/posts/lets_encrypt_and_customer_requests.png)
+![let's encrypt and customer requests](/assets/img/posts/lets_encrypt_and_customer_requests.png)
 
 This guarantees that Domain Validation requests go to our Certbot host and all other traffic goes to our pool of application servers. We set up all our proxy EC2 application servers with these special `<Location>` blocks as well as all of the application servers in the old hosting environment (not shown in the diagram). So whether the Let's Encrypt CA issues a Domain Validation request for a domain that was still being handled by the old hosting environment or a domain that was being handled by the new AWS hosting environment, we were guaranteed that the request would eventually get proxied to the host that's running Certbot.
 
