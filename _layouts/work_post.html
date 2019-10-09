@@ -22,10 +22,24 @@
             {{ content | markdownify }}
             <hr class="star-primary">
             <ul class="list-inline item-details">
+<<<<<<< HEAD
                 <li>Tags: </li>
                 {% for tag in page.tags %}
                 <li class="list-inline-item text-muted">
                     <span>{{ tag }}</span>
+=======
+                <li class="list-inline-item">Client:
+                    <strong><a href="{{page.project-url}}" target="_blank" rel="noopener noreferrer">{{ page.client }}</a>
+                    </strong>
+                </li>
+<<<<<<< HEAD
+                <li>Tags:
+                    {{ page.tags }}
+=======
+                <li class="list-inline-item">Technology:
+                    {{ page.tech }}
+>>>>>>> Remove deprecated `.hidden` class
+>>>>>>> Remove deprecated `.hidden` class
                 </li>
                 {% endfor %}
             </ul>
