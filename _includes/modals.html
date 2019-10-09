@@ -25,17 +25,17 @@
                         <div class="modal-body">
                             <!-- <h1 class="text-center">{{ post.title }}</h1> -->
                             <hr class="star-primary">
-                            <!-- <img src="/assets/img/case-studies/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
+                            <!-- <img src="/assets/img/case-studies/{{ post.img }}" class="img-fluid rounded-circle" alt="{{ post.alt }}"> -->
                             <div class="case-study-content">
                             {{ post.content }}
                             </div>
                             <hr class="star-primary">
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li class="list-inline-item">Client:
                                     <strong><a href="{{post.project-url}}">{{ post.client }}</a>
                                     </strong>
                                 </li>
-                                <li>Tags:
+                                <li class="list-inline-item">Tags:
                                     {{ post.tags }}
                                 </li>
                             </ul>
