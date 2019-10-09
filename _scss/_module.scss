@@ -91,6 +91,10 @@ Header Styles
   background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
+.header--services {
+  background: linear-gradient( 45deg, rgba(121, 69, 200, 0.9) 0%, rgba(2, 248, 174, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
+}
+
 .header--intro-text {
   width: 100%;
   padding-top: 100px;
@@ -134,12 +138,17 @@ Header Styles
       padding-top: 300px;
       padding-bottom: 200px;
   }
+
+  .header--services .header--intro-text {
+    width: 50%;
+}
   
   .header--careers .header--intro-text,
   .header--about-us .header--intro-text,
   .header--case-studies .header--intro-text,
   .header--blog .header--intro-text,
-  .header--hire-us .header--intro-text {
+  .header--hire-us .header--intro-text,
+  .header--services .header--intro-text {
       padding-top: 200px;
       padding-bottom: 200px;
   }
@@ -157,6 +166,8 @@ Header Styles
       display: block;
       width: 50%;
       text-align: right;
+      padding-top: 250px;
+      padding-bottom: 200px;
   }
 
   .header--careers .intro-image {
@@ -169,10 +180,13 @@ Header Styles
       padding-bottom: 150px;
   }
 
-  .header--case-studies .intro-image {
-      padding-top: 250px;
-      padding-bottom: 200px;
-  }
+  .header--services .intro-image {
+    display: block;
+    width: 50%;
+    text-align: right;
+    padding-top: 250px;
+    padding-bottom: 200px;
+}
 
   .header--careers .intro-image img {
       width: 42%;
@@ -186,11 +200,19 @@ Header Styles
       width: 90%;
   }
 
+  .header--services .intro-image img {
+    width: 90%;
+}
+
   .header--blog .intro-image img {
       padding-top: 200px;
       padding-bottom: 200px;
       width: 90%;
   }
+
+  .header--services .intro-image img {
+    width: 90%;
+}
 
   .header--hire-us .intro-image {
       padding-top: 225px;
