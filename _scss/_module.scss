@@ -1,4 +1,8 @@
-/* Navbar Styles */
+/* 
+*************************************************
+Navbar Styles
+************************************************* 
+*/
 
 .navbar--main {
   position: absolute;
@@ -29,5 +33,186 @@
 
   .nav--link {
     padding: 10px 15px;
+  }
+}
+
+
+/*
+*************************************************
+Header Styles
+*************************************************
+*/
+.line-breaker {
+  display: inline;
+}
+
+@media(min-width:768px) {
+  .line-breaker {
+    display: block;
+  } 
+}
+
+
+.header {
+  position: relative;
+  color: #fff;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header--home {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.jpg');
+}
+
+.header--careers,
+.header--careers-post {
+  background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
+}
+
+.header--about-us {
+  background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
+}
+
+.header--case-studies,
+.header--case-study-post {
+  background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
+}
+
+.header--blog {
+  background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
+}
+
+.header--hire-us {
+  background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
+}
+
+.header--intro-text {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.header--intro-lead-in {
+  margin-bottom: 25px;
+  font-family: $tertiary-font;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.header--intro-heading {
+  margin-bottom: 25px;
+  font-family: $primary-font;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+@media(min-width:768px) {
+  .header--intro-text {
+      width: 60%;
+      text-align: left;
+  }
+
+  .header--case-studies .header--intro-text {
+      width: 50%;
+  }
+
+  .header--careers-post .header--intro-text,
+  .header--case-study-post .header--intro-text {
+      width: 100%;
+      padding-top: 200px;
+      padding-bottom: 50px;
+  }
+
+  .header--home .header--intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+  }
+  
+  .header--careers .header--intro-text,
+  .header--about-us .header--intro-text,
+  .header--case-studies .header--intro-text,
+  .header--blog .header--intro-text,
+  .header--hire-us .header--intro-text {
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+
+  .header--careers .intro-image,
+  .header--about-us .intro-image,
+  .header--blog .intro-image,
+  .header--hire-us .intro-image {
+      display: block;
+      width: 40%;
+      text-align: center;
+  }
+
+  .header--case-studies .intro-image {
+      display: block;
+      width: 50%;
+      text-align: right;
+  }
+
+  .header--careers .intro-image {
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+
+  .header--about-us .intro-image {
+      padding-top: 225px;
+      padding-bottom: 150px;
+  }
+
+  .header--case-studies .intro-image {
+      padding-top: 250px;
+      padding-bottom: 200px;
+  }
+
+  .header--careers .intro-image img {
+      width: 42%;
+  }
+
+  .header--about-us .intro-image img {
+      width: 100%;
+  }
+
+  .header--case-studies .intro-image img {
+      width: 90%;
+  }
+
+  .header--blog .intro-image img {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      width: 90%;
+  }
+
+  .header--hire-us .intro-image {
+      padding-top: 225px;
+      padding-bottom: 150px;
+  }
+
+  .header--hire-us .intro-image img {
+      width: 100%;
+  }
+
+  .header--intro-lead-in {
+      margin-bottom: 25px;
+      font-family: $tertiary-font;
+      font-size: 16px;
+      line-height: 40px;
+  }
+
+  .header--intro-heading {
+      margin-bottom: 50px;
+      font-family: $primary-font;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 60px;
   }
 }
