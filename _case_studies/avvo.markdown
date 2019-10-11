@@ -7,7 +7,7 @@ thumbnail: avvo-thumbnail.png
 slug: avvo
 alt: image-alt
 client: Avvo
-tech: Ruby
+tags: Ruby
 description: Avvo provides an easier way to find a lawyer. The Rapid River team was responsible for building the new global nav. 
 project-url: https://www.avvo.com/
 status: draft
