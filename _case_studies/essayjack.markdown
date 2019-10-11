@@ -29,17 +29,17 @@ A design firm called Digital Natives were brought in at this point to design a b
 
 The re-design of the frontend was an intense period of development for us, carried out over a four month period. We turned off access to the old app once EssayJack users were comfortably using the new app. Thus bidding farewell to the beta phase of the project.
 
-
+<!-- 
 <div class="client-quote">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar scelerisque purus. Sed pharetra tempor est quis ultricies. Vestibulum ut tellus tortor. Etiam lacinia libero id enim porttitor scelerisque. Ut eget nisl et risus aliquam tempor. Aliquam et risus a ante tempus viverra a eget nisl. Praesent congue magna non scelerisque convallis.
-</div>
+</div> -->
 
 ## Against the Clock
 The desired delivery date for the new frontend was rather tight. In order to meet it we decided to get creative with our internal team structure. We temporarily expanded our team by adding developers who could write React components. This allowed us to ship on the timeline that EssayJack wanted.
 
-<div class="client-quote">
+<!-- <div class="client-quote">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar scelerisque purus. Sed pharetra tempor est quis ultricies. Vestibulum ut tellus tortor. Etiam lacinia libero id enim porttitor scelerisque. Ut eget nisl et risus aliquam tempor. Aliquam et risus a ante tempus viverra a eget nisl. Praesent congue magna non scelerisque convallis.
-</div>
+</div> -->
 
 ## The Outcome
 Getting the app stable was instrumental in keeping EssayJack users engaged. The new front-end allowed the EssayJack team to push sales and marketing a lot harder. It looked modern and stylish, and worked a whole lot better as it fixed many performance issues that simply could not be addressed in the old app.

@@ -31,9 +31,9 @@ For testing, the QA team we were working with planned to concurrently build out 
 
 We did however anticipate that many errors would be encountered during testing on staging environments, so we decided early on to add [Rollbar](https://rollbar.com/) to the project, and to act on items as they came in. This proved to be a very effective way of detecting and fixing problems introduced by the upgrade at all stages of the project.
 
-<div class="client-quote">
+<!-- <div class="client-quote">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar scelerisque purus. Sed pharetra tempor est quis ultricies. Vestibulum ut tellus tortor. Etiam lacinia libero id enim porttitor scelerisque. Ut eget nisl et risus aliquam tempor. Aliquam et risus a ante tempus viverra a eget nisl. Praesent congue magna non scelerisque convallis.
-</div>
+</div> -->
 
 ## Some App-Specific Trickiness
 
