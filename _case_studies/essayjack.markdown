@@ -25,7 +25,7 @@ The next order of business was stabilize the product. This stabilization process
 
 With a reliable test suite in place, we began refactoring. The first major area we tackled was the template editor. Rebuilding this key feature was a crucial step in moving the product into a phase where it was open for extension. The refactoring put us in a good place for a front-end revamp to be considered.
 
-A design firm called Digital Natives were brought in at this point to design a brand new app for EssayJack. Our goal was to bring this reimagined EssayJack to life. The complex essay editor had a lot of moving parts, so we needed a solution that would give us a way to manage state and provide us with a view layer. We went with React.
+A design firm called <a href="http://d-n.io/essayjack/" target="_blank" rel="noopener noreferrer">Digital Natives</a> were brought in at this point to design a brand new app for EssayJack. Our goal was to bring this reimagined EssayJack to life. The complex essay editor had a lot of moving parts, so we needed a solution that would give us a way to manage state and provide us with a view layer. We went with React.
 
 The re-design of the frontend was an intense period of development for us, carried out over a four month period. We turned off access to the old app once EssayJack users were comfortably using the new app. Thus bidding farewell to the beta phase of the project.
 
