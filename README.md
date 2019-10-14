@@ -37,6 +37,6 @@ This section provides a summary of the ways different types of content can be ad
 
 ### Creating case-study item:
 1. Copy an existing post in the `_case_studies/` directory, edit the file name and "front matter" accordingly
-2. Create an `img` and a `thumbnail` for the new case study item in the `img/case-studies` directory
+2. Create an `img` and a `thumbnail` for the new case study item in the `assets/img/case-studies` directory
 3. Review in the browser when done
 4. Open a PR
