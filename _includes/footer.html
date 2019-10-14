@@ -1,23 +1,24 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <span class="copyright">Copyright &copy; {{ site.title }} 2016-2019</span>
-                </div>
-                <div class="col-md">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li class="list-inline-item">
-                            <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md company-info">
-                    <p><strong>Telephone:</strong> +60 3 2242 0689</p>
-                    <p><strong>Office address:</strong><br>
-                    Unit 25-02 Tower A The Vertical Business Suites<br>Avenue 3 Bangsar South City, No. 8 Jalan Kerinchi<br>59200 Kuala Lumpur, Malaysia</p>
-                </div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <span class="copyright">Copyright &copy; {{ site.title }} 2016-2019</span>
+            </div>
+            <div class="col-md">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li class="list-inline-item">
+                        <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md company-info">
+                <p><strong>Telephone:</strong> +60 3 2242 0689</p>
+                <p><strong>Office address:</strong><br>
+                    Unit 25-02 Tower A The Vertical Business Suites<br>Avenue 3 Bangsar South City, No. 8 Jalan
+                    Kerinchi<br>59200 Kuala Lumpur, Malaysia</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>

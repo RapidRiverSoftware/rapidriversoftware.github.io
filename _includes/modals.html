@@ -1,50 +1,50 @@
- <!-- Portfolio Modals -->
- {% for post in site.case_studies %}
-    <div class="portfolio-modal modal fade" id="case-study-{{ post.slug }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <header class="case-studies">
-                <div class="container">
-                    <div class="close-modal" data-dismiss="modal">
-                        <!-- <div class="lr">
+<!-- Portfolio Modals -->
+{% for post in site.case_studies %}
+<div class="portfolio-modal modal fade" id="case-study-{{ post.slug }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <header class="case-studies">
+            <div class="container">
+                <div class="close-modal" data-dismiss="modal">
+                    <!-- <div class="lr">
                             <div class="rl">
                             </div>
                         </div> -->
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                    <div class="intro-image">
-                        <img src="/assets/img/case-studies/{{ post.img }}" alt="Vector image of person on a laptop">
-                    </div>
-                    <div class="intro-text">
-                        <div class="intro-heading">{{ post.title }}</div>
-                    </div>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
-            </header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- <h1 class="text-center">{{ post.title }}</h1> -->
-                            <hr class="star-primary">
-                            <!-- <img src="/assets/img/case-studies/{{ post.img }}" class="img-fluid rounded-circle" alt="{{ post.alt }}"> -->
-                            <div class="case-study-content">
+                <div class="intro-image">
+                    <img src="/assets/img/case-studies/{{ post.img }}" alt="Vector image of person on a laptop">
+                </div>
+                <div class="intro-text">
+                    <div class="intro-heading">{{ post.title }}</div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- <h1 class="text-center">{{ post.title }}</h1> -->
+                        <hr class="star-primary">
+                        <!-- <img src="/assets/img/case-studies/{{ post.img }}" class="img-fluid rounded-circle" alt="{{ post.alt }}"> -->
+                        <div class="case-study-content">
                             {{ post.content }}
-                            </div>
-                            <hr class="star-primary">
-                            <ul class="list-inline item-details">
-                                <li class="list-inline-item">Client:
-                                    <strong><a href="{{post.project-url}}">{{ post.client }}</a>
-                                    </strong>
-                                </li>
-                                <li class="list-inline-item">Tags:
-                                    {{ post.tags }}
-                                </li>
-                            </ul>
-                            <hr class="star-primary">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Go back to homepage</button>
                         </div>
+                        <hr class="star-primary">
+                        <ul class="list-inline item-details">
+                            <li class="list-inline-item">Client:
+                                <strong><a href="{{post.project-url}}">{{ post.client }}</a>
+                                </strong>
+                            </li>
+                            <li class="list-inline-item">Tags:
+                                {{ post.tags }}
+                            </li>
+                        </ul>
+                        <hr class="star-primary">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Go back to homepage</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endfor %}

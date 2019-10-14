@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         {% include head_content.html %}
-        <link rel="canonical" href="{{ page.redirect_to }}"/>
+        <link rel="canonical" href="{{ page.redirect_to }}" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
     </head>
 
     <body id="home" class="page">
+        {% include gtm.html %}
+        {% include nav.html %}
 
-    {% include gtm.html %}
-    {% include nav.html %}
-    <div class="container post">
-        <div class="row">
-            <div class="col">
-                <h1>Redirecting...</h1>
-                <p style="text-align: center"><a href="{{ page.redirect_to }}">Click here if you are not redirected.<a></p>
-                  <script>location='{{ page.redirect_to }}'</script>
+        <div class="container post">
+            <div class="row">
+                <div class="col">
+                    <h1>Redirecting...</h1>
+                    <p style="text-align: center"><a href="{{ page.redirect_to }}">Click here if you are not redirected.<a>
+                    </p>
+                    <script>location = '{{ page.redirect_to }}'</script>
+                </div>
             </div>
         </div>
-    </div>
 
-
-    {% include footer.html %}
-    {% include js.html %}
-
+        {% include footer.html %}
+        {% include js.html %}
     </body>
 </html>
