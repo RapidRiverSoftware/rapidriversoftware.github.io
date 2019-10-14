@@ -10,6 +10,8 @@ collections:
     output: true
   case_studies:
     output: true
+  services:
+    output: true
 
 sass:
   sass_dir: _scss
