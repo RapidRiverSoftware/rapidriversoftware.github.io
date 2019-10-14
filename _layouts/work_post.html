@@ -22,13 +22,12 @@
             {{ content | markdownify }}
             <hr class="star-primary">
             <ul class="list-inline item-details">
-                <li>Client:
-                    <strong><a href="{{page.project-url}}" target="_blank" rel="noopener noreferrer">{{ page.client }}</a>
-                    </strong>
+                <li>Tags: </li>
+                {% for tag in page.tags %}
+                <li class="list-inline-item text-muted">
+                    <span>{{ tag }}</span>
                 </li>
-                <li>Tags:
-                    {{ page.tags }}
-                </li>
+                {% endfor %}
             </ul>
             <hr class="star-primary">
             <a href="/case_studies/#{{page.slug}}" type="button" class="btn btn-primary">Go back to case studies</a>
