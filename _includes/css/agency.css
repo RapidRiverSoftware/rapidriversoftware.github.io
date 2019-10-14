@@ -903,7 +903,7 @@ body {
 }
 
  /* Case Study Styles */
-.case-studies-page .project-item:nth-child(even) {
+.case-studies-page .project-item:nth-child(odd) {
     background-color: #EFEFEF;
 }
 
