@@ -14,41 +14,23 @@
                     </div>
                 </div>
             </header>
+        
             <div class="container post">
                 <img class="case-study-product" src="/assets/img/case-studies/product/{{page.slug}}.png" />
                 <hr class="star-primary">
                 {{ content | markdownify }}
                 <hr class="star-primary">
                 <ul class="list-inline item-details">
-                    <li class="list-inline-item">Client:
-                        <strong><a href="{{page.project-url}}" target="_blank"
-                                rel="noopener noreferrer">{{ page.client }}</a>
-                        </strong>
+                    <li class="list-inline-item">Tags: </li>
+                    {% for tag in page.tags %}
+                    <li class="list-inline-item text-muted">
+                        <span>{{ tag }}</span>
                     </li>
-                    <li class="list-inline-item">Tags:
-                        {{ page.tags }}
-                    </li>
+                    {% endfor %}
                 </ul>
                 <hr class="star-primary">
                 <a href="/case_studies/#{{page.slug}}" type="button" class="btn btn-primary">Go back to case studies</a>
             </div>
-        </header>
-        
-        <div class="container post">
-            <img class="case-study-product" src="/assets/img/case-studies/product/{{page.slug}}.png" />
-            <hr class="star-primary">
-            {{ content | markdownify }}
-            <hr class="star-primary">
-            <ul class="list-inline item-details">
-                <li>Tags: </li>
-                {% for tag in page.tags %}
-                <li class="list-inline-item text-muted">
-                    <span>{{ tag }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-            <hr class="star-primary">
-            <a href="/case_studies/#{{page.slug}}" type="button" class="btn btn-primary">Go back to case studies</a>
         </div>
 
         {% include footer.html %}
