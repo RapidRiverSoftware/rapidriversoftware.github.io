@@ -13,7 +13,17 @@
                     </div>
                     <div class="col-md-6">
                         <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.tech }}</p>
+
+                        <ul class="list-inline">
+                            {% for tag in post.tags %}
+                            <li class="list-inline-item text-muted">
+                                <small>{{ tag | replace: "+"," " }}</small>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                        <br />
+
                         <p>{{ post.subtitle }}</p>
                         <br /><br />
                         <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">

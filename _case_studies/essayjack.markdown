@@ -7,7 +7,7 @@ thumbnail: essayjack-thumbnail.png
 slug: essayjack
 alt: image-alt
 client: EssayJack
-tags: Ruby, React, Project Rescue
+tags: [Ruby, React, Project+Rescue]
 description: EssayJack is an essay writing system that takes the stress out of essay-writing. The Rapid River team inherited a clunky beta app and was tasked with transforming it into a sleak, modern, React frontend.
 project-url: https://www.essayjack.com
 status: published
