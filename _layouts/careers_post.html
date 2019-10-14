@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
+    {% include head.html %}
 
     <body id="home" class="page">
+        {% include gtm.html %}
+        {% include nav_frontpage.html %}
 
-    {% include gtm.html %}
-    {% include nav_frontpage.html %}
-
-    <div class="full-page careers">
-        <header class="header header--careers-post">
-            <div class="container post">
-                <div class="header--intro-text">
-                    <div class="header--intro-heading">  {{ page.title }}</div>
+        <div class="full-page careers">
+            <header class="header header--careers-post">
+                <div class="container post">
+                    <div class="header--intro-text">
+                        <div class="header--intro-heading"> {{ page.title }}</div>
+                    </div>
                 </div>
+            </header>
+            <div class="container post">
+                {{ content | markdownify }}
+                <p>If you think you have what it takes, get in touch with us by sending an email to <a
+                        href="mailto:workwithus@rrsoft.co">workwithus@rrsoft.co</a>.</p>
             </div>
-        </header>
-        <div class="container post">
-            {{ content | markdownify }}
-            <p>If you think you have what it takes, get in touch with us by sending an email to <a href="mailto:workwithus@rrsoft.co">workwithus@rrsoft.co</a>.</p>
         </div>
-    </div>
 
-
-    {% include footer.html %}
-    {% include js.html %}
-
+        {% include footer.html %}
+        {% include js.html %}
     </body>
 </html>

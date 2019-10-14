@@ -1,6 +1,6 @@
 <!-- Services List Section -->
 <div id="services" class="services">
-{% for post in site.services %}
+    {% for post in site.services %}
     <section id="{{ post.slug }}" class="service-item">
         <div class="container">
             <div class="row">
@@ -16,27 +16,24 @@
                         {{ post.description }}
                     </h3>
                     <br />
-                    <a
-                      href="{{ post.url | prepend: site.baseurl }}"
-                      class=""
-                    >
-                      Learn more about {{ post.title }}
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="">
+                        Learn more about {{ post.title }}
                     </a>
                 </div>
                 <div class="col-md-5">
                     <h4>Related projects</h4>
                     <ul>
-                    {% for project in post.example-projects %}
+                        {% for project in post.example-projects %}
                         <li>
                             <a href="/case_studies{{ project[1] }}">
                                 {{ project[0] | capitalize}}
                             </a>
                         </li>
-                    {% endfor %}
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-{% endfor %}
+    {% endfor %}
 </div>
