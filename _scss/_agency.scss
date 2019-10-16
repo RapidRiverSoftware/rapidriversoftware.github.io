@@ -326,11 +326,12 @@ body {
     color: #888888;
 }
 
- /* Case Study Styles */
-.case-studies-page .project-item:nth-child(odd) {
+/* Collection List Styles */
+.collection-list--item:nth-child(odd) {
     background-color: #EFEFEF;
 }
 
+ /* Case Study Styles */
 .case-study-post .post h2 {
     margin-top: 45px;
 }
