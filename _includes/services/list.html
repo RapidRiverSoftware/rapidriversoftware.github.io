@@ -1,39 +1,43 @@
 <!-- Services List Section -->
 <div id="services" class="services">
-    {% for post in site.services %}
-    <section id="{{ post.slug }}" class="service-item">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="section-heading">
-                        {{ post.title }}
-                    </h2>
-                </div>
-            </div>
-            <div class="row justify-content-between">
-                <div class="col-md-6">
-                    <h3 class="section-subheading text-muted mb-5">
-                        {{ post.description }}
-                    </h3>
-                    <br />
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="">
-                        Learn more about {{ post.title }}
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <h4>Related projects</h4>
-                    <ul>
-                        {% for project in post.related-projects %}
-                        <li>
-                            <a href="/case-studies{{ project[1] }}">
-                                {{ project[0] | capitalize}}
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% for post in page.services %}
+        {% for ordered_post in site.services in  %}
+            {% if post == ordered_post.slug %}
+                <section id="{{ ordered_post.slug }}" class="service-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="section-heading">
+                                    {{ ordered_post.title }}
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-md-6">
+                                <h3 class="section-subheading text-muted mb-5">
+                                    {{ ordered_post.description }}
+                                </h3>
+                                <br />
+                                <a href="{{ ordered_post.url | prepend: site.baseurl }}" class="">
+                                    Learn more about {{ ordered_post.title }}
+                                </a>
+                            </div>
+                            <div class="col-md-5">
+                                <h4>Related projects</h4>
+                                <ul>
+                                    {% for project in ordered_post.related-projects %}
+                                    <li>
+                                        <a href="/case-studies{{ project[1] }}">
+                                            {{ project[0] | capitalize}}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {%endif%}
+        {% endfor %}
     {% endfor %}
 </div>
