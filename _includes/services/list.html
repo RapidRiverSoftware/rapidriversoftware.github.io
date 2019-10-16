@@ -13,14 +13,13 @@
                             </div>
                         </div>
                         <div class="row justify-content-between">
-                            <div class="col-md-2">
+                            <div class="col-6 col-md-2">
                                 <img src="/assets/img/services/icons/icon-{{ ordered_post.slug }}.svg" class="full-width" />
                             </div>
                             <div class="col-md-6">
                                 <h3 class="section-subheading text-muted mb-5">
                                     {{ ordered_post.description }}
                                 </h3>
-                                <br />
                                 <a href="{{ ordered_post.url | prepend: site.baseurl }}" class="">
                                     Learn more about {{ ordered_post.title }}
                                 </a>
