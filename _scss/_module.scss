@@ -91,7 +91,8 @@ Header Styles
   background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
 }
 
-.header--services {
+.header--services,
+.header--services-post {
   background: linear-gradient( 45deg, rgba(121, 69, 200, 0.9) 0%, rgba(2, 248, 174, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
 }
 
@@ -128,7 +129,8 @@ Header Styles
   }
 
   .header--careers-post .header--intro-text,
-  .header--case-study-post .header--intro-text {
+  .header--case-study-post .header--intro-text,
+  .header--services-post .header--intro-text {
       width: 100%;
       padding-top: 200px;
       padding-bottom: 50px;

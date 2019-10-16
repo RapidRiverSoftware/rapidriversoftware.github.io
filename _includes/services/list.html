@@ -23,7 +23,7 @@
                 <div class="col-md-5">
                     <h4>Related projects</h4>
                     <ul>
-                        {% for project in post.example-projects %}
+                        {% for project in post.related-projects %}
                         <li>
                             <a href="/case-studies{{ project[1] }}">
                                 {{ project[0] | capitalize}}
