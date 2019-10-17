@@ -37,11 +37,14 @@ $('div.modal').on('show.bs.modal', function() {
 });
 
 $(function() {
-  var path = window.location.pathname.replace(/\//g, '');
+  var fullPath = window.location.pathname.substring(1);
+  var parentPath = fullPath.split('/')[0];
+  var path = fullPath.replace(/\//g, '');
+
   if (path) {
     // For blog post pages.
     if (path.match(/^\d{4}/)) { path = 'blog' }
 
-    $("#bs-example-navbar-collapse-1 a[href='/"+path+"']").parent().addClass('active');
+    $("#bs-example-navbar-collapse-1 a[href='/"+parentPath+"']").addClass('active');
   }
 });
