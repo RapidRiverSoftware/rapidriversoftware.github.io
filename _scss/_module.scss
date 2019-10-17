@@ -11,7 +11,7 @@ Navbar Styles
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #10293f;
+  background-color: $secondary-blue;
 }
 
 .nav--link {
@@ -23,7 +23,7 @@ Navbar Styles
 }
 
 .navbar-toggler {
-  background-color: #0081df;
+  background-color: $primary-blue;
 }
 
 @media(min-width:768px) {
@@ -55,7 +55,7 @@ Header Styles
 
 .header {
   position: relative;
-  color: #fff;
+  color: white;
   background-attachment: scroll;
   background-position: center center;
   background-repeat: none;

@@ -9,20 +9,20 @@
 }
 
 .bg-light-gray {
-    background-color: #efefef;
+    background-color: $grey-light;
 }
 
 .bg-darkest-gray {
-    background-color: #222;
+    background-color: $grey-dark;
 }
 
 .btn-primary {
-    border-color: #0081df;
+    border-color: $primary-blue;
     text-transform: uppercase;
     font-family: $primary-font;
     font-weight: 700;
-    color: #fff;
-    background-color: #0081df;
+    color: white;
+    background-color: $primary-blue;
 }
 
 .btn-primary:hover,
@@ -30,9 +30,9 @@
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #0081df;
-    color: #fff;
-    background-color: #1d94ea;
+    border-color: $primary-blue;
+    color: white;
+    background-color: $primary-blue-light;
 }
 
 .btn-primary:active,
@@ -56,25 +56,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #0081df;
-    background-color: #0081df;
+    border-color: $primary-blue;
+    background-color: $primary-blue;
 }
 
 .btn-primary .badge {
-    color: #0081df;
-    background-color: #fff;
+    color: $primary-blue;
+    background-color: white;
 }
 
 .btn-xl {
     padding: 15px 35px;
-    border-color: #0081df;
+    border-color: $primary-blue;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: $primary-font;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
-    background-color: #0081df;
+    color: white;
+    background-color: $primary-blue;
 }
 
 .btn-xl:hover,
@@ -82,9 +82,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #0081df;
-    color: #fff;
-    background-color: #1d94ea;
+    border-color: $primary-blue;
+    color: white;
+    background-color: $primary-blue-light;
 }
 
 .btn-xl:active,
@@ -108,13 +108,13 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #0081df;
-    background-color: #0081df;
+    border-color: $primary-blue;
+    background-color: $primary-blue;
 }
 
 .btn-xl .badge {
-    color: #0081df;
-    background-color: #fff;
+    color: $primary-blue;
+    background-color: white;
 }
 
 section {
@@ -165,7 +165,7 @@ section h2.section-heading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
+    border: 7px solid white;
 }
 
 .team-member h4 {
@@ -207,12 +207,12 @@ section#hire-us .form-group textarea.form-control {
 }
 
 section#hire-us .form-control:focus {
-    border-color: #0081df;
+    border-color:$primary-blue;
     box-shadow: none;
 }
 
 section#hire-us .text-danger {
-    color: #e74c3c;
+    color: $red;
 }
 
 /* Footer styles */
@@ -266,8 +266,8 @@ ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: #fff;
-    background-color: #10293f;
+    color: white;
+    background-color: $secondary-blue;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -276,7 +276,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #0081df;
+    background-color: $primary-blue;
 }
 
 .btn:focus,
@@ -288,13 +288,13 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #0081df;
+    background: $primary-blue;
     color: white;
 }
 
 ::selection {
     text-shadow: none;
-    background: #0081df;
+    background: $primary-blue;
     color: white;
 }
 
@@ -307,7 +307,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #0081df;
+    webkit-tap-highlight-color: $primary-blue;
 }
 
 .full-page {
@@ -323,12 +323,12 @@ body {
 /* Careers Styles */
 .careers .post p,
 .careers .post ul li {
-    color: #888888;
+    color: $grey;
 }
 
 /* Collection List Styles */
 .collection-list--item:nth-child(odd) {
-    background-color: #EFEFEF;
+    background-color: $grey-light;
 }
 
  /* Case Study Styles */
@@ -337,7 +337,7 @@ body {
 }
 
 .case-study-post .post p {
-    color: #888888;
+    color: $grey;
 }
 
 img.case-study-product {
@@ -351,7 +351,7 @@ img.case-study-product {
 .case-studies h6,
 .client-quote {
     position: relative;
-    background-color: #e6f2fb;
+    background-color: $off-white;
     border-radius: 10px 0px 10px 0px;
 }
 
@@ -380,7 +380,7 @@ img.case-study-product {
     background-image: url('../img/case-studies/clients/default.png');
     background-size: cover;
     border-radius: 80px;
-    border: 3px solid #ecf0f1;
+    border: 3px solid $grey-light;
 }
 
 .case-studies .post img {
@@ -464,19 +464,19 @@ img.case-study-product {
 }
 
 .blog.posts h3 a {
-    color: #10293f;
+    color: $secondary-blue;
 }
 
 .blog.posts h3 a:hover {
-    color: #0081df;
+    color: $primary-blue;
 }
 
 .blog.posts p {
-    color: #888888;
+    color: $grey;
 }
 
 .blog.posts p.meta {
-    color: #0081df;
+    color: $primary-blue;
 }
 
 .blog img {

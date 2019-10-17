@@ -2,24 +2,34 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,100,300,700&display=swap');
 @import url('../font/font-awesome/css/font-awesome.min.css');
 
-/* Variables */
+/* Variables - Font Families */
 $primary-font: 'Montserrat', "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif';
 $secondary-font: 'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; 
 $tertiary-font: 'Droid Serif', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+/* Variables - Colours */
+$primary-blue: #0081df; // lighter blue than RRSoft logo
+$primary-blue-light: #1d94ea;
+$secondary-blue: #10293f;
+$grey: #888888;
+$grey-light: #EFEFEF;
+$grey-dark: #222222;
+$off-white: #E6F2FB;
+$red: #E74C3C;
 
 /* Base Site Styles */
 body {
   overflow-x: hidden;
   font-family: $secondary-font;
-  color: #10293f;
+  color: $secondary-blue;
 }
 
 .text-muted {
-  color: #888888;
+  color: $grey;
 }
 
 .text-primary {
-  color: #0081df;
+  color: $primary-blue;
 }
 
 p {
@@ -40,14 +50,14 @@ a.active {
 }
 
 a {
-  color: #0081df;
+  color: $primary-blue;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #1d94ea;
+  color: $primary-blue-light;
 }
 
 a:hover {
