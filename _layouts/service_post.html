@@ -16,25 +16,41 @@
             </header>
     
             <div class="container post">
-                <img class="case-study-product" src="/assets/img/services/{{ page.slug }}.jpg" />
-                <hr class="star-primary">
-
-                {{ content | markdownify }}
-
-                <hr class="star-primary">
-                <ul class="list-inline item-details">
-                    <li class="list-inline-item">Related projects: </li>
-                    {% for project in page.related-projects %}
-                    <li class="list-inline-item">
-                        <a href="/case-studies{{ project[1] }}">{{ project[0] | capitalize }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <hr class="star-primary">
-                <a href="/services/#{{page.slug}}" type="button" class="btn btn-primary">Go back to services</a>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="/assets/img/services/icons/icon-{{ page.slug }}.svg" class="full-width" />
+                    </div>
+                    <div class="col-md-9">
+                        <!-- <img class="case-study-product" src="/assets/img/services/{{ page.slug }}.jpg" /> -->
+                        <!-- <hr class="star-primary"> -->
+        
+                        {{ content | markdownify }}
+        
+                        <hr class="star-primary">
+                    </div>
+                    <div class="col-md-1">
+                        <h4>Related projects</h4>
+                        <ul>
+                            {% for project in page.related-projects %}
+                            <li>
+                                <a href="/case-studies{{ project[1] }}">
+                                    {{ project[0] | capitalize}}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr class="star-primary">
+                </div>
+                <div class="row justify-content-center">
+                    <a href="/services/#{{page.slug}}" type="button" class="btn btn-primary">Go back to services</a>
+                </div>
             </div>
         </div>
 
+        {% include shared/cta_to_hire_us.html %}
         {% include footer.html %}
         {% include js.html %}
     </body>
