@@ -331,6 +331,17 @@ body {
     background-color: $grey-light;
 }
 
+/* Servies Styles */
+.services-img {
+    width: 60%;
+}
+
+@media(min-width:768px) {
+    .services-img {
+        width: auto;
+    }
+}
+
  /* Case Study Styles */
 .case-study-post .post h2 {
     margin-top: 45px;
