@@ -1,35 +1,41 @@
-body.page .post {
+.page .post {
   margin-bottom: 4em;
 }
 
-body.page .post h1,
-body.page .wide-post h1 {
+.page .post h1,
+.page .wide-post h1 {
   margin: 2em 0 1em;
   text-align: center;
   text-transform: none;
 }
 
-body.page .post p.meta {
+.page .services .post h1 {
+  text-align: left;
+  margin: 1em 0 1em;
+}
+
+.page .post p.meta {
   margin: 2em;
   text-align: center;
 }
 
-body.page .post h2 {
+.page .post h2 {
   text-transform: none;
 }
-body.page .post h3 {
+.page .post h3 {
   line-height: 2;
   font-size: 18px;
   text-transform: none;
 }
 
-body.page .post p,
-body.page .post ul {
+.page .post p,
+.page .post ul {
   font-size: 16px;
   line-height: 2;
   margin: 1em 0;
 }
-body.page .post ul ul {
+
+.page .post ul ul {
   margin: 0;
 }
 
