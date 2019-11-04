@@ -11,6 +11,7 @@ tags: [Ruby, React, Project Rescue]
 description: EssayJack is an essay writing system that takes the stress out of essay-writing. The Rapid River team inherited a clunky beta app and was tasked with transforming it into a sleak, modern, React frontend.
 project-url: https://www.essayjack.com
 status: published
+permalink: /case-studies/essayjack
 ---
 
 ###### EssayJack is an essay templating platform that has an interactive essay editor that pre-structures student essays. Created by professors, it provides a way for instructors to guide students through the daunting task of essay writing.

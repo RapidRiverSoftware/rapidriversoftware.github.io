@@ -1,0 +1,37 @@
+<!-- Case studies Section -->
+<div id="projects" class="projects">
+{% for post in site.case_studies %}
+    {% if post.status contains 'published' %}
+    <section id="{{ post.slug }}" class="collection-list--item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
+                        <img src="/assets/img/case-studies/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <h4>{{ post.title }}</h4>
+
+                    <ul class="list-inline">
+                        {% for tag in post.tags %}
+                        <li class="list-inline-item text-muted">
+                            <small>{{ tag }}</small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <br />
+
+                    <p>{{ post.subtitle }}</p>
+                    <br /><br />
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
+                        Learn more about our work on {{ post.title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endfor %}
+</div>

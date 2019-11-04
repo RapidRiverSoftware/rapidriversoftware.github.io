@@ -1,0 +1,67 @@
+.page .post {
+  margin-bottom: 4em;
+}
+
+.page .post h1,
+.page .wide-post h1 {
+  margin: 2em 0 1em;
+  text-align: center;
+  text-transform: none;
+}
+
+.page .services .post h1 {
+  text-align: left;
+  margin: 1em 0 1em;
+}
+
+.page .post p.meta {
+  margin: 2em;
+  text-align: center;
+}
+
+.page .post h2 {
+  text-transform: none;
+}
+.page .post h3 {
+  line-height: 2;
+  font-size: 18px;
+  text-transform: none;
+}
+
+.page .post p,
+.page .post ul {
+  font-size: 16px;
+  line-height: 2;
+  margin: 1em 0;
+}
+
+.page .post ul ul {
+  margin: 0;
+}
+
+#about h4 a {
+  color: white;
+}
+
+dl {
+  font-size: 16px;
+  margin-left: 40px;
+}
+dl dt {
+  display: list-item;
+  font-weight: normal;
+}
+dl dd {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/*
+*************************************************
+Utility: Display Styles
+*************************************************
+*/
+.full-width {
+  width: 100%;
+}

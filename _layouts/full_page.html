@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
+    {% include head.html %}
 
     <body id="home" class="page">
+        {% include gtm.html %}
+        {% include nav_frontpage.html %}
 
-    {% include gtm.html %}
-    {% include nav_transparent.html %}
-    <div class="full-page">
-        {{ content | markdownify }}
-    </div>
+        <div class="full-page">
+            {{ content | markdownify }}
+        </div>
 
-
-    {% include footer.html %}
-    {% include js.html %}
-
+        {% include footer.html %}
+        {% include js.html %}
     </body>
 </html>

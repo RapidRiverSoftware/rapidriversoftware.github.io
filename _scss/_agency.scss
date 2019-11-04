@@ -1,0 +1,525 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: $grey-light;
+}
+
+.bg-darkest-gray {
+    background-color: $grey-dark;
+}
+
+.btn-primary {
+    border-color: $primary-blue;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: 700;
+    color: white;
+    background-color: $primary-blue;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: $primary-blue;
+    color: white;
+    background-color: $primary-blue-light;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: $primary-blue;
+    background-color: $primary-blue;
+}
+
+.btn-primary .badge {
+    color: $primary-blue;
+    background-color: white;
+}
+
+.btn-xl {
+    padding: 15px 35px;
+    border-color: $primary-blue;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: $primary-blue;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: $primary-blue;
+    color: white;
+    background-color: $primary-blue-light;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: $primary-blue;
+    background-color: $primary-blue;
+}
+
+.btn-xl .badge {
+    color: $primary-blue;
+    background-color: white;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: $tertiary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+@media(min-width:768px) {
+    .section-subheading {
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    section h2.section-heading {
+        font-size: 40px;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+aside.clients img {
+    margin: 50px auto;
+}
+
+/* Hire Us Form styles */
+section#hire-us {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hire-us .form-group {
+    margin-bottom: 25px;
+}
+
+section#hire-us .form-group input,
+section#hire-us .form-group textarea {
+    padding: 20px;
+}
+
+section#hire-us .form-group input.form-control {
+    height: auto;
+}
+
+section#hire-us .form-group textarea.form-control {
+    height: 236px;
+    resize: vertical;
+}
+
+section#hire-us .form-control:focus {
+    border-color:$primary-blue;
+    box-shadow: none;
+}
+
+section#hire-us .text-danger {
+    color: $red;
+}
+
+/* Footer styles */
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    font-family: $primary-font;
+    line-height: 40px; 
+    font-size: x-small;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: $primary-font;
+    line-height: 40px;
+}
+
+footer div.company-info p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: x-small;
+}
+
+@media(min-width:768px) {
+    footer span.copyright {
+        font-family: $primary-font;
+        line-height: 40px;
+    }
+
+    footer div.company-info p {
+        margin-top: 0px;
+        text-align: left;
+    }
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: white;
+    background-color: $secondary-blue;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: $primary-blue;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: $primary-blue;
+    color: white;
+}
+
+::selection {
+    text-shadow: none;
+    background: $primary-blue;
+    color: white;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: $primary-blue;
+}
+
+.full-page {
+    margin-top: -22px;
+}
+
+@media(min-width:768px) {
+    .full-page {
+        margin-top: 0px;
+    }
+}
+
+/* Careers Styles */
+.careers .post p,
+.careers .post ul li {
+    color: $grey;
+}
+
+/* Collection List Styles */
+.collection-list--item:nth-child(odd) {
+    background-color: $grey-light;
+}
+
+/* Servies Styles */
+.services-img {
+    width: 60%;
+}
+
+@media(min-width:768px) {
+    .services-img {
+        width: auto;
+    }
+}
+
+ /* Case Study Styles */
+.case-study-post .post h2 {
+    margin-top: 45px;
+}
+
+.case-study-post .post p {
+    color: $grey;
+}
+
+img.case-study-product {
+    max-width: 100%;
+}
+
+.case-studies h2 {
+    margin-top: 50px;
+}
+
+.case-studies h6,
+.client-quote {
+    position: relative;
+    background-color: $off-white;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.case-studies h6 {
+    font-size: 21px;
+    font-family: $secondary-font;
+    font-weight: normal;
+    line-height: 160%;
+    text-transform: none;
+    padding: 20px 30px;
+    margin: 50px 0px;
+}
+
+.client-quote {
+    padding: 60px 40px 60px 40px;
+    margin: 50px 0px 100px 0px;
+}
+
+.client-quote::after {
+    content: '';
+    position: absolute;
+    left: 37%;
+    bottom: -40px;
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/case-studies/clients/default.png');
+    background-size: cover;
+    border-radius: 80px;
+    border: 3px solid $grey-light;
+}
+
+.case-studies .post img {
+    max-width: 100%;
+}
+
+.case-study-photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.case-study-photo-grid img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .case-study-photo-grid {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .client-quote::after {
+        left: -10px;
+    }
+}
+
+@media(min-width: 770px) {
+    .client-quote::after {
+        left: -40px;
+    }
+}
+
+/* Homepage Case Studies CTA */
+.work .flex-row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.work .flex-row .flex-column {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .work .flex-row {
+        flex-direction: row;
+    }
+
+    .work .flex-row .flex-column {
+        width: 50%;
+    }
+}
+
+/* Blog Styles */
+.subscribe {
+    text-align: center;
+}
+
+.blog.posts {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+@media(min-width:768px) {
+    .blog.posts {
+        width: 64%;
+    }
+}
+
+.blog.posts li {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.blog.posts h3 {
+    text-transform: capitalize;
+}
+
+.blog.posts h3 a {
+    color: $secondary-blue;
+}
+
+.blog.posts h3 a:hover {
+    color: $primary-blue;
+}
+
+.blog.posts p {
+    color: $grey;
+}
+
+.blog.posts p.meta {
+    color: $primary-blue;
+}
+
+.blog img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .blog img {
+        width: auto;
+    }
+}
+
+/* Icon Styles */
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+@media(min-width:768px) {
+    .icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* About Page Styles */
+.about-item .about-image img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .photo-feed-row img {
+        width: 100%;
+    }
+}

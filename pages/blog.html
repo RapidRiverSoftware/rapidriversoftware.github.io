@@ -1,0 +1,25 @@
+---
+title: Blog
+layout: full_page
+permalink: /blog/
+---
+<div class="blog-page home">
+    {% include blog/header.html %}
+    <section>
+        <div class="container">
+            <ul class="blog posts">
+                {% for post in site.posts %}
+                {% if post.categories contains 'blog' %}
+                <li>
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    <p>{{ post.description }}</p>
+                    <p class="meta">{{ post.author }} - <em>{{ post.date | date: '%B %d, %Y' }}</em></p>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    {% include blog/subscribe.html %}
+</div>

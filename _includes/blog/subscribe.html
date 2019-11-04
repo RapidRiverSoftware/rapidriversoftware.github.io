@@ -1,0 +1,23 @@
+<section id="subscribe" class="subscribe bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="section-heading">Follow our blog</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center">
+                <h3 class="section-subheading text-muted">Keep up with our blog updates by subscribing via RSS.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a
+                    href="{{ "/feed.xml" | prepend: site.baseurl }}"
+                    class="btn btn-xl rss-subscribe">
+                    Subscribe via RSS
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
+    {% include head.html %}
 
     <body id="home" class="page">
+        {% include gtm.html %}
+        {% include nav_frontpage.html %}
 
-    {% include gtm.html %}
-    {% include nav_transparent.html %}
-
-    <div class="full-page case-studies">
-        <header class="case-study-post">
-            <div class="container post">
-                <div class="intro-text">
-                    <div class="intro-heading">{{ page.title }}</div>
+        <div class="full-page case-studies">
+            <header class="header header--case-study-post">
+                <div class="container post">
+                    <div class="header--intro-text">
+                        <div class="header--intro-heading">{{ page.title }}</div>
+                    </div>
                 </div>
+            </header>
+        
+            <div class="container post">
+                <img class="case-study-product" src="/assets/img/case-studies/product/{{ page.slug }}.png" />
+                <hr class="star-primary">
+
+                {{ content | markdownify }}
+
+                <hr class="star-primary">
+                <ul class="list-inline item-details">
+                    <li class="list-inline-item">Tags: </li>
+                    {% for tag in page.tags %}
+                    <li class="list-inline-item text-muted">
+                        <span>{{ tag }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <hr class="star-primary">
+                <a href="/case-studies/#{{page.slug}}" type="button" class="btn btn-primary">Go back to case studies</a>
             </div>
-        </header>
-        <div class="container post">
-            <img class="case-study-product" src="/img/case-studies/product/{{page.slug}}.png" />
-            <hr class="star-primary">
-            {{ content | markdownify }}
-            <hr class="star-primary">
-            <ul class="list-inline item-details">
-                <li>Tags: </li>
-                {% for tag in page.tags %}
-                <li class="list-inline-item text-muted">
-                    <span>{{ tag }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-            <hr class="star-primary">
-            <a href="/case_studies/#{{page.slug}}" type="button" class="btn btn-primary">Go back to case studies</a>
         </div>
-    </div>
 
-
-    {% include footer.html %}
-    {% include js.html %}
-
+        {% include footer.html %}
+        {% include js.html %}
     </body>
+
 </html>
