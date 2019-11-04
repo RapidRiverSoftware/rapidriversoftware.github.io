@@ -18,6 +18,10 @@ $off-white: #E6F2FB;
 $red: #E74C3C;
 
 /* Base Site Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: $secondary-font;
