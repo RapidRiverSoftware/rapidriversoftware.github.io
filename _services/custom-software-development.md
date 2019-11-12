@@ -1,26 +1,31 @@
 ---
 title: Custom Software Development
 layout: service_post
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius nisl vitae elit imperdiet laoreet. Curabitur nec turpis eu dolor scelerisque commodo ac in lacus. Donec auctor nibh dui, a mattis velit convallis ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam tristique volutpat velit, ac gravida erat placerat in.
+description: For new initiatives or existing projects, when we join your team our aim is to bring your business forward. We are value oriented and wish to become not just a deliverer of tasks, but a thought partner in your company’s mission.
 slug: custom-software-development
 related-projects:
   essayjack: '/essayjack'
 ---
 
-## About
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+# Custom Software Development
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+Whether for a new initiative or to help with an existing project, when we join your team our aim is to bring your business forward. We are value oriented and wish to become not just a deliverer of tasks, but a thought partner in your company’s mission.
 
+Some of the values we bring with us to every situation we encounter are:
 
-## Process
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+* [Async communication](https://doist.com/blog/asynchronous-communication/). We understand that good communication rules above all else. We take the time to communicate fully, accurately and clearly, to allow other team members to digest information on their own schedule.
+* Creative problem solving. We think creatively about problems, in order to achieve desired results with less effort and in a shorter time frame.
+* Trustworthiness and dependability. We strive to do the Right Thing in every situation. We avoid cutting corners that will hurt us later on. We are clear about the trade-offs and consequences in the decisions we make. We take your concerns and interests to heart. We sometimes break our own rules if the situation warrants.
+* [Continuous delivery](https://continuousdelivery.com/). We lean on sound engineering practices to get changes into production safely and quickly. Techniques like feature toggles, test coverage, similar environments, comprehensive business metric monitoring.
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+For projects where we staff all developer roles, we like to work as follows:
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+* We prefer to practice [Scrum](https://www.scrum.org/resources/what-is-scrum). We carry out our work in two-week Sprints. From the outset we ensure that four key roles are present on the team: Product Owner, Scrum Master, Developers and QA Engineer(s). Whether these roles are provided by people on your team or by Rapid River matters less than ensuring that they exist in the first place.
+* We groom the product backlog regularly. We measure the team’s velocity. These practices lead to keeping the project’s roadmap focused and forecasted timelines accurate.
+* We make appropriate technology choices and write robust, maintainable code.
 
-## Deliverables
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+When we work with your existing development team:
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+* We will use the tools that you and your team are using already. We’ll fit into your workflow.
+* Once we have grokked your system, we typically start suggesting changes that we believe will benefit all parties. If you find our suggestions agreeable, we’ll work them into the backlog.
+* If your code is difficult to work with, we may find on-boarding more challenging. But we can handle it. We have successfully contributed to, and have even taken full ownership of, applications of this nature. We can even help you [get a project back on track](/services/project-rescue/).
