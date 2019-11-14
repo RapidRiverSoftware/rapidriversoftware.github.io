@@ -327,7 +327,7 @@ body {
 }
 
 /* Collection List Styles */
-.collection-list--item:nth-child(odd) {
+.collection-list--item:nth-child(even) {
     background-color: $grey-light;
 }
 
