@@ -322,3 +322,20 @@ Homepage - Services CTA - SVG Styles
 .services__icon { 
   fill: $primary-blue;
 }
+
+/*
+*************************************************
+Services - Post - Styles
+*************************************************
+*/
+.services__heading {
+  font-size: 2rem;
+  margin: 0 0 2em 0;
+  text-transform: none;
+}
+
+@media(min-width:768px) {
+  .services__heading {
+    font-size: 3rem;
+  }
+}
