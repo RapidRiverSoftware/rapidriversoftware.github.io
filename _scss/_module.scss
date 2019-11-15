@@ -339,3 +339,19 @@ Services - Post - Styles
     font-size: 3rem;
   }
 }
+
+/*
+*************************************************
+Services - List - Styles
+*************************************************
+*/
+.services__list--heading {
+  font-size: 27px;
+  text-transform: capitalize;
+}
+
+@media(min-width:768px) {
+  .services__list--heading {
+    font-size: 40px;
+  }
+}
