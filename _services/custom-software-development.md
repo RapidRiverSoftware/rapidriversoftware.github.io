@@ -4,7 +4,8 @@ layout: service_post
 description: For new initiatives or existing projects, when we join your team our aim is to bring your business forward. We are value oriented and wish to become not just a deliverer of tasks, but a thought partner in your company’s mission.
 slug: custom-software-development
 related-projects:
-  essayjack: '/essayjack'
+  EssayJack: '/essayjack'
+  Full Slate: '/full-slate'
 ---
 
 # Custom Software Development

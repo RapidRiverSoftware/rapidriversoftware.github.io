@@ -4,8 +4,8 @@ layout: service_post
 description: Projects critical to business needs can rack up significant technical debt. Feature development slows. Maintenance and security fixes pile up. Versions of the technology powering the project have reached end-of-life. Key technical people have moved on. The project is spiralling towards a perilous end. When this happens, the project needs to be Rescued.
 slug: project-rescue
 related-projects:
-  essayjack: '/essayjack'
-  fullslate: '/fullslate'
+  EssayJack: '/essayjack'
+  Full Slate: '/full-slate'
 ---
 
 # Project Rescue

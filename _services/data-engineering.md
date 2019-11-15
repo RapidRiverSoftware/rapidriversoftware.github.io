@@ -5,8 +5,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
 slug: data-engineering
 published: false
 related-projects:
-  essayjack: '/clickstream'
-  fullslate: '/fullslate'
+  EssayJack: '/clickstream'
+  Full Slate: '/full-slate'
   avvo: '/avvo'
 ---
 
