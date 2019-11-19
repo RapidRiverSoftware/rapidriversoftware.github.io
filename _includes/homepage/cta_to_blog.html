@@ -4,17 +4,21 @@
         <div class="row">
             <div class="col-md text-center">
                 <h2 class="section-heading">Check out the blog</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md text-center">
                 <h3 class="section-subheading text-muted mb-5">
-                    Take a deeper look into our process by reading some blog posts we have written
+                    Take a deeper look into our process by
+                    <span class="line-breaker">
+                        reading some blog posts we have written
+                    </span>
                 </h3>
-                <a href="/case-studies/#projects" class="btn btn-xl">See our work</a>
+                <a href="/blog" class="btn btn-xl">See more on our blog</a>
             </div>
             <div class="col-md">
-                <div class="widget__blog-feed">
-                    <img src="/assets/img/case-studies/thumbnail/ruby.png">
-                </div>
+                {% include shared/blog_feed_widget.html %}
             </div>
-
         </div>
     </div>
 </section>
