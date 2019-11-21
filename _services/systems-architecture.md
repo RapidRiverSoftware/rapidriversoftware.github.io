@@ -4,8 +4,8 @@ layout: service_post
 description: We have years of experience designing, upgrading and migrating complex systems in environments ranging from startups to large corporations to government.
 slug: systems-architecture
 related-projects:
-  essayjack: '/essayjack'
-  fullslate: '/fullslate'
+  EssayJack: '/essayjack'
+  Full Slate: '/full-slate'
 ---
 
 # Systems Architecture

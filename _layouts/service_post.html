@@ -9,23 +9,17 @@
         <div class="full-page services">
             <header class="header header--services-post">
                 <div class="container post">
-                    <div class="header--intro-text">
-                        <div class="header--intro-heading">{{ page.title }}</div>
-                    </div>
+                    <div class="header__space-maker"></div>
                 </div>
             </header>
     
             <div class="container post">
-                <div class="row">
-                    <div class="col-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-4 col-md-2 text-center mb-5">
                         <img src="/assets/img/services/icons/icon-{{ page.slug }}.svg" class="full-width" />
                     </div>
                     <div class="col-md-8">
-                        <!-- <img class="case-study-product" src="/assets/img/services/{{ page.slug }}.jpg" /> -->
-                        <!-- <hr class="star-primary"> -->
-        
                         {{ content | markdownify }}
-        
                         <hr class="star-primary">
                     </div>
                     <div class="col-md-2">
@@ -34,7 +28,7 @@
                             {% for project in page.related-projects %}
                             <li>
                                 <a href="/case-studies{{ project[1] }}">
-                                    {{ project[0] | capitalize}}
+                                    {{ project[0] }}
                                 </a>
                             </li>
                             {% endfor %}
@@ -45,7 +39,7 @@
                     <hr class="star-primary">
                 </div>
                 <div class="row justify-content-center">
-                    <a href="/services/#{{page.slug}}" type="button" class="btn btn-primary">Go back to services</a>
+                    <a href="/services/#{{page.slug}}" class="btn btn-primary">Go back to services</a>
                 </div>
             </div>
         </div>

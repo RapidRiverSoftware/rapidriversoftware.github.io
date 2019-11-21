@@ -2,16 +2,10 @@
   margin-bottom: 4em;
 }
 
-.page .post h1,
 .page .wide-post h1 {
   margin: 2em 0 1em;
   text-align: center;
   text-transform: none;
-}
-
-.page .services .post h1 {
-  text-align: left;
-  margin: 1em 0 1em;
 }
 
 .page .post p.meta {
@@ -64,4 +58,10 @@ Utility: Display Styles
 */
 .full-width {
   width: 100%;
+}
+
+.header__space-maker {
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
