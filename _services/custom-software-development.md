@@ -21,7 +21,7 @@ Some of the values we bring with us to every situation we encounter are:
 
 For projects where we staff all developer roles, we like to work as follows:
 
-* We prefer to practice [Scrum](https://www.scrum.org/resources/what-is-scrum). We carry out our work in two-week Sprints. From the outset we ensure that four key roles are present on the team: Product Owner, Scrum Master, Developers and QA Engineer(s). Whether these roles are provided by people on your team or by Rapid River matters less than ensuring that they exist in the first place.
+* We prefer to practice [Scrum](https://www.scrum.org/resources/what-is-scrum). We carry out our work in two-week Sprints. From the outset we ensure that three key roles are present on the team: Product Owner, Scrum Master and Developers. Whether these roles are provided by people on your team or by Rapid River matters less than ensuring that they exist in the first place. We also make sure that an approach to QA is outlined, whether it be via Developers building integration tests in addition to the unit tests they write, or via dedicated QA people.
 * We groom the product backlog regularly. We measure the team’s velocity. These practices lead to keeping the project’s roadmap focused and forecasted timelines accurate.
 * We make appropriate technology choices and write robust, maintainable code.
 
