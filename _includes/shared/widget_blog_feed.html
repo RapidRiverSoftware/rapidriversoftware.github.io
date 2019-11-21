@@ -1,0 +1,16 @@
+<div class="widget__blog-feed">
+    <ul class="list-group-flush pl-0">
+    {% for post in site.posts limit:4 %}
+        {% if post.categories contains 'blog' %}
+        <li class="list-group-item pl-0">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <p>
+                    {{ post.title }}
+                </p>
+                <!-- <p>{{ post.description | truncate:120 }}</p> -->
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>

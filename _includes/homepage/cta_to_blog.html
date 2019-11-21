@@ -1,0 +1,28 @@
+<!-- CTA to Blog -->
+<section id="work" class="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <h2 class="section-heading">Check out the blog</h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md text-center">
+                <img src="/assets/img/shared/icon-blog.svg" alt="A lengthy blog post and a pencil for decoration" class="icon icon-blog" />
+                <h3 class="section-subheading text-muted mb-5">
+                    Take a deeper look into our process by
+                    <span class="line-breaker">
+                        reading some blog posts we have written.
+                    </span>
+                </h3>
+                <a href="/blog" class="btn btn-primary">See more on our blog</a>
+            </div>
+            <div class="col-md mt-5 mt-md-0">
+                <div class="text-left">
+                    <h4 class="service-heading">Recent Posts</h4>
+                </div>
+                {% include shared/widget_blog_feed.html %}
+            </div>
+        </div>
+    </div>
+</section>
