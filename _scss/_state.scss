@@ -1,7 +1,7 @@
 /* Link State Styles */
 .active {
   position: relative;
-  color: $secondary-blue;
+  color: $primary-blue;
 }
 
 .active::before {
@@ -12,11 +12,27 @@
   right: 0;
   height: 1px;
   width: 100%;
-  background-color: $secondary-blue;
+  background-color: $primary-blue;
 }
 
 .nav--link::hover,
 .nav--link::active,
 .nav--link::focus {
-  color: $secondary-blue;
+  color: $primary-blue;
+}
+
+@media(min-width:768px) {
+  .active {
+    color: $secondary-blue;
+  }
+
+  .active::before {
+    background-color: $secondary-blue;
+  }
+
+  .nav--link::hover,
+  .nav--link::active,
+  .nav--link::focus {
+    color: $secondary-blue;
+  } 
 }
