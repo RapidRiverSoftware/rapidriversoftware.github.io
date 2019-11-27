@@ -2,8 +2,8 @@
 title: EssayJack
 subtitle: EssayJack is an essay templating platform that has an interactive essay editor that pre-structures student essays. Created by professors, it provides a way for instructors to guide students through the daunting task of essay writing.
 layout: work_post
-img: essayjack.png
-thumbnail: essayjack-thumbnail.png
+img: essayjack.webp
+thumbnail: essayjack-thumbnail.webp
 slug: essayjack
 alt: image-alt
 client: EssayJack
