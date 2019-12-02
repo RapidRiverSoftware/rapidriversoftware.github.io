@@ -16,7 +16,11 @@
             </header>
         
             <div class="container post">
-                <img class="case-study-product" src="/assets/img/case-studies/product/{{ page.slug }}.webp" />
+                <picture>
+                    <source srcset="/assets/img/case-studies/product/{{ page.slug }}.webp" type="image/webp">
+                    <source srcset="/assets/img/case-studies/product/{{ page.slug }}.png" type="image/png">
+                    <img class="case-study-product" src="/assets/img/case-studies/product/{{ page.slug }}.png" />
+                </picture>
                 <hr class="star-primary">
 
                 {{ content | markdownify }}
