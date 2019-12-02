@@ -6,12 +6,20 @@
         {% include gtm.html %}
         {% include nav_frontpage.html %}
 
-        <div class="container post blog">
-            <div class="row">
-                <div class="col">
-                    <h1>{{ page.title }}</h1>
-                    <p class="meta"><em>{{ page.author }} - {{ page.date | date: '%B %d, %Y' }}</em></p>
-                    {{ content }}
+        <div class="full-page blog">
+            <header class="header header--blog-post">
+                <div class="container post">
+                    <div class="header__space-maker"></div>
+                </div>
+            </header>
+
+            <div class="container post">
+                <div class="row">
+                    <div class="col">
+                        <h1>{{ page.title }}</h1>
+                        <p class="meta"><em>{{ page.author }} - {{ page.date | date: '%B %d, %Y' }}</em></p>
+                        {{ content }}
+                    </div>
                 </div>
             </div>
         </div>
