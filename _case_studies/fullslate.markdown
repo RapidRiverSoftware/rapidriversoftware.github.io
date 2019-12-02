@@ -2,8 +2,8 @@
 title: Full Slate
 subtitle: Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
 layout: work_post
-img: fullslate.png
-thumbnail: fullslate-thumbnail.png
+img: fullslate.webp
+thumbnail: fullslate-thumbnail.webp
 slug: fullslate
 alt: image-alt
 client: Full Slate

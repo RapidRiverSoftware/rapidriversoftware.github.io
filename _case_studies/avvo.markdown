@@ -2,8 +2,8 @@
 title: Avvo
 subtitle: Built new "global nav"
 layout: work_post
-img: avvo.png
-thumbnail: avvo-thumbnail.png
+img: avvo.webp
+thumbnail: avvo-thumbnail.webp
 slug: avvo
 alt: image-alt
 client: Avvo
