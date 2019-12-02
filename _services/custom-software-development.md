@@ -8,7 +8,7 @@ related-projects:
   Full Slate: '/full-slate'
 ---
 
-<h1 class="title-case__heading text-center">Custom Software Development</h1>
+<h1 class="title-case__heading text-center mb-md-2em">Custom Software Development</h1>
 
 Whether for a new initiative or to help with an existing project, when we join your team our aim is to bring your business forward. We are value oriented and wish to become not just a deliverer of tasks, but a thought partner in your company’s mission.
 

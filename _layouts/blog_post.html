@@ -14,12 +14,18 @@
             </header>
 
             <div class="container post">
-                <div class="row">
-                    <div class="col">
-                        <h1>{{ page.title }}</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h1 class="title-case__heading">{{ page.title }}</h1>
                         <p class="meta"><em>{{ page.author }} - {{ page.date | date: '%B %d, %Y' }}</em></p>
                         {{ content }}
                     </div>
+                </div>
+                <div class="row">
+                    <hr class="star-primary">
+                </div>
+                <div class="row justify-content-center">
+                    <a href="/blog" class="btn btn-primary">Go back to blog posts</a>
                 </div>
             </div>
         </div>

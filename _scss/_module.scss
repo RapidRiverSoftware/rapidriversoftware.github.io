@@ -335,7 +335,6 @@ Helper - Typography - Styles
 */
 .title-case__heading {
   font-size: 2rem;
-  margin: 0 0 2em 0;
   text-transform: none;
 }
 
@@ -343,6 +342,10 @@ Helper - Typography - Styles
   .title-case__heading {
     font-size: 3rem;
   }
+}
+
+.mb-md-2em {
+  margin-bottom: 2em;
 }
 
 /*

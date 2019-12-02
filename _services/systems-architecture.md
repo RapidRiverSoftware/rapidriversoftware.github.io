@@ -7,7 +7,7 @@ related-projects:
   EssayJack: '/essayjack'
   Full Slate: '/full-slate'
 ---
-<h1 class="title__heading text-center">Systems Architecture</h1>
+<h1 class="title__heading text-center mb-md-2em">Systems Architecture</h1>
 
 We have years of experience designing, upgrading and migrating complex systems in environments ranging from startups to large corporations to government.
 
