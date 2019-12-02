@@ -406,26 +406,6 @@ img.case-study-product {
     }
 }
 
-/* Homepage Case Studies CTA */
-.work .flex-row {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.work .flex-row .flex-column {
-    width: 100%;
-}
-
-@media(min-width:768px) {
-    .work .flex-row {
-        flex-direction: row;
-    }
-
-    .work .flex-row .flex-column {
-        width: 50%;
-    }
-}
-
 /* Blog Styles */
 .subscribe {
     text-align: center;
