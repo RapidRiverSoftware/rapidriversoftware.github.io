@@ -4,16 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.img-centered {
-    margin: 0 auto;
-}
-
 .bg-light-gray {
     background-color: $grey-light;
-}
-
-.bg-darkest-gray {
-    background-color: $grey-dark;
 }
 
 .btn-primary {
@@ -28,16 +20,14 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.btn-primary.active {
     border-color: $primary-blue;
     color: white;
     background-color: $primary-blue-light;
 }
 
 .btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.btn-primary.active {
     background-image: none;
 }
 
@@ -60,11 +50,6 @@ fieldset[disabled] .btn-primary.active {
     background-color: $primary-blue;
 }
 
-.btn-primary .badge {
-    color: $primary-blue;
-    background-color: white;
-}
-
 .btn-xl {
     padding: 15px 35px;
     border-color: $primary-blue;
@@ -80,16 +65,14 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
+.btn-xl.active {
     border-color: $primary-blue;
     color: white;
     background-color: $primary-blue-light;
 }
 
 .btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
+.btn-xl.active {
     background-image: none;
 }
 
@@ -110,11 +93,6 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
     border-color: $primary-blue;
     background-color: $primary-blue;
-}
-
-.btn-xl .badge {
-    color: $primary-blue;
-    background-color: white;
 }
 
 section {
