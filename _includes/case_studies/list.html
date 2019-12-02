@@ -7,7 +7,11 @@
             <div class="row">
                 <div class="col-sm mb-4 mb-md-0">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
-                        <img src="/assets/img/case-studies/{{ post.thumbnail }}" class="img-fluid img-centered" alt="">
+                        <picture class="img-fluid img-centered">
+                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.webp" type="image/webp">
+                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" type="image/jpeg">
+                            <img src="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" alt="">
+                        </picture>
                     </a>
                 </div>
                 <div class="col-sm">
