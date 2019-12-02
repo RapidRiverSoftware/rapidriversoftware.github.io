@@ -3,7 +3,7 @@
     {% for post in page.services %}
         {% for ordered_post in site.services in  %}
             {% if post == ordered_post.slug %}
-                <section id="{{ ordered_post.slug }}" class="collection-list--item">
+                <section id="{{ ordered_post.slug }}" class="content-row collection-list--item">
                     <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-9 col-md-12 order-2 order-md-1 align-text-middle">

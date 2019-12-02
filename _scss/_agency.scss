@@ -95,11 +95,11 @@ fieldset[disabled] .btn-xl.active {
     background-color: $primary-blue;
 }
 
-section {
+.content-row {
     padding: 100px 0;
 }
 
-section .section-heading {
+.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 36px;
@@ -122,11 +122,11 @@ section .section-heading {
 }
 
 @media(min-width:768px) {
-    section {
+    .content-row {
         padding: 150px 0;
     }
 
-    section .section-heading {
+    .section-heading {
         font-size: 40px;
     }
 }
