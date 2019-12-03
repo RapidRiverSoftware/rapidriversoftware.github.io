@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    homepage: "./webpack/javascripts/homepage.js",
+    global: "./webpack/javascripts/global.js",
     hire_us: "./webpack/javascripts/hire_us.js"
   },
   output: {
