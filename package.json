@@ -1,0 +1,21 @@
+{
+  "name": "rapidriversoftware.github.io",
+  "version": "1.0.0",
+  "description": "Rapid River Software's website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RapidRiverSoftware/rapidriversoftware.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RapidRiverSoftware/rapidriversoftware.github.io/issues"
+  },
+  "homepage": "https://github.com/RapidRiverSoftware/rapidriversoftware.github.io#readme"
+}
