@@ -2,6 +2,7 @@
 title: Hire Us
 layout: full_page
 permalink: /hire-us/
+js_bundle: hire_us
 ---
 
 <div class="hire-us-page">
@@ -12,3 +13,6 @@ permalink: /hire-us/
     {% include hire_us/form.html %}
     {% include shared/cta_to_services.html %}
 </div>
+{% if page.js_bundle %}
+    <script type="text/javascript" src="/assets/javascripts/{{ page.js_bundle }}.js" async></script>
+{% endif %}

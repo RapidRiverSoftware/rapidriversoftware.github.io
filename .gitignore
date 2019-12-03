@@ -20,6 +20,11 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Node
+node_modules
+.sass_cache
+_src/assets/javascripts/*
+
 # =========================
 # Operating System Files
 # =========================

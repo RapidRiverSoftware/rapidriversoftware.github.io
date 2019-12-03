@@ -15,6 +15,11 @@ You may find [reading about Jekyll](https://jekyllrb.com) will help also.
 
 Please open a PR and assign it to Calum for review.
 
+## Project Notes
+
+### Editing JavaScript
+All raw JavaScript files can be found at `webpack/javascripts/`, these are the files you'd want to edit.
+
 ## Quick Guides
 This section provides a summary of the ways different types of content can be added.
 
