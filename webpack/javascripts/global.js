@@ -1,3 +1,5 @@
+require('jquery');
+require('bootstrap');
 require('./classie');
 require('./jqBootstrapValidation');
 require('./modernizr');
