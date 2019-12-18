@@ -1,9 +1,7 @@
 require('jquery');
 require('bootstrap');
 require('./jquery.easing.min');
-require('./classie');
 require('./jqBootstrapValidation');
-require('./cbpAnimatedHeader.min');
 require('./modernizr');
 require('./agency');
 require('./test1');
