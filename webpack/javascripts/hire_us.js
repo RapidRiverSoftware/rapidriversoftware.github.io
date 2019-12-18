@@ -1,3 +1,5 @@
+require('./jqBootstrapValidation');
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
