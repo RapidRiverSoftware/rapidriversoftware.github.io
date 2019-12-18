@@ -7,6 +7,9 @@ description: "Rapid River Software is a worldwide group of full-stack developers
 map: "https://goo.gl/maps/1TAqia2N7gYPWcCz5"
 telephone: "+60322420689"
 
+destination: _site
+source: _src
+
 collections:
   careers:
     output: true
