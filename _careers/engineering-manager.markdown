@@ -1,10 +1,10 @@
 ---
-title: Lead Rails Developer
+title: Engineering Manager
 layout: careers_post
 cta: Learn more and apply
 ---
 
-We have an opening on one of our Scrum teams for the position of Lead Rails Developer.
+We have an opening for the position of Engineering Manager. This is a senior developer position, which includes responsibilities related to managing a small team of software engineers working on a Ruby on Rails project.
 
 ### About the Role
 
