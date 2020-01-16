@@ -101,6 +101,11 @@ Header Styles
   background: linear-gradient( 45deg, rgba(121, 69, 200, 0.9) 0%, rgba(2, 248, 174, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
 }
 
+.header--404 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(132, 132, 132, 0.9) 100%), url("../img/shared/texture-dark-mosaic.png");
+  
+}
+
 .header--intro-text {
   width: 100%;
   padding-top: 100px;
@@ -155,7 +160,8 @@ Header Styles
   .header--case-studies .header--intro-text,
   .header--blog .header--intro-text,
   .header--hire-us .header--intro-text,
-  .header--services .header--intro-text {
+  .header--services .header--intro-text,
+  .header--404 .header--intro-text {
       padding-top: 200px;
       padding-bottom: 200px;
   }
@@ -195,6 +201,12 @@ Header Styles
     padding-bottom: 140px;
 }
 
+.header--404 .intro-image {
+  padding-top: 225px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
   .header--careers .intro-image img {
       width: 42%;
   }
@@ -229,6 +241,10 @@ Header Styles
   .header--hire-us .intro-image img {
       width: 100%;
   }
+
+  .header--404 .intro-image img {
+    width: 85%;
+}
 
   .header--intro-lead-in {
       margin-bottom: 25px;
@@ -362,4 +378,34 @@ Services - List - Styles
   .services__list--heading {
     font-size: 40px;
   }
+}
+
+/*
+*************************************************
+CTA Group - Links - Styles
+*************************************************
+*/
+.cta-group-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.cta-group-item {
+  display: inline-block;
+}
+
+.cta-group-item:first-child {
+  margin-bottom: 20px;
+}  
+
+@media(min-width:768px) {
+  .cta-group-item:first-child {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }  
+}
+
+.action-link {
+  display: inline-block;
+  margin-bottom: 50px;
 }
