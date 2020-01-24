@@ -17,6 +17,11 @@
         </div>
         <div class="row text-center">
             {% for career in site.careers %}
+
+                {% if career.redirect_to %}
+                  {% continue %}
+                {% endif %}
+
                 <div class="col-md-6 col-lg-4">
                     <img src="/assets/img/shared/icon-employee.svg" alt="An awesome applicant who is smiling" class="icon icon-laptop" />
                     <h4 class="service-heading">{{ career.title }}</h4>

@@ -1,10 +1,10 @@
 ---
-title: Engineering Manager
+title: Senior Software Engineer
 layout: careers_post
 cta: Learn more and apply
 ---
 
-We have an opening for the position of Engineering Manager. This is a senior developer position, which includes responsibilities related to managing a small team of software engineers working on a Ruby on Rails project.
+We have an opening for the position of Senior Software Engineer. The position includes responsibilities related to managing a small team of software engineers working on a Ruby on Rails and JavaScript project.
 
 ### About the Role
 
