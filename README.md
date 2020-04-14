@@ -4,6 +4,7 @@ Rapid River Software's website
 ### For developers:
 
 - Clone this repo
+- Ensure that `docker` is running
 - `bundle install`
 - `bundle exec jekyll serve`
 
