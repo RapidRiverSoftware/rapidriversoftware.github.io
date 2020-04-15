@@ -1,0 +1,91 @@
+// Generic Header styles
+.page-header {
+  position: relative;
+  height: 506px;
+  background-color: $blue500;
+  background-image: url($header-bg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .intro {
+    padding-top: 50px;
+    font-family: $main-font;
+    
+    .heading {
+      color: white;
+      font-size: 34px;
+      line-height: 40px;
+      padding-bottom: 24px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .tagline {
+      color: white;
+      font-size: 19px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .image {
+    text-align: right;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .page-header {
+    height: 820px;
+    border-bottom-right-radius: 90px;
+
+    &::after {
+      display: none;
+    }
+
+    .intro {
+      padding-top: 260px;
+
+      .heading {
+        font-size: 42px;
+        line-height: 50px;
+        padding-bottom: 30px
+      }
+
+      .tagline {
+        font-size: 19px;
+        padding-bottom: 50px;
+      }
+    }
+
+    .image {
+      padding-top: 160px;
+    }
+  }
+}
+
+// Global Component Styles
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  &.-white {
+    color: $blue900;
+    background-color: $grey100;
+  }
+}
