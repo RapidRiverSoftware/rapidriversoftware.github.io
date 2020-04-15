@@ -11,7 +11,37 @@ Navbar Styles
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: $secondary-blue;
+
+  &.-dark {
+    background-color: $secondary-blue;
+  }
+
+  &.-light {
+    background-color: $primary-blue;
+
+    .navbar-brand img {
+      height: 20px;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .navbar--main {
+    &.-dark {
+      background-color: transparent;
+    }
+
+    &.-light {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .nav--link {
