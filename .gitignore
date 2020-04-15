@@ -1,6 +1,9 @@
 _site
 #rubymine config
 .idea
+
+# VS Code config
+.vscode
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
