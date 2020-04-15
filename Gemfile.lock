@@ -242,8 +242,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faraday (~> 0)
   github-pages
   nokogiri (>= 1.10.4)
 
 BUNDLED WITH
-   1.17.2
+   1.17.3

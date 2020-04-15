@@ -4,8 +4,8 @@ Rapid River Software's website
 ### For developers:
 
 - Clone this repo
-- `bundle install`
-- `bundle exec jekyll serve`
+- Ensure that `docker` is running
+- Run `docker-compose up`
 
 Note: if you don't see your changes showing up, stop the jekyll server, do a `jekyll clean` then start the server again.
 
