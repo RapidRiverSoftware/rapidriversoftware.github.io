@@ -135,6 +135,20 @@
   }
 }
 
+@media(min-width:768px) {
+  .site-footer {
+    border-top-left-radius: 90px;
+
+    &::before {
+      display: none;
+    }
+
+    .socialmedia {
+      padding-top: 0px;
+    }
+  }
+}
+
 // Global Component Styles
 .button {
   display: inline-block;
