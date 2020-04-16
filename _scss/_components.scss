@@ -79,8 +79,8 @@
 // Footer Styles
 .site-footer {
   position: relative;
-  height: 380px;
-  padding-top: 70px;
+  height: 400px;
+  padding-top: 95px;
   color: $grey600;
   font-family: $main-font;
   background-color: $grey150;
@@ -127,6 +127,11 @@
 
   .contactdetails {
     font-size: 14px;
+
+    .contactlink {
+      color: $grey600;
+      text-decoration: underline;
+    }
   }
 }
 

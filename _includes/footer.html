@@ -2,7 +2,7 @@
     <div class="container d-flex">
         <div class="row">
             <div class="copyright col-md">
-                <span class="copyright">&copy; {{ site.title }} 2016-{{ 'now' | date: "%Y" }}</span>
+                <span class="copyright">&copy; {{ site.title }} 2016 - {{ 'now' | date: "%Y" }}</span>
             </div>
             <hr/>
             <div class="socialmedia col-md">
@@ -17,10 +17,13 @@
                 </ul>
             </div>
             <div class="contactdetails col-md">
-                <p><strong>Telephone:</strong> +60 3 2242 0689</p>
+                <p><strong>Telephone:</strong> <a class="contactlink" href="tel:{{site.telephone}}">+60 3 2242 0689</a></p>
                 <p><strong>Office address:</strong><br>
-                    Unit 25-02 Tower A The Vertical Business Suites<br>Avenue 3 Bangsar South City, No. 8 Jalan
-                    Kerinchi<br>59200 Kuala Lumpur, Malaysia</p>
+                    <a class="contactlink" href="{{site.map}}">
+                        Unit 25-02 Tower A The Vertical Business Suites<br>Avenue 3 Bangsar South City, No. 8 Jalan
+                        Kerinchi<br>59200 Kuala Lumpur, Malaysia
+                    </a>
+                </p>
             </div>
         </div>
     </div>
