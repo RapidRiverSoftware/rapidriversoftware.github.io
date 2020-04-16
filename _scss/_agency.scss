@@ -19,7 +19,7 @@
 .btn-primary {
     border-color: $primary-blue;
     text-transform: uppercase;
-    font-family: $primary-font;
+    font-family: $main-font;
     font-weight: 700;
     color: white;
     background-color: $primary-blue;
@@ -70,7 +70,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: $primary-blue;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: $primary-font;
+    font-family: $main-font;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -131,7 +131,7 @@ section .section-heading {
 .section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: $tertiary-font;
+    font-family: $main-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -304,7 +304,7 @@ img.case-study-product {
 
 .case-studies h6 {
     font-size: 21px;
-    font-family: $secondary-font;
+    font-family: $main-font;
     font-weight: normal;
     line-height: 160%;
     text-transform: none;
