@@ -2,7 +2,7 @@
     <ul class="list-group-flush pl-0">
     {% for post in site.posts limit:4 %}
         {% if post.categories contains 'blog' %}
-        <li class="list-group-item pl-0">
+        <li class="list-group-item pl-0 bg-light-gray">
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <p>
                     {{ post.title }}
