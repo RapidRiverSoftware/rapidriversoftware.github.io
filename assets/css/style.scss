@@ -3,10 +3,10 @@
 ---
 
 @import 'bootstrap.min';
-@import 'variables';
+@import 'variables/index';
 @import 'base';
 @import 'layout';
 @import 'module';
-@import 'headers';
+@import 'components';
 @import 'state';
 @import 'agency';

@@ -76,6 +76,60 @@
   }
 }
 
+// Footer Styles
+.site-footer {
+  position: relative;
+  height: 380px;
+  padding-top: 70px;
+  color: $grey600;
+  font-family: $main-font;
+  background-color: $grey150;
+  background-image: url($footer-bg);
+  border-bottom: 16px solid $blue500;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .copyright {
+    padding-bottom: 20px;
+  }
+
+  .socialmedia {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+
+    .fa {
+      font-size: 21px;
+    }
+  }
+
+  .socialmedia-list {
+    list-style: none;
+    padding-left: 0px;
+
+    .item {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .sociallink {
+      color: $grey600;
+    }
+  }
+
+  .contactdetails {
+    font-size: 14px;
+  }
+}
+
 // Global Component Styles
 .button {
   display: inline-block;

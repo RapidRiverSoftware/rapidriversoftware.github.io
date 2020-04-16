@@ -1,19 +1,22 @@
-<footer>
-    <div class="container">
+<footer class="site-footer">
+    <div class="container d-flex">
         <div class="row">
-            <div class="col-md">
-                <span class="copyright">Copyright &copy; {{ site.title }} 2016-{{ 'now' | date: "%Y" }}</span>
+            <div class="copyright col-md">
+                <span class="copyright">&copy; {{ site.title }} 2016-{{ 'now' | date: "%Y" }}</span>
             </div>
-            <div class="col-md">
-                <ul class="list-inline social-buttons">
+            <hr/>
+            <div class="socialmedia col-md">
+                <ul class="socialmedia-list">
                     {% for network in site.social %}
-                    <li class="list-inline-item">
-                        <a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    <li class="item">
+                        <a class="sociallink" href="{{ network.url }}">
+                            <i class="fa fa-{{ network.title }}"></i>
+                        </a>
                     </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="col-md company-info">
+            <div class="contactdetails col-md">
                 <p><strong>Telephone:</strong> +60 3 2242 0689</p>
                 <p><strong>Office address:</strong><br>
                     Unit 25-02 Tower A The Vertical Business Suites<br>Avenue 3 Bangsar South City, No. 8 Jalan
