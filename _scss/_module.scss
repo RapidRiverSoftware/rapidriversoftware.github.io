@@ -82,8 +82,7 @@ Header Styles
   } 
 }
 
-
-.header {
+.page-header.-home {
   position: relative;
   color: white;
   background-attachment: scroll;
@@ -95,11 +94,11 @@ Header Styles
   -o-background-size: cover;
 }
 
-.no-webp .header--home {
+.no-webp .page-header.-home {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.jpg');
 }
 
-.webp .header--home {
+.webp .page-header.-home {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.webp');
 }
 
