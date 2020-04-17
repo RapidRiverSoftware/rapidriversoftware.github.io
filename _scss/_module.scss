@@ -11,12 +11,42 @@ Navbar Styles
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: $secondary-blue;
+
+  &.-dark {
+    background-color: $secondary-blue;
+  }
+
+  &.-light {
+    background-color: $primary-blue;
+
+    .navbar-brand img {
+      height: 20px;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .navbar--main {
+    &.-dark {
+      background-color: transparent;
+    }
+
+    &.-light {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .nav--link {
   color: white;
-  font-family: $primary-font;
+  font-family: $main-font;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -52,8 +82,7 @@ Header Styles
   } 
 }
 
-
-.header {
+.page-header.-home {
   position: relative;
   color: white;
   background-attachment: scroll;
@@ -65,40 +94,20 @@ Header Styles
   -o-background-size: cover;
 }
 
-.no-webp .header--home {
+.no-webp .page-header.-home {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.jpg');
 }
 
-.webp .header--home {
+.webp .page-header.-home {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.webp');
 }
 
-.header--careers,
-.header--careers-post {
-  background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(255, 193, 0, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
-}
-
-.header--about-us {
-  background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(195, 33, 72, 0.9) 60%, rgba(255, 193, 0, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
-}
-
-.header--case-studies,
-.header--case-study-post {
-  background: linear-gradient( 45deg, rgba(2, 248, 174, 0.9) 0%, rgba(136, 14, 99, 0.76) 40%, rgba(255, 145, 0, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
-}
-
-.header--blog,
-.header--blog-post {
-  background: linear-gradient( 45deg, rgba(195, 33, 72, 0.9) 0%, rgba(90, 148, 255, 0.9) 60%, rgba(20, 247, 232, 0.7) 100% ), url('../img/shared/texture-dark-mosaic.png');
-}
-
-.header--hire-us {
-  background: linear-gradient( 45deg, rgba(16, 41, 63, 0.9) 0%, rgba(121, 69, 200, 0.9) 60%, rgba(236, 113, 113, 0.9) 100% ), url('../img/shared/texture-dark-mosaic.png');
-}
-
-.header--services,
+.header--careers-post,
+.header--case-study-post,
+.header--blog-post,
 .header--services-post {
-  background: linear-gradient( 45deg, rgba(121, 69, 200, 0.9) 0%, rgba(2, 248, 174, 0.9) 100%), url('../img/shared/texture-dark-mosaic.png');
+  background-color: $blue500;
+  background-image: url($header-bg);
 }
 
 .header--404 {
@@ -110,20 +119,20 @@ Header Styles
   width: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .header--intro-lead-in {
   margin-bottom: 25px;
-  font-family: $tertiary-font;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 22px;
 }
 
 .header--intro-heading {
   margin-bottom: 25px;
-  font-family: $primary-font;
-  font-size: 36px;
+  font-family: $main-font;
+  font-size: 34px;
   font-weight: 700;
   line-height: 50px;
 }
@@ -132,10 +141,6 @@ Header Styles
   .header--intro-text {
       width: 60%;
       text-align: left;
-  }
-
-  .header--case-studies .header--intro-text {
-      width: 50%;
   }
 
   .header--careers-post .header--intro-text,
@@ -153,109 +158,31 @@ Header Styles
 
   .header--services .header--intro-text {
     width: 50%;
-}
+  }
   
-  .header--careers .header--intro-text,
-  .header--about-us .header--intro-text,
-  .header--case-studies .header--intro-text,
-  .header--blog .header--intro-text,
-  .header--hire-us .header--intro-text,
-  .header--services .header--intro-text,
   .header--404 .header--intro-text {
       padding-top: 200px;
       padding-bottom: 200px;
   }
 
-  .header--careers .intro-image,
-  .header--about-us .intro-image,
-  .header--blog .intro-image,
-  .header--hire-us .intro-image {
-      display: block;
-      width: 40%;
-      text-align: center;
-  }
-
-  .header--case-studies .intro-image {
-      display: block;
-      width: 50%;
-      text-align: right;
-      padding-top: 250px;
-      padding-bottom: 200px;
-  }
-
-  .header--careers .intro-image {
-      padding-top: 200px;
-      padding-bottom: 200px;
-  }
-
-  .header--about-us .intro-image {
-      padding-top: 225px;
-      padding-bottom: 150px;
-  }
-
-  .header--services .intro-image {
-    display: block;
-    width: 50%;
-    text-align: right;
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-
-.header--404 .intro-image {
-  padding-top: 225px;
-  padding-bottom: 150px;
-  text-align: center;
-}
-
-  .header--careers .intro-image img {
-      width: 42%;
-  }
-
-  .header--about-us .intro-image img {
-      width: 100%;
-  }
-
-  .header--case-studies .intro-image img {
-      width: 90%;
-  }
-
-  .header--services .intro-image img {
-    width: 90%;
-}
-
-  .header--blog .intro-image img {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      width: 90%;
-  }
-
-  .header--services .intro-image img {
-    width: 90%;
-}
-
-  .header--hire-us .intro-image {
-      padding-top: 225px;
-      padding-bottom: 150px;
-  }
-
-  .header--hire-us .intro-image img {
-      width: 100%;
+  .header--404 .intro-image {
+    padding-top: 225px;
+    padding-bottom: 150px;
+    text-align: center;
   }
 
   .header--404 .intro-image img {
-    width: 85%;
-}
+      width: 85%;
+  }
 
   .header--intro-lead-in {
       margin-bottom: 25px;
-      font-family: $tertiary-font;
       font-size: 16px;
       line-height: 40px;
   }
 
   .header--intro-heading {
       margin-bottom: 50px;
-      font-family: $primary-font;
       font-size: 42px;
       font-weight: 700;
       line-height: 60px;
@@ -409,3 +336,10 @@ CTA Group - Links - Styles
   display: inline-block;
   margin-bottom: 50px;
 }
+
+/*
+*************************************************
+SERVICES PAGE
+*************************************************
+*/
+

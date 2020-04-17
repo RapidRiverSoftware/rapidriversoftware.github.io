@@ -1,0 +1,33 @@
+@import 'header_bg';
+@import 'footer_bg';
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,100,300,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,600,700&display=swap');
+
+@import url('../font/font-awesome/css/font-awesome.min.css');
+
+/* Variables - Font Families */
+$main-font: "Barlow", "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif'; 
+
+/* Variables - Colours */
+$primary-blue: #0081df; // lighter blue than RRSoft logo
+$primary-blue-dark: #0b6cb3;
+$primary-blue-light: #1d94ea;
+$secondary-blue: #10293f;
+$grey: #888888;
+$grey-light: #EFEFEF;
+$grey-dark: #222222;
+$off-white: #E6F2FB;
+$red: #E74C3C;
+
+// New Colour Variables
+$blue500: #0081df; //primary blue
+$blue900: #10293f; //secondary blue
+$grey100: #F7FAFC;
+$grey150: #F6F9FC;
+$grey300: #F5F5F5;
+$grey600: #767E86;
+
+$pink400: #FF559C;

@@ -4,6 +4,8 @@ baseurl: ''
 title: Rapid River Software
 email: info@rrsoft.co
 description: "Rapid River Software is a worldwide group of full-stack developers. We have skills ranging from front-end to operations automation and everything in between. With extensive experience writing software for the Internet, whether it's designing new systems or improving existing ones, we have the skills to hit the ground running."
+map: "https://goo.gl/maps/1TAqia2N7gYPWcCz5"
+telephone: "+60322420689"
 
 collections:
   careers:

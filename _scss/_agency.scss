@@ -19,8 +19,8 @@
 .btn-primary {
     border-color: $primary-blue;
     text-transform: uppercase;
-    font-family: $primary-font;
-    font-weight: 700;
+    font-family: $main-font;
+    font-weight: 300;
     color: white;
     background-color: $primary-blue;
 }
@@ -70,7 +70,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: $primary-blue;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: $primary-font;
+    font-family: $main-font;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -131,7 +131,7 @@ section .section-heading {
 .section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: $tertiary-font;
+    font-family: $main-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -213,70 +213,6 @@ section#hire-us .form-control:focus {
 
 section#hire-us .text-danger {
     color: $red;
-}
-
-/* Footer styles */
-
-footer {
-    padding: 25px 0;
-    text-align: center;
-}
-
-footer span.copyright {
-    font-family: $primary-font;
-    line-height: 40px; 
-    font-size: x-small;
-}
-
-footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: $primary-font;
-    line-height: 40px;
-}
-
-footer div.company-info p {
-    margin-top: 20px;
-    text-align: center;
-    font-size: x-small;
-}
-
-@media(min-width:768px) {
-    footer span.copyright {
-        font-family: $primary-font;
-        line-height: 40px;
-    }
-
-    footer div.company-info p {
-        margin-top: 0px;
-        text-align: left;
-    }
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: white;
-    background-color: $secondary-blue;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: $primary-blue;
 }
 
 .btn:focus,
@@ -368,7 +304,7 @@ img.case-study-product {
 
 .case-studies h6 {
     font-size: 21px;
-    font-family: $secondary-font;
+    font-family: $main-font;
     font-weight: normal;
     line-height: 160%;
     text-transform: none;
