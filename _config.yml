@@ -35,14 +35,14 @@ people:
 
 - name: Yury Stepanov
   pic: yury
-  position: Software Engineer
+  position: Senior Software Engineer
   social:
     - title: facebook
       url: https://www.facebook.com/yurgen.kulikow
 
 - name: Lim Victor
   pic: victor
-  position: Software Engineer
+  position: Senior Software Engineer
   social:
     - title: github
       url: https://github.com/viclim
@@ -51,7 +51,7 @@ people:
 
 - name: Ivan Yeoh
   pic: ivan
-  position: Software Engineer
+  position: Senior Software Engineer
   social:
     - title: github
       url: https://github.com/ivanyeoh
@@ -64,7 +64,7 @@ people:
 
 - name: Aaron Lim
   pic: aaron
-  position: Software Engineer
+  position: Senior Software Engineer
   social:
     - title: github
       url: https://github.com/aaron-lim
@@ -242,7 +242,7 @@ people:
 
 - name: Haritha Kotte
   pic: haritha
-  position: Junior Software Engineer
+  position: Software Engineer
   social:
     - title: github
       url: https://github.com/harithakotte59
