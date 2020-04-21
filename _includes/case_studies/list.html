@@ -1,41 +1,32 @@
 <!-- Case studies Section -->
-<div id="projects" class="projects">
-{% for post in site.case_studies %}
-    {% if post.status contains 'published' %}
-    <section id="{{ post.slug }}" class="collection-list--item">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm mb-4 mb-md-0">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
-                        <picture class="img-fluid img-centered">
-                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.webp" type="image/webp">
-                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" type="image/jpeg">
-                            <img src="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" alt="" class="img-fluid img-centered">
-                        </picture>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <h4>{{ post.title }}</h4>
+<div class="casestudy-list">
+    {% for post in site.case_studies %}
+      {% if post.status contains 'published' %}
+      <article id="{{post.slug}}" class="casestudy-item">
+            <div class="intro">
+                <h4 class="title">{{ post.title }}</h4>
+                <p class="client">{{ post.client }}</p>
 
-                    <ul class="list-inline">
-                        {% for tag in post.tags %}
-                        <li class="list-inline-item text-muted">
-                            <small>{{ tag }}</small>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                <ul class="taglist">
+                    <li>Tags:</li>
+                    {% for tag in post.tags %}
+                    <li class="tag">
+                        <a>{{ tag }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
 
-                    <br />
-
-                    <p>{{ post.subtitle }}</p>
-                    <br /><br />
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
-                        Learn more about our work on {{ post.title }}
-                    </a>
-                </div>
+                <picture class="">
+                    <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.webp" type="image/webp">
+                    <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" type="image/jpeg">
+                    <img src="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" alt="" class="">
+                </picture>
             </div>
-        </div>
-    </section>
-    {% endif %}
-{% endfor %}
+
+            <div class="content">
+                {{ post.content | markdownify }}
+            </div>
+      </article>
+      {% endif %}
+  {% endfor %}  
 </div>
