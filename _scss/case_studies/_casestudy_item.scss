@@ -1,5 +1,14 @@
 .casestudy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: -40px;
+}
+
+@media(min-width: $width-md) {
+  .casestudy-list {
+
+  }
 }
 
 .casestudy-item {
@@ -94,6 +103,7 @@
   .productimg {
     text-align: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     > .img {
       width: 80%;
@@ -125,6 +135,47 @@
 
     .value {
       padding: 1px 20px 30px 20px;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .casestudy-item {
+    width: 80%;
+    margin-bottom: 30px;
+
+    &:nth-child(even) {
+      background-color: white;
+  
+      .title {
+        color: $blue900;
+      }
+  
+      .tag {
+        color: $grey600;
+      }
+  
+      .productimg {
+        background-image: url("../img/case-studies/shared/bg-stripes.png");
+      }
+  
+      .content .subheading {
+        color: $blue900;
+      }
+  
+      .content p {
+        color: $grey600;
+      }
+  
+      .content .solution {
+        background-color: $blue200;
+      }
+    }
+
+    .productimg {    
+      > .img {
+        width: 62%;
+      }
     }
   }
 }
