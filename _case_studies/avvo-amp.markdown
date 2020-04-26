@@ -6,7 +6,7 @@ alt: image-alt
 client: Avvo
 tags: amp, seo, frontend, backend, custom-software-development
 project-url: ''
-status: draft
+status: published
 ---
 
 <div class="problem">
@@ -20,7 +20,7 @@ AMP was becoming a major contributor to the ability to attract traffic from sear
 <div class="solution">
 <h2 class="subheading">Our Solution</h2>
 <p>
-We built AMP versions of the pages. When it came to the placing… @jimmy can you provide info on the specific challenges we faced, and how we got around them?
+We built AMP versions of the pages. We had to get creative about how to place a dynamic number of ads on a page that was served with static content in mind. Through the use of AMP caching rules and knowledge about how many ad spaces would be filled per page over future 12-hour periods, we were able to implement a solution that worked with the existing internal ad system.
 </p>
 </div>
 
