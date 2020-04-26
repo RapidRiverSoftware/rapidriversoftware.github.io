@@ -235,7 +235,43 @@
 
 @media(min-width: $width-xl) {
   .casestudy-item {
+    position: relative;
+    z-index: 1;
     max-width: 1140px;
+    margin-bottom: 150px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      width: 280px;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:nth-child(even):before {
+      top: -60px;
+      right: -58px;
+      background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
+    }
+
+    &:nth-child(odd):before {
+      top: 180px;
+      left: -140px;
+      background-image: url("../img/case-studies/shared/bg-pattern-stripes.png"); 
+    }
+
+    &:first-child:before {
+      top: 120px;
+      left: -140px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png");
+    }
+
+    .intro {
+      position: relative;
+      z-index: 1;
+    }
 
     .productimg {    
       > .img {
