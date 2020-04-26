@@ -179,3 +179,68 @@
     }
   }
 }
+
+@media(min-width: $width-lg) {
+  .casestudy-item {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    padding-top: 0px;
+    margin-bottom: 70px;
+
+    &:nth-child(even),
+    &:nth-child(odd) {
+      .content .subheading {
+        color: $grey300;
+      }
+  
+      .content p {
+        color: white;
+      }
+  
+      .content .solution {
+        background-color: $blue800;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: transparent;
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(odd) {
+      background-color: transparent;
+      flex-direction: row;
+    }
+
+    .intro {
+      width: 40%;
+      background-color: white;
+      border-radius: 30px;
+    }
+
+    .text {
+      padding-top: 60px;
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 28px;
+    }
+
+    .content {
+      width: 60%;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .casestudy-item {
+    max-width: 1140px;
+
+    .productimg {    
+      > .img {
+        width: 80%;
+      }
+    }
+  }
+}
