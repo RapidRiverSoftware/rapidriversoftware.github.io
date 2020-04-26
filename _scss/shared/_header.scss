@@ -49,9 +49,9 @@
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .page-header {
-    height: 820px;
+    height: 670px;
 
     &.-other {
       border-bottom-right-radius: 90px;
@@ -62,7 +62,7 @@
     }
 
     .intro {
-      padding-top: 260px;
+      padding-top: 195px;
 
       .heading {
         font-size: 42px;
@@ -77,7 +77,31 @@
     }
 
     .image {
-      padding-top: 160px;
+      padding-top: 190px;
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .page-header {
+    height: 700px;
+
+    .intro {
+      padding-top: 180px;
+    }
+
+    .image {
+      padding-top: 140px;
+    }
+  } 
+}
+
+@media(min-width: $width-xl) {
+  .page-header {
+    height: 820px;
+
+    .intro {
+      padding-top: 225px;
     }
   }
 }
