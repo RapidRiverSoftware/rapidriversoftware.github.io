@@ -1,5 +1,5 @@
 <!-- Case studies Section -->
-<div class="casestudy-list">
+<div id="projects" class="casestudy-list">
     {% assign case_studies = site.case_studies | sort: 'id' %}
     {% for post in case_studies reversed %}
       {% if post.status contains 'published' %}
