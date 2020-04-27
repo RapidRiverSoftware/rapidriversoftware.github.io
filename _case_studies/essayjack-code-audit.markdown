@@ -6,6 +6,7 @@ alt: image-alt
 client: EssayJack
 tags: RoR, JavaScript, project-rescue, audit-and-optimization
 project-url: ''
+blog-post: '2019/12/01/essayjack-case-study'
 related-services: [project-rescue]
 status: published
 ---

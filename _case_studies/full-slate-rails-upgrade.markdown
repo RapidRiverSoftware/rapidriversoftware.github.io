@@ -6,6 +6,7 @@ alt: image-alt
 client: Full Slate
 tags: RoR, JS, frontend, backend, project-rescue, audit-and-optimization
 project-url: ''
+blog-post: '2019/12/02/full-slate-case-study'
 related-services: [project-rescue]
 status: published
 ---
