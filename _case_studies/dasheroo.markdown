@@ -6,6 +6,7 @@ alt: image-alt
 client: Dasheroo
 tags: RoR, JavaScript, postgres, custom-software-development, rapid-rampup
 project-url: ''
+related-services: [custom-software-development]
 status: published
 ---
 

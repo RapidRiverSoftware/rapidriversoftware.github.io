@@ -5,12 +5,6 @@
   margin-top: -40px;
 }
 
-@media(min-width: $width-md) {
-  .casestudy-list {
-
-  }
-}
-
 .casestudy-item {
   position: relative;
   padding-top: 40px;
@@ -214,9 +208,16 @@
     }
 
     .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 40%;
       background-color: white;
       border-radius: 30px;
+    }
+
+    .productimg {   
+      padding-top: 40px;
     }
 
     .text {

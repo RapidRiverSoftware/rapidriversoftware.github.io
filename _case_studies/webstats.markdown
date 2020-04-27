@@ -6,6 +6,7 @@ alt: image-alt
 client: Martindale-Hubbell
 tags: clickstream, analytics, RoR, postgres, oracle, pl-sql, project-rescue
 project-url: ''
+related-services: [project-rescue]
 status: published
 ---
 
