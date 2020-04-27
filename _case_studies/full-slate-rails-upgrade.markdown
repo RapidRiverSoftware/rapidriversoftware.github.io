@@ -13,7 +13,7 @@ status: published
 <div class="problem">
 <h2 class="subheading">The Problem</h2>
 <p>
-Full Slate was serving thousands of businesses daily, but a major piece of technical debt had been present for some time: the app was built on Rails version 2.3, which had been end-of-life for more than three years. The ask was to upgrade to the latest version (5.0 at the time).
+<a class="link-pink" href="https://www.fullslate.com/" target="_blank">Full Slate</a> was serving thousands of businesses daily, but a major piece of technical debt had been present for some time: the app was built on Rails version 2.3, which had been end-of-life for more than three years. The ask was to upgrade to the latest version (5.0 at the time).
 </p>
 </div>
 

@@ -13,7 +13,7 @@ status: published
 <div class="problem">
 <h2 class="subheading">The Problem</h2>
 <p>
-GovWizely were tasked with making many data sets publicly accessible via standardised HTTP APIs. These data sets were stored in places and formats which were difficult to access and decipher.
+<a class="link-pink" href="http://www.govwizely.com/" target="_blank">GovWizely</a> were tasked with making many data sets publicly accessible via standardised HTTP APIs. These data sets were stored in places and formats which were difficult to access and decipher.
 </p>
 </div>
 

@@ -13,7 +13,7 @@ status: published
 <div class="problem">
 <h2 class="subheading">The Problem</h2>
 <p>
-Dasheroo were a start-up with a viable business idea: to provide a place were digital marketers and business people could see metrics from all the online tools they use in one place. The problem was that in order to build this, Dasheroo needed a build large number of integrations with their product.
+<a class="link-pink" href="https://www.dasheroo.com/" target="_blank">Dasheroo</a> were a start-up with a viable business idea: to provide a place were digital marketers and business people could see metrics from all the online tools they use in one place. The problem was that in order to build this, Dasheroo needed a build large number of integrations with their product.
 </p>
 </div>
 

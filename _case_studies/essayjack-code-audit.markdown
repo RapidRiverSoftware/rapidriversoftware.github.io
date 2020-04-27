@@ -13,7 +13,7 @@ status: published
 <div class="problem">
 <h2 class="subheading">The Problem</h2>
 <p>
-EssayJack came to us with a MVP. Their app was supporting a small user base, but it had a number of concerning problems. They were keen to understand why these problems were present. They wanted to make judgement calls on how next to proceed with product development. They were also keen to find a consulting partner to take ownership of the technical development of the product.
+<a class="link-pink" href="https://www.essayjack.com/" target="_blank">EssayJack</a> came to us with a MVP. Their app was supporting a small user base, but it had a number of concerning problems. They were keen to understand why these problems were present. They wanted to make judgement calls on how next to proceed with product development. They were also keen to find a consulting partner to take ownership of the technical development of the product.
 </p>
 </div>
 

@@ -13,7 +13,7 @@ status: published
 <div class="problem">
 <h2 class="subheading">The Problem</h2>
 <p>
-Avvo had a typical problem - a substantial tech team, who were busy with many important deliverables. The trouble was that certain operational aspects of the product were being sidelined. The area most hit was Sales. There was a growing list of items that the Sales team needed from the Development team, but not enough people free to help.
+<a class="link-pink" href="https://www.avvo.com/" target="_blank">Avvo</a> had a typical problem - a substantial tech team, who were busy with many important deliverables. The trouble was that certain operational aspects of the product were being sidelined. The area most hit was Sales. There was a growing list of items that the Sales team needed from the Development team, but not enough people free to help.
 </p>
 </div>
 
