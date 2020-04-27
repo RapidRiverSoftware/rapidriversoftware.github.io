@@ -7,7 +7,10 @@ description: Full Slate is an appointment scheduling software for small business
 author: Calum Halcrow
 ---
 
-###### Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
+## About Full Slate
+Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
+
+![Full Slate Homepage](/assets/img/posts/fullslate-screenshot.png)
 
 ## The Problem
 
