@@ -1,3 +1,10 @@
+// Temporary fix until all pages have been redesigned
+.toplevel-page.-blue .site-footer {
+  &::before {
+    background-color: $blue800;
+  }
+}
+
 .site-footer {
   position: relative;
   height: 400px;
@@ -14,7 +21,7 @@
     top: 0px;
     height: 40px;
     width: 100%;
-    background-color: $blue800;
+    background-color: white;
     border-radius: 0px 0px 30px 30px;
   }
 
