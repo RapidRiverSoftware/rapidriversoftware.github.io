@@ -23,6 +23,14 @@
                     <div class="productimg">
                         <img src="/assets/img/case-studies/product/{{ post.slug }}.png" alt="" class="img">
                     </div>
+
+                    {% if post.blog-post %}
+                        <div class="blogredirect">
+                            <a href="/blog/{{post.blog-post}}" class="button -blue">
+                                Read more on the blog
+                            </a>
+                        </div>
+                    {% endif %}
                 </span>
 
                 <ul class="service-list">
