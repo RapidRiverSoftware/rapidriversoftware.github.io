@@ -1,41 +1,52 @@
 <!-- Case studies Section -->
-<div id="projects" class="projects">
-{% for post in site.case_studies %}
-    {% if post.status contains 'published' %}
-    <section id="{{ post.slug }}" class="collection-list--item">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm mb-4 mb-md-0">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
-                        <picture class="img-fluid img-centered">
-                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.webp" type="image/webp">
-                            <source srcset="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" type="image/jpeg">
-                            <img src="/assets/img/case-studies/{{ post.slug }}-thumbnail.jpg" alt="" class="img-fluid img-centered">
-                        </picture>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <h4>{{ post.title }}</h4>
+<div id="projects" class="casestudy-list">
+    {% assign case_studies = site.case_studies | sort: 'id' %}
+    {% for post in case_studies reversed %}
+      {% if post.status contains 'published' %}
+      <article id="{{post.slug}}" class="casestudy-item">
+            <div class="intro">
+                <span>
+                    <div class="text">
+                        <h4 class="title">{{ post.title }}</h4>
+                        <p class="client">{{ post.client }}</p>
+        
+                        <ul class="taglist">
+                            <li class="tag">Tags:</li>
+                            {% for tag in post.tags %}
+                            <li class="tag">
+                                <a>{{ tag }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
 
-                    <ul class="list-inline">
-                        {% for tag in post.tags %}
-                        <li class="list-inline-item text-muted">
-                            <small>{{ tag }}</small>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                    <div class="productimg">
+                        <img src="/assets/img/case-studies/product/{{ post.slug }}.png" alt="" class="img">
+                    </div>
 
-                    <br />
+                    {% if post.blog-post %}
+                        <div class="blogredirect">
+                            <a href="/blog/{{post.blog-post}}" class="button -blue">
+                                Read more on the blog
+                            </a>
+                        </div>
+                    {% endif %}
+                </span>
 
-                    <p>{{ post.subtitle }}</p>
-                    <br /><br />
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="project-link">
-                        Learn more about our work on {{ post.title }}
-                    </a>
-                </div>
+                <ul class="service-list">
+                    <li class="serviceitem -title">Related services:</li>
+                    {% for service in post.related-services %}
+                    <li class="serviceitem">
+                        <a class="link-pink capitalize" href="/services/{{ service }}">{{ service | replace: "-", " " }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-        </div>
-    </section>
-    {% endif %}
-{% endfor %}
+
+            <div class="content">
+                {{ post.content | markdownify }}
+            </div>
+      </article>
+      {% endif %}
+  {% endfor %}
 </div>

@@ -1,0 +1,5 @@
+.toplevel-page {
+  &.-blue {
+    background: linear-gradient(to bottom, $blue900 0%, $blue800 100%);
+  }
+}

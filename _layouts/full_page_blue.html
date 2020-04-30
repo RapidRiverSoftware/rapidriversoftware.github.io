@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body id="home" class="toplevel-page -blue">
+        {% include gtm.html %}
+        {% include nav_light.html %}
+
+        <div class="full-page">
+            {{ content | markdownify }}
+        </div>
+
+        {% include footer.html %}
+        {% include js.html %}
+    </body>
+</html>

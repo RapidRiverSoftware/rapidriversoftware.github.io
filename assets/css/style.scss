@@ -7,6 +7,15 @@
 @import 'base';
 @import 'layout';
 @import 'module';
-@import 'components';
 @import 'state';
 @import 'agency';
+
+// Page Styles
+@import 'shared/index';
+@import 'home/index';
+@import 'services/index';
+@import 'case_studies/index';
+@import 'about/index';
+@import 'careers/index';
+@import 'blog/index';
+@import 'hire_us/index';

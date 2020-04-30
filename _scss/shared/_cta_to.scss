@@ -1,0 +1,58 @@
+.cta-bucket {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  > .content {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: $blue500;
+    background-image: url("../img/shared/bg-cta-hireus.png");
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+
+  > .content .heading {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: $blue900;
+  }
+
+  > .content .description {
+    font-size: 16px;
+  }
+
+  &.-hireus {
+    background-color: transparent;
+  }
+}
+
+@media(min-width: $width-md) {
+  .cta-bucket {
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+
+    > .content {
+      width: 70%;
+      padding: 40px;
+      border-radius: 10px 0px 10px 0px;
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .cta-bucket {
+    > .content {
+      max-width: 700px;
+      width: 80%;
+      padding: 40px 80px;
+    }
+  }
+}
+
+@media(min-width: $width-xl) {}

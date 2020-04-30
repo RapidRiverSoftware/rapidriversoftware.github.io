@@ -1,20 +1,16 @@
 ---
-title: EssayJack
-subtitle: EssayJack is an essay templating platform that has an interactive essay editor that pre-structures student essays. Created by professors, it provides a way for instructors to guide students through the daunting task of essay writing.
-layout: work_post
-img: essayjack.webp
-thumbnail: essayjack-thumbnail.webp
-slug: essayjack
-alt: image-alt
-client: EssayJack
-tags: [Ruby on Rails, React, Project Rescue, Custom Software Development]
+title: EssayJack Case Study
+layout: blog_post
+category: blog
+date: 2019-12-01
 description: EssayJack is an essay writing system that takes the stress out of essay-writing. The Rapid River team inherited a clunky beta app and was tasked with transforming it into a sleak, modern, React frontend.
-project-url: https://www.essayjack.com
-status: published
-permalink: /case-studies/essayjack
+author: Team Rapid River
 ---
 
-###### EssayJack is an essay templating platform that has an interactive essay editor that pre-structures student essays. Created by professors, it provides a way for instructors to guide students through the daunting task of essay writing.
+## About EssayJack
+EssayJack is an essay templating platform that has an interactive essay editor that pre-structures student essays. Created by professors, it provides a way for instructors to guide students through the daunting task of essay writing.
+
+![EssayJack Homepage](/assets/img/posts/essayjack-screenshot.png)
 
 ## The Challenge
 EssayJack founder Lindy came to us with a “traditional” Rails app that needed some intensive care. The app had been developed as an MVP, had gained some traction and had a user base. But key features of this beta version of the app behaved unpredictably, at times breaking the UX in a jarring way. The app’s test suite was not in a state where we could rely on it to provide the security we needed to conduct a refactoring exercise. Being a team who isn’t afraid of anything, we welcomed this opportunity. A Project Rescue operation began.

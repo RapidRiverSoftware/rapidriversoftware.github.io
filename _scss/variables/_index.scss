@@ -23,11 +23,21 @@ $off-white: #E6F2FB;
 $red: #E74C3C;
 
 // New Colour Variables
+$blue200: #EAF6FF;
 $blue500: #0081df; //primary blue
+$blue800: #143959;
 $blue900: #10293f; //secondary blue
+
 $grey100: #F7FAFC;
 $grey150: #F6F9FC;
 $grey300: #F5F5F5;
+$grey400: #D7D7D7;
 $grey600: #767E86;
 
 $pink400: #FF559C;
+
+// Breakpoint Variables
+$width-sm: 576px;
+$width-md: 768px;
+$width-lg: 1024px;
+$width-xl: 1200px;

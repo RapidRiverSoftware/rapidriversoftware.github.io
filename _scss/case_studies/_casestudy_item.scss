@@ -1,0 +1,293 @@
+.casestudy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.casestudy-item {
+  position: relative;
+  padding-top: 40px;
+  border-radius: 30px;
+
+  &:nth-child(odd) {
+    background-color: white;
+
+    .title {
+      color: $blue900;
+    }
+
+    .tag {
+      color: $grey600;
+    }
+
+    .productimg {
+      background-image: url("../img/case-studies/shared/bg-stripes.png");
+    }
+
+    .content .subheading {
+      color: $blue900;
+    }
+
+    .content p {
+      color: $grey600;
+    }
+
+    .content .solution {
+      background-color: $blue200;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: $blue900;
+
+    .title {
+      color: white;
+    }
+
+    .tag {
+      color: $grey400;
+    }
+
+    .productimg {
+      background-image: url("../img/case-studies/shared/bg-stripes-dark.png");
+    }
+
+    .content .subheading {
+      color: $grey300;
+    }
+
+    .content p {
+      color: white;
+    }
+
+    .content .solution {
+      background-color: $blue800;
+    }
+  }
+
+  .text {
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .client {
+    color: $blue500;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .taglist {
+    padding-left: 0px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .productimg {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > .img {
+      width: 80%;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+    }
+  }
+
+  .blogredirect {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .content {
+    .subheading {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 10px;
+      font-size: 19px;
+      text-transform: capitalize;
+      border-left: 3px solid $blue500;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .problem {
+      padding: 1px 20px 30px 20px;
+    }
+
+    .solution {
+      padding: 1px 20px 30px 20px;
+    }
+
+    .value {
+      padding: 1px 20px 30px 20px;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .casestudy-item {
+    width: 80%;
+    margin-bottom: 30px;
+
+    &:nth-child(even) {
+      background-color: white;
+  
+      .title {
+        color: $blue900;
+      }
+  
+      .tag {
+        color: $grey600;
+      }
+  
+      .productimg {
+        background-image: url("../img/case-studies/shared/bg-stripes.png");
+      }
+  
+      .content .subheading {
+        color: $blue900;
+      }
+  
+      .content p {
+        color: $grey600;
+      }
+  
+      .content .solution {
+        background-color: $blue200;
+      }
+    }
+
+    .productimg {    
+      > .img {
+        width: 62%;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .casestudy-item {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    padding-top: 0px;
+    margin-bottom: 70px;
+
+    &:nth-child(even),
+    &:nth-child(odd) {
+      .content .subheading {
+        color: $grey300;
+      }
+  
+      .content p {
+        color: white;
+      }
+  
+      .content .solution {
+        background-color: $blue800;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: transparent;
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(odd) {
+      background-color: transparent;
+      flex-direction: row;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40%;
+      background-color: white;
+      border-radius: 30px;
+    }
+
+    .productimg {   
+      padding-top: 40px;
+
+      > .img {
+        width: 80%;
+      }
+    }
+
+    .text {
+      padding-top: 60px;
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 28px;
+    }
+
+    .content {
+      width: 60%;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .casestudy-item {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin-bottom: 150px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      width: 280px;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:nth-child(even):before {
+      top: -60px;
+      right: -58px;
+      background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
+    }
+
+    &:nth-child(odd):before {
+      top: 180px;
+      left: -140px;
+      background-image: url("../img/case-studies/shared/bg-pattern-stripes.png"); 
+    }
+
+    &:first-child:before {
+      top: 120px;
+      left: -140px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png");
+    }
+
+    .intro {
+      position: relative;
+      z-index: 1;
+    }
+
+    .productimg {    
+      > .img {
+        width: 80%;
+      }
+    }
+  }
+}

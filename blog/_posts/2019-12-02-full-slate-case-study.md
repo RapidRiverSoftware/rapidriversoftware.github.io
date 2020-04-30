@@ -1,20 +1,16 @@
 ---
-title: Full Slate
-subtitle: Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
-layout: work_post
-img: fullslate.webp
-thumbnail: fullslate-thumbnail.webp
-slug: fullslate
-alt: image-alt
-client: Full Slate
-tags: [Ruby on Rails, JavaScript, Project Rescue, Custom Software Development]
+title: Full Slate Case Study
+layout: blog_post
+category: blog
+date: 2019-12-02
 description: Full Slate is an appointment scheduling software for small businesses. The Rapid River successfully upgraded the Rails version from 2 to 5.
-project-url: https://www.fullslate.com/
-status: published
-permalink: /case-studies/full-slate
+author: Calum Halcrow
 ---
 
-###### Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
+## About Full Slate
+Full Slate is appointment scheduling software for businesses. They provide their customers (typically small businesses) with a convenient way of letting their clients book appointments online.
+
+![Full Slate Homepage](/assets/img/posts/fullslate-screenshot.png)
 
 ## The Problem
 

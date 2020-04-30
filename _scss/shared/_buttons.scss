@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  &.-blue {
+    color: white;
+    background-color: $blue500;
+  }
+
+  &.-white {
+    color: $blue900;
+    background-color: $grey100;
+  }
+}

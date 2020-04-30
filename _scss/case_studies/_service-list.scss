@@ -1,0 +1,24 @@
+.service-list {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+  background-color: rgba($blue500, 0.1);
+
+  > .serviceitem {
+    &:not(.-title) {
+      padding-left: 20px;
+    }
+
+    &.-title {
+      color: $grey600;
+      font-weight: bold;
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .service-list {
+    padding-bottom: 60px;
+  }
+}
