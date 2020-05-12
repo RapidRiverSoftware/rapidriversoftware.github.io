@@ -244,6 +244,7 @@ PLATFORMS
 DEPENDENCIES
   faraday (~> 0)
   github-pages
+  jekyll-paginate
   nokogiri (>= 1.10.4)
 
 BUNDLED WITH

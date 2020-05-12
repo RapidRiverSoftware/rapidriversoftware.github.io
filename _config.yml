@@ -18,6 +18,12 @@ collections:
 sass:
   sass_dir: _scss
 
+plugins:
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "/blog/:num/"
+
 # Team names, titles and social links
 people:
 - name: Calum Halcrow
