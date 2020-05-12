@@ -19,7 +19,7 @@ Please open a PR and assign it to Calum for review.
 This section provides a summary of the ways different types of content can be added.
 
 ### Creating a team member profile
-1. Add your details in the `config.yml` file
+1. Add your details in `/data/people.yml` file
 2. Review in the browser when done
 3. Open a PR
 
