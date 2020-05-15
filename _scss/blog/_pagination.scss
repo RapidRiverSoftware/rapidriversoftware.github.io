@@ -1,0 +1,16 @@
+.blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pagenum {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+
+    &.-link {
+      color: $pink400;
+      text-decoration: underline;
+    }
+  }
+}
