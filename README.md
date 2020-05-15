@@ -35,6 +35,19 @@ This section provides a summary of the ways different types of content can be ad
 3. Review in the browser when done writing.
 4. Open a PR.
 
+### Syntax highlighting for your code
+
+In your markdown, you can use a shortcode to add syntax highlighting to your code. Below is an example for JavaScript:
+```javascript
+{%highlight javascript %}
+  function myCoolFunc() {
+    let hello = "uh, hello";
+    alert(hello);
+  }
+
+  myCoolFunc();
+{% endhighlight %}
+```
 ### Creating case-study item:
 1. Copy an existing post in the `_case_studies/` directory, edit the file name and "front matter" accordingly
 2. Create an `img` and a `thumbnail` for the new case study item in the `assets/img/case-studies` directory
