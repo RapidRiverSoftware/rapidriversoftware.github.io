@@ -18,10 +18,11 @@
   > .content .heading {
     font-size: 21px;
     text-transform: capitalize;
-    color: $blue900;
+    color: lighten($blue500, 35%);
   }
 
   > .content .description {
+    color: white;
     font-size: 16px;
   }
 
