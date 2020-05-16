@@ -32,7 +32,9 @@ $(function() {
 
   if (path) {
     // For blog post pages.
-    if (path.match(/^\d{4}/)) { path = 'blog' }
+    if (/blog/.test(path)) {
+      parentPath = parentPath +'/'; 
+    }
 
     $("#bs-example-navbar-collapse-1 a[href='/"+parentPath+"']").addClass('active');
   }
