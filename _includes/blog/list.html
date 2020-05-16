@@ -1,19 +1,18 @@
-<section>
+<div id="posts">
     <div class="container">
-      <div id="blog-list" class="blog-list">
+        <div id="blog-list" class="blog-list">
         {% for post in paginator.posts %}
-        {% if post.categories contains 'blog' %}
-        <div class="blogitem">
-          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-          <!--<p>{{ post.description }}</p>-->
-          <p class="meta">{{ post.author }} - <em>{{ post.date | date: '%B %d, %Y' }}</em></p>
-          <ul class="tag-list">
-            <li>Tags:</li>
-
-          </ul>
-        </div>
-        {% endif %}
+            {% if post.categories contains 'blog' %}
+            <div class="blogitem">
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <!--<p>{{ post.description }}</p>-->
+                <p class="meta">{{ post.author }} - <em>{{ post.date | date: '%B %d, %Y' }}</em></p>
+                <ul class="tag-list">
+                    <li>Tags:</li>
+                </ul>
+            </div>
+            {% endif %}
         {% endfor %}
-      </div>
+        </div>
     </div>
-  </section>
+  </div>

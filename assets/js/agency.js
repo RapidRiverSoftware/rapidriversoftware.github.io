@@ -42,7 +42,7 @@ $(function() {
 });
 
 
-// Helper function to set blogitem classes to be used for backgrounds
+// Helper function to set bloglist classes to be used for backgrounds
 $(function() {
   var pathname = window.location.pathname;
 
