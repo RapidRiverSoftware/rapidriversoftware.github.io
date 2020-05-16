@@ -27,7 +27,7 @@ plugins:
   - jekyll-paginate
   
 paginate: 8
-paginate_path: "/blog/:num/"
+paginate_path: "/blog/page/:num/"
 
 # Company social media links
 social:

@@ -25,6 +25,7 @@ $('div.modal').on('show.bs.modal', function() {
 	}
 });
 
+// Highlight active navigation menu item
 $(function() {
   var fullPath = window.location.pathname.substring(1);
   var parentPath = fullPath.split('/')[0];
@@ -37,5 +38,33 @@ $(function() {
     }
 
     $("#bs-example-navbar-collapse-1 a[href='/"+parentPath+"']").addClass('active');
+  }
+});
+
+
+// Helper function to set blogitem classes to be used for backgrounds
+$(function() {
+  var pathname = window.location.pathname;
+
+  if (/blog/.test(pathname)) {
+    var pageNum = parseInt(pathname.split('/')[3], 10);
+
+    if (!pageNum) {
+      pageNum = 1;
+    }
+
+    if (pageNum <= 4) {
+      pageNum = pageNum;
+    }
+
+    if (pageNum > 4) {
+      if (pageNum % 4 === 0) {
+        pageNum = 4;
+      } else {
+        pageNum = pageNum % 4;
+      }
+    }
+
+    $('#blog-list').addClass('page' + pageNum);
   }
 });
