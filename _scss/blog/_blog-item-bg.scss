@@ -1,6 +1,7 @@
 .blog-list {
   .blogitem {
-    background-size: cover;
+    background-size: contain;
+    background-color: $blue300;
   }
 
   &.page1 {
