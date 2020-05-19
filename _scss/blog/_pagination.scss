@@ -14,3 +14,9 @@
     }
   }
 }
+
+@media(min-width: $width-xl) {
+  .blog-pagination {
+    margin-bottom: 150px;
+  }
+}

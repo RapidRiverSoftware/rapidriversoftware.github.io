@@ -2,6 +2,7 @@
   .blogitem {
     background-size: contain;
     background-color: $blue300;
+    background-repeat: no-repeat;
   }
 
   &.page1 {
@@ -53,6 +54,14 @@
       &:nth-child(6) { background-image: url('../img/blog/item-bg/30.jpg');}
       &:nth-child(7) { background-image: url('../img/blog/item-bg/31.jpg');}
       &:nth-child(8) { background-image: url('../img/blog/item-bg/32.jpg');}
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .blog-list {
+    .blogitem {
+      background-size: cover;
     }
   }
 }
