@@ -15,7 +15,7 @@ In this case you can use this approach to non-destructively debug the chef-clien
 
 To debug this code, first make sure that you have the [debugger](http://rubygems.org/gems/debugger) gem installed where chef-client can see it:
 
-```
+```bash
 # How to correctly install http://rubygems.org/gems/debugger
 # for use with chef-client
 
@@ -39,7 +39,7 @@ To debug this code, first make sure that you have the [debugger](http://rubygems
 
 Now, start the debugger and set a breakpoint at the offending line:
 
-```
+```bash
 [root@my-server]$ rdebug `which chef-client`
 (rdb:1) break /var/chef/cache/cookbooks/gsfn_mysql/recipes/custom.rb:168
 Breakpoint 1 file /var/chef/cache/cookbooks/gsfn_mysql/recipes/custom.rb, line 168
@@ -48,7 +48,7 @@ Breakpoint 1 file /var/chef/cache/cookbooks/gsfn_mysql/recipes/custom.rb, line 1
 
 With the breakpoint set, chef-client will continue executing until the offending line is encountered, at which point it will stop:
 
-```
+```bash
 [2012-11-19T18:16:09+00:00] INFO: *** Chef 10.14.4 ***
 [2012-11-19T18:16:16+00:00] INFO: Run List is [recipe[xfs], role[gsfn_auth_prod], role[volumes]...
 Breakpoint 1 at /var/chef/cache/cookbooks/gsfn_mysql/recipes/custom.rb:168

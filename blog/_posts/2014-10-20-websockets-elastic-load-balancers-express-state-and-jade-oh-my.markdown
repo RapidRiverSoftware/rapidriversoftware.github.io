@@ -49,7 +49,7 @@ While the server-side NodeJS code now had the required endpoint information, it 
 
 In app.js I added this:
 
-```
+```javascript
 var expstate = require('express-state');
 expstate.extend(app);
 app.set('state namespace', 'AWESOMEAPP');
@@ -65,7 +65,7 @@ Note that by default AWESOMEAPP_WEBSOCKET_URL would just be understood to be the
 
 Since express-state locals need to be made visible somewhere in the client code, I added this to `<HEAD>` section of the global layout template:
 
-```
+```html
 <script>// <![CDATA[
 != state
 // ]]></script>
@@ -75,7 +75,7 @@ Note the use of != instead of = in order to avoid escaping of the state contents
 
 With this configuration available on the client side, the socket.io connections were created by using the provided endpoint information:
 
-```
+```javascript
 module.exports.ready = function() {
     // AWESOMEAPP is defined via express-state
     var url = AWESOMEAPP.config.endpoints.websocketURL;

@@ -11,7 +11,7 @@ Recently a client asked me to make their Jenkins CI test suite function correctl
 
 It seemed simple enough to add something like this to `config/environments/test.rb`:
 
-```
+```ruby
 if ENV['BUILD_NUMBER'] # this is set by Jenkins in CI
   config.assets.compress = true # Compress precompiled assets
   config.assets.compile = false # Refuse to compile assets on-the-fly
@@ -21,7 +21,7 @@ end
 
 And then test my changes like this:
 
-```
+```bash
 RAILS_ENV=test BUILD_NUMBER=1 rake assets:clean assets:precompile
 BUILD_NUMBER=1 rake konacha:run spec
 ```
@@ -46,7 +46,7 @@ So I was stuck between a rock and a hard place. If I turned on compression, the 
 
 After a little reading, I discovered that I could replace the compression engine itself with class of my own, so I did exactly that:
 
-```
+```ruby
 if ENV['BUILD_NUMBER'] # this is set by Jenkins in CI
   config.assets.compress = true # Compress precompiled assets
   config.assets.compile = false # Refuse to compile assets on-the-fly
@@ -57,7 +57,7 @@ end
 
 My new asset compressor is very simple, delegating all the work to Uglifier:
 
-```
+```ruby
 class SelectiveAssetsCompressor < Uglifier
  def initialize(options = { })
    options.merge(comments: :all)
@@ -82,7 +82,7 @@ comments: :all
 
 which guarantees that all comments in all Javascript files will be preserved during the compilation phase. This is important, because I use a comment to indicate that I do not want `spec/konacha/spec_helper.js` (or anything that includes it) to be compressed:
 
-```
+```javascript
 /**
  * DO NOT REMOVE THIS COMMENT
  * It turns off compression of the Konacha specs
