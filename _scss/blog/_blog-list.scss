@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: end;
     flex: auto;
-    height: 345px;
+    height: 250px;
     width: 100%;
     margin-bottom: 20px;
     border-radius: 30px;
@@ -53,19 +53,83 @@
   }
 }
 
-@media(min-width: $width-lg) {
+@media(min-width: $width-md) {
   .blog-list {
-    margin-left: -15px;
     width: 100%;
-    max-width: 960px;
+    max-width: 720px;
     margin-right: auto;
     margin-left: auto;
   
     .blogitem {
       flex: auto;
-      height: 345px;
+      height: 250px;
       min-width: 150px;
       margin: 0 15px 20px 15px;
+  
+      &:nth-child(4n+1) {
+        width: 300px;
+      }
+  
+      &:nth-child(4n+2) {
+        width: 210px;
+      }
+  
+      &:nth-child(4n+3) {
+        width: 210px;
+      }
+  
+      &:nth-child(4n+4) {
+        width: 300px;
+      }
+
+      .content {
+        height: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .blog-list {
+    max-width: 960px;
+  
+    .blogitem {
+      margin: 0 30px 60px 30px;
+
+      &:nth-child(4n+1) {
+        width: 400px;
+      }
+  
+      &:nth-child(4n+2) {
+        width: 300px;
+      }
+  
+      &:nth-child(4n+3) {
+        width: 300px;
+      }
+  
+      &:nth-child(4n+4) {
+        width: 400px;
+      }
+
+      .content {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .blog-list {
+    max-width: 1140px;
+
+    .blogitem {
+      flex: auto;
+      height: 345px;
+      min-width: 150px;
+      margin: 0 15px 30px 15px;
   
       &:nth-child(4n+1) {
         width: 520px;
@@ -82,16 +146,12 @@
       &:nth-child(4n+4) {
         width: 520px;
       }
-    }
-  }
-}
 
-@media(min-width: $width-xl) {
-  .blog-list {
-    max-width: 1140px;
-
-    .blogitem {
-      margin-bottom: 30px;
+      .content {
+        height: 60%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
     }
   }
 }
