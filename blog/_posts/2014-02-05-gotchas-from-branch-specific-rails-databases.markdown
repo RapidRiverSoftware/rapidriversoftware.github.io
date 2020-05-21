@@ -11,7 +11,7 @@ One client project that we’re working on includes many concurrent development 
 
 However, it comes with some drawbacks as well. First, you need to remember to create the database for the new branch before you begin using it.
 
-```
+```bash
 git checkout my_new_branch
 rake db:setup
 ```

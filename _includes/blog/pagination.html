@@ -1,0 +1,38 @@
+<div>
+    <!-- pagination -->
+    <div class="container">
+      {% if paginator.total_pages > 1 %}
+      <div class="blog-pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#posts" class="button -white">
+            <i class="fa fa-chevron-left"></i>
+          </a>
+        {% else %}
+          <span class="button -white">
+            <i class="fa fa-chevron-left"></i>
+          </span>
+        {% endif %}
+      
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="pagenum">{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="/blog/#posts" class="pagenum -link">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}#posts" class="pagenum -link">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+      
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#posts" class="button -white">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        {% else %}
+          <span class="button -white">
+            <i class="fa fa-chevron-right"></i>
+          </span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>

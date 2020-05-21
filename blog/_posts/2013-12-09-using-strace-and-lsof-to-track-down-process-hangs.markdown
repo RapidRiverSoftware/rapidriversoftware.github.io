@@ -23,7 +23,7 @@ To use this debugging recipe, we’ll need to be comfortable with [strace](http:
 
 To understand how strace enables us to track down hangs, let’s start with a quick “Hello, world” program:
 
-```
+```bash
 [root@nickdev ~]$ cat ./hw.c
 #include <stdio.h>
 
@@ -38,7 +38,7 @@ Hello, world
  
 Simple enough. Now what happens when we run that through strace?
 
-```
+```bash
 [root@nickdev ~]$ strace ./hello_world
 execve("./hello_world", ["./hello_world"], [/* 50 vars */]) = 0
 brk(0)                                  = 0xa7e000
@@ -78,19 +78,19 @@ Now let’s look at one particular system call that occurred during the executio
 
 First, the program made a system call to the write() function. The write function was told to print the string “Hello, world\n” to file handle #1, also known as “[standard output](http://www.livefirelabs.com/unix_tip_trick_shell_script/june_2003/06092003.htm)“. Since write() can handle null-terminated strings, it was also necessary for the write() function to be told the length of the string (13 characters).
 
-```
+```bash
 write(1, "Hello, world\n", 13
 ```
 
 Next, _because the output of strace and the output of the “Hello, world” program were being printed to the same terminal_, the actual string “Hello, world” was printed including a carriage return:
 
-```
+```bash
 write(1, "Hello, world\n", 13Hello, world
 ```
 
 Lastly, the write() function returned the number 13 to let the calling program know that it had, in fact, successfully written all 13 characters to the requested file handle. Because of the carriage return included in the “Hello, worldn” string, the remainder of the strace output appears on the next line in our terminal:
 
-```
+```bash
 write(1, "Hello, world\n", 13Hello, world
 )          = 13
 ```
@@ -124,7 +124,7 @@ To see this in action, let’s compare the strace of a successful MySQL database
 
 First, here’s a successful login:
 
-```
+```bash
 [root@nickdev ~]$ strace -e trace=connect mysql -h nickdev.marden.reading.ma.us
 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = 0
 connect(4, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = 0
@@ -146,7 +146,7 @@ mysql>
 
 Now here’s a login that hangs at first (probably because there is no machine out there with the IP address 1.2.3.4):
 
-```
+```bash
 [root@nickdev ~]$ </code<code>strace -e trace=connect mysql -h 1.2.3.4
 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = 0
 connect(3, {sa_family=AF_INET, sin_port=htons(3306), sin_addr=inet_addr("1.2.3.4")}, 16 
@@ -156,7 +156,7 @@ What has happened here is that the system call has occurred, but hasn’t return
 
 How does this particular hang resolve itself? After 60 seconds, the Linux IP stack gives up on the connection, and the connect() call returns a value (-1) that indicates failure. strace intercepts this result and prints the results to standard output along with some explanatory text; -1 becomes “-1 ETIMEDOUT (Connection timed out)”. After all of this, the MySQL client program prints its own error message to the standard error file handle as well.
 
-```
+```bash
 [root@nickdev ~]$ strace -e trace=connect mysql -h 1.2.3.4
 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = 0
 connect(3, {sa_family=AF_INET, sin_port=htons(3306), sin_addr=inet_addr("1.2.3.4")}, 16) = -1 ETIMEDOUT (Connection timed out)
@@ -175,7 +175,7 @@ We know that file handles 0, 1, and 2 represent standard input, standard output,
 
 In this case, our program open()’d and then close()’d (you’ll have to believe me on this; it’s in the full strace output) file handle #3 to connect to `/var/run/nscd/socket`. Then, it called socket() as part of the process of connecting to the remote server at 1.2.3.4. Since file handle #3 had been closed already – returned to the pool of available sockets – it was the one handed back to our process to be used in the connect() call to the remote MySQL server at 1.2.3.4:
 
-```
+```bash
 [root@nickdev ~]$ strace -e trace=connect,socket mysql -h 1.2.3.4
 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
 connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = 0
@@ -185,7 +185,7 @@ connect(3, {sa_family=AF_INET, sin_port=htons(3306), sin_addr=inet_addr("1.2.3.4
 
 With all this reuse of file handles, it would be nearly impossible to tell what’s going on without the [lsof](https://people.freebsd.org/~abe/) program. While this mysql client was hanging in one terminal, I used lsof to dump a partial list of files in another terminal, and sure enough file handle #3 was the socket that was timing out on the remote, nonexistent MySQL server:
 
-```
+```bash
 [root@nickdev ~]$ ps auxwww | grep mysql | grep 1.2.3.4
 root     11497  0.0  0.0  31760  2144 pts/6    S+   23:44   0:00 mysql -h 1.2.3.4
 
@@ -209,7 +209,7 @@ Everything so far has involved running a process under strace to identify which 
 
 To simulate the collection of system call info from a running process, let’s run our doomed MySQL connection to 1.2.3.4 in one terminal and attach to it with strace in another terminal by specifying the process ID (-p):
 
-```
+```bash
 [root@nickdev ~]$ ps auxwww | grep mysql | grep 1.2.3.4
 root     11548  0.0  0.0  31760  2140 pts/6    S+   23:48   0:00 mysql -h 1.2.3.4
 [root@nickdev ~]$ strace -p 11548
@@ -227,7 +227,7 @@ The connect() example is a bit pedantic because most of the information needed t
 
 Imagine, for example, if you connect to a hanging program (pid 11591) with strace and see this output:
 
-```
+```bash
 [root@nickdev ~]$ strace -p 11591
 Process 11591 attached - interrupt to quit
 read(3,
@@ -235,7 +235,7 @@ read(3,
 
 The corresponding lsof data tells you that the process is hanging while trying to read from a pipe called `/tmp/a_pipe_between_programs`:
 
-```
+```bash
 [root@nickdev ~]$ lsof -n -p 11591 | egrep -v '(DIR|REG)'
 COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
 cat     11591 root    0u   CHR  136,8      0t0      11 /dev/pts/8
@@ -246,7 +246,7 @@ cat     11591 root    3r  FIFO    8,1      0t0 5095543 /tmp/a_pipe_between_progr
 
 (By the way, the ‘3r’ in the lsof output means “file handle 3, opened for reading”). Now what do you do? You look for the program at the other end of that pipe by removing the ‘-p’ option from lsof:
 
-```
+```bash
 [root@nickdev ~]$ lsof -n | grep /tmp/a_pipe_between_programs
 cat       11591       root    3r     FIFO                8,1       0t0    5095543 /tmp/a_pipe_between_programs
 perl      11708       root    1w     FIFO                8,1       0t0    5095543 /tmp/a_pipe_between_programs
@@ -254,7 +254,7 @@ perl      11708       root    1w     FIFO                8,1       0t0    509554
 
 There’s the culprit…it’s the Perl script write_words_slowly.pl, which is writing (1w) to the same pipe that our hanging process is reading from. Now that we’ve identified the process ID (11708) that is causing our problem by looking at the other end of the file handle, we might be able to use strace to figure out what is wrong with that program:
 
-```
+```bash
 [strace output snipped...]
 write(1, "Aaliyahn", 8Aaliyah
 )                = 8
