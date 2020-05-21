@@ -9,8 +9,7 @@
 
   .blogitem {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-direction: column-reverse;
     flex: auto;
     height: 250px;
     width: 100%;
@@ -21,7 +20,7 @@
       display: flex;
       flex-direction: column;
       justify-content: end;
-      height: 50%;
+      height: 60%;
       padding: 20px;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
@@ -83,7 +82,7 @@
       }
 
       .content {
-        height: 100%;
+        height: 60%;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
       }
@@ -115,7 +114,7 @@
       }
 
       .content {
-        height: 100%;
+        height: 60%;
       }
     }
   }
