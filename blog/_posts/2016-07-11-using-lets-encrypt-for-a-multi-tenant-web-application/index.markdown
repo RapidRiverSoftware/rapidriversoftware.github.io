@@ -9,7 +9,7 @@ author: Nathan Smith
 
 ## Introduction
 
-As mentioned in a [previous post]({% post_url blog/_posts/2016-07-09-making-dnssec-work-for-an-aws-hosted-saas/index %}), we recently undertook a project to migrate the server infrastructure behind search.usa.gov to Amazon Web Services' (AWS) Elastic Compute Cloud (EC2). This post references that previous post frequently, so please read that post before reading this one if you haven't done so already. In addition to the DNS challenges created by offering "masked" domains such as `nasasearch.search.gov`, we also had to solve the problem of how to maintain SSL certificates for the main `search.usa.gov` domain along with the "masked" domains of all customers that wanted HTTPS support for their own domains. As also noted in our previous post, this all needed to be done in a multi-app-server environment with no interruption of service.
+As mentioned in a [previous post]({% post_url /_posts/2016-07-09-making-dnssec-work-for-an-aws-hosted-saas/index %}), we recently undertook a project to migrate the server infrastructure behind search.usa.gov to Amazon Web Services' (AWS) Elastic Compute Cloud (EC2). This post references that previous post frequently, so please read that post before reading this one if you haven't done so already. In addition to the DNS challenges created by offering "masked" domains such as `nasasearch.search.gov`, we also had to solve the problem of how to maintain SSL certificates for the main `search.usa.gov` domain along with the "masked" domains of all customers that wanted HTTPS support for their own domains. As also noted in our previous post, this all needed to be done in a multi-app-server environment with no interruption of service.
 
 ## SAN SSL Certificates and Let's Encrypt
 
