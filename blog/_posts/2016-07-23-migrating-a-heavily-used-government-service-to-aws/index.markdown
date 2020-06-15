@@ -87,7 +87,7 @@ The final savings calculation looked like this:
 
 That's a **97.5%** savings we were delighted to return to the operating budget of the project for more important things like developing new features!
 
-In other blog posts we discuss in more detail the complexities of supporting [SSL certificates for our government customers's hostnames]({% post_url blog/2016-07-11-using-lets-encrypt-for-a-multi-tenant-web-application %}) and how we managed to comply with the [DNSSEC requirement]({% post_url blog/2016-07-09-making-dnssec-work-for-an-aws-hosted-saas %}) for government agencies. Those posts go into much more technical detail and are worth reading if you're interested in how we solved the security challenges of providing SaaS services for thousands of government agencies.
+In other blog posts we discuss in more detail the complexities of supporting [SSL certificates for our government customers's hostnames]({% post_url blog/_posts/2016-07-11-using-lets-encrypt-for-a-multi-tenant-web-application/index %}) and how we managed to comply with the [DNSSEC requirement]({% post_url blog/_posts/2016-07-09-making-dnssec-work-for-an-aws-hosted-saas/index %}) for government agencies. Those posts go into much more technical detail and are worth reading if you're interested in how we solved the security challenges of providing SaaS services for thousands of government agencies.
 
 ## Challenges in the ATO Process
 
