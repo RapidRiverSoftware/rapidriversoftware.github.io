@@ -1,0 +1,54 @@
+/* Blog Styles */
+.subscribe {
+  text-align: center;
+}
+
+.blog.posts {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0px;
+}
+
+@media(min-width:768px) {
+  .blog.posts {
+      width: 64%;
+  }
+}
+
+.blog.posts li {
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.blog.posts h3 {
+  text-transform: capitalize;
+}
+
+.blog.posts h3 a {
+  color: $secondary-blue;
+}
+
+.blog.posts h3 a:hover {
+  color: $primary-blue;
+}
+
+.blog.posts p {
+  color: $grey;
+}
+
+.blog.posts p.meta {
+  color: $primary-blue;
+}
+
+.blog img {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #E1E3EA;
+  border-radius: 5px;
+}
+
+@media(min-width:768px) {
+  .blog img {
+      width: 80%;
+  }
+}
