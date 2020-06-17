@@ -11,6 +11,8 @@ As you grow in your career as a software developer, one of the trickier things t
 
 You can learn a lot about coaching by helping a child with a project which they find challenging. I had such an experience recently when I helped my four year old daughter complete a 100 piece jigsaw puzzle.
 
+![Little girl solving the puzzle](/assets/img/posts/mentorship-girl-puzzling.jpg)
+
 ## Lesson 1: Coaching is most effective when the task’s level of difficulty is just right.
 
 Going into the exercise, without help my daughter could complete a jigsaw with less pieces (around 50) which she had had experience completing before. She understood the principles of jigsaw completion. But a new puzzle (with an unfamiliar picture) and a higher number of pieces presented a challenge which she’d unlikely succeed at without help.
@@ -36,6 +38,8 @@ My daughter’s motivation would wane from time to time. This was usually due to
 I’d have both of us look closely at the picture and I would describe in detail what the next piece may look like. I’d also preemptively seek out the next pieces ahead of her doing so, so that if I needed to I could point them out to her. If she was having trouble finding a piece, I would start by hovering my hand over the area of the table where the piece was. “It might be somewhere over here” I would say. If this didn’t work, I would subtly whisper to her “it’s this one” while pointing at it. I was progressively making it easier for her to find the next step, while always trying to hold out as long as I could in case she’d make the breakthrough without the need for further help.
 
 Such situations would also arise when trying to fit pieces into the puzzle. She’d have the correct piece, but wouldn’t be seeing exactly where it joined on. In these cases she’d conclude that the piece didn’t fit (whereas in fact it would). Sometimes I’d deliberately let her make this conclusion, in case she may come back to the piece later and try again. If it seemed that she’d completely given up on the piece, I’d suggest she try it again.
+
+![Completed puzzle](/assets/img/posts/mentorship-complete-puzzle.jpg)
 
 ## Lesson 5: You know you’re achieving your goal when the person needs less and less help from you.
 
