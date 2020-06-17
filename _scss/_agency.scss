@@ -428,6 +428,9 @@ img.case-study-product {
 
 .blog img {
     width: 100%;
+    padding: 20px;
+    border: 1px solid #E1E3EA;
+    border-radius: 5px;
 }
 
 @media(min-width:768px) {
