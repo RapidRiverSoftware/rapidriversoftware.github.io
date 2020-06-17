@@ -151,7 +151,7 @@ This small change, called [outgoing-axfr-expand-alias](https://doc.powerdns.com/
 
 Overall, the process looks like this:
 
-![Two-step ALIAS and DNSSEC handling](/assets/img/posts/multi-tier-alias-and-dnssec-architecture.png)
+![Two-step ALIAS and DNSSEC handling]({% asset_path multi-tier-alias-and-dnssec-architecture.png %})
 
 You can see the script that we wrote to request the AXFR from the master server and compare its contents to the current slave server zone file [here](https://gist.github.com/nickmarden/9092c99cf3e201510ca83455fc2d2dab). It's quite simple, and relies on straightforward zone management features already built into the PowerDNS software. [Strictly speaking, this script is no longer necessary and was developed as a precaution against the possibility of a failed AXFR "emptying" the zone on the slave server. In the released version of PowerDNS 4.0.0, a standard zone slaving configuration will have such protection enabled automatically.]
 
