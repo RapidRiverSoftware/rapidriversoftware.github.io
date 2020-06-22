@@ -1,3 +1,8 @@
 <div class="capabilities-list">
-  
+  {% for cap in site.capabilities %}
+    <div style="background-color: white;">
+      <h4>{{ cap.title }}</h4>
+      <p>{{ cap.content }}</p>
+    </div>
+  {% endfor %}
 </div>
