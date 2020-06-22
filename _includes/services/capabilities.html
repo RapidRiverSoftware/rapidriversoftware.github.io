@@ -1,8 +1,20 @@
-<div class="capabilities-list">
-  {% for cap in site.capabilities %}
-    <div style="background-color: white;">
-      <h4>{{ cap.title }}</h4>
-      <p>{{ cap.content }}</p>
+<div id="capabilities">
+    <div class="capabilities-header">
+        <h2 class="heading">Capabilities</h2>
+        <p class="description">
+            These are the building blocks of what we do. We draw on our technical skills to create custom solutions for our clients.
+        </p>
     </div>
-  {% endfor %}
+
+    <div class="capabilities-list">
+    {% for cap in site.capabilities %}
+        <div class="capability-item">
+            <h4 class="title">{{ cap.title }}</h4>
+            <p class="description">{{ cap.content }}</p>
+            <div class="iconbox">
+                <img src="/assets/img/services/icons/icon-{{ cap.slug }}.svg" class="iconimg" />
+            </div>
+        </div>
+    {% endfor %}
+    </div>
 </div>

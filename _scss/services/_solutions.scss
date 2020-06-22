@@ -3,12 +3,16 @@
   border-radius: 30px;
   box-shadow: $shadow-xl;
   color: white;
-  padding: 20px;
+  padding: 40px 20px;
   margin-bottom: 30px;
 
   .heading {
     font-size: 28px;
     text-transform: capitalize;
+  }
+
+  .description {
+    font-size: 16px;
   }
 }
 
@@ -25,7 +29,7 @@
 
   .intro {
     background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 30px;
     box-shadow: $shadow-xl;
   }
@@ -35,6 +39,10 @@
     font-size: 28px;
     font-weight: 600;
     text-transform: capitalize;
+  }
+
+  .description {
+    font-size: 16px;
   }
 
   .iconbox {

@@ -1,3 +1,54 @@
+.capabilities-header {
+  position: relative;
+  z-index: 9;
+  background-color: $blue900;
+  background-image: url($solutionheader-bg);
+  border-radius: 30px;
+  box-shadow: $shadow-xl;
+  color: white;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+
+  .heading {
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
 .capabilities-list {
   display: flex;
+  flex-direction: column;
+}
+
+.capability-item {
+  padding: 40px 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 30px;
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    color: $pink400;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .title {
+    color: $blue900;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .description {
+    font-size: 16px;
+  }
 }
