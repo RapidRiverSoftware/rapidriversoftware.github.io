@@ -14,6 +14,8 @@ collections:
     output: true
   services:
     output: true
+  capabilities:
+    output: true
 
 sass:
   sass_dir: _scss
