@@ -1,3 +1,17 @@
+.solutions-header {
+  background-image: url($solutionheader-bg);
+  border-radius: 30px;
+  box-shadow: $shadow-xl;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .heading {
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+}
+
 .solution-item {
   display: flex;
   flex-direction: column;
@@ -18,7 +32,7 @@
 
   .title {
     color: $blue900;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     text-transform: capitalize;
   }
