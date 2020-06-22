@@ -1,5 +1,6 @@
 @import 'header_bg';
 @import 'footer_bg';
+@import 'solutionicon_bg';
 
 /* Font Imports */
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,100,300,700&display=swap');
@@ -26,6 +27,7 @@ $red: #E74C3C;
 $blue200: #EAF6FF;
 $blue300: #9EBEEE;
 $blue500: #0081df; //primary blue
+$blue700: #2F5181;
 $blue800: #143959;
 $blue900: #10293f; //secondary blue
 
@@ -37,8 +39,13 @@ $grey600: #767E86;
 
 $pink400: #FF559C;
 
+$purple600: #674C7C;
+$purple800: #534B78;
+
 // Breakpoint Variables
 $width-sm: 576px;
 $width-md: 768px;
 $width-lg: 1024px;
 $width-xl: 1200px;
+
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);

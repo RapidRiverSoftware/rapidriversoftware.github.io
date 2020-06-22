@@ -1,44 +1,37 @@
 <!-- Services List Section -->
-<div id="services" class="services-list">
-    {% for post in page.services %}
-        {% for ordered_post in site.services in  %}
-            {% if post == ordered_post.slug %}
-                <section id="{{ ordered_post.slug }}" class="collection-list--item">
-                    <div class="container">
-                        <div class="row justify-content-between">
-                            <div class="col-9 col-md-12 order-2 order-md-1 align-text-middle">
-                                <h2 class="services__list--heading mb-md-5">
-                                    {{ ordered_post.title }}
-                                </h2>
-                            </div>
-                            <div class="col-3 col-md-2 order-1 order-md-2">
-                                <a href="{{ ordered_post.url | prepend: site.baseurl }}" class="">
-                                    <img src="/assets/img/services/icons/icon-{{ ordered_post.slug }}.svg" class="full-width" />
-                                </a>
-                            </div>
-                            <div class="col-md-6 order-3">
-                                <h3 class="section-subheading text-muted mb-3 mb-md-5 mt-3 mt-md-0">
-                                    {{ ordered_post.description }}
-                                </h3>
-                                <a href="{{ ordered_post.url | prepend: site.baseurl }}" class="">
-                                    Learn more about {{ ordered_post.title }}.
-                                </a>
-                            </div>
-                            <div class="col-md-4 order-4 mt-5 mt-md-0">
-                                <h4>Related projects</h4>
+<div id="solutions" class="solutions-list">
+    {% for unordered_solution in page.solutions %}
+        {% for solution in site.solutions in  %}
+            {% if unordered_solution == solution.slug %}
+                <div id="{{ solution }}" class="solution-item">
+                    <div class="text">
+                        <div class="intro">
+                            <h4 class="title">{{ solution.title }}</h4>
+                            <p>{{ solution.description }}</p>
+                        </div>
+                        <div class="iconbox">
+                            <img src="/assets/img/services/icons/icon-{{ solution.slug }}.svg" class="iconimg" />
+                        </div>
+                    </div>
+                    <div class="processlist">
+                        {{ solution.content }}
+                        <ol class="related">
+                            <li>
+                                Related case studies
                                 <ul>
-                                    {% for project in ordered_post.related-projects %}
+                                    {% for project in solution.related-projects %}
                                     <li>
-                                        <a href="/case-studies{{ project[1] }}">
-                                            {{ project[0] }}
-                                        </a>
+                                    <a
+                                        href="{{ project[1] }}"
+                                        class="link-pink">
+                                        {{ project[0] }}</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
-                            </div>
-                        </div>
+                            </li>
+                        </ol>
                     </div>
-                </section>
+                </div>
             {%endif%}
         {% endfor %}
     {% endfor %}

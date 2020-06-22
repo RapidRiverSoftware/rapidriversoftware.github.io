@@ -1,0 +1,115 @@
+.solution-item {
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    background-color: white;
+    background-image: url($solutionicon-bg);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .intro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: $shadow-xl;
+  }
+
+  .title {
+    color: $blue900;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .iconbox {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .iconimg {
+    width: 30%;
+  }
+
+  .processlist {
+    margin-bottom: 30px;
+
+    ol {
+      list-style: none;
+      padding-left: 0px;
+      margin-bottom: 0px;
+    }
+
+    ol:first-child {
+      counter-reset: numcounter;
+    }
+
+    ol:nth-child(2) {
+      text-transform: uppercase;
+    }
+
+    ol:first-child > li {
+      counter-increment: numcounter;
+
+      &::before {
+        content: counter(numcounter);
+      }
+    }
+
+    ol > li {
+      position: relative;
+      color: $blue300;
+      padding: 20px 20px 20px 60px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      &::before {
+        position: absolute;
+        left: 10px;
+        top: 30px;
+        color: $grey100;
+        font-size: 48px;
+        font-weight: 900;
+      }
+
+      &::last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ol:first-child > li:nth-child(odd) {
+      background-color: $purple600;
+    }
+    ol:first-child > li:nth-child(even) {
+      background-color: $purple800;
+    }
+
+    ol:nth-child(2) > li {
+      background-color: $blue700;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      &::before {
+        content: "*";
+      }
+    }
+
+    ol > li > ul {
+      padding-left: 0px;
+      list-style: none;
+      color: $grey100;
+      font-weight: 400;
+    }
+
+    ol:nth-child(2) > li > ul {
+      text-transform: none;
+    }
+
+    ol > li > ul > li {
+      line-height: 24px;
+    }
+  }
+}

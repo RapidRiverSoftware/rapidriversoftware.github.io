@@ -12,7 +12,7 @@ collections:
     output: true
   case_studies:
     output: true
-  services:
+  solutions:
     output: true
   capabilities:
     output: true
