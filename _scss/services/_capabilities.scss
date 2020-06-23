@@ -33,6 +33,12 @@
   }
 }
 
+@media(min-width: $width-xl) {
+  .capabilities-header {
+    width: 550px;
+  }
+}
+
 .capabilities-list {
   display: flex;
   flex-direction: column;
@@ -51,6 +57,14 @@
     width: 100%;
     max-height: 1480px;
     flex-flow: column wrap;
+  }
+}
+
+@media(min-width: $width-xl) {
+  .capabilities-list {
+    max-width: 1140px;
+    max-height: 1400px;
+    align-content: space-between;
   }
 }
 
@@ -93,5 +107,11 @@
     width: 460px;
     padding: 40px 40px;
     margin-top: 40px;
+  }
+}
+
+@media(min-width: $width-xl) {
+  .capability-item {
+    width: 550px;
   }
 }

@@ -48,6 +48,13 @@
   }
 }
 
+@media(min-width: $width-xl) {
+  .solutions-header {
+    max-width: 1140px;
+    margin-bottom: 100px;
+  }
+}
+
 .solution-item {
   display: flex;
   flex-direction: column;
@@ -216,6 +223,56 @@
   }
 }
 
+@media(min-width: $width-xl) {
+  .solution-item {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 150px;
+
+    .text,
+    .processlist {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      width: 280px;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:first-child::before {
+      top: -60px;
+      left: -58px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png"); 
+    }
+
+    &:nth-child(2)::before {
+      top: -60px;
+      left: 85px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png"); 
+    }
+
+    &:nth-child(2)::after {
+      bottom: -60px;
+      left: 85px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png"); 
+    }
+
+    &:last-child::before {
+      bottom: -60px;
+      left: -58px;
+      transform: rotate(0.5turn);
+      background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
+    }
+  }
+}
+
 .solutions-list {
   display: flex;
   flex-direction: column;
@@ -231,5 +288,11 @@
   .solutions-list {
     max-width: 960px;
     width: 100%;
+  }
+}
+
+@media(min-width: $width-xl) {
+  .solutions-list {
+    max-width: 1140px;
   }
 }
