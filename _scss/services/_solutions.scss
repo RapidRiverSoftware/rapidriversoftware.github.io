@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
 
 .solutions-header {
+  background-color: $blue900;
   background-image: url($solutionheader-bg);
   border-radius: 30px;
   box-shadow: $shadow-xl;
