@@ -5,6 +5,12 @@
   margin-top: 60px;
 }
 
+@media(min-width: $width-lg) {
+  .solutions-component {
+    margin-top: 150px;
+  }
+}
+
 .solutions-header {
   background-color: $blue900;
   background-image: url($solutionheader-bg);
@@ -27,6 +33,18 @@
 @media(min-width: $width-md) {
   .solutions-header {
     width: 80%;
+  }
+}
+
+@media(min-width: $width-lg) {
+  .solutions-header {
+    max-width: 960px;
+    width: 100%;
+    padding: 40px 40px;
+
+    .description {
+      width: 50%;
+    }
   }
 }
 
@@ -82,7 +100,7 @@
       counter-reset: numcounter;
     }
 
-    ol:nth-child(2) {
+    ol.related {
       text-transform: uppercase;
     }
 
@@ -122,7 +140,7 @@
       background-color: $purple800;
     }
 
-    ol:nth-child(2) > li {
+    ol.related > li {
       background-color: $blue700;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
@@ -139,7 +157,7 @@
       font-weight: 400;
     }
 
-    ol:nth-child(2) > li > ul {
+    ol.related > li > ul {
       text-transform: none;
     }
 
@@ -149,8 +167,69 @@
   }
 }
 
+@media(min-width: $width-lg) {
+  .solution-item {
+    flex-direction: row;
+    flex: 1 1 0px;
+    margin-bottom: 100px;
+
+    .intro {
+      padding: 40px;
+    }
+
+    .text {
+      width: 40%;
+      border-radius: 30px;
+    }
+
+    .iconimg {
+      width: 50%;
+      padding-top: 30%;
+    }
+
+    .processlist {
+      width: 60%;
+      margin-bottom: 0;
+
+      ol {
+        padding-left: 10px;
+      }
+
+      ol > li {
+        padding: 20px 40px 20px 75px;
+        border-radius: 20px;
+
+        &::before {
+          left: 25px;
+        }
+      }
+
+      ol.related li {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      ol:first-child li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.solutions-list {
+  display: flex;
+  flex-direction: column;
+}
+
 @media(min-width: $width-md) {
   .solutions-list {
     width: 80%;
+  }
+}
+
+@media(min-width: $width-lg) {
+  .solutions-list {
+    max-width: 960px;
+    width: 100%;
   }
 }
