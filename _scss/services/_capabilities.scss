@@ -1,3 +1,9 @@
+.capabilities-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .capabilities-header {
   position: relative;
   z-index: 9;
@@ -20,9 +26,21 @@
   }
 }
 
+@media(min-width: $width-md) {
+  .capabilities-header {
+    width: 80%;
+  }
+}
+
 .capabilities-list {
   display: flex;
   flex-direction: column;
+}
+
+@media(min-width: $width-md) {
+  .capabilities-list {
+    width: 80%;
+  }
 }
 
 .capability-item {

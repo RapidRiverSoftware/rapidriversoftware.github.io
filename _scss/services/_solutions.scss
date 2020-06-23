@@ -1,3 +1,9 @@
+.solutions-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .solutions-header {
   background-image: url($solutionheader-bg);
   border-radius: 30px;
@@ -13,6 +19,12 @@
 
   .description {
     font-size: 16px;
+  }
+}
+
+@media(min-width: $width-md) {
+  .solutions-header {
+    width: 80%;
   }
 }
 
@@ -132,5 +144,11 @@
     ol > li > ul > li {
       line-height: 24px;
     }
+  }
+}
+
+@media(min-width: $width-md) {
+  .solutions-list {
+    width: 80%;
   }
 }
