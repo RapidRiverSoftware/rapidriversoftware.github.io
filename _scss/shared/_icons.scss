@@ -1,0 +1,11 @@
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+@media(min-width:768px) {
+  .icon {
+      width: 120px;
+      height: 120px;
+  }
+}
