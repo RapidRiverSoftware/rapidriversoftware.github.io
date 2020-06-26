@@ -11,7 +11,7 @@ related-projects:
   * We’ll get ourselves on-boarded onto your team and ready to complete work quickly.
 2. Process Alignment
   * Whether fitting into your established workflow or bringing our own, we’ll fit in and work side by side with your people in a complementary fashion.
-3. Internal Projects or Team Collaboration
+3. Working Alongside In Situ Software
+  * We'll take a deeper dive into discovering your existing stack. We’ll learn about and figure out how to plan, build and deploy services which will co-exist with existing components in your system.
+4. Internal Projects or Team Collaboration
   * We can take ownership of a particular development area within your architecture, or we can join forces with one of your existing teams.
-4. Arbitrary Step
-  * Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
