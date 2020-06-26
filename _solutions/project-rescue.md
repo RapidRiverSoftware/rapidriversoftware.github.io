@@ -3,8 +3,9 @@ title: Project Rescue
 description: Projects critical to business needs can rack up significant technical debt. Feature development slows. Maintenance and security fixes pile up. Versions of the technology powering the project have reached end-of-life. Key technical people have moved on. The project spirals towards a perilous end. When this happens, the project needs to be rescued.
 slug: project-rescue
 related-projects:
-  EssayJack: '/essayjack'
-  Full Slate: '/full-slate'
+  Webstats: 'webstats'
+  Full Slate: 'full-slate-rails-upgrade'
+  EssayJack: 'essayjack-code-audit'
 ---
 
 1. Code Audit

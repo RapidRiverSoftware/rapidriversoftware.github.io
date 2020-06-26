@@ -3,8 +3,14 @@ title: Custom Software Development
 description: For existing projects, when we join your team our aim is to bring your business forward. We are value oriented and wish to become not just a deliverer of tasks, but a thought partner in your company’s mission.
 slug: custom-software-development
 related-projects:
-  EssayJack: '/essayjack'
-  Full Slate: '/full-slate'
+  NOLO Rebuild Proposal: 'nolo-rebuild-proposal'
+  NOLO Proof of Concept: 'nolo-poc'
+  GovWizely: 'govwizely'
+  Dasheroo: 'dasheroo'
+  Clickstream Ingestion System: 'clickstream-ingestion-system'
+  Avvo Sales Luv: 'avvo-sales-luv'
+  Avvo AMP: 'avvo-amp'
+  
 ---
 
 1. Rapid Ramp-Up

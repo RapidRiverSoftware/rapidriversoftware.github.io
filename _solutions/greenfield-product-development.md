@@ -3,8 +3,7 @@ title: Greenfield Product Development
 description: If you’re looking to build a new product from scratch we can be your technical partner from day one. We know how to navigate the product development lifecycle, guiding you at every step of the way.
 slug: greenfield-product-development
 related-projects:
-  EssayJack: '/essayjack'
-  Full Slate: '/full-slate'
+  NOLO Proof of Concept: 'nolo-poc'
 ---
 
 1. Initial Requirements Gathering

@@ -10,7 +10,7 @@
         {% for unordered_solution in page.solutions %}
             {% for solution in site.solutions in  %}
                 {% if unordered_solution == solution.slug %}
-                    <div id="{{ solution }}" class="solution-item">
+                    <div id="{{ solution.slug }}" class="solution-item">
                         <div class="text">
                             <div class="intro">
                                 <h4 class="title">{{ solution.title }}</h4>
@@ -29,7 +29,7 @@
                                         {% for project in solution.related-projects %}
                                         <li>
                                         <a
-                                            href="{{ project[1] }}"
+                                            href="/case-studies/#{{ project[1] }}"
                                             class="link-pink">
                                             {{ project[0] }}</a>
                                         </li>

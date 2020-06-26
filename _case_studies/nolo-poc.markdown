@@ -4,9 +4,9 @@ title: Proof of Concept - with Code
 slug: nolo-poc
 alt: image-alt
 client: Nolo
-tags: javascript, new-project, custom-software-development
+tags: javascript, greenfield-product-development, custom-software-development
 project-url: ''
-related-services: [custom-software-development]
+related-services: [custom-software-development, greenfield-product-development]
 status: published
 ---
 

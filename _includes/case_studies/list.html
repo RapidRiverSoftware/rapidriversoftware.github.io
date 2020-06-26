@@ -34,10 +34,10 @@
                 </span>
 
                 <ul class="service-list">
-                    <li class="serviceitem -title">Related services:</li>
+                    <li class="serviceitem -title">Related solutions:</li>
                     {% for service in post.related-services %}
                     <li class="serviceitem">
-                        <a class="link-pink capitalize" href="/services/{{ service }}">{{ service | replace: "-", " " }}</a>
+                        <a class="link-pink capitalize" href="/services/#{{ service }}">{{ service | replace: "-", " " }}</a>
                     </li>
                     {% endfor %}
                 </ul>
