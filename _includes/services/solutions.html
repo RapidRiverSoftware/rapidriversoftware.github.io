@@ -1,0 +1,46 @@
+<!-- Solutions List Section -->
+<div id="solutions" class="solutions-component">
+    <div class="solutions-header">
+        <h2 class="heading">Solutions</h2>
+        <p class="description">
+            Each project has a unique set of requirements, and we offer solutions to suit each product. Find out what we can do for you.
+        </p>
+    </div>
+    <div class="solutions-list">
+        {% for unordered_solution in page.solutions %}
+            {% for solution in site.solutions in  %}
+                {% if unordered_solution == solution.slug %}
+                    <div id="{{ solution.slug }}" class="solution-item">
+                        <div class="text">
+                            <div class="intro">
+                                <h4 class="title">{{ solution.title }}</h4>
+                                <p class="description">{{ solution.description }}</p>
+                            </div>
+                            <div class="iconbox">
+                                <img src="/assets/img/services/icons/icon-{{ solution.slug }}.svg" class="iconimg" />
+                            </div>
+                        </div>
+                        <div class="processlist">
+                            {{ solution.content }}
+                            <ol class="related">
+                                <li>
+                                    Related case studies
+                                    <ul>
+                                        {% for project in solution.related-projects %}
+                                        <li>
+                                        <a
+                                            href="/case-studies/#{{ project[1] }}"
+                                            class="link-pink">
+                                            {{ project[0] }}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                {%endif%}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

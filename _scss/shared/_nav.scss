@@ -1,0 +1,61 @@
+.navbar--main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &.-dark {
+    background-color: $secondary-blue;
+  }
+
+  &.-light {
+    background-color: $primary-blue;
+
+    .navbar-brand img {
+      height: 20px;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .navbar--main {
+    &.-dark {
+      background-color: transparent;
+    }
+
+    &.-light {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav--link {
+  color: white;
+  font-family: $main-font;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  background-color: $primary-blue;
+}
+
+@media(min-width:768px) {
+  .navbar--main {
+    background-color: transparent;
+  }
+
+  .nav--link {
+    padding: 10px 15px;
+  }
+}

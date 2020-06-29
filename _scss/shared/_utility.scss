@@ -1,0 +1,39 @@
+.ml-10 {
+  margin-left: 10px;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+.bg-light-gray {
+  background-color: $grey-light;
+}
+
+.bg-darkest-gray {
+  background-color: $grey-dark;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mb-md-2em {
+  margin-bottom: 2em;
+}
+
+.header__space-maker {
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.line-breaker {
+  display: inline;
+}
+
+@media(min-width:768px) {
+  .line-breaker {
+    display: block;
+  } 
+}

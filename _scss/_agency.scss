@@ -4,119 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.img-centered {
-    margin: 0 auto;
-}
-
-.bg-light-gray {
-    background-color: $grey-light;
-}
-
-.bg-darkest-gray {
-    background-color: $grey-dark;
-}
-
-.btn-primary {
-    border-color: $primary-blue;
-    text-transform: uppercase;
-    font-family: $main-font;
-    font-weight: 300;
-    color: white;
-    background-color: $primary-blue;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    border-color: $primary-blue;
-    color: white;
-    background-color: $primary-blue-light;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: $primary-blue;
-    background-color: $primary-blue;
-}
-
-.btn-primary .badge {
-    color: $primary-blue;
-    background-color: white;
-}
-
-.btn-xl {
-    padding: 15px 35px;
-    border-color: $primary-blue;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-family: $main-font;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    background-color: $primary-blue;
-}
-
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    border-color: $primary-blue;
-    color: white;
-    background-color: $primary-blue-light;
-}
-
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    background-image: none;
-}
-
-.btn-xl.disabled,
-.btn-xl[disabled],
-fieldset[disabled] .btn-xl,
-.btn-xl.disabled:hover,
-.btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl:hover,
-.btn-xl.disabled:focus,
-.btn-xl[disabled]:focus,
-fieldset[disabled] .btn-xl:focus,
-.btn-xl.disabled:active,
-.btn-xl[disabled]:active,
-fieldset[disabled] .btn-xl:active,
-.btn-xl.disabled.active,
-.btn-xl[disabled].active,
-fieldset[disabled] .btn-xl.active {
-    border-color: $primary-blue;
-    background-color: $primary-blue;
-}
-
-.btn-xl .badge {
-    color: $primary-blue;
-    background-color: white;
-}
-
 section {
     padding: 100px 0;
 }
@@ -267,26 +154,7 @@ body {
     background-color: $grey-light;
 }
 
-/* Servies Styles */
-.services-img {
-    width: 60%;
-}
-
-@media(min-width:768px) {
-    .services-img {
-        width: auto;
-    }
-}
-
  /* Case Study Styles */
-.case-study-post .post h2 {
-    margin-top: 45px;
-}
-
-.case-study-post .post p {
-    color: $grey;
-}
-
 img.case-study-product {
     max-width: 100%;
 }
@@ -384,19 +252,6 @@ img.case-study-product {
     }
 }
 
-/* Icon Styles */
-.icon {
-    width: 100px;
-    height: 100px;
-}
-
-@media(min-width:768px) {
-    .icon {
-        width: 120px;
-        height: 120px;
-    }
-}
-
 /* About Page Styles */
 .about-item .about-image img {
     width: 100%;
@@ -407,3 +262,59 @@ img.case-study-product {
         width: 100%;
     }
 }
+
+
+// layout
+.page .post {
+    margin-bottom: 4em;
+  }
+  
+  .page .wide-post h1 {
+    margin: 2em 0 1em;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .page .post p.meta {
+    margin-bottom: 2.5rem;
+  }
+  
+  .page .post h2 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    text-transform: none;
+  }
+  .page .post h3 {
+    line-height: 2;
+    font-size: 18px;
+    text-transform: none;
+  }
+  
+  .page .post p,
+  .page .post ul {
+    font-size: 16px;
+    line-height: 2;
+    margin: 1em 0;
+  }
+  
+  .page .post ul ul {
+    margin: 0;
+  }
+  
+  #about h4 a {
+    color: white;
+  }
+  
+  dl {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  dl dt {
+    display: list-item;
+    font-weight: normal;
+  }
+  dl dd {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
