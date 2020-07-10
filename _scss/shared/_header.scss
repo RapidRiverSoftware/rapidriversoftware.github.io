@@ -42,10 +42,6 @@
 
   .image {
     text-align: right;
-
-    img {
-      width: 80%;
-    }
   }
 }
 
@@ -78,6 +74,10 @@
 
     .image {
       padding-top: 190px;
+
+      img {
+        width: 80%;
+      }
     }
   }
 }
@@ -91,7 +91,11 @@
     }
 
     .image {
-      padding-top: 140px;
+      padding-top: 215px;
+
+      img {
+        width: auto;
+      }
     }
   } 
 }
