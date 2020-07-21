@@ -8,9 +8,19 @@
 
 .navbar-nav {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
-.navbar-nav li {
-  line-height: 24px;
+.navbar-nav li:not(.hireuslink) {
+  line-height: 50px;
+}
+
+@media(min-width: $width-md) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-nav li {
+    line-height: 24px;
+  }
 }
