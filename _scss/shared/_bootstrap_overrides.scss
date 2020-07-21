@@ -2,6 +2,15 @@
   flex-wrap: wrap;
 }
 
+.navbar {
+  padding-top: 30px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-nav li {
-  line-height: 50px;
+  line-height: 24px;
 }
