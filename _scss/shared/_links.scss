@@ -20,6 +20,15 @@
   color: $primary-blue;
 }
 
+.link {
+  &.-pink {
+    color: $pink400;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+
 @media(min-width:768px) {
   .active {
     color: $secondary-blue;
