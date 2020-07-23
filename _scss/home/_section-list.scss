@@ -34,12 +34,12 @@
       display: flex;
       justify-content: center;
       border-radius: 0 0 30px 30px;
-      padding: 60px 30px 30px 30px;
+      padding: 60px 15px 30px 15px;
       margin-top: -30px;
 
       .inner {
         position: relative;
-        max-width: 375px;
+        max-width: 345px;
       }
 
       .inner svg {
@@ -51,8 +51,8 @@
       .featuredposts-widget {
         position: absolute;
         z-index: 2;
-        top: 30px;
-        left: 175px;
+        top: 38px;
+        left: 160px;
       }
     }
 

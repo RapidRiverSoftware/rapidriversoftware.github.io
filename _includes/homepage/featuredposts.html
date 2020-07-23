@@ -1,0 +1,13 @@
+<ul class="featuredposts-list">
+    {% for post in site.posts %}
+        {% if post.categories contains 'blog' %}
+            {% if post.featured == true limit:5 %}
+            <li class="featureditem">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title | truncate: 50 }}
+                </a>
+            </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+.featuredposts-list {
+  width: 95%;
+  padding-left: 0;
+  list-style: none;
+  
+  .featureditem {
+    line-height: 16px;
+    margin-bottom: 11px;
+    font-size: 13px;
+
+    &:nth-child(even) {
+      padding-left: 5px;
+    }
+  }
+}
