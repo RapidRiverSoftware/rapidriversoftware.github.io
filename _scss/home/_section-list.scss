@@ -31,15 +31,28 @@
     }
 
     .animation {
-      position: relative;
-      z-index: 0;
+      display: flex;
+      justify-content: center;
       border-radius: 0 0 30px 30px;
       padding: 60px 30px 30px 30px;
       margin-top: -30px;
-      text-align: center;
 
-      > svg {
+      .inner {
+        position: relative;
+        max-width: 375px;
+      }
+
+      .inner svg {
+        position: relative;
+        z-index: 1;
         width: 100%;
+      }
+
+      .featuredposts-widget {
+        position: absolute;
+        z-index: 2;
+        top: 30px;
+        left: 175px;
       }
     }
 
@@ -127,7 +140,7 @@
         margin-top: -130px;
         padding: 100px 30px 100px 30px;
 
-        > svg {
+        .inner svg {
           width: auto;
         }
       }
