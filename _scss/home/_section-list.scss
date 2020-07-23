@@ -69,3 +69,68 @@
     width: 80%;
   }
 }
+
+@media(min-width: $width-lg) {
+  .section-list {
+    .item {
+      background-image: url('../img/homepage/shared/bg-pattern-square-large.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      &:nth-child(odd) {
+        .text {
+          align-self: flex-end;
+        }
+
+        .animation {
+          align-self: flex-start;
+        }
+      }
+
+      &:nth-child(even) {
+        .text {
+          align-self: flex-start;
+        }
+
+        .animation {
+          align-self: flex-end;
+        }
+      }
+
+      .text {
+        width: 450px;
+        padding: 40px 40px;
+      }
+
+      .animation {
+        width: 450px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .section-list {
+    max-width: 980px;
+
+    .item {
+      margin-bottom: 100px;
+
+      .text {
+        width: 540px;
+      }
+
+      .animation {
+        width: 500px;
+        margin-top: -130px;
+        padding: 100px 30px 100px 30px;
+
+        > svg {
+          width: auto;
+        }
+      }
+    }
+  }
+}
