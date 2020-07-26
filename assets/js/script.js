@@ -1,5 +1,5 @@
 // Highlight active navigation menu item
-$(function() {
+(function() {
   var fullPath = window.location.pathname.substring(1);
   var parentPath = fullPath.split('/')[0];
   var path = fullPath.replace(/\//g, '');
@@ -9,14 +9,14 @@ $(function() {
     if (/blog/.test(path)) {
       parentPath = parentPath +'/'; 
     }
-
-    $("[data-fx='main-nav'] a[href='/"+parentPath+"']").addClass('active');
+    
+    document.querySelector("[data-fx='main-nav'] a[href='/"+parentPath+"']").classList.add('active');
   }
-});
+})();
 
 
 // Helper function to set bloglist classes to be used for backgrounds
-$(function() {
+(function() {
   var pathname = window.location.pathname;
 
   if (/blog/.test(pathname)) {
@@ -38,6 +38,6 @@ $(function() {
       }
     }
 
-    $('#blog-list').addClass('page' + pageNum);
+    document.querySelector("[data-fx='blog-list']").classList.add('page' + pageNum);
   }
-});
+})();
