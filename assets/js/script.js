@@ -10,7 +10,7 @@ $(function() {
       parentPath = parentPath +'/'; 
     }
 
-    $("#bs-example-navbar-collapse-1 a[href='/"+parentPath+"']").addClass('active');
+    $("[data-fx='main-nav'] a[href='/"+parentPath+"']").addClass('active');
   }
 });
 
