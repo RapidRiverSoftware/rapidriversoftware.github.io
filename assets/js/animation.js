@@ -46,19 +46,19 @@
 
   var postitFx = debounce(function() {
     console.log(isElementInView(servicesSection));
-    // gsap.to(flyingPostit, {
-    //   duration: 5,
-    //   repeat: 5,
-    //   repeatDelay: 5,
-    //   yoyo: true,
-    //   ease: "power1.inOut",
-    //   motionPath: {
-    //     path: "[data-fx='postit-path']",
-    //     align: "[data-fx='postit-path']",
-    //     autoRotate: true,
-    //     alignOrigin: [0.5, 0.5]
-    //   }
-    // });
+    gsap.to(flyingPostit, {
+      duration: 5,
+      repeat: 5,
+      repeatDelay: 5,
+      yoyo: true,
+      ease: "power1.inOut",
+      motionPath: {
+        path: "[data-fx='postit-path']",
+        align: "[data-fx='postit-path']",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    });
   }, 15);
 
   var teamFx = debounce(function() {
