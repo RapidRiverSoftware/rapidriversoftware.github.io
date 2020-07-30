@@ -5,7 +5,10 @@
 
   // Store Elements
   var servicesSection = document.querySelector('[data-fx="services-section"]');
+  var casestudySection = document.querySelector('[data-fx="casestudy-section"]');
   var teamSection = document.querySelector('[data-fx="team-section"]');
+  var blogSection = document.querySelector('[data-fx="blog-section"]');
+
   var flyingPostit = document.querySelector('[data-fx="flying-postit"]');
 
   var speechBubble1 = document.querySelector('[data-fx="speech-bubble-1"]');
@@ -15,7 +18,9 @@
   var speechBubble5 = document.querySelector('[data-fx="speech-bubble-5"]');
 
   var timelineServices = gsap.timeline({repeat: 2, repeatDelay: 1});
+  var timelineCasestudies = gsap.timeline({repeat: 2, repeatDelay: 1});
   var timelineTeam = gsap.timeline({repeat: 2, repeatDelay: 1});
+  var timelineBlog = gsap.timeline({repeat: 2, repeatDelay: 1});
 
   function debounce(func, wait, immediate) {
     var timeout;
