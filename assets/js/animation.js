@@ -5,6 +5,7 @@
   gsap.registerPlugin(ScrollTrigger);
 
   // Store Elements
+  var headerSection = document.querySelector('[data-fx="header-section"]');
   var servicesSection = document.querySelector('[data-fx="services-section"]');
   var casestudiesSection = document.querySelector('[data-fx="casestudies-section"]');
   var teamSection = document.querySelector('[data-fx="team-section"]');
@@ -15,6 +16,13 @@
     teamSection,
     blogSection
   ];
+
+  var glow1 = document.querySelector('[data-fx="glow-1"]');
+  var glow2 = document.querySelector('[data-fx="glow-2"]');
+  var glow3 = document.querySelector('[data-fx="glow-3"]');
+  var glowPath1 = document.querySelector('[data-fx="glow-path-1"]');
+  var glowPath2 = document.querySelector('[data-fx="glow-path-2"]');
+  var glowPath3 = document.querySelector('[data-fx="glow-path-3"]');
 
   var flyingPostit = document.querySelector('[data-fx="flying-postit"]');
   var postitPath = document.querySelector('[data-fx="postit-path"]');
@@ -52,6 +60,16 @@
     }
   });
 
+  var timelineHeader = gsap.timeline({
+    scrollTrigger: {
+      trigger: '[data-fx="header-section"]',
+      // toggleActions: 'restart pause resume pause',
+      // start: 'top top',
+    },
+    repeat: -1,
+    repeatDelay: 1
+  });
+
   var timelineServices = gsap.timeline({
     scrollTrigger: {
       trigger: '[data-fx="services-section"]',
@@ -82,7 +100,7 @@
     repeatDelay: 1
   });
 
-  var timelineBlog = gsap.timeline({
+  var timelineBlog1 = gsap.timeline({
     scrollTrigger: {
       trigger: '[data-fx="blog-section"]',
       toggleActions: 'restart pause resume pause',
@@ -90,6 +108,17 @@
     },
     repeat: -1,
     repeatDelay: 1
+  });
+
+  var timelineBlog2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '[data-fx="blog-section"]',
+      toggleActions: 'restart pause resume pause',
+      start: 'top center',
+    },
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
   });
 
   function debounce(func, wait, immediate) {
@@ -117,7 +146,45 @@
       ) {
         return true;
       }
-    }
+  }
+  
+  var headerFx = debounce(function() {
+    gsap.to(glow1, {
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inout',
+      motionPath: {
+        path: glowPath1,
+        align: glowPath1,
+        alignOrigin: [0.5, 0.5]
+      }
+    });
+
+    gsap.to(glow2, {
+      duration: 1,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inout',
+      motionPath: {
+        path: glowPath2,
+        align: glowPath2,
+        alignOrigin: [0.5, 0.5]
+      }
+    });
+
+    gsap.to(glow3, {
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inout',
+      motionPath: {
+        path: glowPath3,
+        align: glowPath3,
+        alignOrigin: [0.5, 0.5]
+      }
+    });
+  }, 15);
 
   var servicesFx = debounce(function() {
     timelineServices.from(postitGroupTodo, {duration: 1, opacity: 0});
@@ -151,22 +218,27 @@
     timelineCasestudies.from(casestudy3, {y: 5, duration: 1, opacity: 0});
   }, 15);
 
-  var blogFx = debounce(function() {
-    timelineBlog.from(readingIndicator1, {opacity: 0});
-    timelineBlog.from(readingIndicator2, {opacity: 0});
-    timelineBlog.from(readingIndicator3, {opacity: 0});
-    timelineBlog.from(blogBubble1, {x: 5});
-    timelineBlog.from(blogBubble2, {x: -5});
-    timelineBlog.from(blogBubble3, {x: 5});
-    timelineBlog.from(blogBubble4, {x: -5});
-    timelineBlog.from(blogBubble5, {x: 5});
+  var blogFx1 = debounce(function() {
+    timelineBlog1.from(readingIndicator1, {opacity: 0});
+    timelineBlog1.from(readingIndicator2, {opacity: 0});
+    timelineBlog1.from(readingIndicator3, {opacity: 0});
+  }, 15);
+
+  var blogFx2 = debounce(function() {
+    timelineBlog2.from(blogBubble1, {x: 5});
+    timelineBlog2.from(blogBubble2, {x: -5});
+    timelineBlog2.from(blogBubble3, {x: 5});
+    timelineBlog2.from(blogBubble4, {x: -5});
+    timelineBlog2.from(blogBubble5, {x: 5});
   }, 15);
 
   var animationPlayer = function() {
+    headerFx();
     servicesFx();
     teamFx();
     casestudiesFx();
-    blogFx();
+    blogFx1();
+    blogFx2();
     // gsap.utils.toArray('-section').forEach(function(section, index) {
     //   gsap.fromTo()
     // });
