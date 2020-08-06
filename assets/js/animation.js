@@ -18,6 +18,9 @@
 
   var flyingPostit = document.querySelector('[data-fx="flying-postit"]');
   var postitPath = document.querySelector('[data-fx="postit-path"]');
+  var postitGroupTodo = document.querySelector('[data-fx="postit-group-todo"]');
+  var postitGroupDoing = document.querySelector('[data-fx="postit-group-doing"]');
+  var postitGroupDone = document.querySelector('[data-fx="postit-group-done"]');
 
   var casestudyPreview = document.querySelector('[data-fx="case-study-preview"]');
   var casestudy1 = document.querySelector('[data-fx="case-study-1"]');
@@ -55,7 +58,7 @@
       toggleActions: 'restart pause resume pause',
       start: 'top center',
     },
-    repeat: 2,
+    repeat: -1,
     repeatDelay: 1
   });
 
@@ -65,7 +68,7 @@
       toggleActions: 'restart pause resume pause',
       start: 'top center',
     },
-    repeat: 2,
+    repeat: -1,
     repeatDelay: 1
   });
 
@@ -75,7 +78,7 @@
       toggleActions: 'restart pause resume pause',
       start: 'top center',
     },
-    repeat: 2,
+    repeat: -1,
     repeatDelay: 1
   });
 
@@ -85,7 +88,7 @@
       toggleActions: 'restart pause resume pause',
       start: 'top center',
     },
-    repeat: 2,
+    repeat: -1,
     repeatDelay: 1
   });
 
@@ -116,11 +119,12 @@
       }
     }
 
-  var postitFx = debounce(function() {
+  var servicesFx = debounce(function() {
+    timelineServices.from(postitGroupTodo, {duration: 1, opacity: 0});
+    timelineServices.from(postitGroupDoing, {duration: 1, opacity: 0});
+    timelineServices.from(postitGroupDone, {duration: 1, opacity: 0});
     timelineServices.to(flyingPostit, {
       duration: 1, 
-      repeat: 12,
-      repeatDelay: 3,
       yoyo: true,
       ease: 'power1.inOut',
       motionPath: {
@@ -133,9 +137,6 @@
   }, 15);
 
   var teamFx = debounce(function() {
-    if (isElementInView(teamSection)) {
-      console.log('viewing the team section');
-    }
     timelineTeam.from(speechBubble1, {x: 80, duration: 1, opacity:0});
     timelineTeam.from(speechBubble2, {x: -80, duration: 1, opacity:0});
     timelineTeam.from(speechBubble3, {x: 80, duration: 1, opacity:0});
@@ -144,10 +145,6 @@
   }, 15);
 
   var casestudiesFx = debounce(function() {
-    if (isElementInView(casestudiesSection)) {
-      console.log('viewing the case studies section');
-    } 
-
     timelineCasestudies.from(casestudyPreview, {y: 80, duration: 1, opacity: 0}); 
     timelineCasestudies.from(casestudy1, {y: 5, duration: 1, opacity: 0});
     timelineCasestudies.from(casestudy2, {y: 5, duration: 1, opacity: 0});
@@ -155,10 +152,6 @@
   }, 15);
 
   var blogFx = debounce(function() {
-    if (isElementInView(blogSection)) {
-      console.log('viewing the blog section');
-    }
-
     timelineBlog.from(readingIndicator1, {opacity: 0});
     timelineBlog.from(readingIndicator2, {opacity: 0});
     timelineBlog.from(readingIndicator3, {opacity: 0});
@@ -170,7 +163,7 @@
   }, 15);
 
   var animationPlayer = function() {
-    postitFx();
+    servicesFx();
     teamFx();
     casestudiesFx();
     blogFx();
