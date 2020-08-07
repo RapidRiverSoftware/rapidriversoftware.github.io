@@ -5,19 +5,6 @@
   gsap.registerPlugin(ScrollTrigger);
 
   // Store Elements
-  var headerSection = document.querySelector('[data-fx="header-section"]');
-  var servicesSection = document.querySelector('[data-fx="services-section"]');
-  var casestudiesSection = document.querySelector('[data-fx="casestudies-section"]');
-  var teamSection = document.querySelector('[data-fx="team-section"]');
-  var blogSection = document.querySelector('[data-fx="blog-section"]');
-
-  var sectionArray = [
-    servicesSection,
-    casestudiesSection,
-    teamSection,
-    blogSection
-  ];
-
   var glow1 = document.querySelector('[data-fx="glow-1"]');
   var glow2 = document.querySelector('[data-fx="glow-2"]');
   var glow3 = document.querySelector('[data-fx="glow-3"]');
@@ -25,8 +12,6 @@
   var glowPath2 = document.querySelector('[data-fx="glow-path-2"]');
   var glowPath3 = document.querySelector('[data-fx="glow-path-3"]');
 
-  var flyingPostit = document.querySelector('[data-fx="flying-postit"]');
-  var postitPath = document.querySelector('[data-fx="postit-path"]');
   var postit1 = document.querySelector('[data-fx="postit-1"]');
   var postit2 = document.querySelector('[data-fx="postit-2"]');
   var postit3 = document.querySelector('[data-fx="postit-3"]');
@@ -53,34 +38,14 @@
   var blogBubble4 = document.querySelector('[data-fx="blog-bubble-4"]');
   var blogBubble5 = document.querySelector('[data-fx="blog-bubble-5"]');
 
-  var timelineExample = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".trigger",
-      start: "center bottom",
-      end: "center top",
-      scrub: true,
-      markers: true
-    }
-  });
-
-  var timelineHeader = gsap.timeline({
-    scrollTrigger: {
-      trigger: '[data-fx="header-section"]',
-      // toggleActions: 'restart pause resume pause',
-      // start: 'top top',
-    },
-    repeat: -1,
-    repeatDelay: 1
-  });
-
+  // Timelines
   var timelineServices = gsap.timeline({
     scrollTrigger: {
       trigger: '[data-fx="services-section"]',
       toggleActions: 'restart pause resume pause',
       start: 'top center',
     },
-    repeat: -1,
-    repeatDelay: 1
+    repeat: -1
   });
 
   var timelineCasestudies = gsap.timeline({
@@ -124,6 +89,7 @@
     yoyo: true,
   });
 
+  // Helper Functions
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -138,19 +104,8 @@
       if (callNow) func.apply(context, args);
     };
   };
-
-  function isElementInView(el) {
-    var bounding = el.getBoundingClientRect();
-
-    while (bounding.top >= 0 
-      && bounding.left >= 0 
-      && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) 
-      && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-      ) {
-        return true;
-      }
-  }
   
+  // Animation Functions
   var headerFx = debounce(function() {
     gsap.to(glow1, {
       duration: 3,
@@ -190,45 +145,47 @@
   }, 15);
 
   var servicesFx = debounce(function() {
+    timelineServices.to(postit5, {opacity: 0});
+
     timelineServices.from(postit1, {opacity: 0});
+
     timelineServices.from(postit2, {opacity: 0});
-    timelineServices.from(postit3, {opacity: 0});
 
-    timelineServices.to(postit1, {x: 100});
-    timelineServices.to(postit3, {x: 70});
+    timelineServices.to(postit3, {x: 80});
 
-    timelineServices.from(postit4, {opacity: 0});
+    timelineServices.to(postit4, {x: 100});
+    //----
+    timelineServices.to(postit5, {x: -140});
+    timelineServices.to(postit5, {opacity: 1});
 
-    timelineServices.to(postit2, {x: 30});
+    timelineServices.to(postit1, {x: 80});
 
-    timelineServices.from(postit5, {opacity: 0});
+    timelineServices.to(postit2, {x: 125});
+    
+    timelineServices.to(postit3, {opacity: 0});
+    timelineServices.to(postit3, {x: -20})
 
-    timelineServices.to(postit1, {x: 160});
+    timelineServices.to(postit4, {opacity: 0});
+    timelineServices.to(postit4, {x: -30});
 
-    timelineServices.to(postit5, {x: 40});
+    //----
+    timelineServices.to(postit5, {x: -90});
 
-    timelineServices.to(postit4, {x: 80});
+    timelineServices.to(postit1, {x: 130});
 
-    timelineServices.to(postit2, {x: 120});
+    timelineServices.to(postit3, {opacity: 1});
+
+
+    timelineServices.to(postit4, {opacity: 1});
     timelineServices.to(postit1, {opacity: 0});
 
+    //---
+    timelineServices.to(postit5, {x: 0});
+    timelineServices.to(postit3, {x: 0});
+    timelineServices.to(postit2, {opacity: 0});
 
-    timelineServices.to(postit4, {x: 130});
-    timelineServices.to(postit3, {x: 120});
+    timelineServices.to(postit4, {x: 0});
 
-    timelineServices.to(postit5, {x: 140});
-
-    // timelineServices.to(flyingPostit, {
-    //   duration: 1, 
-    //   yoyo: true,
-    //   ease: 'power1.inOut',
-    //   motionPath: {
-    //     path: postitPath,
-    //     align: postitPath,
-    //     autoRotate: true,
-    //     alignOrigin: [0.5, 0.5]
-    //   }
-    // });
   }, 15);
 
   var teamFx = debounce(function() {
@@ -267,9 +224,6 @@
     casestudiesFx();
     blogFx1();
     blogFx2();
-    // gsap.utils.toArray('-section').forEach(function(section, index) {
-    //   gsap.fromTo()
-    // });
   };
 
   animationPlayer();
