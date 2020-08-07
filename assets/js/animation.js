@@ -10,6 +10,7 @@
   var casestudiesSection = document.querySelector('[data-fx="casestudies-section"]');
   var teamSection = document.querySelector('[data-fx="team-section"]');
   var blogSection = document.querySelector('[data-fx="blog-section"]');
+
   var sectionArray = [
     servicesSection,
     casestudiesSection,
@@ -26,9 +27,11 @@
 
   var flyingPostit = document.querySelector('[data-fx="flying-postit"]');
   var postitPath = document.querySelector('[data-fx="postit-path"]');
-  var postitGroupTodo = document.querySelector('[data-fx="postit-group-todo"]');
-  var postitGroupDoing = document.querySelector('[data-fx="postit-group-doing"]');
-  var postitGroupDone = document.querySelector('[data-fx="postit-group-done"]');
+  var postit1 = document.querySelector('[data-fx="postit-1"]');
+  var postit2 = document.querySelector('[data-fx="postit-2"]');
+  var postit3 = document.querySelector('[data-fx="postit-3"]');
+  var postit4 = document.querySelector('[data-fx="postit-4"]');
+  var postit5 = document.querySelector('[data-fx="postit-5"]');
 
   var casestudyPreview = document.querySelector('[data-fx="case-study-preview"]');
   var casestudy1 = document.querySelector('[data-fx="case-study-1"]');
@@ -187,20 +190,45 @@
   }, 15);
 
   var servicesFx = debounce(function() {
-    timelineServices.from(postitGroupTodo, {duration: 1, opacity: 0});
-    timelineServices.from(postitGroupDoing, {duration: 1, opacity: 0});
-    timelineServices.from(postitGroupDone, {duration: 1, opacity: 0});
-    timelineServices.to(flyingPostit, {
-      duration: 1, 
-      yoyo: true,
-      ease: 'power1.inOut',
-      motionPath: {
-        path: postitPath,
-        align: postitPath,
-        autoRotate: true,
-        alignOrigin: [0.5, 0.5]
-      }
-    });
+    timelineServices.from(postit1, {opacity: 0});
+    timelineServices.from(postit2, {opacity: 0});
+    timelineServices.from(postit3, {opacity: 0});
+
+    timelineServices.to(postit1, {x: 100});
+    timelineServices.to(postit3, {x: 70});
+
+    timelineServices.from(postit4, {opacity: 0});
+
+    timelineServices.to(postit2, {x: 30});
+
+    timelineServices.from(postit5, {opacity: 0});
+
+    timelineServices.to(postit1, {x: 160});
+
+    timelineServices.to(postit5, {x: 40});
+
+    timelineServices.to(postit4, {x: 80});
+
+    timelineServices.to(postit2, {x: 120});
+    timelineServices.to(postit1, {opacity: 0});
+
+
+    timelineServices.to(postit4, {x: 130});
+    timelineServices.to(postit3, {x: 120});
+
+    timelineServices.to(postit5, {x: 140});
+
+    // timelineServices.to(flyingPostit, {
+    //   duration: 1, 
+    //   yoyo: true,
+    //   ease: 'power1.inOut',
+    //   motionPath: {
+    //     path: postitPath,
+    //     align: postitPath,
+    //     autoRotate: true,
+    //     alignOrigin: [0.5, 0.5]
+    //   }
+    // });
   }, 15);
 
   var teamFx = debounce(function() {
