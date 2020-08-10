@@ -145,47 +145,35 @@
   }, 15);
 
   var servicesFx = debounce(function() {
-    timelineServices.to(postit5, {opacity: 0});
+    // Frame 1
+    timelineServices.to(postit5, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.from(postit1, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.from(postit2, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit3, {x: 80, ease: 'power1.inOut'});
+    timelineServices.to(postit4, {x: 100, ease: 'power1.inOut'});
 
-    timelineServices.from(postit1, {opacity: 0});
+    // Frame 2
+    timelineServices.to(postit5, {x: -140, ease: 'power1.inOut'});
+    timelineServices.to(postit5, {opacity: 1, ease: 'power1.inOut'});
+    timelineServices.to(postit1, {x: 80, ease: 'power1.inOut'});
+    timelineServices.to(postit2, {x: 125, ease: 'power1.inOut'});
+    timelineServices.to(postit3, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit3, {x: -20, ease: 'power1.inOut'})
+    timelineServices.to(postit4, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit4, {x: -30, ease: 'power1.inOut'});
 
-    timelineServices.from(postit2, {opacity: 0});
+    // Frame 3
+    timelineServices.to(postit5, {x: -90, ease: 'power1.inOut'});
+    timelineServices.to(postit1, {x: 130, ease: 'power1.inOut'});
+    timelineServices.to(postit3, {opacity: 1, ease: 'power1.inOut'});
+    timelineServices.to(postit4, {opacity: 1, ease: 'power1.inOut'});
+    timelineServices.to(postit1, {opacity: 0, ease: 'power1.inOut'});
 
-    timelineServices.to(postit3, {x: 80});
-
-    timelineServices.to(postit4, {x: 100});
-    //----
-    timelineServices.to(postit5, {x: -140});
-    timelineServices.to(postit5, {opacity: 1});
-
-    timelineServices.to(postit1, {x: 80});
-
-    timelineServices.to(postit2, {x: 125});
-    
-    timelineServices.to(postit3, {opacity: 0});
-    timelineServices.to(postit3, {x: -20})
-
-    timelineServices.to(postit4, {opacity: 0});
-    timelineServices.to(postit4, {x: -30});
-
-    //----
-    timelineServices.to(postit5, {x: -90});
-
-    timelineServices.to(postit1, {x: 130});
-
-    timelineServices.to(postit3, {opacity: 1});
-
-
-    timelineServices.to(postit4, {opacity: 1});
-    timelineServices.to(postit1, {opacity: 0});
-
-    //---
-    timelineServices.to(postit5, {x: 0});
-    timelineServices.to(postit3, {x: 0});
-    timelineServices.to(postit2, {opacity: 0});
-
-    timelineServices.to(postit4, {x: 0});
-
+    // Frame 4
+    timelineServices.to(postit5, {x: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit3, {x: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit2, {opacity: 0, ease: 'power1.inOut'});
+    timelineServices.to(postit4, {x: 0, ease: 'power1.inOut'});
   }, 15);
 
   var teamFx = debounce(function() {
