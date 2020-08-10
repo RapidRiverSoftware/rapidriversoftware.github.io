@@ -1,1 +1,11 @@
+@media(min-width: $width-md) {
+  .header-section {
+    width: 100%;
+  }
+}
 
+@media(min-width: $width-lg) {
+  .header-section {
+    width: auto;
+  }
+}
