@@ -217,7 +217,7 @@
     timelineBlog2.from(blogBubble5, {x: 5});
   }, 15);
 
-  var animationPlayer = function() {
+  var initAnimations = function() {
     headerFx();
     servicesFx();
     teamFx();
@@ -226,7 +226,7 @@
     blogFx2();
   };
 
-  animationPlayer();
+  initAnimations();
 
 
 })(window.document, window.console)
