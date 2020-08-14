@@ -5,6 +5,7 @@ category: blog
 date: 2014-02-05
 description: A demonstration of a problem that can plague projects that use per-branch database names
 author: Nick Marden
+featured: true
 ---
 
 One client project that we’re working on includes many concurrent development branches, often with different database schemas and seeds. To simplify life, a developer at the client company recently changed their application’s database.yml to derive the development database name from the current git branch name. This is a fairly common trick, documented [here](http://mislav.uniqpath.com/rails/branching-the-database-along-with-your-code/) and [here](http://www.reinteractive.net/posts/22-branch-specific-database-yml) and [here](https://github.com/schlick/Git-DB-Switcher).

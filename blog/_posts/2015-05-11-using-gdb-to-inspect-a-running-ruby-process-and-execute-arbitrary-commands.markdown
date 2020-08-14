@@ -5,6 +5,7 @@ category: blog
 date: 2015-05-11
 description: How Unix utilities helped me dive beneath the covers to spot a problem deep in some Ruby code
 author: Nick Marden
+featured: true
 ---
 
 #### The Problem

@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
+    {% include shared/head.html %}
 
-    <body id="home" class="index">
-        {% include gtm.html %}
-        {% include nav_dark.html %}
-        {% include header.html %}
-        {% include services.html %}
-        {% include case_studies.html %}
-        {% include homepage/cta_to_about_careers.html %}
-        {% include homepage/cta_to_blog.html %}
-        {% include hire_cta.html %}
-        {% include footer.html %}
-        {% include js.html %}
-        <script src="{{ "/assets/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+    <body id="home" class="index toplevel-page -blue">
+        {% include shared/gtm.html %}
+        {% include shared/nav_light.html %}
+        {% include homepage/header.html %}
+        {% include homepage/sections.html %}
+        {% include shared/cta_to_hire_us.html %}
+        {% include shared/footer.html %}
+        {% include shared/js.html %}
+        {% include shared/js_home.html %}
     </body>
 </html>

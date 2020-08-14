@@ -1,0 +1,150 @@
+.homepage-sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px
+}
+
+.section-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:nth-child(odd) {
+      .animation {
+        background-color: $purple800;
+      }
+    }
+
+    &:nth-child(even) {
+      .animation {
+        background-color: $purple600;
+      }
+    }
+
+    .animation {
+      display: flex;
+      justify-content: center;
+      border-radius: 0 0 30px 30px;
+      padding: 60px 15px 30px 15px;
+      margin-top: -30px;
+
+      .inner {
+        position: relative;
+        max-width: 345px;
+      }
+
+      .inner svg {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+      }
+
+      .featuredposts-widget {
+        position: absolute;
+        z-index: 2;
+        top: 38px;
+        left: 160px;
+      }
+    }
+
+    .text {
+      position: relative;
+      z-index: 1;
+      background-color: white;
+      padding: 40px 20px;
+      border-radius: 30px;
+      box-shadow: $shadow-xl;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .section-list {
+    width: 80%;
+
+    .item {
+      .text {
+        padding: 40px 40px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .section-list {
+    .item {
+      background-image: url('../img/homepage/shared/bg-pattern-square-large.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      &:nth-child(odd) {
+        .text {
+          align-self: flex-end;
+        }
+
+        .animation {
+          align-self: flex-start;
+        }
+      }
+
+      &:nth-child(even) {
+        .text {
+          align-self: flex-start;
+        }
+
+        .animation {
+          align-self: flex-end;
+        }
+      }
+
+      .text {
+        width: 60%;
+      }
+
+      .animation {
+        width: 60%;
+        border-radius: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .section-list {
+    max-width: 980px;
+
+    .item {
+      margin-bottom: 100px;
+
+      .text {
+        width: 540px;
+      }
+
+      .animation {
+        width: 500px;
+        margin-top: -130px;
+        padding: 100px 30px 100px 30px;
+      }
+    }
+  }
+}

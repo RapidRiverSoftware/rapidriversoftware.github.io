@@ -7,7 +7,7 @@
 
 .site-footer {
   position: relative;
-  height: 400px;
+  height: 600px;
   padding-top: 95px;
   color: $grey600;
   font-family: $main-font;
@@ -23,6 +23,11 @@
     width: 100%;
     background-color: white;
     border-radius: 0px 0px 30px 30px;
+  }
+
+  .link {
+    color: $grey600;
+    text-decoration: underline;
   }
 
   .copyright {
@@ -55,16 +60,23 @@
 
   .contactdetails {
     font-size: 14px;
+  }
 
-    .contactlink {
-      color: $grey600;
-      text-decoration: underline;
+  .menu {
+    font-size: 14px;
+
+    .subnavlist,
+    .creditlist {
+      font-size: 14px;
+      list-style: none;
+      padding-left: 0;
     }
   }
 }
 
 @media(min-width:768px) {
   .site-footer {
+    height: 400px;
     border-top-left-radius: 90px;
 
     &::before {

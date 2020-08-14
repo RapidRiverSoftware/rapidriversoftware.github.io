@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% include head_content.html %}
+        {% include shared/head_content.html %}
         <link rel="canonical" href="{{ page.redirect_to }}" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
     </head>
 
     <body id="home" class="page">
-        {% include gtm.html %}
-        {% include nav_dark.html %}
+        {% include shared/gtm.html %}
+        {% include shared/nav_dark.html %}
 
         <div class="container post">
             <div class="row">
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        {% include footer.html %}
-        {% include js.html %}
+        {% include shared/footer.html %}
+        {% include shared/js.html %}
     </body>
 </html>

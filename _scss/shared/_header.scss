@@ -2,7 +2,7 @@
   position: relative;
   height: 506px;
 
-  // Pages "other" than home page
+  // TODO: Deprecate and generalise this "other"-ness
   &.-other {
     background-color: $blue500;
     background-image: url($header-bg);
@@ -19,7 +19,7 @@
   }
 
   .intro {
-    padding-top: 120px;
+    padding-top: 100px;
     font-family: $main-font;
     
     .heading {
@@ -42,10 +42,6 @@
 
   .image {
     text-align: right;
-
-    img {
-      width: 80%;
-    }
   }
 }
 
@@ -62,7 +58,7 @@
     }
 
     .intro {
-      padding-top: 195px;
+      padding-top: 150px;
 
       .heading {
         font-size: 42px;
@@ -77,7 +73,11 @@
     }
 
     .image {
-      padding-top: 190px;
+      padding-top: 150px;
+
+      img {
+        width: 80%;
+      }
     }
   }
 }
@@ -91,7 +91,11 @@
     }
 
     .image {
-      padding-top: 140px;
+      padding-top: 215px;
+
+      img {
+        width: auto;
+      }
     }
   } 
 }
@@ -104,28 +108,6 @@
       padding-top: 225px;
     }
   }
-}
-
-
-// TODO: Deprecate the below header styles and remove bootstrap dependency
-.page-header.-home {
-  position: relative;
-  color: white;
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.no-webp .page-header.-home {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.jpg');
-}
-
-.webp .page-header.-home {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header-bg.webp');
 }
 
 .header--careers-post,
@@ -173,11 +155,6 @@
       width: 100%;
       padding-top: 200px;
       padding-bottom: 50px;
-  }
-
-  .header--home .header--intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
   }
 
   .header--services .header--intro-text {

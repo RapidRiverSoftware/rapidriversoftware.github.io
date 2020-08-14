@@ -5,6 +5,7 @@ category: blog
 date: 2020-05-20
 description: How do you define your backlog when your team's work involves refactoring or is architectural in nature? The answer is to add a Technical Product Owner to your Scrum team.
 author: Calum Halcrow
+featured: true
 ---
 
 *How do you define your backlog when your team’s work involves refactoring or is architectural in nature?*

@@ -5,6 +5,7 @@ category: blog
 date: 2016-07-11
 description: It's a well-known fact that acquiring SSL certificates can be a difficult process. It's even more difficult to acquire SSL certificates that are valid for an arbitrary list of domains, many of which are controlled by different agencies. This post describes how we use Let's Encrypt to easily keep our SAN SSL certificate up to date with all of the domains of our customers who require HTTPS support in a multi-server environment.
 author: Nathan Smith
+featured: true
 ---
 
 ## Introduction

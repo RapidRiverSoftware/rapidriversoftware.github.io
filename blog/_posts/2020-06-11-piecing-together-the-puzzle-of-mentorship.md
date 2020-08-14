@@ -5,6 +5,7 @@ category: blog
 date: 2020-06-11
 description: "As you grow in your career as a software developer, one of the trickier things to master is mentoring junior team members. Let’s take a look at how you can learn to do this."
 author: Calum Halcrow
+featured: true
 ---
 
 As you grow in your career as a software developer, one of the trickier things to master is mentoring junior team members. Let’s take a look at how you can learn to do this.

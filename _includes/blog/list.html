@@ -1,5 +1,5 @@
 <div id="posts">
-    <div id="blog-list" class="blog-list">
+    <div id="blog-list" class="blog-list" data-fx="blog-list">
     {% for post in paginator.posts %}
         {% if post.categories contains 'blog' %}
         <div class="blogitem">

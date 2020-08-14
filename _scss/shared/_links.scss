@@ -1,15 +1,15 @@
 .active {
   position: relative;
-  color: $pink400;
+  color: $blue900 !important;
 }
 
 .active::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 2px;
   width: 100%;
   background-color: $primary-blue;
 }
@@ -18,6 +18,15 @@
 .nav--link::active,
 .nav--link::focus {
   color: $primary-blue;
+}
+
+.link {
+  &.-pink {
+    color: $pink400;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }
 
 @media(min-width:768px) {
@@ -33,5 +42,9 @@
   .nav--link::active,
   .nav--link::focus {
     color: $secondary-blue;
-  } 
+  }
+
+  .hireuslink .active::before {
+    height: 0;
+  }
 }
