@@ -160,16 +160,6 @@
     - title: linkedin
       url: https://www.linkedin.com/in/iqbalhasnan
 
-- name: Fahmi San
-  slug: fahmi_san
-  pic: fahmi
-  position: Software Engineer
-  social:
-    - title: github
-      url: https://github.com/fahmisan88
-    - title: linkedin
-      url: https://www.linkedin.com/in/ahmad-fahmi-san-ahmad-8763b7131/
-
 - name: Shaii Ong
   slug: shaii_ong
   pic: shaii
