@@ -18,7 +18,14 @@
     }
   }
 
+  .headerflex {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .intro {
+    flex-basis: 0;
+    flex-grow: 1;
     padding-top: 100px;
     font-family: $main-font;
     
@@ -41,6 +48,9 @@
   }
 
   .image {
+    display: none;
+    flex-basis: 0;
+    flex-grow: 1;
     text-align: right;
   }
 }
@@ -73,6 +83,7 @@
     }
 
     .image {
+      display: block;
       padding-top: 150px;
 
       img {

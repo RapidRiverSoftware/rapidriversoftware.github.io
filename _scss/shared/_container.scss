@@ -1,23 +1,25 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  justify-content: space-between;
-
-  &.-flex {
-    display: flex;
-  }
 }
 
 @media(min-width: $width-md) {
-  .container {}
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media(min-width: $width-lg) {
-  .container {}
+  .container {
+    max-width: 980px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 @media(min-width: $width-xl) {
   .container {
-    max-width: 980px;
+    
   }
 }

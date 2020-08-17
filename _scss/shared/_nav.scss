@@ -6,12 +6,20 @@
   width: 100%;
   z-index: 1000;
   background-color: $blue500;
+
+  .navflex {
+    display: flex;
+  }
 }
 
 @media(min-width: $width-md) {
   .navbar--main {
     padding-top: 50px;
     background-color: transparent;
+
+    .navflex {
+      justify-content: space-between;
+    }
   }
 }
 
