@@ -257,3 +257,15 @@
   social:
     - title: github
       url: https://github.com/lucindax
+
+- name: Tee Shuwn Yuan
+  slug: tee_shuwn_yuan
+  pic: shuwnyuan
+  position: Senior Software Engineer
+  social:
+    - title: github
+      url: https://github.com/shuwnyuantee
+    - title: stack-overflow
+      url: https://stackoverflow.com/users/1051441/shuwn-yuan-tee
+    - title: linkedin
+      url: https://www.linkedin.com/in/shuwn-yuan-tee
