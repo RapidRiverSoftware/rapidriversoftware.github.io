@@ -5,53 +5,47 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-
-  &.-dark {
-    background-color: $secondary-blue;
-  }
-
-  &.-light {
-    background-color: $primary-blue;
-
-    .navbar-brand img {
-      height: 20px;
-    }
-  }
+  background-color: $blue500;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .navbar--main {
-    &.-dark {
-      background-color: transparent;
-    }
-
-    &.-light {
-      .navbar-brand img {
-        height: 30px;
-      }
-    }
+    padding-top: 50px;
+    background-color: transparent;
   }
 }
 
-.navbar-toggler-icon {
-  width: 20px;
-  height: 20px;
+/* Navigation Link List */ 
+
+.navlink-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  li:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
-.nav--link {
+/* Burger Menu */
+.burgericon {}
+
+@media(min-width: $width-md) {
+  .burgericon {
+    display: none;
+  }
+}
+
+/* Navigation Links */
+.navlink {
   color: white;
   font-family: $main-font;
   font-weight: 400;
   letter-spacing: 1px;
+  text-decoration: none;
   text-transform: uppercase;
-}
-
-.navbar-toggler {
-  background-color: $primary-blue;
-}
-
-@media(min-width:768px) {
-  .navbar--main {
-    background-color: transparent;
-  }
 }

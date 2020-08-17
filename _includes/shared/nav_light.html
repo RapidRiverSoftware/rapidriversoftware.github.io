@@ -1,44 +1,49 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark navbar--main -light">
-    <div class="container">
+<nav class="navbar--main">
+    <div class="container -flex">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-            aria-controls="bs-example-navbar-collapse-1"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="/">
-            <img src="/assets/img/logos/rrs-white.png" width="auto" height="30" class="d-none d-sm-none d-md-block"
-                alt="{{ site.title }}">
-            <img src="/assets/img/logos/rrs-white.png" width="auto" height="30" class="d-sm-block d-md-none"
-                alt="{{ site.title }}">
-        </a>
+        <div class="sitelogo">
+            <div class="burgericon">
+                <label for="menu-toggle" class="pointer-cursor lg:hidden block">
+                    <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20">
+                        <title>menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle"  data-fx="menu-toggle">
+            </div>
+
+            <a class="navbar-brand" href="/">
+                <img src="/assets/img/logos/rrs-white.png" width="auto" height="30" class="d-sm-block d-md-none"
+                    alt="{{ site.title }}">
+            </a>
+        </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse justify-content-end" id="bs-example-navbar-collapse-1" data-fx="main-nav">
-            <ul class="navbar-nav">
+        <div class="mainnav" id="" data-fx="main-nav">
+            <ul class="navlink-list">
                 <li style="display:none">
                     <a href="/"></a>
                 </li>
                 <li>
-                    <a href="/services" class="nav--link">Services</a>
+                    <a href="/services" class="navlink">Services</a>
                 </li>
                 <li>
-                    <a href="/case-studies" class="nav--link">Case studies</a>
+                    <a href="/case-studies" class="navlink">Case studies</a>
                 </li>
                 <li>
-                    <a href="/about" class="nav--link">About</a>
+                    <a href="/about" class="navlink">About</a>
                 </li>
                 <li>
-                    <a href="/careers" class="nav--link">Careers</a>
+                    <a href="/careers" class="navlink">Careers</a>
                 </li>
                 <li>
-                    <a href="/blog/" class="nav--link">Blog</a>
+                    <a href="/blog/" class="navlink">Blog</a>
                 </li>
                 <li class="hireuslink">
                     <a href="/hire-us" class="button -pink">Hire us</a>

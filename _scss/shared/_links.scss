@@ -14,9 +14,9 @@
   background-color: $primary-blue;
 }
 
-.nav--link::hover,
-.nav--link::active,
-.nav--link::focus {
+.navlink::hover,
+.navlink::active,
+.navlink::focus {
   color: $primary-blue;
 }
 
@@ -38,9 +38,9 @@
     background-color: $secondary-blue;
   }
 
-  .nav--link::hover,
-  .nav--link::active,
-  .nav--link::focus {
+  .navlink::hover,
+  .navlink::active,
+  .navlink::focus {
     color: $secondary-blue;
   }
 
