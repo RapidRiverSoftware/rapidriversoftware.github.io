@@ -20,8 +20,9 @@ This section provides a summary of the ways different types of content can be ad
 
 ### Creating a team member profile
 1. Add your details in `/data/people.yml` file
-2. Review in the browser when done
-3. Open a PR
+2. Put a little photo of yourself in `/assets/img/team`. Filename should match the `pic` value you provided with your details, above
+3. Check that it looks good in the browser
+4. Open a PR and request a review
 
 ### Creating a page
 1. Add your new page in the `/pages` directory
@@ -30,10 +31,10 @@ This section provides a summary of the ways different types of content can be ad
 
 ### Creating a blog post:
 
-1. Copy an existing post in the `blog/_posts` directory, edit the file name and "front matter" accordingly.
-2. Get your markdown on.
-3. Review in the browser when done writing.
-4. Open a PR.
+1. Copy an existing post in the `blog/_posts` directory, edit the file name and "front matter" accordingly
+2. Get your markdown on
+3. Review in the browser when done writing
+4. Open a PR and request a review
 
 ### Syntax highlighting for your code
 
