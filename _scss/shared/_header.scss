@@ -27,12 +27,14 @@
     flex-basis: 0;
     flex-grow: 1;
     padding-top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-family: $main-font;
     
     .heading {
       color: white;
-      font-size: 34px;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: 35px;
       padding-bottom: 24px;
     }
 
@@ -42,7 +44,8 @@
 
     .tagline {
       color: white;
-      font-size: 19px;
+      font-size: 18px;
+      line-height: 28px;
       padding-bottom: 40px;
     }
   }
@@ -69,7 +72,8 @@
 
     .intro {
       padding-top: 150px;
-      
+      padding-right: 0;
+      padding-left: 0;
 
       .heading {
         font-size: 30px;
