@@ -15,6 +15,13 @@
   background-image: url($footer-bg);
   border-bottom: 16px solid $blue500;
 
+  .footerflex {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -74,13 +81,18 @@
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .site-footer {
     height: 400px;
     border-top-left-radius: 90px;
 
     &::before {
       display: none;
+    }
+
+    .footerflex {
+      justify-content: space-between;
+      flex-direction: row;
     }
 
     .socialmedia {
