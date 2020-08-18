@@ -1,0 +1,72 @@
+.navbar-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: $blue500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .navflex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burgericon {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+
+    .menuicon {
+      fill: white;
+    }
+  }
+
+  .toggleinput {
+    display: none;
+  }
+
+  .mainnav {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: $blue500;
+  }
+
+  // Start Mobile Menu Effect
+  div[data-fx="main-nav"] {
+    display: none;
+  }
+  
+  input[data-fx="menu-toggle"]:checked + div[data-fx="main-nav"] {
+    display: block;
+  }
+  // End Mobile Menu Effect
+
+  .navbarlogo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    img {
+      height: 20px;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .navbar-main {
+    padding-top: 50px;
+    background-color: transparent;
+
+    .navflex {
+      justify-content: space-between;
+    }
+  }
+}
