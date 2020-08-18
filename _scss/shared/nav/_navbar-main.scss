@@ -60,13 +60,39 @@
   }
 }
 
-@media(min-width: $width-md) {
+@media(min-width: $width-lg) {
   .navbar-main {
     padding-top: 50px;
     background-color: transparent;
 
     .navflex {
       justify-content: space-between;
+      flex-direction: row-reverse;
     }
+
+    .burgericon {
+      display: none;
+    }
+
+    div[data-fx="main-nav"] {
+      display: block;
+    }
+
+    .mainnav {
+      position: relative;
+      top: 0;
+      width: auto;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .navbarlogo {
+      margin-right: 0;
+
+      img {
+        height: 30px;
+      }
+    }
+
   }
 }
