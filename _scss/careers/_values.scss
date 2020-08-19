@@ -1,0 +1,62 @@
+.careers-page {
+  .values {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .valueslist {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .valueslist .item {
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+
+      .valueheading {
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+      .valuedesc {
+        color: $grey500;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .careers-page {
+    .values {
+      padding-top: 40px;
+
+      .valueslist {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .valueslist .item {
+        //
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .careers-page {
+    .values {
+      .valueslist {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+    }
+  }
+}

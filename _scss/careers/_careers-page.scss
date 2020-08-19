@@ -1,0 +1,57 @@
+.careers-page {
+  .-section {
+    .heading {
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 36px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .description {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      color: $grey500;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: center;
+      text-transform: none;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .careers-page {
+    .-section {
+      .heading {
+        font-size: 40px;
+      }
+
+      .description {
+        width: 420px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .about-careers {
+    .-section {
+      .description {
+        width: 560px;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .about-careers {
+    .-section {
+      .description {
+        width: 670px;
+      }
+    }
+  }
+}
