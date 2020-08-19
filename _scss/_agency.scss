@@ -151,7 +151,7 @@ body {
 
 /* Collection List Styles */
 .collection-list--item:nth-child(even) {
-    background-color: $grey-light;
+    background-color: $grey200;
 }
 
  /* Case Study Styles */
@@ -195,7 +195,7 @@ img.case-study-product {
     background-image: url('../img/case-studies/clients/default.png');
     background-size: cover;
     border-radius: 80px;
-    border: 3px solid $grey-light;
+    border: 3px solid $grey200;
 }
 
 .case-studies .post img {
