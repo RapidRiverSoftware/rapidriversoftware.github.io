@@ -1,4 +1,4 @@
-.careers-page {
+.error-page {
   .-section {
     .heading {
       padding-right: 15px;
@@ -23,7 +23,7 @@
 }
 
 @media(min-width: $width-md) {
-  .careers-page {
+  .error-page {
     .-section {
       .heading {
         font-size: 40px;
@@ -37,7 +37,7 @@
 }
 
 @media(min-width: $width-lg) {
-  .careers-page {
+  .error-page {
     .-section {
       .description {
         width: 560px;
@@ -47,7 +47,7 @@
 }
 
 @media(min-width: $width-xl) {
-  .careers-page {
+  .error-page {
     .-section {
       .description {
         width: 670px;
