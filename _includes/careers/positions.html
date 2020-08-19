@@ -1,33 +1,25 @@
 <!-- Careers: Open positions -->
-<section id="positions" class="positions">
+<section id="positions" class="positions -section">
     <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="section-heading">Open positions</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center">
-                <h3 class="section-subheading text-muted">
-                    We are currently looking to fill the following positions in Malaysia.
-                    <br/><br/>
-                    These positions will be primarily remote. We only require that you be resident in Malaysia, so that you can be an employee of our Malaysian company.
-                </h3>
-            </div>
-        </div>
-        <div class="row text-center">
+        <h2 class="heading">Open positions</h2>
+        <h3 class="description">
+            We are currently looking to fill the following positions in Malaysia.
+            <br/><br/>
+            These positions will be primarily remote. We only require that you be resident in Malaysia, so that you can be an employee of our Malaysian company.
+        </h3>
+        <div class="positionslist">
             {% for career in site.careers %}
 
-                {% if career.redirect_to %}
-                  {% continue %}
-                {% endif %}
+            {% if career.redirect_to %}
+              {% continue %}
+            {% endif %}
 
-                <div class="col-md-6 col-lg-4">
-                    <img src="/assets/img/shared/icon-employee.svg" alt="An awesome applicant who is smiling" class="icon icon-laptop" />
-                    <h4 class="service-heading">{{ career.title }}</h4>
-                    <a href="{{ career.url | prepend: site.baseurl }}">{{ career.cta }}</a>
-                </div>
-            {% endfor %}
+            <div class="item">
+                <img src="/assets/img/shared/icon-employee.svg" alt="An awesome applicant who is smiling" class="icon" />
+                <h4 class="positionheading">{{ career.title }}</h4>
+                <a class="positionlink" href="{{ career.url | prepend: site.baseurl }}">{{ career.cta }}</a>
+            </div>
+        {% endfor %}
         </div>
     </div>
 </section>

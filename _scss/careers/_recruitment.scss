@@ -1,6 +1,7 @@
 .careers-page {
-  .values {
+  .recruitment {
     padding-bottom: 40px;
+    background-color: $grey200;
     
     .container {
       display: flex;
@@ -8,25 +9,25 @@
       align-items: center;
     }
 
-    .valueslist {
+    .processlist {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
 
-    .valueslist .item {
+    .processlist .item {
       padding-right: 15px;
       padding-left: 15px;
       text-align: center;
 
-      .valueheading {
+      .processheading {
         margin-bottom: 0;
         font-size: 20px;
         font-weight: 700;
         text-transform: capitalize;
       }
 
-      .valuedesc {
+      .processdesc {
         color: $grey500;
       }
     }
@@ -35,10 +36,10 @@
 
 @media(min-width: $width-md) {
   .careers-page {
-    .values {
+    .recruitment {
       padding-top: 40px;
 
-      .valueslist {
+      .processlist {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
       }
@@ -48,8 +49,8 @@
 
 @media(min-width: $width-lg) {
   .careers-page {
-    .values {
-      .valueslist {
+    .recruitment {
+      .processlist {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
       }
