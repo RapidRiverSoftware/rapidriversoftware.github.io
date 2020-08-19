@@ -165,7 +165,7 @@
   line-height: 50px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .header--intro-text {
       width: 60%;
       text-align: left;

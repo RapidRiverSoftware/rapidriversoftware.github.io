@@ -11,13 +11,13 @@
   right: 0;
   height: 2px;
   width: 100%;
-  background-color: $primary-blue;
+  background-color: $blue500;
 }
 
 .navlink::hover,
 .navlink::active,
 .navlink::focus {
-  color: $primary-blue;
+  color: $blue500;
 }
 
 .link {
@@ -29,19 +29,19 @@
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .active {
-    color: $secondary-blue;
+    color: $blue900;
   }
 
   .active::before {
-    background-color: $secondary-blue;
+    background-color: $blue900;
   }
 
   .navlink::hover,
   .navlink::active,
   .navlink::focus {
-    color: $secondary-blue;
+    color: $blue900;
   }
 
   .hireuslink .active::before {

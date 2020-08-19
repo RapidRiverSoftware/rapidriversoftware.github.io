@@ -6,7 +6,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: $main-font;
-  color: $secondary-blue;
+  color: $blue900;
 }
 
 .text-muted {
@@ -14,7 +14,7 @@ body {
 }
 
 .text--primary {
-  color: $primary-blue;
+  color: $blue500;
 }
 
 p {
@@ -35,7 +35,7 @@ a.active {
 }
 
 a {
-  color: $primary-blue;
+  color: $blue500;
 }
 
 a:hover,

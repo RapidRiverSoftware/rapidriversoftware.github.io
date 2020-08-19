@@ -24,13 +24,13 @@ section .section-heading {
     line-height: 32px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     .section-subheading {
         margin: 0 auto;
     }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     section {
         padding: 150px 0;
     }
@@ -94,12 +94,12 @@ section#hire-us .form-group textarea.form-control {
 }
 
 section#hire-us .form-control:focus {
-    border-color:$primary-blue;
+    border-color: $blue500;
     box-shadow: none;
 }
 
 section#hire-us .text-danger {
-    color: $red;
+    color: $red400;
 }
 
 .btn:focus,
@@ -111,13 +111,13 @@ section#hire-us .text-danger {
 
 ::-moz-selection {
     text-shadow: none;
-    background: $primary-blue;
+    background: $blue500;
     color: white;
 }
 
 ::selection {
     text-shadow: none;
-    background: $primary-blue;
+    background: $blue500;
     color: white;
 }
 
@@ -130,14 +130,14 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: $primary-blue;
+    webkit-tap-highlight-color: $blue500;
 }
 
 .full-page {
     margin-top: -22px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     .full-page {
         margin-top: 0px;
     }
@@ -215,7 +215,7 @@ img.case-study-product {
     width: 100%;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     .case-study-photo-grid {
         width: 100%;
         margin-top: 0px;
@@ -226,7 +226,7 @@ img.case-study-product {
     }
 }
 
-@media(min-width: 770px) {
+@media(min-width: $width-md) {
     .client-quote::after {
         left: -40px;
     }
@@ -242,7 +242,7 @@ img.case-study-product {
     width: 100%;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     .work .flex-row {
         flex-direction: row;
     }
@@ -257,7 +257,7 @@ img.case-study-product {
     width: 100%;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
     .photo-feed-row img {
         width: 100%;
     }

@@ -9,7 +9,7 @@
   padding-left: 0px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .blog.posts {
       width: 64%;
   }
@@ -25,11 +25,11 @@
 }
 
 .blog.posts h3 a {
-  color: $secondary-blue;
+  color: $blue900;
 }
 
 .blog.posts h3 a:hover {
-  color: $primary-blue;
+  color: $blue500;
 }
 
 .blog.posts p {
@@ -37,7 +37,7 @@
 }
 
 .blog.posts p.meta {
-  color: $primary-blue;
+  color: $blue500;
 }
 
 .blog img {
@@ -47,7 +47,7 @@
   border-radius: 5px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .blog img {
       width: 80%;
   }
