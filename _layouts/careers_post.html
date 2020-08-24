@@ -4,20 +4,23 @@
 
     <body id="home" class="page">
         {% include shared/gtm.html %}
-        {% include shared/nav_light.html %}
+        {% include shared/nav.html %}
 
-        <div class="full-page careers">
-            <header class="header header--careers-post">
-                <div class="container post">
-                    <div class="header--intro-text">
-                        <div class="header--intro-heading"> {{ page.title }}</div>
+        <div class="full-page careerspost -post">
+            {% include posts/header.html %}
+
+            <div class="container">
+                <div class="postflex">
+                    <h1 class="heading">{{ page.title }}</h1>
+                    <div class="content">
+                        {{ content | markdownify }} 
+                    </div>
+                    <div class="signoff">
+                        <p>
+                            If you think you have what it takes, get in touch with us by sending an email to <a href="mailto:careers@rrsoft.co">careers@rrsoft.co</a>
+                        </p>
                     </div>
                 </div>
-            </header>
-            <div class="container post">
-                {{ content | markdownify }}
-                <p>If you think you have what it takes, get in touch with us by sending an email to <a
-                        href="mailto:careers@rrsoft.co">careers@rrsoft.co</a>.</p>
             </div>
         </div>
 

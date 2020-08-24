@@ -3,7 +3,7 @@
   height: 100px;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .icon {
       width: 120px;
       height: 120px;

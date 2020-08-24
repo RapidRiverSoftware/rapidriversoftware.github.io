@@ -1,0 +1,33 @@
+.about-page {
+  .instagram {
+    padding-bottom: 40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image {
+      width: 80%;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .about-page {
+    .instagram {
+      padding-top: 40px;
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .about-page {
+    .instagram {
+      .image {
+        width: auto;
+      }
+    }
+  }
+}

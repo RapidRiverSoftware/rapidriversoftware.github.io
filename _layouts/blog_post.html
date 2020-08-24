@@ -4,29 +4,28 @@
 
     <body id="home" class="page">
         {% include shared/gtm.html %}
-        {% include shared/nav_light.html %}
+        {% include shared/nav.html %}
 
-        <div class="full-page blog">
-            <header class="header header--blog-post">
-                <div class="container post">
-                    <div class="header__space-maker"></div>
-                </div>
-            </header>
+        <div class="full-page blogpost -post">
+            {% include posts/header.html %}
 
-            <div class="container post">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h1 class="title-case__heading">{{ page.title }}</h1>
-                        <p class="meta"><em>{{ page.author }} - {{ page.date | date: '%B %d, %Y' }}</em></p>
+            <div class="container">
+                <div class="postflex">
+                    <h1 class="heading">{{ page.title }}</h1>
+                    <p class="meta">
+                        <em>
+                            {{ page.author }} - {{ page.date | date: '%B %d, %Y' }}
+                        </em>
+                    </p>
+                    <div class="content">
                         {{ content }}
-                        <hr class="star-primary">
                     </div>
-                </div>
-                <div class="row">
-                    <hr class="star-primary">
-                </div>
-                <div class="row justify-content-center">
-                    <a href="/blog" class="btn btn-primary">Go back to blog posts</a>
+                    <hr>
+                    <div class="signoff">
+                        <a href="/blog" class="button -blue">
+                            Go back to blog posts
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

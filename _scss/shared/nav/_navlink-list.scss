@@ -1,0 +1,35 @@
+.navlink-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: block;
+  }
+
+  li:not(:last-child) {
+    margin-right: 20px;
+    line-height: 40px;
+  }
+
+  li:last-child {
+    padding-top: 15px;
+  }
+
+  .navlink {
+    color: white;
+    font-family: $main-font;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media(min-width: $width-lg) {
+  .navlink-list {
+    li {
+      display: inline-block;
+    }
+  }
+}

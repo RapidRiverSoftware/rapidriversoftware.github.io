@@ -1,0 +1,53 @@
+.careers-page {
+  .positions {
+    padding-bottom: 40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .positionslist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .positionslist .item {
+      flex-grow: 1;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+
+      .positionheading {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .careers-page {
+    .positions {
+      padding-top: 40px;
+
+      .positionslist .item {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .careers-page {
+    .positions {
+      .positionslist .item {
+        width: 33%;
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@
 }
 
 .bg-light-gray {
-  background-color: $grey-light;
+  background-color: $grey200;
 }
 
 .bg-darkest-gray {
@@ -36,7 +36,7 @@
   display: inline;
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .line-breaker {
     display: block;
   } 

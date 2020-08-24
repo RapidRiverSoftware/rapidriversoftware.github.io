@@ -1,0 +1,19 @@
+.full-page {
+  .learnmore {
+    padding-bottom: 40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media(min-width: $width-md) {
+  .full-page {
+    .learnmore {
+      padding-top: 40px;
+    }
+  }
+}

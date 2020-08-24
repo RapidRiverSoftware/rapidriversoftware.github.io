@@ -11,13 +11,13 @@
   right: 0;
   height: 2px;
   width: 100%;
-  background-color: $primary-blue;
+  background-color: $blue500;
 }
 
-.nav--link::hover,
-.nav--link::active,
-.nav--link::focus {
-  color: $primary-blue;
+.navlink::hover,
+.navlink::active,
+.navlink::focus {
+  color: $blue500;
 }
 
 .link {
@@ -29,19 +29,19 @@
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .active {
-    color: $secondary-blue;
+    color: $blue900;
   }
 
   .active::before {
-    background-color: $secondary-blue;
+    background-color: $blue900;
   }
 
-  .nav--link::hover,
-  .nav--link::active,
-  .nav--link::focus {
-    color: $secondary-blue;
+  .navlink::hover,
+  .navlink::active,
+  .navlink::focus {
+    color: $blue900;
   }
 
   .hireuslink .active::before {

@@ -1,18 +1,27 @@
 .button {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 10px;
   font-family: $main-font;
+  text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
 
   &.-blue {
     color: white;
     background-color: $blue500;
+
+    &:hover {
+      color: white;
+    }
   }
 
   &.-white {
     color: $blue900;
     background-color: $grey100;
+
+    &:hover {
+      color: $blue900;
+    }
   }
 
   &.-pink {
@@ -22,108 +31,9 @@
     color: white;
     text-shadow: 2px 1px $pink600;
     background-color: $pink400;
+
+    &:hover {
+      color: white;
+    }
   }
-}
-
-
-// TODO: Deprecate the below button styles and remove bootstrap dependency
-.btn-primary {
-  border-color: $primary-blue;
-  text-transform: uppercase;
-  font-family: $main-font;
-  font-weight: 300;
-  color: white;
-  background-color: $primary-blue;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  border-color: $primary-blue;
-  color: white;
-  background-color: $primary-blue-light;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  border-color: $primary-blue;
-  background-color: $primary-blue;
-}
-
-.btn-primary .badge {
-  color: $primary-blue;
-  background-color: white;
-}
-
-.btn-xl {
-  padding: 15px 35px;
-  border-color: $primary-blue;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
-  background-color: $primary-blue;
-}
-
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-  border-color: $primary-blue;
-  color: white;
-  background-color: $primary-blue-light;
-}
-
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-  background-image: none;
-}
-
-.btn-xl.disabled,
-.btn-xl[disabled],
-fieldset[disabled] .btn-xl,
-.btn-xl.disabled:hover,
-.btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl:hover,
-.btn-xl.disabled:focus,
-.btn-xl[disabled]:focus,
-fieldset[disabled] .btn-xl:focus,
-.btn-xl.disabled:active,
-.btn-xl[disabled]:active,
-fieldset[disabled] .btn-xl:active,
-.btn-xl.disabled.active,
-.btn-xl[disabled].active,
-fieldset[disabled] .btn-xl.active {
-  border-color: $primary-blue;
-  background-color: $primary-blue;
-}
-
-.btn-xl .badge {
-  color: $primary-blue;
-  background-color: white;
 }

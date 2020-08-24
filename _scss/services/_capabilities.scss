@@ -12,7 +12,7 @@
   border-radius: 30px;
   box-shadow: $shadow-xl;
   color: white;
-  padding: 40px 20px;
+  padding: 10px 20px 40px 20px;
   margin-bottom: 30px;
   margin-top: -40px;
 
@@ -29,7 +29,7 @@
 @media(min-width: $width-lg) {
   .capabilities-header {
     width: 460px;
-    padding: 40px 40px;
+    padding: 10px 40px 40px 40px;
   }
 }
 
@@ -55,7 +55,7 @@
   .capabilities-list {
     max-width: 960px;
     width: 100%;
-    max-height: 1480px;
+    max-height: 1585px;
     flex-flow: column wrap;
   }
 }
@@ -63,13 +63,14 @@
 @media(min-width: $width-xl) {
   .capabilities-list {
     max-width: 1140px;
-    max-height: 1400px;
+    max-height: 1500px;
     align-content: space-between;
   }
 }
 
 .capability-item {
-  padding: 40px 20px;
+  width: 100%;
+  padding: 5px 20px 40px 20px;
   margin-bottom: 10px;
   background-color: white;
   border-radius: 30px;
@@ -105,7 +106,7 @@
 @media(min-width: $width-lg) {
   .capability-item {
     width: 460px;
-    padding: 40px 40px;
+    padding: 5px 40px 40px 40px;
     margin-top: 40px;
   }
 }

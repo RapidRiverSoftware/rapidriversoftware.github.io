@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm col-md-8">
+        <div class="footerflex">
+            <div class="col">
                 <div class="copyright">
                     <span class="">&copy; {{ site.title }} 2016 - {{ 'now' | date: "%Y" }}</span>
                 </div>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-4">
+            <div class="col">
                 <div class="socialmedia">
                     <ul class="socialmedia-list">
                         {% for network in site.social %}
