@@ -1,0 +1,32 @@
+.client-quote {
+  position: relative;
+  padding: 60px 40px 60px 40px;
+  margin: 50px 0px 100px 0px;
+  background-color: $off-white;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.client-quote::after {
+  content: '';
+  position: absolute;
+  left: 37%;
+  bottom: -40px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../img/case-studies/clients/default.png');
+  background-size: cover;
+  border-radius: 80px;
+  border: 3px solid $grey200;
+}
+
+@media(min-width: $width-md) {
+  .client-quote::after {
+      left: -10px;
+  }
+}
+
+@media(min-width: $width-md) {
+  .client-quote::after {
+      left: -40px;
+  }
+}

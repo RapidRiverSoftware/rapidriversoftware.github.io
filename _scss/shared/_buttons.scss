@@ -9,11 +9,19 @@
   &.-blue {
     color: white;
     background-color: $blue500;
+
+    &:hover {
+      color: white;
+    }
   }
 
   &.-white {
     color: $blue900;
     background-color: $grey100;
+
+    &:hover {
+      color: $blue900;
+    }
   }
 
   &.-pink {
@@ -23,5 +31,9 @@
     color: white;
     text-shadow: 2px 1px $pink600;
     background-color: $pink400;
+
+    &:hover {
+      color: white;
+    }
   }
 }

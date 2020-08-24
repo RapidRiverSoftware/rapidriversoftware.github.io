@@ -1,0 +1,12 @@
+.post-header {
+  position: relative;
+  height: 50px;
+  background-color: $blue500;
+  background-image: url($header-bg);
+}
+
+@media(min-width: $width-lg) {
+  .post-header {
+    height: 150px;
+  }
+}
