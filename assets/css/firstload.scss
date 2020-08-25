@@ -1,0 +1,13 @@
+---
+# Import files from the /_scss directory for first load
+---
+
+@import 'variables/colours';
+@import 'variables/breakpoints';
+@import 'variables/fonts';
+@import 'variables/header_bg';
+@import 'shared/page_layout';
+@import 'shared/container';
+@import 'shared/nav/index';
+@import 'shared/posts/pageheader';
+@import 'shared/posts/postheader';
