@@ -1,6 +1,6 @@
 (function() {
   var bouncer = new Bouncer('[data-validate]', {
-    disableSubmit: true,
+    // disableSubmit: true,
 
     messages: {
       missingValue: {
