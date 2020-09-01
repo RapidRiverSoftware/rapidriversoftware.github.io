@@ -12,7 +12,12 @@
             id="hireUsForm"
             method="POST"
             data-netlify="true"
+            data-netlify-recaptcha="true"
+            netlify-honeypot="bot-field"
         >
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="formrow">
                 <label for="project_name">What is your company or project name? *</label>
                 <input type="text" class="input" id="project_name" name="project_name" required>
@@ -44,6 +49,9 @@
                 <input type="text" class="input" id="referral_point" name="referral_point"
                     required>
                 <p class="help-block warn"></p>
+            </div>
+            <div class="formrow">
+                <div data-netlify-recaptcha="true"></div>
             </div>
             <div class="formrow">
                 <div id="success"></div>

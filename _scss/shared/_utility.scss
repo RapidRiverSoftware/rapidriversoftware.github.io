@@ -45,6 +45,10 @@
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media(min-width: $width-md) {
   .line-breaker {
     display: block;
