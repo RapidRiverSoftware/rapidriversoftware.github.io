@@ -36,8 +36,25 @@
   display: inline;
 }
 
+.only-sm {
+  display: block;
+  margin: 0 auto;
+}
+
+.except-sm {
+  display: none;
+}
+
 @media(min-width: $width-md) {
   .line-breaker {
     display: block;
-  } 
+  }
+
+  .only-sm {
+    display: none;
+  }
+
+  .except-sm {
+    display: block;
+  }
 }

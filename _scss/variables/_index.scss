@@ -1,54 +1,7 @@
+@import 'colours';
+@import 'breakpoints';
+@import 'fonts';
+@import 'shadows';
 @import 'header_bg';
 @import 'footer_bg';
 @import 'solutionicon_bg';
-
-/* Font Imports */
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700|Roboto+Slab:400,100,300,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,600,700&display=swap');
-
-@import url('../font/font-awesome/css/font-awesome.min.css');
-
-/* Variables - Font Families */
-$main-font: "Barlow", "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif'; 
-
-/* Variables - Colours */
-$primary-blue-dark: #0b6cb3;
-$primary-blue-light: #1d94ea;
-$grey: #888888;
-$grey-light: #EFEFEF;
-$grey-dark: #222222;
-$off-white: #E6F2FB;
-
-// New Colour Variables
-$blue200: #EAF6FF;
-$blue300: #9EBEEE;
-$blue500: #0081df; //primary blue
-$blue700: #2F5181;
-$blue800: #143959;
-$blue900: #10293f; //secondary blue
-
-$grey100: #F7FAFC;
-$grey150: #F6F9FC;
-$grey200: #EFEFEF;
-$grey300: #F5F5F5;
-$grey400: #D7D7D7;
-$grey500: #95A5A6;
-$grey600: #767E86;
-
-$pink400: #FF559C;
-$pink600: #CA2369;
-
-$red400: #E74C3C;
-
-$purple600: #674C7C;
-$purple800: #534B78;
-$purple900: #374972;
-
-// Breakpoint Variables
-$width-sm: 576px;
-$width-md: 768px;
-$width-lg: 1024px;
-$width-xl: 1200px;
-
-$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);

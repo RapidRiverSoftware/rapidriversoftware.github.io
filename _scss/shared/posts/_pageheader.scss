@@ -5,7 +5,6 @@
   // TODO: Deprecate and generalise this "other"-ness
   &.-other {
     background-color: $blue500;
-    background-image: url($header-bg);
 
     &::after {
       content: '';
@@ -63,6 +62,7 @@
     height: 670px;
 
     &.-other {
+      background-image: url($header-bg);
       border-bottom-right-radius: 90px;
 
       &::after {
