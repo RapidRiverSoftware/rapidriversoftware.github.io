@@ -18,11 +18,18 @@
       .formrow {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
 
         .input {
           padding: 5px 10px;
-          border: 1px solid $grey400;
+          border-width: 1px;
+          border-style: solid;
+          border-color: $grey400;
           border-radius: 3px;
+
+          &.error {
+            border-color: $red800;
+          }
         }
 
         .button {
@@ -30,8 +37,10 @@
           border: none;
         }
 
-        .warn {
-          color: $red400;
+        .error-message {
+          margin-top: 5px;
+          color: $red800;
+          font-size: 14px;
         }
       }
     }
