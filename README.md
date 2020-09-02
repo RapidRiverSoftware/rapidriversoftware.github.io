@@ -1,8 +1,21 @@
-Rapid River Software's website
-====================
+# Rapid River Software's website
 
-### For developers:
+## Basic Style Guide
+### CSS naming
+- SCSS/CSS filenames should be kebab case (i.e. `kebab-case`) to match class names.
+- Assume that each parent "component" should have it's own corresponding stylesheet. E.g. The `.about-page` class declaration can be found in the `_about-page.scss` file
+- A parent "component" will be named with two words, separated by a hyphen. E.g. `.service-list`
+- A child "component" will be named with one "word", no hyphens. E.g. `.serviceitem`
+- Some out-dated classes probably exist that don't follow this convention, so those should be refactored.
 
+### JS naming
+JavaScript filenames should be camel case (i.e. `camelCase`) to match the JS object/method naming conventions.
+
+### HTML/Jekyll Template naming
+HTML/Jekyll templates should be snake case (i.e. `snake_case`) to match Jekyll/Ruby conventions.
+
+
+## To contribute:
 - Clone this repo
 - Ensure that `docker` is running
 - Run `docker-compose up`
@@ -10,10 +23,6 @@ Rapid River Software's website
 Note: if you don't see your changes showing up, stop the jekyll server, do a `jekyll clean` then start the server again.
 
 You may find [reading about Jekyll](https://jekyllrb.com) will help also.
-
-### To contribute:
-
-Please open a PR and assign it to Calum for review.
 
 ## Quick Guides
 This section provides a summary of the ways different types of content can be added.
