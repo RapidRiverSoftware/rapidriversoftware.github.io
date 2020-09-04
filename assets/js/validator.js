@@ -1,6 +1,9 @@
 (function() {
+  var submitButton = document.querySelector('[data-fx="submit-button"]');
+  submitButton.disabled = true;
+
   var bouncer = new Bouncer('[data-validate]', {
-    // disableSubmit: true,
+    disableSubmit: true,
 
     messages: {
       missingValue: {
@@ -10,4 +13,10 @@
       },
     }
   });
+
+  document.addEventListener('bouncerFormValid', function () {
+    alert('Form submitted successfully!');
+    // window.location.reload();
+    submitButton.disabled = false;
+  }, false);
 })();
