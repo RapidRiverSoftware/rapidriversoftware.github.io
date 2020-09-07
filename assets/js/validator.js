@@ -1,11 +1,16 @@
+window.onload = function() {
+  var recaptcha = document.querySelector('#g-recaptcha-response');
+
+  if (recaptcha) {
+    recaptcha.setAttribute("required", "required");
+  }
+};
+
 (function() {
-  var submitButton = document.querySelector('[data-fx="submit-button"]');
-  var recaptchaResponse = document.querySelector('g-recaptcha-response');
-  submitButton.disabled = 'disabled';
-
   var bouncer = new Bouncer('[data-validate]', {
-    disableSubmit: true,
-
+    customValidations: {
+      recaptcha: function() {}
+    },
     messages: {
       missingValue: {
         text: '💔 Please fill out this required field.',
@@ -15,18 +20,4 @@
     }
   });
 
-  var recaptcha_callback = function() {
-    if (recaptchaResponse) {
-      submitButton.removeAttribute('disabled');
-      console.log('recaptcha response');
-    }
-  };
-
-  recaptcha_callback();
-
-  document.addEventListener('bouncerFormValid', function () {
-    // alert('Form submitted successfully!');
-    recaptcha_callback();
-    // window.location.reload();
-  }, false);
 })();

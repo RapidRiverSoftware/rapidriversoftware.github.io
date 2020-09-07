@@ -11,6 +11,8 @@
     }
     
     document.querySelector("[data-fx='main-nav'] a[href='/"+parentPath+"']").classList.add('active');
+  } else {
+    return;
   }
 })();
 
