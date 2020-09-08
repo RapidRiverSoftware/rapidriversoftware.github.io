@@ -5,6 +5,10 @@
   var path = fullPath.replace(/\//g, '');
 
   if (path) {
+    if (/404/.test(path) || /success/.test(path)) {
+      return;
+    }
+
     // For blog post pages.
     if (/blog/.test(path)) {
       parentPath = parentPath +'/'; 
@@ -21,7 +25,7 @@
 (function() {
   var pathname = window.location.pathname;
 
-  if (/blog/.test(pathname)) {
+  if (pathname === '/blog/') {
     var pageNum = parseInt(pathname.split('/')[3], 10);
 
     if (!pageNum) {
