@@ -2,6 +2,14 @@
   margin-left: 10px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
 .p-r-5 {
   padding-right: 5px;
 }
@@ -42,6 +50,10 @@
 }
 
 .except-sm {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 

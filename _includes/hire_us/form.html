@@ -8,46 +8,60 @@
 
         <form
             class="hireusform"
-            name="projectDetails"
+            name="hireUsForm"
             id="hireUsForm"
             method="POST"
+            action="/success"
             data-netlify="true"
+            data-netlify-recaptcha="true"
+            netlify-honeypot="bot-field"
+            data-validate
         >
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="formrow">
                 <label for="project_name">What is your company or project name? *</label>
                 <input type="text" class="input" id="project_name" name="project_name" required>
-                <p class="help-block warn"></p>
             </div>
             <div class="formrow">
                 <label for="client_name">What is your name? *</label>
                 <input type="text" class="input" id="client_name" name="client_name" required>
-                <p class="help-block warn"></p>
             </div>
             <div class="formrow">
                 <label for="client_email">What is your email address? *</label>
-                <input type="email" class="input" id="client_email" name="client_email" required>
-                <p class="help-block warn"></p>
+                <input
+                    type="email"
+                    class="input"
+                    id="client_email"
+                    name="client_email"
+                    required
+                    data-bouncer-message="💌 The domain portion of the email address is invalid (the portion after the @).">
             </div>
             <div class="formrow">
                 <label for="client_phone">What is your phone number? (Optional)</label>
                 <input type="tel" class="input" id="client_phone" name="client_phone">
-                <p class="help-block warn"></p>
             </div>
             <div class="formrow">
                 <label for="project_brief">What can Rapid River do for you? *</label>
                 <textarea type="text" class="input" id="project_brief" name="project_brief"
                     required></textarea>
-                <p class="help-block warn"></p>
             </div>
             <div class="formrow">
                 <label for="referral_point">How did you hear about Rapid River? *</label>
-                <input type="text" class="input" id="referral_point" name="referral_point"
+                <input
+                    type="text"
+                    class="input"
+                    id="referral_point"
+                    name="referral_point"
                     required>
-                <p class="help-block warn"></p>
+            </div>
+            <div class="formrow mb-30">
+                <div data-netlify-recaptcha="true"></div>
             </div>
             <div class="formrow">
                 <div id="success"></div>
-                <button type="submit" class="button -blue">Send Message</button>
+                <button data-fx="submit-button" type="submit" class="button -blue">Send Message</button>
             </div>
         </form>
     </div>

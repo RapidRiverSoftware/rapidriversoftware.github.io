@@ -36,4 +36,22 @@
       color: white;
     }
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $grey600;
+  }
+}
+
+@media(min-width: $width-lg) {
+  .button {
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled,
+    &[disabled] {
+      cursor: not-allowed;
+    }
+  }
 }

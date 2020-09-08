@@ -18,11 +18,18 @@
       .formrow {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
 
         .input {
           padding: 5px 10px;
-          border: 1px solid $grey400;
+          border-width: 1px;
+          border-style: solid;
+          border-color: $grey400;
           border-radius: 3px;
+
+          &.error {
+            border-color: $red800;
+          }
         }
 
         .button {
@@ -30,12 +37,29 @@
           border: none;
         }
 
-        .warn {
-          color: $red400;
+        .error-message {
+          margin-top: 5px;
+          color: $red800;
+          font-size: 14px;
         }
       }
     }
   }
+}
+
+// Hack to make Recaptcha a "required" field
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+#bouncer-error_g-recaptcha-response {
+  visibility: hidden !important;
 }
 
 @media(min-width: $width-md) {
