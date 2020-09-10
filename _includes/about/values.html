@@ -1,0 +1,16 @@
+<div id="values" class="values-component">
+    <div class="container">
+        <div class="value-list">
+            {% for value in site.data.values %}
+                <div class="value-item">
+                    <h4 class="title">
+                        {{ value.title }}
+                    </h4>
+                    <p class="description">
+                        {{ value.description }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
