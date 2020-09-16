@@ -1,49 +1,20 @@
 .solutions-component {
   @include flex-column-center;
-  margin-top: 60px;
 }
 
-@media(min-width: $width-lg) {
-  .solutions-component {
-    margin-top: 150px;
-  }
+.solutions-list {
+  @include flex-column;
 }
 
 .solutions-header {
   @include list-header;
 
   .heading {
-    font-size: 28px;
-    text-transform: capitalize;
+    @include heading;
   }
 
   .description {
     font-size: 16px;
-  }
-}
-
-@media(min-width: $width-md) {
-  .solutions-header {
-    width: 80%;
-  }
-}
-
-@media(min-width: $width-lg) {
-  .solutions-header {
-    max-width: 960px;
-    width: 100%;
-    padding: 40px 40px;
-
-    .description {
-      width: 50%;
-    }
-  }
-}
-
-@media(min-width: $width-xl) {
-  .solutions-header {
-    max-width: 1140px;
-    margin-bottom: 100px;
   }
 }
 
@@ -65,10 +36,7 @@
   }
 
   .title {
-    color: $blue900;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: capitalize;
+    @include title;
   }
 
   .description {
@@ -92,6 +60,7 @@
       list-style: none;
       padding-left: 0px;
       margin-bottom: 0px;
+      margin-top: 0px;
     }
 
     ol:first-child {
@@ -166,6 +135,14 @@
 }
 
 @media(min-width: $width-lg) {
+  .solutions-header {
+    padding: 40px 40px;
+
+    .description {
+      width: 50%;
+    }
+  }
+
   .solution-item {
     flex-direction: row;
     flex: 1 1 0px;
@@ -215,26 +192,20 @@
 }
 
 @media(min-width: $width-xl) {
+  .solutions-header {
+    margin-bottom: 100px;
+  }
+
   .solution-item {
     position: relative;
     z-index: 1;
     margin-bottom: 150px;
+    @include decorative-spots;
 
     .text,
     .processlist {
       position: relative;
       z-index: 1;
-    }
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: 0;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
 
     &:first-child::before {
@@ -261,28 +232,5 @@
       transform: rotate(0.5turn);
       background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
     }
-  }
-}
-
-.solutions-list {
-  @include flex-column;
-}
-
-@media(min-width: $width-md) {
-  .solutions-list {
-    width: 80%;
-  }
-}
-
-@media(min-width: $width-lg) {
-  .solutions-list {
-    max-width: 960px;
-    width: 100%;
-  }
-}
-
-@media(min-width: $width-xl) {
-  .solutions-list {
-    max-width: 1140px;
   }
 }

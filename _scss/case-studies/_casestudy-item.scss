@@ -71,7 +71,7 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -248,16 +248,7 @@
     z-index: 1;
     max-width: 1140px;
     margin-bottom: 150px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 0;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+    @include decorative-spots;
 
     &:nth-child(even):before {
       top: -60px;

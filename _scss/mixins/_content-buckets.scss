@@ -1,8 +1,15 @@
-@mixin white-bucket {
+@mixin content-bucket($bg-color: white) {
   border-radius: 30px;
   padding: 10px 20px 40px 20px;
   box-shadow: $shadow-xl;
-  background-image: linear-gradient(-12deg, white 0%, white 50%,$grey300 50%, $grey300 100%);
+
+  @if $bg-color == $purple600 {
+    background-color: $purple600;
+  } @else if $bg-color == $purple800 {
+    background-color: $purple800;
+  } @else {
+    background-image: linear-gradient(-12deg, white 0%, white 50%,$grey300 50%, $grey300 100%);
+  }
 }
 
 @mixin page-hero {

@@ -1,12 +1,14 @@
 <!-- About Us: Team -->
 <div class="team">
     <div class="container">
-        <h2 class="heading">Who We Are</h2>
-        <h3 class="description">
-            Our team may not always be in the same room, but we do a great job staying on the same page. Meet
-            the people who make Rapid River tick.
-        </h3>
-        <div class="teamprofiles">
+        <div class="team-header">
+            <h2 class="heading">Who We Are</h2>
+            <p class="description">
+                Our team may not always be in the same room, but we do a great job staying on the same page. Meet
+                the people who make Rapid River tick.
+            </p>
+        </div>
+        <div class="profile-list">
             {% for member in site.data.people %}
                 <div class="profile">
                     <img src="/assets/img/team/{{ member.pic }}.jpg" class="image" alt="">

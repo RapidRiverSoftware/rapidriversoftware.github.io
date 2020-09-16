@@ -1,0 +1,12 @@
+@mixin heading {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+@mixin title {
+  margin-bottom: 0;
+  color: $blue900;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}

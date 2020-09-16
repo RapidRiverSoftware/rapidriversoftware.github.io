@@ -5,12 +5,29 @@
 .purpose-header {
   @include masonry-header;
   margin-top: -40px;
+
+  .heading {
+    @include heading;
+  }
+
+  .description {
+    font-size: 16px;
+  }
 }
 
 .purpose-img {
-  background-color: $purple600;
+  @include masonry-item($purple600);
+  text-align: center;
 }
 
 .purpose-item {
   @include masonry-item;
+
+  .title {
+    @include title;
+  }
+
+  .description {
+    font-size: 16px;
+  }
 }

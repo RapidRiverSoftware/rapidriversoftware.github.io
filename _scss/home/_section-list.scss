@@ -53,7 +53,7 @@
     .text {
       position: relative;
       z-index: 1;
-      @include white-bucket;
+      @include content-bucket;
     }
 
     .title {

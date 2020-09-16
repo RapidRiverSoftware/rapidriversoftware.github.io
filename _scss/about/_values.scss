@@ -1,15 +1,32 @@
 .values-list {
-  @include masonry-container(924px, 850px);
+  @include masonry-container(1010px, 850px);
 }
 
 .values-header {
   @include masonry-header;
+
+  .heading {
+    @include heading;
+  }
+
+  .description {
+    font-size: 16px;
+  }
 }
 
 .values-img {
-  background-color: $purple800;
+  @include masonry-item($purple800);
+  text-align: center;
 }
 
 .value-item {
   @include masonry-item;
+
+  .title {
+    @include title;
+  }
+
+  .description {
+    font-size: 16px;
+  }
 }

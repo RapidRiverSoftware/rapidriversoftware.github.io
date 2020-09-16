@@ -1,0 +1,12 @@
+@mixin decorative-spots {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

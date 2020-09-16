@@ -13,15 +13,12 @@
 
 @mixin masonry-container($maxh-lg, $maxh-xl) {
   @include flex-column-center;
-
-  @media(min-width: $width-md) {
-    width: 80%;
-    margin: 0 auto;
-  }
+  margin-bottom: 60px;
+  width: 100%;
 
   @media(min-width: $width-lg) {
-    width: 100%;
     max-height: $maxh-lg;
+    margin-bottom: 150px;
     flex-flow: column wrap;
   }
 
@@ -44,10 +41,10 @@
   }  
 }
 
-@mixin masonry-item {
+@mixin masonry-item($bg-color: white) {
   width: 100%;
   margin-bottom: 10px;
-  @include white-bucket;
+  @include content-bucket($bg-color);
 
   @media(min-width: $width-lg) {
     width: 415px;

@@ -7,8 +7,7 @@
   margin-top: -40px;
 
   .heading {
-    font-size: 28px;
-    text-transform: capitalize;
+    @include heading;
   }
 
   .description {
@@ -17,6 +16,7 @@
 }
 
 .capabilities-list {
+  // @mixin masonry-container($maxh-lg, $maxh-xl)
   @include masonry-container(1585px, 1500px);
 }
 
@@ -34,10 +34,7 @@
   }
 
   .title {
-    color: $blue900;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: capitalize;
+    @include title;
   }
 
   .description {

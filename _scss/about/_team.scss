@@ -1,74 +1,31 @@
-.about-page {
-  .team {
-    padding-bottom: 40px;
-
-    .container {
-      @include flex-column-center;
-    }
+.team-component {
   
-    .teamprofiles {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 50px;
-    }
-
-    .profile {
-      @include flex-column-center;
-      padding-bottom: 30px;
-
-      .image {
-        border: 3px solid white;
-        border-radius: 100%;
-      }
-
-      .name {
-        margin-bottom: 0;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: capitalize;
-      }
-
-      .position {
-        margin-top: 0;
-      }
-
-      .sociallinks {
-        display: flex;
-      }
-
-      .sociallinks .link {
-        display: inline-block;
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-    }
-  }
 }
 
+.team-header {
+  @include list-header;
 
-@media(min-width: $width-md) {
-  .about-page {
-    .team {
-      padding-top: 40px;
+  .heading {
+    @include heading;
+  }
 
-      .teamprofiles {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr; 
-      }
-    }
+  .description {
+    font-size: 16px;
   }
 }
 
 @media(min-width: $width-lg) {
-  .about-page {
-    .team {
-      .teamprofiles {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr; 
-      }
+  .team-header {
+    padding: 40px 40px;
+
+    .description {
+      width: 50%;
     }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .team-header {
+    margin-bottom: 100px;
   }
 }
