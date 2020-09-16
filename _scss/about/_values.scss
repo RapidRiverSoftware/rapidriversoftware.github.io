@@ -19,7 +19,7 @@
   text-align: center;
 
   img {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -35,22 +35,6 @@
   }
 }
 
-@media(min-width: $width-md) {
-  .values-img {
-    img {
-      width: auto;
-    }
-  }
-}
-
-@media(min-width: $width-lg) {
-  .values-img {
-    img {
-      width: 100%;
-    }
-  }
-}
-
 @media(min-width: $width-xl) {
   .values-list {
     @include decorative-dots;
@@ -60,12 +44,6 @@
       right: -75px;
       transform: rotate(0.25turn);
       background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
-    }
-  }
-
-  .values-img {
-    img {
-      width: auto;
     }
   }
 }
