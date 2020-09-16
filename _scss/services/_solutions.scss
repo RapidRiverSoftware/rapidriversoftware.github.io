@@ -200,7 +200,7 @@
     position: relative;
     z-index: 1;
     margin-bottom: 150px;
-    @include decorative-spots;
+    @include decorative-dots;
 
     .text,
     .processlist {

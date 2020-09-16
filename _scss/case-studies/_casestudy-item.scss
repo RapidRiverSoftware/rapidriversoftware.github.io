@@ -248,7 +248,7 @@
     z-index: 1;
     max-width: 1140px;
     margin-bottom: 150px;
-    @include decorative-spots;
+    @include decorative-dots;
 
     &:nth-child(even):before {
       top: -60px;

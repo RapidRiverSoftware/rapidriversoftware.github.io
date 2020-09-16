@@ -44,11 +44,12 @@
 @mixin masonry-item($bg-color: white) {
   width: 100%;
   margin-bottom: 10px;
+  z-index: 1;
   @include content-bucket($bg-color);
 
   @media(min-width: $width-lg) {
     width: 415px;
-    padding: 5px 40px 40px 40px;
+    padding: 40px;
     margin-top: 40px;
   }
 

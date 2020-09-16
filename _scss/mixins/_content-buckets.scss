@@ -1,6 +1,6 @@
 @mixin content-bucket($bg-color: white) {
   border-radius: 30px;
-  padding: 10px 20px 40px 20px;
+  padding: 40px 20px;
   box-shadow: $shadow-xl;
 
   @if $bg-color == $purple600 {

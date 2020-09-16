@@ -1,4 +1,5 @@
-@mixin decorative-spots {
+@mixin decorative-dots {
+  position: relative;
   &::before,
   &::after {
     content: '';

@@ -1,5 +1,5 @@
 .values-list {
-  @include masonry-container(1010px, 850px);
+  @include masonry-container(1120px, 950px);
 }
 
 .values-header {
@@ -17,6 +17,10 @@
 .values-img {
   @include masonry-item($purple800);
   text-align: center;
+
+  img {
+    width: 100%;
+  }
 }
 
 .value-item {
@@ -28,5 +32,40 @@
 
   .description {
     font-size: 16px;
+  }
+}
+
+@media(min-width: $width-md) {
+  .values-img {
+    img {
+      width: auto;
+    }
+  }
+}
+
+@media(min-width: $width-lg) {
+  .values-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .values-list {
+    @include decorative-dots;
+
+    &::before {
+      bottom: -60px;
+      right: -75px;
+      transform: rotate(0.25turn);
+      background-image: url("../img/case-studies/shared/bg-pattern-triangle.png"); 
+    }
+  }
+
+  .values-img {
+    img {
+      width: auto;
+    }
   }
 }

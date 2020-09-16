@@ -4,6 +4,7 @@
 }
 
 @mixin title {
+  margin-top: 0;
   margin-bottom: 0;
   color: $blue900;
   font-size: 28px;
