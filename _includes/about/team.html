@@ -8,21 +8,27 @@
                 the people who make Rapid River tick.
             </p>
         </div>
-        <div class="profile-list">
-            {% for member in site.data.people %}
-                <div class="profile">
-                    <img src="/assets/img/team/{{ member.pic }}.jpg" class="image" alt="">
-                    <h4 class="name">{{ member.name }}</h4>
-                    <p class="position">{{ member.position }}</p>
-                    <div class="sociallinks">
-                        {% for network in member.social %}
-                        <a class="link" href="{{ network.url }}">
-                            <i class="fa fa-{{ network.title }}"></i>
-                        </a>
-                        {% endfor %}
+        <div class="profile-window">
+            <div class="profile-list">
+                {% for member in site.data.people %}
+                    <div class="profile">
+                        <div class="photo">
+                            <img src="/assets/img/team/thumbnail/{{ member.pic }}.jpg" class="image" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">{{ member.name }}</h4>
+                            <p class="position">{{ member.position }}</p>
+                        </div>
+                        <div class="sociallinks">
+                            {% for network in member.social %}
+                            <a class="link" href="{{ network.url }}">
+                                <i class="fa fa-{{ network.title }}"></i>
+                            </a>
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
-            {% endfor %} 
+                {% endfor %} 
+            </div>
         </div>
     </div>
 </div>

@@ -7,8 +7,7 @@
     }
 
     .positionslist {
-      display: flex;
-      flex-wrap: wrap;
+      @include flex-row;
       justify-content: space-around;
     }
 
