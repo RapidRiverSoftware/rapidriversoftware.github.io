@@ -3,7 +3,7 @@
 }
 
 .capabilities-header {
-  @include list-header;
+  @include masonry-header;
   margin-top: -40px;
 
   .heading {
@@ -48,18 +48,5 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-  }
-}
-
-@media(min-width: $width-lg) {
-  .capabilities-header {
-    width: 415px;
-    padding: 10px 40px 40px 40px;
-  }
-}
-
-@media(min-width: $width-xl) {
-  .capabilities-header {
-    width: 550px;
   }
 }

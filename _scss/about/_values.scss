@@ -1,5 +1,9 @@
+.values-list {
+  @include masonry-container(924px, 850px);
+}
+
 .values-header {
-  @include list-header;
+  @include masonry-header;
 }
 
 .values-img {
@@ -7,5 +11,5 @@
 }
 
 .value-item {
-  @include white-bucket;
+  @include masonry-item;
 }
