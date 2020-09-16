@@ -4,6 +4,11 @@
 
 .purpose-header {
   @include list-header;
+  margin-top: -40px;
+}
+
+.purpose-img {
+  background-color: $purple600;
 }
 
 .purpose-item {

@@ -10,3 +10,23 @@
   align-items: center;
   position: relative;
 }
+
+@mixin masonry-container($maxh-lg, $maxh-xl) {
+  @include flex-column-center;
+
+  @media(min-width: $width-md) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $width-lg) {
+    width: 100%;
+    max-height: $maxh-lg;
+    flex-flow: column wrap;
+  }
+
+  @media(min-width: $width-xl) {
+    max-height: $maxh-xl;
+    align-content: space-between;
+  }
+}

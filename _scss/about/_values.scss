@@ -2,6 +2,10 @@
   @include list-header;
 }
 
+.values-img {
+  background-color: $purple800;
+}
+
 .value-item {
   @include white-bucket;
 }

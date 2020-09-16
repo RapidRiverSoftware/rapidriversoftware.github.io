@@ -17,7 +17,7 @@
 }
 
 .capabilities-list {
-  @include flex-column-center;
+  @include masonry-container(1585px, 1500px);
 }
 
 .capability-item {
@@ -53,27 +53,14 @@
   }
 }
 
-@media(min-width: $width-md) {
-  .capabilities-list {
-    width: 80%;
-  }
-}
-
 @media(min-width: $width-lg) {
   .capabilities-header {
-    width: 460px;
+    width: 415px;
     padding: 10px 40px 40px 40px;
   }
 
-  .capabilities-list {
-    max-width: 960px;
-    width: 100%;
-    max-height: 1585px;
-    flex-flow: column wrap;
-  }
-
   .capability-item {
-    width: 460px;
+    width: 415px;
     padding: 5px 40px 40px 40px;
     margin-top: 40px;
   }
@@ -82,12 +69,6 @@
 @media(min-width: $width-xl) {
   .capabilities-header {
     width: 550px;
-  }
-
-  .capabilities-list {
-    max-width: 1140px;
-    max-height: 1500px;
-    align-content: space-between;
   }
 
   .capability-item {
