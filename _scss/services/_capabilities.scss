@@ -21,9 +21,7 @@
 }
 
 .capability-item {
-  width: 100%;
-  margin-bottom: 10px;
-  @include white-bucket;
+  @include masonry-item;
 
   p {
     font-size: 16px;
@@ -58,20 +56,10 @@
     width: 415px;
     padding: 10px 40px 40px 40px;
   }
-
-  .capability-item {
-    width: 415px;
-    padding: 5px 40px 40px 40px;
-    margin-top: 40px;
-  }
 }
 
 @media(min-width: $width-xl) {
   .capabilities-header {
-    width: 550px;
-  }
-
-  .capability-item {
     width: 550px;
   }
 }
