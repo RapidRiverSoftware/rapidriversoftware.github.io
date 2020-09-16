@@ -1,0 +1,7 @@
+.values-header {
+  @include list-header;
+}
+
+.value-item {
+  @include white-bucket;
+}

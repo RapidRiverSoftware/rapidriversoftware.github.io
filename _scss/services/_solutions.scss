@@ -1,7 +1,5 @@
 .solutions-component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
   margin-top: 60px;
 }
 
@@ -12,13 +10,7 @@
 }
 
 .solutions-header {
-  background-color: $blue900;
-  background-image: url($solutionheader-bg);
-  border-radius: 30px;
-  box-shadow: $shadow-xl;
-  color: white;
-  padding: 40px 20px;
-  margin-bottom: 30px;
+  @include list-header;
 
   .heading {
     font-size: 28px;
@@ -56,8 +48,7 @@
 }
 
 .solution-item {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 
   .text {
     background-color: white;
@@ -274,8 +265,7 @@
 }
 
 .solutions-list {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 @media(min-width: $width-md) {

@@ -1,0 +1,34 @@
+@mixin white-bucket {
+  border-radius: 30px;
+  padding: 10px 20px 40px 20px;
+  box-shadow: $shadow-xl;
+  background-image: linear-gradient(-12deg, white 0%, white 50%,$grey300 50%, $grey300 100%);
+}
+
+@mixin page-hero {
+  position: relative;
+  height: 506px;
+  background-color: $blue500;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+  }
+}
+
+@mixin list-header {
+  position: relative;
+  z-index: 9;
+  background-color: $blue900;
+  background-image: url($solutionheader-bg);
+  border-radius: 30px;
+  box-shadow: $shadow-xl;
+  color: white;
+  padding: 10px 20px 40px 20px;
+  margin-bottom: 30px;
+}

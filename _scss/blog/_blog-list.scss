@@ -17,8 +17,7 @@
     border-radius: 30px;
 
     .content {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       justify-content: end;
       height: 60%;
       padding: 20px;

@@ -1,0 +1,11 @@
+.purpose-list {
+
+}
+
+.purpose-header {
+  @include list-header;
+}
+
+.purpose-item {
+  @include white-bucket;
+}

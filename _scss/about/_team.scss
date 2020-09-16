@@ -3,9 +3,7 @@
     padding-bottom: 40px;
 
     .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
   
     .teamprofiles {
@@ -18,9 +16,7 @@
     }
 
     .profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
       padding-bottom: 30px;
 
       .image {

@@ -1,19 +1,9 @@
 .capabilities-component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .capabilities-header {
-  position: relative;
-  z-index: 9;
-  background-color: $blue900;
-  background-image: url($solutionheader-bg);
-  border-radius: 30px;
-  box-shadow: $shadow-xl;
-  color: white;
-  padding: 10px 20px 40px 20px;
-  margin-bottom: 30px;
+  @include list-header;
   margin-top: -40px;
 
   .heading {
@@ -27,17 +17,13 @@
 }
 
 .capabilities-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .capability-item {
   width: 100%;
-  padding: 5px 20px 40px 20px;
   margin-bottom: 10px;
-  background-color: white;
-  border-radius: 30px;
+  @include white-bucket;
 
   p {
     font-size: 16px;
