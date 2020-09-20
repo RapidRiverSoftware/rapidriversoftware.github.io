@@ -4,7 +4,7 @@
   var background = 'background';
   var timedRemoval;
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
-  var allSocialLinks = document.querySelectorAll('[data-fx="social-link"]');
+  var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
 
   // TODO List
   // 1. Switch profile photo
@@ -37,8 +37,8 @@
   };
 
   var preventLinkBubble = function() {
-    allSocialLinks.forEach(function(socialLink) {
-      socialLink.addEventListener('click', function(event) {
+    allNestedLinks.forEach(function(nestedLink) {
+      nestedLink.addEventListener('click', function(event) {
         event.stopPropagation();
       });
     });
