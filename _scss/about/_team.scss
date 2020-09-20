@@ -32,13 +32,16 @@
 
   .profile {
     overflow: hidden;
-    display: flex;
     width: 310px;
     height: 92px;
     margin-right: 15px;
     margin-bottom: 15px;
     border-radius: 10px 0px 10px 0px;
     box-shadow: $shadow-xl;
+
+    .meta {
+      display: flex;
+    }
 
     .photo {
       position: relative;
@@ -53,6 +56,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      display: block;
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -91,6 +95,12 @@
 
   .sociallinks {
     display: none;
+
+    a {
+      color: $pink400;
+      font-size: 16px;
+      text-decoration: none;
+    }
   }
 }
 
@@ -122,7 +132,6 @@
     height: auto;
 
     .profile {
-      // float: left;
       width: 277px;
       height: 82px;
       margin-left: 8px;
@@ -131,31 +140,64 @@
 
       &.fx-expand {
         position: relative;
-        // flex-direction: column;
         grid-column: span 2;
         grid-row: span 4;
         width: 570px;
         height: 373px;
 
-        .photo {
-          width: 100%;
-
-          img {
-            width: 100%;
-          }
-        }
-
-        .details {
+        .meta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           position: absolute;
           bottom: 0;
           left: 0;
           width: 100%;
-          background-color: transparent;
+          padding: 20px;
           @include bg-navy-gradient;
+        }
+
+        .photo {
+          overflow: hidden;
+          width: 100px;
+          height: 100px;
+          border-radius: 100px;
+          border: 2px solid white;
+
+          img {
+            width: 162%;
+            margin-left: -20%;
+          }
+        }
+
+        .details {
+          width: auto;
+          margin-left: 10px;
+          background-color: transparent;
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .position {
+          font-size: 19px;
         }
 
         .sociallinks {
           display: block;
+          margin-right: 0;
+          margin-left: auto;
+
+          a {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 19px;
+          }
+        }
+
+        .fx-expand-button {
+          display: none;
         }
       }
     }
@@ -171,6 +213,19 @@
     .profile {
       width: 362px;
       height: 107px;
+
+      .details {
+        padding: 20px 15px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .position {
+        font-size: 15px;
+        line-height: 19px;
+      }
 
       &.fx-expand {
         width: 740px;

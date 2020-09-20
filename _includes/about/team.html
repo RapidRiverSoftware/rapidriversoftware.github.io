@@ -11,19 +11,25 @@
         <div class="profile-window">
             <div class="profile-list">
                 {% for member in site.data.people %}
-                    <div class="profile">
-                        <div class="photo">
-                            <img src="/assets/img/team/thumbnail/{{ member.pic }}.jpg" class="image" alt="">
-                            <div class="fx-expand-button">
-                                Expand
+                    <div class="profile" data-fx="profile">
+                        <div class="meta">
+                            <div class="photo">
+                                <img src="/assets/img/team/thumbnail/{{ member.pic }}.jpg" class="image" alt="">
+                                <div class="fx-expand-button">
+                                    Expand
+                                </div>
                             </div>
-                        </div>
-                        <div class="details">
-                            <h4 class="name">{{ member.name }}</h4>
-                            <p class="position">{{ member.position }}</p>
+                            <div class="details">
+                                <h4 class="name">{{ member.name }}</h4>
+                                <p class="position">{{ member.position }}</p>
+                            </div>
                             <div class="sociallinks">
                                 {% for network in member.social %}
-                                <a class="link" href="{{ network.url }}">
+                                <a class=""
+                                    data-fx="social-link"
+                                    href="{{ network.url }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     <i class="fa fa-{{ network.title }}"></i>
                                 </a>
                                 {% endfor %}
