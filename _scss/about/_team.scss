@@ -52,6 +52,10 @@
       }
     }
 
+    .toggle-buttons {
+      display: none;
+    }
+
     .fx-expand-button {
       position: absolute;
       bottom: 0;
@@ -145,6 +149,17 @@
         grid-row: span 4;
         width: 570px;
         height: 373px;
+
+        .toggle-buttons {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+
+          .button:first-child {
+            margin-right: 10px;
+          }
+        }
 
         .meta {
           display: flex;

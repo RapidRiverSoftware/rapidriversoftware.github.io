@@ -24,6 +24,15 @@
     }
   }
 
+  &.-grey {
+    color: white;
+    background-color: $grey500;
+
+    &:hover {
+      color: $blue900;
+    }
+  }
+
   &.-pink {
     font-size: 14px;
     font-weight: 600;

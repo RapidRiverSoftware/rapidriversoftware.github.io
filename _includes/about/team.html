@@ -12,6 +12,14 @@
             <div class="profile-list">
                 {% for member in site.data.people %}
                     <div class="profile" data-fx="profile" data-slug="{{ member.slug }}">
+                        <div class="toggle-buttons">
+                            <div class="button -white" data-fx="portrait-toggle-button">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="button -grey" data-fx="background-toggle-button">
+                                <i class="fa fa-picture-o"></i>
+                            </div>
+                        </div>
                         <div class="meta">
                             <div class="photo">
                                 <img src="/assets/img/team/thumbnail/{{ member.slug }}.jpg" class="image" alt="">
