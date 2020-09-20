@@ -1,6 +1,5 @@
 - name: Calum Halcrow
   slug: calum_halcrow
-  pic: calum
   position: CEO
   social:
     - title: linkedin
@@ -14,7 +13,6 @@
 
 - name: Yury Stepanov
   slug: yury_stepanov
-  pic: yury
   position: Senior Software Engineer
   social:
     - title: facebook
@@ -22,7 +20,6 @@
 
 - name: Lim Victor
   slug: victor_lim
-  pic: victor
   position: Senior Software Engineer
   social:
     - title: github
@@ -32,7 +29,6 @@
 
 - name: Ivan Yeoh
   slug: ivan_yeoh
-  pic: ivan
   position: Senior Software Engineer
   social:
     - title: github
@@ -46,7 +42,6 @@
 
 - name: Aaron Lim
   slug: aaron_lim
-  pic: aaron
   position: Senior Software Engineer
   social:
     - title: github
@@ -54,7 +49,6 @@
 
 - name: Jimmy Ngu
   slug: jimmy_ngu
-  pic: jimmy
   position: Engineering Team Lead
   social:
     - title: github
@@ -68,7 +62,6 @@
 
 - name: Anton Lvov
   slug: anton_lvov
-  pic: anton
   position: Senior Software Engineer
   social:
     - title: github
@@ -82,7 +75,6 @@
 
 - name: Karuna Krishnasamy
   slug: karuna_krishnasamy
-  pic: karuna
   position: Software Engineer
   social:
     - title: github
@@ -96,7 +88,6 @@
 
 - name: Kavitha Nadarajah
   slug: kavitha_nadarajah
-  pic: kavitha
   position: HR & Admin Manager
   social:
     - title: linkedin
@@ -108,7 +99,6 @@
 
 - name: Tamer Shlash
   slug: tamer_shlash
-  pic: tamer
   position: Software Engineer
   social:
     - title: github
@@ -120,7 +110,6 @@
 
 - name: Lim Yih En
   slug: lim_yih_en
-  pic: yihen
   position: Software Engineer
   social:
     - title: github
@@ -130,7 +119,6 @@
 
 - name: Adeline Lim
   slug: adeline_lim
-  pic: adeline
   position: Software Engineer
   social:
     - title: github
@@ -140,7 +128,6 @@
 
 - name: Hakim Ahmad
   slug: hakim_ahmad
-  pic: hakim
   position: Software Engineer
   social:
     - title: github
@@ -151,8 +138,7 @@
       url: https://www.linkedin.com/in/hakimthedev
 
 - name: Iqbal Hasnan
-  slug: igbal_hasnan
-  pic: iqbal
+  slug: iqbal_hasnan
   position: Software Engineer
   social:
     - title: github
@@ -162,7 +148,6 @@
 
 - name: Shaii Ong
   slug: shaii_ong
-  pic: shaii
   position: Software Engineer
   social:
     - title: github
@@ -172,7 +157,6 @@
 
 - name: Halah Abuateeq
   slug: halah_abuateeq
-  pic: halah
   position: Software Engineer
   social:
     - title: github
@@ -182,7 +166,6 @@
 
 - name: 'Fatima "Sarah" Maisarah Moktar'
   slug: fatima_sarah_maisarah_moktar
-  pic: sarah
   position: HR & Admin Executive
   social:
     - title: linkedin
@@ -190,7 +173,6 @@
 
 - name: Carlos Lima
   slug: carlos_lima
-  pic: carlos
   position: Engineering Team Lead
   social:
     - title: github
@@ -200,7 +182,6 @@
 
 - name: Audrey Lim
   slug: audrey_lim
-  pic: audrey
   position: Senior Technical Project Manager
   social:
     - title: linkedin
@@ -208,7 +189,6 @@
 
 - name: Tristan Gomez
   slug: tristan_gomez
-  pic: tristan
   position: Senior Software Engineer
   social:
     - title: github
@@ -218,7 +198,6 @@
 
 - name: Jose Fernandes Jr.
   slug: jose_fernandes_jr
-  pic: jose
   position: Senior Software Engineer
   social:
     - title: github
@@ -230,7 +209,6 @@
 
 - name: Haritha Kotte
   slug: haritha_kotte
-  pic: haritha
   position: Software Engineer
   social:
     - title: github
@@ -240,7 +218,6 @@
 
 - name: Gaukhar Yergaleyeva
   slug: gaukhar_yergaleyeva
-  pic: gaukhar
   position: Software Engineer
   social:
     - title: github
@@ -250,7 +227,6 @@
 
 - name: Ahmed Osman
   slug: ahmed_osman
-  pic: ahmed
   position: Software Engineer
   social:
     - title: github
@@ -258,7 +234,6 @@
 
 - name: Tee Shuwn Yuan
   slug: tee_shuwn_yuan
-  pic: shuwnyuan
   position: Senior Software Engineer
   social:
     - title: github

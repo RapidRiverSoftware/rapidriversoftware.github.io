@@ -11,10 +11,10 @@
         <div class="profile-window">
             <div class="profile-list">
                 {% for member in site.data.people %}
-                    <div class="profile" data-fx="profile">
+                    <div class="profile" data-fx="profile" data-slug="{{ member.slug }}">
                         <div class="meta">
                             <div class="photo">
-                                <img src="/assets/img/team/thumbnail/{{ member.pic }}.jpg" class="image" alt="">
+                                <img src="/assets/img/team/thumbnail/{{ member.slug }}.jpg" class="image" alt="">
                                 <div class="fx-expand-button">
                                     Expand
                                 </div>
