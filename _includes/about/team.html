@@ -1,5 +1,5 @@
 <!-- About Us: Team -->
-<div class="team">
+<div id="team" class="team">
     <div class="container">
         <div class="team-header">
             <h2 class="heading">Who We Are</h2>
@@ -18,13 +18,13 @@
                         <div class="details">
                             <h4 class="name">{{ member.name }}</h4>
                             <p class="position">{{ member.position }}</p>
-                        </div>
-                        <div class="sociallinks">
-                            {% for network in member.social %}
-                            <a class="link" href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
-                            {% endfor %}
+                            <div class="sociallinks">
+                                {% for network in member.social %}
+                                <a class="link" href="{{ network.url }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 {% endfor %} 

@@ -97,12 +97,44 @@
   }
 
   .profile-list {
-    @include flex-row;
+    display: flow-root;
     height: auto;
 
     .profile {
-      width: 270px;
-      height: 80px;
+      float: left;
+      width: 277px;
+      height: 82px;
+      margin-left: 8px;
+      margin-right: 8px;
+      transition: all 0.3s ease-out;
+
+      &.fx-expand {
+        position: relative;
+        flex-direction: column;
+        width: 570px;
+        height: 373px;
+
+        .photo {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .details {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: transparent;
+          background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(20,54,83,1) 100%);;
+        }
+
+        .sociallinks {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -114,8 +146,13 @@
 
   .profile-list {
     .profile {
-      width: 310px;
-      height: 92px;;
+      width: 362px;
+      height: 107px;
+
+      &.fx-expand {
+        width: 740px;
+        height: 473px;
+      }
     }
   }
 }
