@@ -6,6 +6,7 @@
       removeExpand();
       // this.classList.toggle('fx-expand');
       toggleClass(this, 'fx-expand');
+      setTimeout(removeExpand, 8000);
       // console.log(this.classList.contains('fx-expand'));
     })
   });

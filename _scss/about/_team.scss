@@ -97,11 +97,14 @@
   }
 
   .profile-list {
-    display: flow-root;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
     height: auto;
 
     .profile {
-      float: left;
+      // float: left;
       width: 277px;
       height: 82px;
       margin-left: 8px;
@@ -110,7 +113,9 @@
 
       &.fx-expand {
         position: relative;
-        flex-direction: column;
+        // flex-direction: column;
+        grid-column: span 2;
+        grid-row: span 4;
         width: 570px;
         height: 373px;
 
