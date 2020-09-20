@@ -140,6 +140,7 @@
 
       &.fx-expand {
         position: relative;
+        background-size: cover;
         grid-column: span 2;
         grid-row: span 4;
         width: 570px;
