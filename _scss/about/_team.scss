@@ -52,7 +52,11 @@
       }
     }
 
-    .toggle-buttons {
+    .toggle-button {
+      display: none;
+    }
+
+    .background-toggle-input {
       display: none;
     }
 
@@ -150,11 +154,33 @@
         width: 570px;
         height: 373px;
 
-        .toggle-buttons {
+        .toggle-button {
           display: block;
           position: absolute;
           top: 20px;
           right: 20px;
+
+          label {
+            display: block;
+          }
+
+          div[data-fx="toggle-background-button"] {
+            width: 38px;
+            text-align: center;
+            background-color: white;
+
+            &:before {
+              content: '\f007';
+              font-family: 'FontAwesome';
+            }
+          }
+
+          input[data-fx="background-toggle"]:checked + div[data-fx="toggle-background-button"] {
+            &:before {
+              content: '\f03e';
+              font-family: "FontAwesome";
+            }
+          }
 
           .button:first-child {
             margin-right: 10px;
