@@ -3,14 +3,12 @@
   var portrait = 'portrait';
   var background = 'background';
   var timedRemoval;
-  var toggleBackgroundBtn = document.querySelector('[data-fx="toggle-background-button"]');
-  var togglePortraitBtn = document.querySelector('[data-fx="toggle-portrait-button"]');
+  var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"]');
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
   var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
 
   // TODO List
-  // 1. Switch profile photo
-  // 2. Add portrait/background toggle feature
+  // 1. Switch profile photo when toggle button is :checked
   // 3. Edit all images down to the appropriate size
   // 4. Do something about mobile. Reduce functionality so as not
   //    to overload it.
@@ -51,9 +49,12 @@
     targetProfile.style.backgroundImage = 'url("/assets/img/team/' + imgType + '/' + slug +'.jpg")';
   };
 
-  var toggleMemberBackground = function(portrait) {
-    toggleBackgroundBtn.addEventListener('click', function() {
-      setBackground(profile, portrait);
+  var toggleMemberBackground = function() {
+    console.log('eh hello');
+    allToggleButtons.forEach(function(tgBtn) {
+      tgBtn.addEventListener('click', function(event) {
+        console.log('halp');
+      });
     });
   };
 
