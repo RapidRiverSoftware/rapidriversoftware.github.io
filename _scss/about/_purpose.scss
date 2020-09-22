@@ -29,6 +29,7 @@
 
   .title {
     @include title;
+    text-transform: none;
   }
 
   .description {
