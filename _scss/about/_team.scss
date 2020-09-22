@@ -1,7 +1,3 @@
-.team-component {
-  
-}
-
 .team-header {
   @include list-header;
 
@@ -14,19 +10,10 @@
   }
 }
 
-.profile-window {
-  position: relative;
-  height: 322px;
-  width: 100%;
-  overflow: scroll;
-  margin-bottom: 50px;
-}
-
 .profile-list {
   @include flex-column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 322px;
+  align-items: center;
   padding-right: 15px;
   padding-left: 15px;
 
@@ -34,13 +21,13 @@
     overflow: hidden;
     width: 310px;
     height: 92px;
-    margin-right: 15px;
     margin-bottom: 15px;
     border-radius: 10px 0px 10px 0px;
     box-shadow: $shadow-xl;
 
     .meta {
       display: flex;
+      position: relative;
     }
 
     .photo {
@@ -61,20 +48,7 @@
     }
 
     .fx-expand-button {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      color: $pink400;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-align: center;
-      text-transform: uppercase;
-      @include bg-navy-gradient;
+      display: none;
     }
 
     .details {
@@ -102,11 +76,16 @@
   }
 
   .sociallinks {
-    display: none;
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 
     a {
       color: $pink400;
       text-decoration: none;
+      margin-left: 8px;
+      margin-right: 8px;
     }
 
     a,
@@ -118,6 +97,8 @@
 
 @media(min-width: $width-md) {
   .profile-list {
+    @include flex-row;
+    justify-content: space-around;
     padding-right: 0;
     padding-left: 0;
   }
@@ -130,10 +111,6 @@
     .description {
       width: 50%;
     }
-  }
-
-  .profile-window {
-    height: auto;
   }
 
   .profile-list {
@@ -149,6 +126,27 @@
       margin-left: 8px;
       margin-right: 8px;
       transition: all 0.3s ease-out;
+
+      .sociallinks {
+        display: none;
+      }
+
+      .fx-expand-button {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $pink400;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        @include bg-navy-gradient;
+      }
 
       &.fx-expand {
         position: relative;
@@ -193,7 +191,6 @@
 
         .meta {
           display: flex;
-          justify-content: space-between;
           align-items: center;
           position: absolute;
           bottom: 0;

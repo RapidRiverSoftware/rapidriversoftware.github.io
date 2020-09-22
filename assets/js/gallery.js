@@ -1,5 +1,5 @@
 (function() {
-  var RESET_INTERVAL = 3000;
+  var RESET_INTERVAL = 5000;
   var IMG_DIR = '/assets/img/team/';
   var IMG_FORMAT = '.jpg';
 
@@ -12,10 +12,6 @@
   var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"] input');
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
   var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
-
-  // TODO List
-  // 1. Do something about mobile. Reduce functionality so as not
-  //    to overload it.
 
   var inactivityTime = function () {
     var time;
