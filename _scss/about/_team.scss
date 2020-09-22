@@ -106,8 +106,12 @@
 
     a {
       color: $pink400;
-      font-size: 16px;
       text-decoration: none;
+    }
+
+    a,
+    .fa {
+      font-size: 16px;
     }
   }
 }
@@ -170,14 +174,14 @@
             background-color: white;
 
             &:before {
-              content: '\f007';
+              content: '\f03e';
               font-family: 'FontAwesome';
             }
           }
 
           input[data-fx="background-toggle"]:checked + div[data-fx="toggle-background-button"] {
             &:before {
-              content: '\f03e';
+              content: '\f007';
               font-family: "FontAwesome";
             }
           }
@@ -235,6 +239,11 @@
             margin-left: 10px;
             margin-right: 10px;
             font-size: 19px;
+          }
+
+          a,
+          .fa {
+            font-size: 25px;;
           }
         }
 

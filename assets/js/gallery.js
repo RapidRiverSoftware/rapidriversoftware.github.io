@@ -3,14 +3,13 @@
   var portrait = 'portrait';
   var background = 'background';
   var timedRemoval;
-  var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"]');
+  var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"] input');
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
   var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
 
   // TODO List
   // 1. Switch profile photo when toggle button is :checked
-  // 3. Edit all images down to the appropriate size
-  // 4. Do something about mobile. Reduce functionality so as not
+  // 2. Do something about mobile. Reduce functionality so as not
   //    to overload it.
 
   var toggleClass = function(e, c) {
@@ -50,10 +49,14 @@
   };
 
   var toggleMemberBackground = function() {
-    console.log('eh hello');
     allToggleButtons.forEach(function(tgBtn) {
-      tgBtn.addEventListener('click', function(event) {
-        console.log('halp');
+      tgBtn.addEventListener('change', function(event) {
+        var parentProfile = this.closest('[data-fx="profile"]')
+        if (this.checked) {
+          setBackground(parentProfile, background);
+        } else {
+          setBackground(parentProfile, portrait);
+        }
       });
     });
   };
@@ -64,6 +67,7 @@
         // reset();
         setBackground(profile, portrait);
         toggleClass(this, 'fx-expand');
+        toggleMemberBackground();
         // setTimer();
       })
     });
@@ -72,7 +76,6 @@
   var init = function() {
     preventLinkBubble();
     expandProfile();
-    toggleMemberBackground();
   };
 
   init();
