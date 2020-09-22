@@ -8,6 +8,7 @@
   var thumbnail = 'thumbnail';
   var thumbBg = 'thumbnail-background';
 
+  var screenResolution = window.innerWidth;
   var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"] input');
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
   var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
@@ -95,7 +96,9 @@
   };
 
   window.onload = function() {
-    inactivityTime();
-    init();
+    if (screenResolution >= 1024) {
+      inactivityTime();
+      init();
+    }
   }
 })();
