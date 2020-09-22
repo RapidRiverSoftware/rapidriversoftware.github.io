@@ -1,12 +1,13 @@
 (function() {
-  var RESET_INTERVAL = 7000;
+  var RESET_INTERVAL = 3000;
   var IMG_DIR = '/assets/img/team/';
   var IMG_FORMAT = '.jpg';
+
   var portrait = 'portrait';
   var background = 'background';
   var thumbnail = 'thumbnail';
   var thumbBg = 'thumbnail-background';
-  var timedRemoval;
+
   var allToggleButtons = document.querySelectorAll('[data-fx="toggle-button"] input');
   var teamProfiles = document.querySelectorAll('[data-fx="profile"]');
   var allNestedLinks = document.querySelectorAll('[data-info="nested-link"]');
@@ -15,21 +16,22 @@
   // 1. Do something about mobile. Reduce functionality so as not
   //    to overload it.
 
+  var inactivityTime = function () {
+    var time;
+    window.onload = resetTimer;
+    document.onmousemove = resetTimer;
+    document.onlick = resetTimer;
+    document.onchange = resetTimer;
+    document.onkeypress = resetTimer;
+
+    function resetTimer() {
+        clearTimeout(time);
+        time = setTimeout(removeExpand, RESET_INTERVAL);
+    }
+};
+
   var toggleClass = function(e, c) {
     (e).classList.toggle(c)
-  };
-
-  var setTimer = function() {
-    timedRemoval = setTimeout(removeExpand, RESET_INTERVAL);
-  };
-
-  var clearTimer = function() {
-    clearTimeout(timedRemoval);
-  };
-
-  var reset = function() {
-    clearTimer();
-    removeExpand();
   };
 
   var setBackground = function(targetProfile, imgType) {
@@ -62,7 +64,7 @@
 
   var toggleMemberBackground = function() {
     allToggleButtons.forEach(function(tgBtn) {
-      tgBtn.addEventListener('change', function(event) {
+      tgBtn.addEventListener('change', function() {
         var parentProfile = this.closest('[data-fx="profile"]')
         if (this.checked) {
           setBackground(parentProfile, background);
@@ -76,22 +78,24 @@
   };
 
   var expandProfile = function() {
-    teamProfiles.forEach(function(profile, index) {
-      profile.addEventListener('click', function(event) {
-        reset();
+    teamProfiles.forEach(function(profile) {
+      profile.addEventListener('click', function() {
+        removeExpand();
         setBackground(profile, portrait);
         setThumbnailSrc(profile, thumbBg);
         toggleClass(this, 'fx-expand');
-        setTimer();
       })
     });
   };
-
+  
   var init = function() {
     preventLinkBubble();
     expandProfile();
     toggleMemberBackground();
   };
 
-  init();
+  window.onload = function() {
+    inactivityTime();
+    init();
+  }
 })();
