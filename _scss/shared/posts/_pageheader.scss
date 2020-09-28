@@ -1,21 +1,5 @@
 .page-header {
-  position: relative;
-  height: 506px;
-
-  // TODO: Deprecate and generalise this "other"-ness
-  &.-other {
-    background-color: $blue500;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      height: 40px;
-      width: 100%;
-      background-color: white;
-      border-radius: 30px 30px 0px 0px;
-    }
-  }
+@include page-hero;
 
   .headerflex {
     display: flex;
@@ -61,13 +45,11 @@
   .page-header {
     height: 670px;
 
-    &.-other {
-      background-image: url($header-bg);
-      border-bottom-right-radius: 90px;
+    background-image: url($header-bg);
+    border-bottom-right-radius: 90px;
 
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
     }
 
     .intro {

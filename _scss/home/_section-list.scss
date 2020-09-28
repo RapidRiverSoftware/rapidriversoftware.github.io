@@ -1,21 +1,14 @@
 .homepage-sections {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
   margin-top: -40px
 }
 
 .section-list {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  @include flex-column;
   z-index: 1;
 
   .item {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    @include flex-column;
     margin-bottom: 40px;
 
     &:nth-child(odd) {
@@ -59,10 +52,7 @@
     .text {
       position: relative;
       z-index: 1;
-      background-color: white;
-      padding: 10px 20px 40px 20px;
-      border-radius: 30px;
-      box-shadow: $shadow-xl;
+      @include content-bucket;
     }
 
     .title {

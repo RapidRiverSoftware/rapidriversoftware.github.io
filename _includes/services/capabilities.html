@@ -1,19 +1,21 @@
 <div id="capabilities" class="capabilities-component">
-    <div class="capabilities-list">
-        <div class="capabilities-header">
-            <h2 class="heading">Capabilities</h2>
-            <p class="description">
-                These are the building blocks of what we do. We draw on our technical skills to create custom solutions for our clients.
-            </p>
-        </div>
-        {% for cap in site.capabilities %}
-        <div class="capability-item">
-            <h4 class="title">{{ cap.title }}</h4>
-            <p class="description">{{ cap.content }}</p>
-            <div class="iconbox">
-                <img src="/assets/img/services/icons/{{ cap.slug }}.svg" class="iconimg" />
+    <div class="container">
+        <div class="capabilities-list">
+            <div class="capabilities-header">
+                <h2 class="heading">Capabilities</h2>
+                <p class="description">
+                    These are the building blocks of what we do. We draw on our technical skills to create custom solutions for our clients.
+                </p>
             </div>
+            {% for cap in site.capabilities %}
+            <div class="capability-item">
+                <h4 class="title">{{ cap.title }}</h4>
+                <p class="description">{{ cap.content }}</p>
+                <div class="iconbox">
+                    <img src="/assets/img/services/icons/{{ cap.slug }}.svg" class="iconimg" />
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>

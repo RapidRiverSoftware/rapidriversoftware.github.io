@@ -1,0 +1,50 @@
+.purpose-list {
+  @include masonry-container(666px, 745px);
+}
+
+.purpose-header {
+  @include masonry-header;
+  margin-top: -40px;
+
+  .heading {
+    @include heading;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+.purpose-img {
+  @include masonry-item($purple600);
+  text-align: center;
+
+  img {
+    width: auto;
+  }
+}
+
+.purpose-item {
+  @include masonry-item;
+
+  .title {
+    @include title;
+    text-transform: none;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: $width-xl) {
+  .purpose-list {
+    @include decorative-dots;
+
+    &::after {
+      bottom: -60px;
+      left: -110px;
+      background-image: url("../img/case-studies/shared/bg-pattern-square.png"); 
+    }
+  }
+}

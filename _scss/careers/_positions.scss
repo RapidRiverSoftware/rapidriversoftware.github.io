@@ -3,14 +3,11 @@
     padding-bottom: 40px;
 
     .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
 
     .positionslist {
-      display: flex;
-      flex-wrap: wrap;
+      @include flex-row;
       justify-content: space-around;
     }
 

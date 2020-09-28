@@ -1,78 +1,299 @@
-.about-page {
-  .team {
-    background-color: $grey200;
-    padding-bottom: 40px;
+.team-header {
+  @include list-header;
 
-    .container {
+  .heading {
+    @include heading;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+.profile-list {
+  @include flex-column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .profile {
+    overflow: hidden;
+    width: 310px;
+    height: 92px;
+    margin-bottom: 15px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: $shadow-xl;
+
+    .meta {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .teamprofiles {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 50px;
+      position: relative;
     }
 
-    .profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 30px;
+    .photo {
+      position: relative;
+      width: 50%;
 
-      .image {
-        border: 3px solid white;
-        border-radius: 100%;
+      img {
+        width: 100%;
       }
+    }
 
-      .name {
-        margin-bottom: 0;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: capitalize;
-      }
+    .toggle-button {
+      display: none;
+    }
 
-      .position {
-        margin-top: 0;
-      }
+    .background-toggle-input {
+      display: none;
+    }
 
-      .sociallinks {
-        display: flex;
-      }
+    .fx-expand-button {
+      display: none;
+    }
 
-      .sociallinks .link {
-        display: inline-block;
-        margin-right: 10px;
-        margin-left: 10px;
-      }
+    .details {
+      width: 50%;
+      padding: 5px 10px;
+      background-color: $blue900;
+    }
+
+    .name {
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .position {
+      color: $grey500;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+
+    .bg {
+      display: none;
+    }
+  }
+
+  .sociallinks {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    a {
+      color: $pink400;
+      text-decoration: none;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    a,
+    .fa {
+      font-size: 16px;
     }
   }
 }
 
-
 @media(min-width: $width-md) {
-  .about-page {
-    .team {
-      padding-top: 40px;
-
-      .teamprofiles {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr; 
-      }
-    }
+  .profile-list {
+    @include flex-row;
+    justify-content: space-around;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media(min-width: $width-lg) {
-  .about-page {
-    .team {
-      .teamprofiles {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr; 
+  .team-header {
+    padding: 40px 40px;
+
+    .description {
+      width: 50%;
+    }
+  }
+
+  .profile-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    height: auto;
+    overflow: hidden;
+
+    .profile {
+      width: 277px;
+      height: 82px;
+      margin-left: 8px;
+      margin-right: 8px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      .sociallinks {
+        display: none;
+      }
+
+      .fx-expand-button {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $pink400;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        @include bg-navy-gradient;
+      }
+
+      &.fx-expand {
+        position: relative;
+        background-size: cover;
+        grid-column: span 2;
+        grid-row: span 4;
+        width: 570px;
+        height: 373px;
+
+        .toggle-button {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+
+          label {
+            display: block;
+          }
+
+          div[data-fx="toggle-background-button"] {
+            width: 38px;
+            text-align: center;
+            background-color: white;
+
+            &:before {
+              content: '\f03e';
+              font-family: 'FontAwesome';
+            }
+          }
+
+          input[data-fx="background-toggle"]:checked + div[data-fx="toggle-background-button"] {
+            &:before {
+              content: '\f007';
+              font-family: "FontAwesome";
+            }
+          }
+
+          .button:first-child {
+            margin-right: 10px;
+          }
+        }
+
+        .meta {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          @include bg-navy-gradient;
+        }
+
+        .photo {
+          overflow: hidden;
+          width: 100px;
+          height: 100px;
+          border-radius: 100px;
+          border: 2px solid white;
+
+          img {
+            width: 162%;
+            margin-left: -20%;
+          }
+        }
+
+        .details {
+          width: auto;
+          margin-left: 10px;
+          background-color: transparent;
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .position {
+          font-size: 19px;
+        }
+
+        .sociallinks {
+          display: block;
+          margin-right: 0;
+          margin-left: auto;
+
+          a {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 19px;
+          }
+
+          a,
+          .fa {
+            font-size: 25px;;
+          }
+        }
+
+        .bg {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          .bgimg {
+            width: 100%;
+          }
+        }
+
+        .fx-expand-button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: $width-xl) {
+  .team-header {
+    margin-bottom: 20px;
+  }
+
+  .profile-list {
+    .profile {
+      width: 362px;
+      height: 107px;
+
+      .details {
+        padding: 20px 15px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .position {
+        font-size: 15px;
+        line-height: 19px;
+      }
+
+      &.fx-expand {
+        width: 740px;
+        height: 473px;
       }
     }
   }

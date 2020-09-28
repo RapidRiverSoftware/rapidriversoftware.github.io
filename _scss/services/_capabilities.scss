@@ -1,24 +1,13 @@
 .capabilities-component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .capabilities-header {
-  position: relative;
-  z-index: 9;
-  background-color: $blue900;
-  background-image: url($solutionheader-bg);
-  border-radius: 30px;
-  box-shadow: $shadow-xl;
-  color: white;
-  padding: 10px 20px 40px 20px;
-  margin-bottom: 30px;
+  @include masonry-header;
   margin-top: -40px;
 
   .heading {
-    font-size: 28px;
-    text-transform: capitalize;
+    @include heading;
   }
 
   .description {
@@ -27,17 +16,12 @@
 }
 
 .capabilities-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // @mixin masonry-container($maxh-lg, $maxh-xl)
+  @include masonry-container(1585px, 1500px);
 }
 
 .capability-item {
-  width: 100%;
-  padding: 5px 20px 40px 20px;
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 30px;
+  @include masonry-item;
 
   p {
     font-size: 16px;
@@ -50,10 +34,7 @@
   }
 
   .title {
-    color: $blue900;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: capitalize;
+    @include title;
   }
 
   .description {
@@ -64,47 +45,5 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-  }
-}
-
-@media(min-width: $width-md) {
-  .capabilities-list {
-    width: 80%;
-  }
-}
-
-@media(min-width: $width-lg) {
-  .capabilities-header {
-    width: 460px;
-    padding: 10px 40px 40px 40px;
-  }
-
-  .capabilities-list {
-    max-width: 960px;
-    width: 100%;
-    max-height: 1585px;
-    flex-flow: column wrap;
-  }
-
-  .capability-item {
-    width: 460px;
-    padding: 5px 40px 40px 40px;
-    margin-top: 40px;
-  }
-}
-
-@media(min-width: $width-xl) {
-  .capabilities-header {
-    width: 550px;
-  }
-
-  .capabilities-list {
-    max-width: 1140px;
-    max-height: 1500px;
-    align-content: space-between;
-  }
-
-  .capability-item {
-    width: 550px;
   }
 }

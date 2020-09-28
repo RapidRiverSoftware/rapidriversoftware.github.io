@@ -24,8 +24,9 @@
 // Helper function to set bloglist classes to be used for backgrounds
 (function() {
   var pathname = window.location.pathname;
+  var bloglist = document.querySelector("[data-fx='blog-list']");
 
-  if (pathname === '/blog/') {
+  if (/blog/.test(pathname)) {
     var pageNum = parseInt(pathname.split('/')[3], 10);
 
     if (!pageNum) {
@@ -44,6 +45,8 @@
       }
     }
 
-    document.querySelector("[data-fx='blog-list']").classList.add('page' + pageNum);
+    if (bloglist) {
+      bloglist.classList.add('page' + pageNum);
+    }
   }
 })();

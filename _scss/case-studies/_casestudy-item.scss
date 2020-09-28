@@ -1,8 +1,5 @@
 .casestudy-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
   margin-top: -40px;
 }
 
@@ -73,7 +70,7 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -215,8 +212,7 @@
     }
 
     .intro {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       justify-content: space-between;
       width: 40%;
       background-color: white;
@@ -251,16 +247,7 @@
     z-index: 1;
     max-width: 1140px;
     margin-bottom: 150px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 0;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+    @include decorative-dots;
 
     &:nth-child(even):before {
       top: -60px;

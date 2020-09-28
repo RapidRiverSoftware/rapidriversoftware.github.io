@@ -1,0 +1,27 @@
+<div id="values" class="values-component">
+    <div class="container">
+        <div class="values-list">
+            <div class="values-header">
+                <h2 class="heading">
+                    Our Values
+                </h2>
+                <p class="description">
+                    Our values guide everything we do. Every decision we make is driven by the things we believe in.
+                </p>
+            </div>
+            <div class="values-img">
+                <img src="/assets/img/about/values.png" alt="">
+            </div>
+            {% for value in site.data.values %}
+                <div class="value-item">
+                    <h4 class="title">
+                        {{ value.title }}
+                    </h4>
+                    <p class="description">
+                        {{ value.description }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

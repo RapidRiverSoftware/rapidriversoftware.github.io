@@ -16,8 +16,7 @@
   border-bottom: 16px solid $blue500;
 
   .footerflex {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding-right: 15px;
     padding-left: 15px;
   }

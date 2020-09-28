@@ -1,0 +1,65 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@mixin masonry-container($maxh-lg, $maxh-xl) {
+  @include flex-column-center;
+  margin-bottom: 60px;
+  width: 100%;
+
+  @media(min-width: $width-lg) {
+    max-height: $maxh-lg;
+    margin-bottom: 150px;
+    flex-flow: column wrap;
+  }
+
+  @media(min-width: $width-xl) {
+    max-height: $maxh-xl;
+    align-content: space-between;
+  }
+}
+
+@mixin masonry-header {
+  @include list-header;
+
+  @media(min-width: $width-lg) {
+    width: 415px;
+    padding: 10px 40px 40px 40px;
+  }
+  
+  @media(min-width: $width-xl) {
+    width: 550px;
+  }  
+}
+
+@mixin masonry-item($bg-color: white) {
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 1;
+  @include content-bucket($bg-color);
+
+  @media(min-width: $width-lg) {
+    width: 415px;
+    padding: 40px;
+    margin-top: 40px;
+  }
+
+  @media(min-width: $width-xl) {
+    width: 550px;
+  }
+}
