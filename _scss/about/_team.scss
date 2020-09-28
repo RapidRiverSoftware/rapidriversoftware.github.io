@@ -123,6 +123,7 @@
     grid-template-rows: auto;
     grid-auto-flow: dense;
     height: auto;
+    overflow: hidden;
 
     .profile {
       width: 277px;
