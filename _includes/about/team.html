@@ -8,47 +8,44 @@
                 the people who make Rapid River tick.
             </p>
         </div>
-        <div class="profile-list">
+        <div class="profile-list" data-fx="profile-list">
             {% for member in site.data.people %}
                 <div class="profile" data-fx="profile" data-slug="{{ member.slug }}">
-                    <div class="toggle-button" data-fx="toggle-button">
-                        <label for="background-toggle-{{ member.slug }}" data-info="nested-link">
-                            <input type="checkbox"
-                            id="background-toggle-{{ member.slug }}"
-                            class="background-toggle-input"
-                            data-info="nested-link"
-                            data-fx="background-toggle">
-                            <div class="button"
-                                data-info="nested-link"
-                                data-fx="toggle-background-button">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="meta">
-                        <div class="photo">
-                            <img src="/assets/img/team/thumbnail/{{ member.slug }}.jpg" class="image" data-fx="thumbnail-photo" alt="Portrait of {{member.slug | capitalize}}">
-                            <div class="fx-expand-button">
-                                Expand
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4 class="name">{{ member.name }}</h4>
-                            <p class="position">{{ member.position }}</p>
-                        </div>
-                        <div class="sociallinks">
-                            {% for network in member.social %}
-                            <a class=""
-                                data-info="nested-link"
-                                href="{{ network.url }}"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa fa-{{ network.title }}"></i>
-                            </a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="bg">
+                    <div class="wrapper">
                         <img class="bgimg" src="/assets/img/team/portrait/{{ member.slug }}.jpg" alt="" data-fx="profile-bg">
+                        <div class="toggle-button" data-fx="toggle-button">
+                            <label for="background-toggle-{{ member.slug }}" data-info="nested-link">
+                                <input type="checkbox"
+                                id="background-toggle-{{ member.slug }}"
+                                class="background-toggle-input"
+                                data-info="nested-link"
+                                data-fx="background-toggle">
+                                <div class="button"
+                                    data-info="nested-link"
+                                    data-fx="toggle-background-button">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="meta">
+                            <div class="photo">
+                                <img src="/assets/img/team/thumbnail/{{ member.slug }}.jpg" class="image" data-fx="thumbnail-photo" alt="Portrait of {{member.slug | capitalize}}">
+                            </div>
+                            <div class="details">
+                                <h4 class="name">{{ member.name }}</h4>
+                                <p class="position">{{ member.position }}</p>
+                            </div>
+                            <div class="sociallinks">
+                                {% for network in member.social %}
+                                <a class=""
+                                    data-info="nested-link"
+                                    href="{{ network.url }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %} 

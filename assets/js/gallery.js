@@ -6,7 +6,6 @@
   var portrait = 'portrait';
   var background = 'background';
   var thumbnail = 'thumbnail';
-  var thumbBg = 'thumbnail-background';
   var thumbImgEl = '[data-fx="thumbnail-photo"]';
   var profileImgEl = '[data-fx="profile-bg"]';
 
@@ -25,12 +24,8 @@
 
     function resetTimer() {
         clearTimeout(time);
-        time = setTimeout(removeExpand, RESET_INTERVAL);
+        time = setTimeout(removeAllExpand, RESET_INTERVAL);
     }
-};
-
-  var toggleClass = function(e, c) {
-    (e).classList.toggle(c)
   };
 
   var setImgSrc = function(element, targetProfile, imgType) {
@@ -40,7 +35,7 @@
     targetElement.src = srcPath;
   };
 
-  var removeExpand = function() {
+  var removeAllExpand = function() {
     teamProfiles.forEach(function(profile) {
       profile.classList.remove('fx-expand');
       setImgSrc(thumbImgEl, profile, thumbnail);
@@ -61,10 +56,10 @@
         var parentProfile = this.closest('[data-fx="profile"]')
         if (this.checked) {
           setImgSrc(profileImgEl, parentProfile, background);
-          setImgSrc(thumbImgEl, parentProfile, thumbnail);
+          setImgSrc(thumbImgEl, parentProfile, portrait);
         } else {
           setImgSrc(profileImgEl, parentProfile, portrait);
-          setImgSrc(thumbImgEl, parentProfile, thumbBg);
+          setImgSrc(thumbImgEl, parentProfile, background);
         }
       });
     });
@@ -73,10 +68,10 @@
   var expandProfile = function() {
     teamProfiles.forEach(function(profile) {
       profile.addEventListener('click', function() {
-        removeExpand();
+        removeAllExpand();
+        this.classList.add('fx-expand');
         setImgSrc(profileImgEl, profile, portrait);
-        setImgSrc(thumbImgEl, profile, thumbBg);
-        toggleClass(this, 'fx-expand');
+        setImgSrc(thumbImgEl, profile, background);
       })
     });
   };
