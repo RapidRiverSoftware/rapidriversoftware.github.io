@@ -11,26 +11,30 @@
 }
 
 .profile-list {
-  @include flex-column;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
   padding-right: 15px;
   padding-left: 15px;
 
   .profile {
     overflow: hidden;
-    width: 310px;
-    height: 92px;
-    margin-bottom: 15px;
+    position: relative;
     border-radius: 10px 0px 10px 0px;
     box-shadow: $shadow-xl;
+
+    .wrapper {
+      display: flex;
+    }
 
     .meta {
       display: flex;
       position: relative;
+      width: 50%;
     }
 
     .photo {
+      display: none;
       position: relative;
       width: 50%;
 
@@ -52,7 +56,7 @@
     }
 
     .details {
-      width: 50%;
+      width: 100%;
       padding: 5px 10px;
       background-color: $blue900;
     }
@@ -74,8 +78,9 @@
       margin-top: 5px;
     }
 
-    .bg {
-      display: none;
+    .bgimg {
+      position: relative;
+      width: 50%;
     }
   }
 
@@ -101,8 +106,8 @@
 
 @media(min-width: $width-md) {
   .profile-list {
-    @include flex-row;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -119,19 +124,19 @@
 
   .profile-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-auto-rows: 92px;
     grid-template-rows: auto;
     grid-auto-flow: dense;
+    column-gap: 3%;
+    row-gap: 8px;
     height: auto;
-    overflow: hidden;
 
     .profile {
-      width: 277px;
-      height: 82px;
-      margin-left: 8px;
-      margin-right: 8px;
-      transition: all 0.2s ease-in-out;
+      margin-top: 0;
+      margin-bottom: 0;
       cursor: pointer;
+      transition: all .2s ease-in-out;
 
       .sociallinks {
         display: none;
@@ -139,7 +144,7 @@
 
       .fx-expand-button {
         position: absolute;
-        bottom: 5px;
+        bottom: 0;
         left: 0;
         display: block;
         width: 100%;
@@ -154,13 +159,17 @@
         @include bg-navy-gradient;
       }
 
+      .bgimg {
+        width: 50%;
+        transition: transform 1s;
+        transform-origin: top center;
+      }
+
       &.fx-expand {
         position: relative;
         background-size: cover;
         grid-column: span 2;
         grid-row: span 4;
-        width: 570px;
-        height: 373px;
 
         .toggle-button {
           display: block;
@@ -199,6 +208,7 @@
           display: flex;
           align-items: center;
           position: absolute;
+          z-index: 10;
           bottom: 0;
           left: 0;
           width: 100%;
@@ -207,6 +217,7 @@
         }
 
         .photo {
+          display: block;
           overflow: hidden;
           width: 100px;
           height: 100px;
@@ -250,14 +261,9 @@
           }
         }
 
-        .bg {
-          display: block;
+        .bgimg {
           width: 100%;
-          height: 100%;
-
-          .bgimg {
-            width: 100%;
-          }
+          transform: scale(1.06);
         }
 
         .fx-expand-button {
@@ -274,9 +280,9 @@
   }
 
   .profile-list {
+    grid-auto-rows: 120px;
+
     .profile {
-      width: 362px;
-      height: 107px;
 
       .details {
         padding: 20px 15px;
@@ -284,16 +290,13 @@
 
       .name {
         font-size: 18px;
+        height: 38px;
       }
 
       .position {
         font-size: 15px;
         line-height: 19px;
-      }
-
-      &.fx-expand {
-        width: 740px;
-        height: 473px;
+        height: 38px;
       }
     }
   }
