@@ -13,6 +13,7 @@
 .profile-list {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 104px;
   row-gap: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -81,6 +82,7 @@
     .bgimg {
       position: relative;
       width: 50%;
+      height: 100%;
     }
   }
 
