@@ -36,7 +36,7 @@ This section provides a summary of the ways different types of content can be ad
 ### Creating a team member profile
 1. Take a profile photo. Visit our [Team Profile Photo Guide](https://docs.google.com/presentation/d/1JeL-FCusWLBF71zpd419F1_Tr2rK8vAoT4EHqSvPg2c/edit) to see how
 2. Add your details in `/data/people.yml` file
-3. Ensure your photo is of the same dimensions as the others and put it in the /assets/img/team folder. The filename should match the `pic` value you provided with your details above
+3. Ensure your photo is of the same dimensions as the others and put it in the `/assets/img/team` folder. The filename should match the `pic` value you provided with your details above
 4. Check that it looks good in the browser
 5. Open a PR and request a review
 
