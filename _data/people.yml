@@ -242,3 +242,12 @@
       url: https://stackoverflow.com/users/1051441/shuwn-yuan-tee
     - title: linkedin
       url: https://www.linkedin.com/in/shuwn-yuan-tee
+
+- name: Yoon Wai Yan
+  slug: waiyan
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/yoonwaiyan
+    - title: linkedin
+      url: https://www.linkedin.com/in/yoonwaiyan/
