@@ -97,17 +97,6 @@
     - title: instagram
       url: https://www.instagram.com/nkavitha
 
-- name: Tamer Shlash
-  slug: tamer
-  position: Software Engineer
-  social:
-    - title: github
-      url: https://github.com/TamerShlash
-    - title: stack-overflow
-      url: https://stackoverflow.com/users/368167
-    - title: linkedin
-      url: https://www.linkedin.com/in/tamershlash
-
 - name: Lim Yih En
   slug: yihen
   position: Software Engineer
