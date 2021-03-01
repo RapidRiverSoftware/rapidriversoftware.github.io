@@ -38,7 +38,7 @@
   var removeAllExpand = function() {
     teamProfiles.forEach(function(profile) {
       profile.classList.remove('fx-expand');
-      setImgSrc(thumbImgEl, profile, thumbnail);
+      setImgSrc(profileImgEl, profile, portrait);
     });
   };
 
