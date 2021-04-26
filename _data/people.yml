@@ -240,3 +240,12 @@
       url: https://github.com/yoonwaiyan
     - title: linkedin
       url: https://www.linkedin.com/in/yoonwaiyan/
+
+- name: Ann Nee Lau
+  slug: annnee
+  position: Software Engineer
+  social:
+    - title: github
+      url: https://github.com/annnee
+    - title: linkedin
+      url: https://www.linkedin.com/in/annnee/
