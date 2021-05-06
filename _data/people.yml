@@ -258,3 +258,12 @@
       url: https://github.com/cmh114933
     - title: linkedin
       url: https://www.linkedin.com/in/chan-ming-hao-01155064/
+      
+- name: Mr. Example
+  slug: mrexample
+  position: Intern
+  social:
+    - title: github
+      url: https://github.com
+    - title: linkedin
+      url: https://www.linkedin.com
