@@ -55,3 +55,6 @@ exclude:
   - Gemfile*
   - LICENSE
   - vendor
+
+include:
+  - _redirects
